@@ -159,6 +159,10 @@
 				</dict>
 				<dict>
 					<key>include</key>
+					<string>#scala-quoted</string>
+				</dict>
+				<dict>
+					<key>include</key>
 					<string>#char-literal</string>
 				</dict>
 				<dict>
@@ -795,6 +799,13 @@
 			<string>'\w+(?=[^'\w])</string>
 			<key>name</key>
 			<string>entity.name.type.symbol.scala</string>
+		</dict>
+		<key>scala-quoted</key>
+		<dict>
+			<key>match</key>
+			<string>'\{'|'\('|'\['|'\{|'\(|'\[</string>
+			<key>name</key>
+			<string>constant.other.quoted.scala</string>
 		</dict>
 		<key>storage-modifiers</key>
 		<dict>
