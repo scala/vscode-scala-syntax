@@ -2,8 +2,8 @@
     "name": "scala",
     "displayName": "Scala Syntax",
     "description": "Scala Syntax",
-    "version": "0.0.3",
-    "publisher": "Nicolas Stucki",
+    "version": "0.1.0",
+    "publisher": "nicolasstucki",
     "license": "SEE LICENSE IN LICENSE.md",
     "engines": {
         "vscode": "^1.5.0"
