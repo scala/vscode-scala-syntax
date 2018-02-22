@@ -1,0 +1,84 @@
+{
+  ".source.scala": {
+		"main": {
+			"prefix": "def main",
+			"body": "def main(args: Array[String]): Unit = {\n\t${1:expr}\n}",
+			"description": "Snippet for if expression"
+		},
+		"val": {
+			"prefix": "val",
+			"body": "val ${1:name}: ${2:Type} = ${3:rhs}",
+			"description": "Snippet for a val declaration with explicit type"
+		},
+		"var": {
+			"prefix": "var",
+			"body": "var ${1:name}: ${2:Type} = ${3:rhs}",
+			"description": "Snippet for a var declaration with explicit type"
+		},
+		"lazy val": {
+			"prefix": "lazy val",
+			"body": "lazy val ${1:name}: ${2:Type} = ${3:rhs}",
+			"description": "Snippet for a var declaration with explicit type"
+		},
+		"def without arguments": {
+			"prefix": "def",
+			"body": "def ${1:name}: ${4:ReturnType} = ${5:rhs}",
+			"description": "Snippet for a var declaration with explicit type"
+		},
+		"def with 1 argument": {
+			"prefix": "def1",
+			"body": "def ${1:name}(${2:arg}: ${3:ArgType}): ${4:ReturnType} = ${5:rhs}",
+			"description": "Snippet for a var declaration with explicit type"
+		},
+		"def with 2 arguments": {
+			"prefix": "def2",
+			"body": "def ${1:name}(${2:arg1}: ${3:ArgType1}, ${4:arg2}: ${5:ArgType2}): ${6:ReturnType} = ${7:rhs}",
+			"description": "Snippet for a var declaration with explicit type"
+		},
+		"if expression": {
+			"prefix": "if",
+			"body": "if (${1:condition}) ${2:thenDo} \nelse ${3:elseDo}",
+			"description": "Snippet for if expression"
+		},
+    "if statement": {
+			"prefix": "if",
+			"body": "if (${1:condition}) {\n\t${2:thenDo}\n}",
+			"description": "Snippet for if statement"
+		},
+		"else branch": {
+			"prefix": "else",
+			"body": "else {\n\t${0:elseDo}\n}",
+			"description": "Snippet for else branch"
+		},
+		"match": {
+			"prefix": "match",
+			"body": "match {\n\tcase ${1:pattern} => $2 \n}",
+			"description": "Snippet for else branch"
+		},
+		"case": {
+			"prefix": "case",
+			"body": "case ${1:pattern} => $2",
+			"description": "Snippet for else branch"
+		},
+		"case if": {
+			"prefix": "case if",
+			"body": "case ${1:pattern} if ${2:guard} => $3",
+			"description": "Snippet for else branch"
+		},
+		"try catch": {
+			"prefix": "try catch",
+			"body": "try {\n\t${1:expression}\n} catch {\n\tcase ex: ${2:ExeptionClass} => $3 \n}",
+			"description": "Snippet for try/catch expression"
+		},
+		"try catch finally": {
+			"prefix": "try catch finally",
+			"body": "try {\n\t${1:expression}\n} catch {\n\tcase ex: ${2:ExeptionClass} => $3 \n} finally {\n\t${4:finallyDo}\n}",
+			"description": "Snippet for try/catch/finally expression"
+		},
+		"try finally": {
+			"prefix": "try finally",
+			"body": "try {\n\t${1:expression}\n} finally {\n\t${4:finallyDo}\n}",
+			"description": "Snippet for try/finally expression"
+		}
+	}
+}
