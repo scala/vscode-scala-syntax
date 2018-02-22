@@ -2,7 +2,7 @@
     "name": "scala",
     "displayName": "Scala Syntax",
     "description": "Scala Syntax",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "publisher": "nicolasstucki",
     "license": "SEE LICENSE IN LICENSE.md",
     "engines": {
