@@ -1,24 +1,28 @@
 {
   ".source.scala": {
 		"main": {
-			"prefix": "def main",
+			"prefix": "main",
 			"body": "def main(args: Array[String]): Unit = {\n\t${1:expr}\n}",
 			"description": "Snippet for if expression"
 		},
+
 		"match": {
 			"prefix": "match",
-			"body": "match {\n\tcase ${1:pattern} => $2 \n}",
+			"body": "match {\n\tcase ${1:pattern} => ${2:doSomething} \n}",
 			"description": "Snippet for else branch"
 		},
-		"case": {
-			"prefix": "case",
-			"body": "case ${1:pattern} => $2",
-			"description": "Snippet for else branch"
-		},
+
 		"try catch": {
-			"prefix": "try catch",
-			"body": "try {\n\t${1:expression}\n} catch {\n\tcase ex: ${2:ExeptionClass} => $3 \n}",
+			"prefix": "try",
+			"body": "try {\n\t${1:expression}\n} catch {\n\tcase ex: ${2:ExeptionClass} => ${3:doSomething} \n}",
 			"description": "Snippet for try/catch expression"
-		}
+		},
+
+		"class": { "prefix": "class", "body": "class ", "description": "class keyword" },
+		"trait": { "prefix": "trait", "body": "trait ", "description": "trait keyword" },
+		"object": { "prefix": "object", "body": "object ", "description": "object keyword" },
+		"override": { "prefix": "override", "body": "override ", "description": "override keyword" },
+		"catch": { "prefix": "catch", "body": "catch ", "description": "catch keyword" },
+		"finally": { "prefix": "finally", "body": "finally ", "description": "finally keyword" }
 	}
 }
