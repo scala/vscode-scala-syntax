@@ -10,6 +10,10 @@ Only scala syntax.
 
 No requirements.
 
+## Based on
+* Plugin: https://github.com/daltonjorge/vscode-scala
+* Template: https://github.com/sellmerfud/scala.tmbundle (https://github.com/mads-hartmann/scala.tmbundle)
+
 ## License
 [MIT](LICENSE)
 
