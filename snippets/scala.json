@@ -1,7 +1,7 @@
 {
   ".source.scala": {
 		"main": {
-			"prefix": "main",
+			"prefix": "def main",
 			"body": "def main(args: Array[String]): Unit = {\n\t${1:expr}\n}",
 			"description": "Snippet for if expression"
 		},
@@ -21,7 +21,10 @@
 		"class": { "prefix": "class", "body": "class ", "description": "class keyword" },
 		"trait": { "prefix": "trait", "body": "trait ", "description": "trait keyword" },
 		"object": { "prefix": "object", "body": "object ", "description": "object keyword" },
+		"extends": { "prefix": "extends", "body": "extends ", "description": "extends keyword" },
 		"override": { "prefix": "override", "body": "override ", "description": "override keyword" },
+		"private": { "prefix": "private", "body": "private ", "description": "private keyword" },
+		"protected": { "prefix": "protected", "body": "protected ", "description": "protected keyword" },
 		"catch": { "prefix": "catch", "body": "catch ", "description": "catch keyword" },
 		"finally": { "prefix": "finally", "body": "finally ", "description": "finally keyword" }
 	}
