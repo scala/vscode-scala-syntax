@@ -4,7 +4,7 @@
 
 ## Features
 
-Only scala syntax.
+Extension providing Scala syntax and code snippets.
 
 ## Requirements
 
