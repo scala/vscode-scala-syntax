@@ -29,24 +29,8 @@
 		<dict>
 			<key>begin</key>
 			<string>/\*</string>
-			<key>beginCaptures</key>
-			<dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
-					<string>punctuation.definition.comment.begin.scala</string>
-				</dict>
-			</dict>
 			<key>end</key>
 			<string>\*/</string>
-			<key>endCaptures</key>
-			<dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
-					<string>punctuation.definition.comment.end.scala</string>
-				</dict>
-			</dict>
 			<key>name</key>
 			<string>comment.block.scala</string>
 			<key>patterns</key>
@@ -54,6 +38,13 @@
 				<dict>
 					<key>include</key>
 					<string>#block-comments</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>(?x)
+			(?! /\*)
+			(?! \*/)
+		  </string>
 				</dict>
 			</array>
 		</dict>
@@ -115,6 +106,10 @@
 			<array>
 				<dict>
 					<key>include</key>
+					<string>#script-header</string>
+				</dict>
+				<dict>
+					<key>include</key>
 					<string>#storage-modifiers</string>
 				</dict>
 				<dict>
@@ -163,11 +158,15 @@
 				</dict>
 				<dict>
 					<key>include</key>
+					<string>#special-identifier</string>
+				</dict>
+				<dict>
+					<key>include</key>
 					<string>#char-literal</string>
 				</dict>
 				<dict>
 					<key>include</key>
-					<string>#empty-blocks</string>
+					<string>#empty-parentheses</string>
 				</dict>
 				<dict>
 					<key>include</key>
@@ -211,7 +210,7 @@
 				</dict>
 				<dict>
 					<key>begin</key>
-					<string>^\s*(/\*\*)</string>
+					<string>^\s*(/\*\*)(?!/)</string>
 					<key>beginCaptures</key>
 					<dict>
 						<key>1</key>
@@ -262,7 +261,7 @@
 								<key>2</key>
 								<dict>
 									<key>name</key>
-									<string>entity.name.type.class.scala</string>
+									<string>entity.name.class</string>
 								</dict>
 							</dict>
 							<key>match</key>
@@ -285,7 +284,7 @@
 								<key>2</key>
 								<dict>
 									<key>name</key>
-									<string>entity.name.type.class.documentation.link.scala</string>
+									<string>entity.other.documentation.link.scala</string>
 								</dict>
 								<key>3</key>
 								<dict>
@@ -299,25 +298,53 @@
 					</array>
 				</dict>
 				<dict>
-					<key>include</key>
-					<string>#block-comments</string>
-				</dict>
-				<dict>
+					<key>begin</key>
+					<string>/\*</string>
 					<key>captures</key>
 					<dict>
-						<key>1</key>
-						<dict>
-							<key>name</key>
-							<string>comment.line.double-slash.scala</string>
-						</dict>
-						<key>2</key>
+						<key>0</key>
 						<dict>
 							<key>name</key>
 							<string>punctuation.definition.comment.scala</string>
 						</dict>
 					</dict>
-					<key>match</key>
-					<string>\s*((//).*$\n?)</string>
+					<key>end</key>
+					<string>\*/</string>
+					<key>name</key>
+					<string>comment.block.scala</string>
+				</dict>
+				<dict>
+					<key>begin</key>
+					<string>(^[ \t]+)?(?=//)</string>
+					<key>beginCaptures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.whitespace.comment.leading.scala</string>
+						</dict>
+					</dict>
+					<key>end</key>
+					<string>(?!\G)</string>
+					<key>patterns</key>
+					<array>
+						<dict>
+							<key>begin</key>
+							<string>//</string>
+							<key>beginCaptures</key>
+							<dict>
+								<key>0</key>
+								<dict>
+									<key>name</key>
+									<string>punctuation.definition.comment.scala</string>
+								</dict>
+							</dict>
+							<key>end</key>
+							<string>\n</string>
+							<key>name</key>
+							<string>comment.line.double-slash.scala</string>
+						</dict>
+					</array>
 				</dict>
 			</array>
 		</dict>
@@ -333,7 +360,7 @@
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\b((0(x|X)[0-9a-fA-F]*)|(([0-9]+\.?[0-9]*)|(\.[0-9]+))((e|E)(\+|-)?[0-9]+)?)([LlFfUuDd]|UL|ul)?\b</string>
+					<string>\b((0(x|X)[0-9a-fA-F]*)|(([0-9]+\.[0-9]+)|(\.[0-9]+))((e|E)(\+|-)?[0-9]+)?|[0-9]+)([LlFfDd]|UL|ul)?\b</string>
 					<key>name</key>
 					<string>constant.numeric.scala</string>
 				</dict>
@@ -367,18 +394,18 @@
 						<key>1</key>
 						<dict>
 							<key>name</key>
-							<string>keyword.control.def.scala</string>
+							<string>keyword.declaration.scala</string>
 						</dict>
 						<key>2</key>
 						<dict>
 							<key>name</key>
-							<string>entity.name.function.declaration.scala</string>
+							<string>entity.name.function.declaration</string>
 						</dict>
 					</dict>
 					<key>match</key>
 					<string>(?x)
 						\b(def)\s+
-						(`[^`]+`|[_$a-zA-Z][_$a-zA-Z0-9]*(?:_[^\s])(?=[(\t ])|[_$a-zA-Z][_$a-zA-Z0-9]*|[-?~&gt;&lt;^+*%:!#|/@\\]+)</string>
+						(`[^`]+`|[_$a-zA-Z][_$a-zA-Z0-9]*(?:_[^\t .,;()\[\]{}'"`\w])(?=[(\t ])|[_$a-zA-Z][_$a-zA-Z0-9]*|[-?~&gt;&lt;^+*%:!#|/@\\]+)</string>
 				</dict>
 				<dict>
 					<key>captures</key>
@@ -386,21 +413,21 @@
 						<key>1</key>
 						<dict>
 							<key>name</key>
-							<string>storage.modifier.case.scala</string>
+							<string>keyword.declaration.scala</string>
 						</dict>
 						<key>2</key>
 						<dict>
 							<key>name</key>
-							<string>storage.type.$1.scala</string>
+							<string>keyword.declaration.scala</string>
 						</dict>
 						<key>3</key>
 						<dict>
 							<key>name</key>
-							<string>entity.name.type.class.declaration.scala</string>
+							<string>entity.name.class.declaration</string>
 						</dict>
 					</dict>
 					<key>match</key>
-					<string>(?:(case) +)?\b(class|trait|object)\s+([^\s\{\(\[]+)</string>
+					<string>(case)?\b(class|trait|object)\s+([^\s\{\(\[]+)</string>
 				</dict>
 				<dict>
 					<key>captures</key>
@@ -408,12 +435,12 @@
 						<key>1</key>
 						<dict>
 							<key>name</key>
-							<string>keyword.control.type.scala</string>
+							<string>keyword.declaration.scala</string>
 						</dict>
 						<key>2</key>
 						<dict>
 							<key>name</key>
-							<string>entity.name.type.type.declaration.scala</string>
+							<string>entity.name.type.declaration</string>
 						</dict>
 					</dict>
 					<key>match</key>
@@ -425,21 +452,16 @@
 						<key>1</key>
 						<dict>
 							<key>name</key>
-							<string>storage.type.stable.scala</string>
+							<string>keyword.declaration.stable.scala</string>
 						</dict>
 						<key>2</key>
 						<dict>
 							<key>name</key>
-							<string>storage.type.volatile.scala</string>
-						</dict>
-						<key>3</key>
-						<dict>
-							<key>name</key>
-							<string>entity.name.type.val.declaration.scala</string>
+							<string>constant.other.declaration.scala</string>
 						</dict>
 					</dict>
 					<key>match</key>
-					<string>\b(?:(val)|(var))\s+(?:(`[^`]+`|[_$a-zA-Z][_$a-zA-Z0-9]*(?:_[^\s])(?=[\t ])|[_$a-zA-Z][_$a-zA-Z0-9]*|[-?~&gt;&lt;^+*%:!#|/@\\]+)|(?=\())</string>
+					<string>\b(val)\s+(?:([A-Z][_a-zA-Z0-9]*))\b</string>
 				</dict>
 				<dict>
 					<key>captures</key>
@@ -447,21 +469,21 @@
 						<key>1</key>
 						<dict>
 							<key>name</key>
-							<string>storage.type.package.scala</string>
+							<string>keyword.declaration.stable.scala</string>
 						</dict>
 						<key>2</key>
 						<dict>
 							<key>name</key>
-							<string>storage.type.package.object.scala</string>
+							<string>keyword.declaration.volatile.scala</string>
 						</dict>
 						<key>3</key>
 						<dict>
 							<key>name</key>
-							<string>entity.name.type.class.declaration.scala</string>
+							<string>variable.other.declaration.scala</string>
 						</dict>
 					</dict>
 					<key>match</key>
-					<string>\b(package) (object)\s+([^\s\{\(\[]+)</string>
+					<string>\b(?:(val)|(var))\s+(?:(`[^`]+`|[_$a-zA-Z][_$a-zA-Z0-9]*(?:_[^\t .,;()\[\]{}'"`\w])(?=[\t ])|[_$a-zA-Z][_$a-zA-Z0-9]*|[-?~&gt;&lt;^+*%:!#|/@\\]+)|(?=\())</string>
 				</dict>
 				<dict>
 					<key>captures</key>
@@ -469,64 +491,73 @@
 						<key>1</key>
 						<dict>
 							<key>name</key>
-							<string>storage.type.package.scala</string>
+							<string>keyword.other.scoping.scala</string>
 						</dict>
 						<key>2</key>
 						<dict>
 							<key>name</key>
-							<string>entity.name.type.package.scala</string>
+							<string>keyword.declaration.scala</string>
+						</dict>
+						<key>3</key>
+						<dict>
+							<key>name</key>
+							<string>entity.name.class.declaration</string>
 						</dict>
 					</dict>
 					<key>match</key>
-					<string>\b(package)\s+([\w\.]+)</string>
+					<string>\b(package)\s+(object)\s+([^\s\{\(\[]+)</string>
+				</dict>
+				<dict>
+					<key>begin</key>
+					<string>\b(package)\s+</string>
+					<key>beginCaptures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>keyword.other.import.scala</string>
+						</dict>
+					</dict>
+					<key>end</key>
+					<string>(?&lt;=[\n;])</string>
 					<key>name</key>
 					<string>meta.package.scala</string>
+					<key>patterns</key>
+					<array>
+						<dict>
+							<key>include</key>
+							<string>#comments</string>
+						</dict>
+						<dict>
+							<key>match</key>
+							<string>(`[^`]+`|[_$a-zA-Z][_$a-zA-Z0-9]*)</string>
+							<key>name</key>
+							<string>entity.name.package.scala</string>
+						</dict>
+						<dict>
+							<key>match</key>
+							<string>\.</string>
+							<key>name</key>
+							<string>punctuation.definition.package</string>
+						</dict>
+					</array>
 				</dict>
 			</array>
 		</dict>
-		<key>empty-blocks</key>
+		<key>empty-parentheses</key>
 		<dict>
-			<key>patterns</key>
-			<array>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
 				<dict>
-					<key>captures</key>
-					<dict>
-						<key>1</key>
-						<dict>
-							<key>name</key>
-							<string>punctuation.definition.parentheses.begin.scala</string>
-						</dict>
-						<key>2</key>
-						<dict>
-							<key>name</key>
-							<string>punctuation.definition.parentheses.end.scala</string>
-						</dict>
-					</dict>
-					<key>match</key>
-					<string>(\()(\))</string>
 					<key>name</key>
-					<string>meta.parentheses.scala</string>
+					<string>meta.bracket.scala</string>
 				</dict>
-				<dict>
-					<key>captures</key>
-					<dict>
-						<key>1</key>
-						<dict>
-							<key>name</key>
-							<string>punctuation.definition.parentheses.begin.scala</string>
-						</dict>
-						<key>2</key>
-						<dict>
-							<key>name</key>
-							<string>punctuation.definition.parentheses.end.scala</string>
-						</dict>
-					</dict>
-					<key>match</key>
-					<string>(\{)(\})</string>
-					<key>name</key>
-					<string>meta.braces.scala</string>
-				</dict>
-			</array>
+			</dict>
+			<key>match</key>
+			<string>(\(\))</string>
+			<key>name</key>
+			<string>meta.parentheses.scala</string>
 		</dict>
 		<key>imports</key>
 		<dict>
@@ -537,7 +568,7 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>keyword.control.import.scala</string>
+					<string>keyword.other.import.scala</string>
 				</dict>
 			</dict>
 			<key>end</key>
@@ -552,15 +583,15 @@
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>([^\s{;.]+)\s*\.\s*</string>
+					<string>(`[^`]+`|[_$a-zA-Z][_$a-zA-Z0-9]*)</string>
 					<key>name</key>
-					<string>variable.other.package.scala</string>
+					<string>entity.name.import.scala</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>([^\s{;.]+)\s*</string>
+					<string>\.</string>
 					<key>name</key>
-					<string>variable.other.import.scala</string>
+					<string>punctuation.definition.import</string>
 				</dict>
 				<dict>
 					<key>begin</key>
@@ -593,31 +624,31 @@
 								<key>1</key>
 								<dict>
 									<key>name</key>
-									<string>variable.other.import.renamed-from.scala</string>
+									<string>entity.name.import.renamed-from.scala</string>
 								</dict>
 								<key>2</key>
 								<dict>
 									<key>name</key>
-									<string>keyword.operator.scala</string>
+									<string>keyword.other.arrow.scala</string>
 								</dict>
 								<key>3</key>
 								<dict>
 									<key>name</key>
-									<string>variable.other.import.renamed-to.scala</string>
+									<string>entity.name.import.renamed-to.scala</string>
 								</dict>
 							</dict>
 							<key>match</key>
 							<string>(?x) \s*
-				([^\s.,}]+) \s*
-				(=&gt;) \s*
-				([^\s.,}]+) \s*
-			  </string>
+				      (`[^`]+`|[_$a-zA-Z][_$a-zA-Z0-9]*) \s*
+				      (=&gt;) \s*
+				      (`[^`]+`|[_$a-zA-Z][_$a-zA-Z0-9]*) \s*
+			        </string>
 						</dict>
 						<dict>
 							<key>match</key>
 							<string>([^\s.,}]+)</string>
 							<key>name</key>
-							<string>variable.other.import.scala</string>
+							<string>entity.name.import.scala</string>
 						</dict>
 					</array>
 				</dict>
@@ -633,7 +664,7 @@
 						<key>1</key>
 						<dict>
 							<key>name</key>
-							<string>storage.modifier.extends.scala</string>
+							<string>keyword.declaration.scala</string>
 						</dict>
 						<key>2</key>
 						<dict>
@@ -653,16 +684,16 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>keyword.control.directive.scala</string>
+					<string>keyword.declaration.scala</string>
 				</dict>
 				<key>2</key>
 				<dict>
 					<key>name</key>
-					<string>entity.name.type.class.scala</string>
+					<string>entity.name.class</string>
 				</dict>
 			</dict>
 			<key>match</key>
-			<string>\b(new)\s+([^\s\{\(\[]+)</string>
+			<string>\b(new)\s+([^\s,\{\}\(\)\[\]]+)</string>
 		</dict>
 		<key>keywords</key>
 		<dict>
@@ -734,6 +765,22 @@
 			<key>patterns</key>
 			<array>
 				<dict>
+					<key>comment</key>
+					<string>The punctuation.section.*.begin is needed for return snippet in source bundle</string>
+					<key>match</key>
+					<string>\{</string>
+					<key>name</key>
+					<string>punctuation.section.block.begin.scala</string>
+				</dict>
+				<dict>
+					<key>comment</key>
+					<string>The punctuation.section.*.end is needed for return snippet in source bundle</string>
+					<key>match</key>
+					<string>\}</string>
+					<key>name</key>
+					<string>punctuation.section.block.end.scala</string>
+				</dict>
+				<dict>
 					<key>match</key>
 					<string>{|}|\(|\)|\[|\]</string>
 					<key>name</key>
@@ -787,7 +834,7 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>entity.name.type.class.scala</string>
+					<string>entity.name.class</string>
 				</dict>
 			</dict>
 			<key>match</key>
@@ -796,9 +843,9 @@
 		<key>scala-symbol</key>
 		<dict>
 			<key>match</key>
-			<string>'\w+(?=[^'\w])</string>
+			<string>'\w+(?=[^'\w]|$)</string>
 			<key>name</key>
-			<string>entity.name.type.symbol.scala</string>
+			<string>constant.other.symbol.scala</string>
 		</dict>
 		<key>scala-quoted</key>
 		<dict>
@@ -806,6 +853,32 @@
 			<string>'\{'|'\('|'\['|'\{|'\(|'\[</string>
 			<key>name</key>
 			<string>constant.other.quoted.scala</string>
+		</dict>
+		<key>script-header</key>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>string.unquoted.shebang.scala</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>^#!(.*)$</string>
+			<key>name</key>
+			<string>comment.block.shebang.scala</string>
+		</dict>
+		<key>special-identifier</key>
+		<dict>
+			<key>comment</key>
+			<string>
+		    Match special scala style identifiers that can end with and underscore and
+		    a a not letter such as blank_?.  This way the symbol will not be colored
+		    differently.
+		  </string>
+			<key>match</key>
+			<string>\b[_$a-zA-Z][_$a-zA-Z0-9]*(?:_[^\t .,;()\[\]{}'"`\w])</string>
 		</dict>
 		<key>storage-modifiers</key>
 		<dict>
@@ -815,13 +888,13 @@
 					<key>match</key>
 					<string>\b(private\[\S+\]|protected\[\S+\]|private|protected)\b</string>
 					<key>name</key>
-					<string>storage.modifier.access.scala</string>
+					<string>storage.modifier.access</string>
 				</dict>
 				<dict>
 					<key>match</key>
 					<string>\b(synchronized|@volatile|abstract|final|lazy|sealed|implicit|override|@transient|@native)\b</string>
 					<key>name</key>
-					<string>storage.modifier.other.scala</string>
+					<string>storage.modifier.other</string>
 				</dict>
 			</array>
 		</dict>
