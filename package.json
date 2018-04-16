@@ -32,12 +32,6 @@
                 "configuration": "./language-configuration.json"
             }
         ],
-        "snippets": [
-            {
-              "language": "scala",
-              "path": "./snippets/scala.json"
-            }
-        ],
         "grammars": [
             {
                 "language": "scala",
