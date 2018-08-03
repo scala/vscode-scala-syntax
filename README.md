@@ -1,6 +1,6 @@
 # Scala Syntax
 
-[VS Code plugin](https://marketplace.visualstudio.com/items?itemName=nicolasstucki.scala)
+[VS Code plugin](https://marketplace.visualstudio.com/items?itemName=scala-lang.scala)
 
 ## Features
 
