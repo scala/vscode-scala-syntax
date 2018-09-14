@@ -27,7 +27,8 @@
                 ],
                 "extensions": [
                     ".scala",
-                    ".sbt"
+                    ".sbt",
+                    ".sc"
                 ],
                 "configuration": "./language-configuration.json"
             }
