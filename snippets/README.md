@@ -8,7 +8,7 @@ Extension providing Scala code snippets.
 
 ## Requirements
 
-No requirements.
+- [Scala Syntax](https://marketplace.visualstudio.com/items?itemName=scala-lang.scala)
 
 ## License
 [MIT](LICENSE)
