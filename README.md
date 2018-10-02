@@ -1,20 +1,8 @@
-# Scala Syntax
+# Scala Syntax and Snippets
+Visual Studio Code extensions that provide Scala syntax and snippets.
 
-[VS Code plugin](https://marketplace.visualstudio.com/items?itemName=nicolasstucki.scala)
+Refer to the READMEs in the respective directories:
 
-## Features
+- [Scala Syntax](/syntax)
+- [Scala Snippets](/snippets)
 
-Extension providing Scala syntax and code snippets.
-
-## Requirements
-
-No requirements.
-
-## Based on
-* Plugin: https://github.com/daltonjorge/vscode-scala
-* Template: https://github.com/sellmerfud/scala.tmbundle (https://github.com/mads-hartmann/scala.tmbundle)
-
-## License
-[MIT](LICENSE)
-
------------------------------------------------------------------------------------------------------------

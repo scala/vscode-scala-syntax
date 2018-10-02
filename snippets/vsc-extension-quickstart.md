@@ -4,12 +4,9 @@
 * This folder contains all of the files necessary for your extension
 * `package.json` - this is the manifest file in which you declare your language support and define
 the location of the grammar file that has been copied into you extension.
-* `syntaxes/Scala.tmLanguage` - this is the Text mate grammar file that is used for tokenization
-* `language-configuration.json` - this the language configuration, defining the tokens that are used for
-comments and brackets.
+* `snippets.json` - this is the file defining the snippets
 
 ## Get up and running straight away
-* Make sure the language configuration settings in `language-configuration.json` are accurate
 * press `F5` to open a new window with your extension loaded
 * create a new file with a file name suffix matching your language
 * verify that syntax highlight works and that the language configuration settings are working

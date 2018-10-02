@@ -1,0 +1,31 @@
+{
+    "name": "scala",
+    "displayName": "Scala Snippets",
+    "description": "Scala Snippets",
+    "version": "0.1.0",
+    "publisher": "scala-lang",
+    "license": "SEE LICENSE IN LICENSE.md",
+    "engines": {
+        "vscode": "^1.5.0"
+    },
+    "homepage": "https://github.com/scala/vscode-scala-syntax/blob/master/snippets/README.md",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/scala/vscode-scala-syntax.git"
+    },
+    "icon": "images/smooth-spiral.png",
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+              "language": "scala",
+              "path": "./snippets.json"
+            }
+        ]
+    },
+    "extensionDependencies": [
+        "scala-lang.scala"
+    ]
+}
