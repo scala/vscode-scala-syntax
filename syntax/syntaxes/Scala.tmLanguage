@@ -418,6 +418,23 @@
 						<key>2</key>
 						<dict>
 							<key>name</key>
+							<string>entity.name.class.declaration</string>
+						</dict>
+					</dict>
+					<key>match</key>
+					<string>\b(trait)\s+([^\s\{\(\[]+)</string>
+				</dict>
+				<dict>
+					<key>captures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>keyword.declaration.scala</string>
+						</dict>
+						<key>2</key>
+						<dict>
+							<key>name</key>
 							<string>keyword.declaration.scala</string>
 						</dict>
 						<key>3</key>
@@ -427,7 +444,7 @@
 						</dict>
 					</dict>
 					<key>match</key>
-					<string>(case)?\b(class|trait|object)\s+([^\s\{\(\[]+)</string>
+					<string>\b(?:(case)\s+)?(class|object)\s+([^\s\{\(\[]+)</string>
 				</dict>
 				<dict>
 					<key>captures</key>
