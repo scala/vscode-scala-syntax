@@ -1,31 +1,80 @@
 {
-  ".source.scala": {
+	".source.scala": {
 		"main": {
 			"prefix": "def main",
 			"body": "def main(args: Array[String]): Unit = {\n\t${1:expr}\n}",
-			"description": "Snippet for if expression"
+			"description": "Main function"
+		},
+
+		"def": {
+			"prefix": "def",
+			"body": "def ${1:defName}(${2:param}: ${3:ParamType}): ${4:ReturnType} = {\n\t$0\n}",
+			"description": "New function"
+		},
+
+		"private def": {
+			"prefix": "private def",
+			"body": "private def ${1:defName}(${2:param}: ${3:ParamType}): ${4:ReturnType} = {\n\t$0\n}",
+			"description": "New private function"
 		},
 
 		"match": {
 			"prefix": "match",
 			"body": "match {\n\tcase ${1:pattern} => ${2:doSomething} \n}",
-			"description": "Snippet for else branch"
+			"description": "Match with a single case statement"
 		},
 
 		"try catch": {
 			"prefix": "try",
-			"body": "try {\n\t${1:expression}\n} catch {\n\tcase ex: ${2:ExeptionClass} => ${3:doSomething} \n}",
-			"description": "Snippet for try/catch expression"
+			"body": "try {\n\t${1:expression}\n} catch {\n\tcase ex: ${2:ExceptionClass} => ${3:doSomething} \n}",
+			"description": "Try/catch expression"
 		},
 
-		"class": { "prefix": "class", "body": "class ", "description": "class keyword" },
-		"trait": { "prefix": "trait", "body": "trait ", "description": "trait keyword" },
-		"object": { "prefix": "object", "body": "object ", "description": "object keyword" },
-		"extends": { "prefix": "extends", "body": "extends ", "description": "extends keyword" },
+		"class": {
+			"prefix": "class",
+			"body": "class ${1:ClassName} {\n\t$0\n}",
+			"description": "Class"
+		},
+
+		"trait": {
+			"prefix": "trait",
+			"body": "trait ${1:TraitName} {\n\t$0\n}",
+			"description": "Trait"
+		},
+
+		"object": {
+			"prefix": "object",
+			"body": "object ${1:ObjectName} {\n\t$0\n}",
+			"description": "Object"
+		},
+
+		"extends": {
+			"prefix": "extends",
+			"body": "extends ${1:ExtendsName}",
+			"description": "Extends"
+		},
+		
+		"val": {
+			"prefix": "val",
+			"body": "val ${1:valName} = ${2:expression}",
+			"description": "Val"
+		},
+
+		"finally": { 
+			"prefix": "finally", 
+			"body": "finally {\n\t$0\n}", 
+			"description": "Finally expression" 
+		},
+
+		"implicit class": {
+			"prefix": "implicit class",
+			"body": "implicit class ${1:ClassName}(${2:extensionParam}: ${3: ExtensionType}) {\n\tdef ${4:extensionName}(${5:param}: ${6:ParamType}): ${7:ReturnType} = {\n\t\t$0\n\t}\n}",
+			"description": "Implicit class (extension method)"
+		},
+
 		"override": { "prefix": "override", "body": "override ", "description": "override keyword" },
 		"private": { "prefix": "private", "body": "private ", "description": "private keyword" },
 		"protected": { "prefix": "protected", "body": "protected ", "description": "protected keyword" },
-		"catch": { "prefix": "catch", "body": "catch ", "description": "catch keyword" },
-		"finally": { "prefix": "finally", "body": "finally ", "description": "finally keyword" }
+		"catch": { "prefix": "catch", "body": "catch ", "description": "catch keyword" }
 	}
 }
