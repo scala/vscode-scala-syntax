@@ -15,7 +15,7 @@
     },
     "icon": "images/smooth-spiral.png",
     "categories": [
-        "Languages"
+        "Programming Languages"
     ],
     "contributes": {
         "languages": [
@@ -37,8 +37,15 @@
             {
                 "language": "scala",
                 "scopeName": "source.scala",
-                "path": "./syntaxes/Scala.tmLanguage"
+                "path": "./syntaxes/Scala.tmLanguage.json"
             }
         ]
+    },
+    "devDependencies": {
+        "@types/node": "^11.11.4",
+        "ajv": "^6.10.0",
+        "ts-node": "^8.0.2",
+        "tsc": "^1.20150623.0",
+        "typescript": "^3.3.3"
     }
 }
