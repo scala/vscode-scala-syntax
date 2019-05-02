@@ -18,8 +18,6 @@ To generate the ouput file either use build command or run:
 
 ```bash
 npm install
-npm build
-npx ts-node src/typescript/GenerateTmLanguageFile.ts > ./syntaxes/Scala.tmLanguage.json
 ```
 
 The output file is validated against the json schema before being written.
