@@ -51,6 +51,7 @@
     },
     "scripts": {
         "vscode:prepublish": "test -f ./syntaxes/Scala.tmLanguage.json",
+        "vscode:publish": "vsce publish --yarn",
         "build": "ts-node src/typescript/GenerateTmLanguageFile.ts > ./syntaxes/Scala.tmLanguage.json"
     }
 }
