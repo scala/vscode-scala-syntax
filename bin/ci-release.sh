@@ -27,7 +27,7 @@ if [[ -n "$DEPLOY_KEY" ]]; then
 fi
 git checkout -b travis-temp
 yarn version --no-git-tag-version --new-version $NEW_VERSION
-yarn github-changes -o scalameta -r metals-vscode --no-merges -t "VSCode Extension Changelog" -k $GITHUB_TOKEN
+yarn github-changes -o scala -r vscode-scala-syntax --no-merges -t "Scala Syntax (official) Changelog" -k $GITHUB_TOKEN
 git commit -am "Update release notes for $TRAVIS_TAG"
 git push origin HEAD:master
 

@@ -1,7 +1,7 @@
 # Contributing
 
 This document explains the developer workflow for making changes to the
-[Metals extension](https://marketplace.visualstudio.com/items?itemName=scalameta.metals)
+[Scala Syntax (official) extension](https://marketplace.visualstudio.com/items?itemName=scala-lang.scala)
 for Visual Studio Code.
 
 ## Prerequisites
