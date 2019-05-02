@@ -3,6 +3,17 @@
     "version": "0.1.0",
     "configurations": [
         {
+            "type": "extensionHost",
+            "request": "launch",
+            "name": "Build && Launch",
+            "runtimeExecutable": "${execPath}",
+            "args": [
+                "--extensionDevelopmentPath=${workspaceFolder}"
+            ],
+            "preLaunchTask": "Generate Scala language file"
+        },
+        
+        {
             "name": "Launch Extension",
             "type": "extensionHost",
             "request": "launch",
