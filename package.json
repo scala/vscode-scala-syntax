@@ -45,12 +45,12 @@
         "@types/node": "^11.11.4",
         "ajv": "^6.10.0",
         "github-changes": "^1.1.2",
-        "ts-node": "^8.0.2",
+        "ts-node": "^8.1.0",
         "tsc": "^1.20150623.0",
         "typescript": "^3.3.3"
     },
     "scripts": {
         "vscode:prepublish": "test -f ./syntaxes/Scala.tmLanguage.json",
-        "build": "npx ts-node src/typescript/GenerateTmLanguageFile.ts > ./syntaxes/Scala.tmLanguage.json"
+        "build": "ts-node src/typescript/GenerateTmLanguageFile.ts > ./syntaxes/Scala.tmLanguage.json"
     }
 }
