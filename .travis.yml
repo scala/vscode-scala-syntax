@@ -1,0 +1,17 @@
+language: node_js
+node_js:
+  - "lts/*"
+
+stages:
+  - name: build
+  - name: release
+    if: tag IS present
+
+jobs:
+  include:
+    - stage: build
+      script: yarn build
+    - stage: release
+      script: bin/ci-release.sh
+
+cache: yarn
