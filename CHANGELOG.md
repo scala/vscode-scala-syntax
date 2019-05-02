@@ -1,6 +1,12 @@
-## VSCode Extension Changelog
+## Scala Syntax (official) Changelog
 
-### upcoming (2019/05/02 12:14 +00:00)
+### v0.3.0 (2019/05/02 13:39 +00:00)
+- [ba65f13](https://github.com/scala/vscode-scala-syntax/commit/ba65f1317dc728e3f5203bf78dadad67b6aa2734) Use SSH remote instead of HTTPS. (@olafurpg)
+- [0546974](https://github.com/scala/vscode-scala-syntax/commit/0546974ba16b0b828dfa095aaed7d1a70331563e) Make ci-release.sh script executable (@olafurpg)
+- [f302051](https://github.com/scala/vscode-scala-syntax/commit/f3020516ecaa80dbb9b74350ed01302c619165c6) Replace links from Metals to Scala Syntax (@olafurpg)
+- [bc2fa54](https://github.com/scala/vscode-scala-syntax/commit/bc2fa542f39592cc6b204738b3bbe4e08ccfaaf2) Replace npx with ts-node for faster build script. (@olafurpg)
+- [869e06b](https://github.com/scala/vscode-scala-syntax/commit/869e06bbfab7534758db59f41b5c978f523a3d75) Configure CI to release on tag push. (@olafurpg)
+- [f554622](https://github.com/scala/vscode-scala-syntax/commit/f554622a468ee49316f509c3a6c7801c6f28fc8b) Remove snippet package, fixes #18 (@olafurpg)
 - [c9a4a36](https://github.com/scala/vscode-scala-syntax/commit/c9a4a36253af5dd78dfecfa19c81fcac3f023674) Add pre-package check. Add proper build script. Updated .vscodeignore. Updated README. (@PanAeon)
 - [f3aca62](https://github.com/scala/vscode-scala-syntax/commit/f3aca62801a0c3fa3faa24c30ad01bd9783e5634) Convert syntax file to Typescript, add utils to work with ts file, update docs (@PanAeon)
 - [ebe1ad0](https://github.com/scala/vscode-scala-syntax/commit/ebe1ad0d9a6a2535aa3d1049c820a250d697da39) Add auto-closing pair for string interpolation (@hugo-vrijswijk)
