@@ -1,6 +1,8 @@
 ## Scala Syntax (official) Changelog
 
-### v0.3.0 (2019/05/02 13:39 +00:00)
+### v0.3.0 (2019/05/02 13:47 +00:00)
+- [27b8cd5](https://github.com/scala/vscode-scala-syntax/commit/27b8cd570be9bcae775ca1b49cad8fc945b59fd1) Add missing vscode:publish command from package.json. (@olafurpg)
+- [25c62bc](https://github.com/scala/vscode-scala-syntax/commit/25c62bccd70ee4cd077236e87d89646debd82515) Update release notes for v0.3.0
 - [ba65f13](https://github.com/scala/vscode-scala-syntax/commit/ba65f1317dc728e3f5203bf78dadad67b6aa2734) Use SSH remote instead of HTTPS. (@olafurpg)
 - [0546974](https://github.com/scala/vscode-scala-syntax/commit/0546974ba16b0b828dfa095aaed7d1a70331563e) Make ci-release.sh script executable (@olafurpg)
 - [f302051](https://github.com/scala/vscode-scala-syntax/commit/f3020516ecaa80dbb9b74350ed01302c619165c6) Replace links from Metals to Scala Syntax (@olafurpg)
