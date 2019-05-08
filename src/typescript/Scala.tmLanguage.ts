@@ -1,6 +1,11 @@
 "use strict";
 import { TmLanguage } from "./TMLanguageModel";
 
+const letter = "[_a-zA-Z\\$\\p{Lo}\\p{Lt}\\p{Nl}\\p{Ll}\\p{Lu}]"
+const digit  = "[0-9]"
+const letterOrDigit = `${letter}|${digit}`
+const variableName  = `${letter}(?:${letterOrDigit})*`
+
 export const scalaTmLanguage: TmLanguage = {
   fileTypes: [
     'scala'
@@ -218,6 +223,36 @@ export const scalaTmLanguage: TmLanguage = {
           name: 'string.quoted.triple.scala'
         },
         {
+          begin: '\\b(s|f|raw)(""")',
+          end: '"""(?!")',
+          beginCaptures: {
+            '1': {
+              name: 'keyword.interpolation.scala'
+            },
+            '2': {
+              name: 'punctuation.definition.string.begin.scala'
+            }
+          },
+          patterns: [
+            {
+              "include": "#string-interpolation"
+            },
+            {
+              match: '\\\\\\\\|\\\\u[0-9A-Fa-f]{4}',
+              name: 'constant.character.escape.scala'
+            },
+            {
+              match: '.',
+              name: 'string.quoted.triple.interpolated.scala'
+            }
+          ],
+          endCaptures: {
+            '0': {
+              name: 'punctuation.definition.string.end.scala'
+            }
+          }
+        },
+        {
           end: '"',
           begin: '"',
           beginCaptures: {
@@ -241,6 +276,72 @@ export const scalaTmLanguage: TmLanguage = {
             }
           },
           name: 'string.quoted.double.scala'
+        },
+        {
+          begin: '\\b(s|f|raw)(")',
+          end: '"',
+          beginCaptures: {
+            '1': {
+              name: 'keyword.interpolation.scala'
+            },
+            '2': {
+              name: 'punctuation.definition.string.begin.scala'
+            }
+          },
+          patterns: [
+            {
+              include: "#string-interpolation"
+            },
+            {
+              match: `\\\\(?:[btnfr\\\\"']|[0-7]{1,3}|u[0-9A-Fa-f]{4})`,
+              name: 'constant.character.escape.scala'
+            },
+            {
+              match: '\\\\.',
+              name: 'invalid.illegal.unrecognized-string-escape.scala'
+            },
+            {
+              match: '.',
+              name: 'string.quoted.double.interpolated.scala'
+            }
+          ],
+          endCaptures: {
+            '0': {
+              name: 'punctuation.definition.string.end.scala'
+            }
+          }
+        }
+      ]
+    },
+    'string-interpolation': {
+      patterns: [
+        {
+          name: "constant.character.escape.interpolation.scala",
+          match: "\\$\\$"
+        },
+        {
+          name: "constant.other.placeholder.scala",
+          match: `(\\$)(${variableName})`,
+          captures: {
+            "1": {
+              name: "punctuation.definition.template-expression.begin.scala"
+            },
+            "2": {
+              name: "variable.other.scala"
+            }
+          }
+        },
+        {
+            name: "punctuation.definition.template-expression.scala",
+            begin: "\\$\\{",
+            beginCaptures: { "0": { name: "punctuation.definition.template-expression.begin.scala" } },
+            end: "\\}",
+            endCaptures: { "0": { name: "punctuation.definition.template-expression.end.scala" } },
+            patterns: [
+                {
+                    include: "#code"
+                }
+            ]
         }
       ]
     },
