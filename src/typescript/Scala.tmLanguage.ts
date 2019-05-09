@@ -4,6 +4,10 @@ import { TmLanguage } from "./TMLanguageModel";
 const letter = "[_a-zA-Z\\$\\p{Lo}\\p{Lt}\\p{Nl}\\p{Ll}\\p{Lu}]"
 const digit  = "[0-9]"
 const letterOrDigit = `${letter}|${digit}`
+const opchar = `[!#%&*+\\-\\/:<>=?@\\\\^|~[\\p{Sm}\\p{So}]]`
+const op     = `${opchar}+`
+const idrest = `${letter}(?:${letterOrDigit})*(?:_${op})?`
+const alphaId = `${letter}+`
 const simpleInterpolatedVariable  = `${letter}(?:${letterOrDigit})*` // see SIP-11 https://docs.scala-lang.org/sips/string-interpolation.html
 
 export const scalaTmLanguage: TmLanguage = {
@@ -223,7 +227,7 @@ export const scalaTmLanguage: TmLanguage = {
           name: 'string.quoted.triple.scala'
         },
         {
-          begin: '\\b(s|f|raw)(""")',
+          begin: `\\b(${alphaId})(""")`,
           end: '"""(?!")',
           beginCaptures: {
             '1': {
@@ -278,7 +282,7 @@ export const scalaTmLanguage: TmLanguage = {
           name: 'string.quoted.double.scala'
         },
         {
-          begin: '\\b(s|f|raw)(")',
+          begin: `\\b(${alphaId})(")`,
           end: '"',
           beginCaptures: {
             '1': {
