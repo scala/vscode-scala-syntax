@@ -4,7 +4,7 @@ import { TmLanguage } from "./TMLanguageModel";
 const letter = "[_a-zA-Z\\$\\p{Lo}\\p{Lt}\\p{Nl}\\p{Ll}\\p{Lu}]"
 const digit  = "[0-9]"
 const letterOrDigit = `${letter}|${digit}`
-const variableName  = `${letter}(?:${letterOrDigit})*`
+const simpleInterpolatedVariable  = `${letter}(?:${letterOrDigit})*` // see SIP-11 https://docs.scala-lang.org/sips/string-interpolation.html
 
 export const scalaTmLanguage: TmLanguage = {
   fileTypes: [
@@ -320,14 +320,10 @@ export const scalaTmLanguage: TmLanguage = {
           match: "\\$\\$"
         },
         {
-          name: "constant.other.placeholder.scala",
-          match: `(\\$)(${variableName})`,
+          match: `(\\$)(${simpleInterpolatedVariable})`,
           captures: {
             "1": {
               name: "punctuation.definition.template-expression.begin.scala"
-            },
-            "2": {
-              name: "variable.other.scala"
             }
           }
         },
