@@ -4,9 +4,6 @@ import { TmLanguage } from "./TMLanguageModel";
 const letter = "[_a-zA-Z\\$\\p{Lo}\\p{Lt}\\p{Nl}\\p{Ll}\\p{Lu}]"
 const digit  = "[0-9]"
 const letterOrDigit = `${letter}|${digit}`
-const opchar = `[!#%&*+\\-\\/:<>=?@\\\\^|~[\\p{Sm}\\p{So}]]`
-const op     = `${opchar}+`
-const idrest = `${letter}(?:${letterOrDigit})*(?:_${op})?`
 const alphaId = `${letter}+`
 const simpleInterpolatedVariable  = `${letter}(?:${letterOrDigit})*` // see SIP-11 https://docs.scala-lang.org/sips/string-interpolation.html
 
@@ -234,7 +231,7 @@ export const scalaTmLanguage: TmLanguage = {
               name: 'keyword.interpolation.scala'
             },
             '2': {
-              name: 'punctuation.definition.string.begin.scala'
+              name: 'string.quoted.triple.interpolated.scala punctuation.definition.string.begin.scala'
             }
           },
           patterns: [
@@ -252,7 +249,7 @@ export const scalaTmLanguage: TmLanguage = {
           ],
           endCaptures: {
             '0': {
-              name: 'punctuation.definition.string.end.scala'
+              name: 'string.quoted.triple.interpolated.scala punctuation.definition.string.end.scala'
             }
           }
         },
@@ -289,7 +286,7 @@ export const scalaTmLanguage: TmLanguage = {
               name: 'keyword.interpolation.scala'
             },
             '2': {
-              name: 'punctuation.definition.string.begin.scala'
+              name: 'string.quoted.double.interpolated.scala punctuation.definition.string.begin.scala'
             }
           },
           patterns: [
@@ -311,7 +308,7 @@ export const scalaTmLanguage: TmLanguage = {
           ],
           endCaptures: {
             '0': {
-              name: 'punctuation.definition.string.end.scala'
+              name: 'string.quoted.double.interpolated.scala punctuation.definition.string.end.scala'
             }
           }
         }
