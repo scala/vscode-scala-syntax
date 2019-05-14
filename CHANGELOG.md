@@ -1,5 +1,13 @@
 ## Scala Syntax (official) Changelog
 
+### v0.3.1 (2019/05/14 09:22 +00:00)
+- [6453d96](https://github.com/scala/vscode-scala-syntax/commit/6453d9636fc8558b4e2ac1f933d252853d2fda97) Review fixes, add missing scope to the interpolated string's quotes (@PanAeon)
+- [a4fb9a0](https://github.com/scala/vscode-scala-syntax/commit/a4fb9a0c33ca337b0833bbbf40213a9f0a593891) generalize string interpolation to processed strings, i.e. <id>"..." (@PanAeon)
+- [e007203](https://github.com/scala/vscode-scala-syntax/commit/e00720354213fe6ad67ae4e5887758c38cbc684d) string interpolation - correct variable name to match sem. meaning, don't mark $vars as vars to be more consistent with the ${var.other} (@PanAeon)
+- [925245c](https://github.com/scala/vscode-scala-syntax/commit/925245c1eaeb712987256d2a45398bed6d155749) Add string interpolation highlighting (@PanAeon)
+- [5b536a4](https://github.com/scala/vscode-scala-syntax/commit/5b536a4c1e3b46fd0a8dc22ff48c362eb0da0158) Commit auto-generated tmLanguage.json (@olafurpg)
+- [d28c383](https://github.com/scala/vscode-scala-syntax/commit/d28c3832d6ddefb2f3e3a931f75f82a87ad761a6) Update release notes for v0.3.0
+
 ### v0.3.0 (2019/05/02 13:52 +00:00)
 - [c995170](https://github.com/scala/vscode-scala-syntax/commit/c9951706d7032146b7c9ff4d88fe1dde6c244086) Add missing vsce dependency in package.json. (@olafurpg)
 - [6246f55](https://github.com/scala/vscode-scala-syntax/commit/6246f550409b2e249a879accac49c878453e4d2c) Update release notes for v0.3.0
