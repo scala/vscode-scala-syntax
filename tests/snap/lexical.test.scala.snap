@@ -1,3845 +1,495 @@
-[
-  {
-    "src": "",
-    "tokens": [
-      {
-        "startIndex": 0,
-        "endIndex": 1,
-        "scopes": [
-          "source.scala"
-        ]
-      }
-    ]
-  },
-  {
-    "src": "object ExampleIdentifiers {",
-    "tokens": [
-      {
-        "startIndex": 0,
-        "endIndex": 6,
-        "scopes": [
-          "source.scala",
-          "keyword.declaration.scala"
-        ]
-      },
-      {
-        "startIndex": 6,
-        "endIndex": 7,
-        "scopes": [
-          "source.scala"
-        ]
-      },
-      {
-        "startIndex": 7,
-        "endIndex": 25,
-        "scopes": [
-          "source.scala",
-          "entity.name.class.declaration"
-        ]
-      },
-      {
-        "startIndex": 25,
-        "endIndex": 26,
-        "scopes": [
-          "source.scala"
-        ]
-      },
-      {
-        "startIndex": 26,
-        "endIndex": 27,
-        "scopes": [
-          "source.scala",
-          "punctuation.section.block.begin.scala"
-        ]
-      }
-    ]
-  },
-  {
-    "src": "  val x = 3",
-    "tokens": [
-      {
-        "startIndex": 0,
-        "endIndex": 2,
-        "scopes": [
-          "source.scala"
-        ]
-      },
-      {
-        "startIndex": 2,
-        "endIndex": 5,
-        "scopes": [
-          "source.scala",
-          "keyword.declaration.stable.scala"
-        ]
-      },
-      {
-        "startIndex": 5,
-        "endIndex": 6,
-        "scopes": [
-          "source.scala"
-        ]
-      },
-      {
-        "startIndex": 6,
-        "endIndex": 7,
-        "scopes": [
-          "source.scala",
-          "variable.other.declaration.scala"
-        ]
-      },
-      {
-        "startIndex": 7,
-        "endIndex": 8,
-        "scopes": [
-          "source.scala"
-        ]
-      },
-      {
-        "startIndex": 8,
-        "endIndex": 9,
-        "scopes": [
-          "source.scala",
-          "keyword.operator.comparison.scala"
-        ]
-      },
-      {
-        "startIndex": 9,
-        "endIndex": 10,
-        "scopes": [
-          "source.scala"
-        ]
-      },
-      {
-        "startIndex": 10,
-        "endIndex": 11,
-        "scopes": [
-          "source.scala",
-          "constant.numeric.scala"
-        ]
-      }
-    ]
-  },
-  {
-    "src": "  val Object = 3        ",
-    "tokens": [
-      {
-        "startIndex": 0,
-        "endIndex": 2,
-        "scopes": [
-          "source.scala"
-        ]
-      },
-      {
-        "startIndex": 2,
-        "endIndex": 5,
-        "scopes": [
-          "source.scala",
-          "keyword.declaration.stable.scala"
-        ]
-      },
-      {
-        "startIndex": 5,
-        "endIndex": 6,
-        "scopes": [
-          "source.scala"
-        ]
-      },
-      {
-        "startIndex": 6,
-        "endIndex": 12,
-        "scopes": [
-          "source.scala",
-          "constant.other.declaration.scala"
-        ]
-      },
-      {
-        "startIndex": 12,
-        "endIndex": 13,
-        "scopes": [
-          "source.scala"
-        ]
-      },
-      {
-        "startIndex": 13,
-        "endIndex": 14,
-        "scopes": [
-          "source.scala",
-          "keyword.operator.comparison.scala"
-        ]
-      },
-      {
-        "startIndex": 14,
-        "endIndex": 15,
-        "scopes": [
-          "source.scala"
-        ]
-      },
-      {
-        "startIndex": 15,
-        "endIndex": 16,
-        "scopes": [
-          "source.scala",
-          "constant.numeric.scala"
-        ]
-      },
-      {
-        "startIndex": 16,
-        "endIndex": 25,
-        "scopes": [
-          "source.scala"
-        ]
-      }
-    ]
-  },
-  {
-    "src": "  val maxIndex = 3   ",
-    "tokens": [
-      {
-        "startIndex": 0,
-        "endIndex": 2,
-        "scopes": [
-          "source.scala"
-        ]
-      },
-      {
-        "startIndex": 2,
-        "endIndex": 5,
-        "scopes": [
-          "source.scala",
-          "keyword.declaration.stable.scala"
-        ]
-      },
-      {
-        "startIndex": 5,
-        "endIndex": 6,
-        "scopes": [
-          "source.scala"
-        ]
-      },
-      {
-        "startIndex": 6,
-        "endIndex": 14,
-        "scopes": [
-          "source.scala",
-          "variable.other.declaration.scala"
-        ]
-      },
-      {
-        "startIndex": 14,
-        "endIndex": 15,
-        "scopes": [
-          "source.scala"
-        ]
-      },
-      {
-        "startIndex": 15,
-        "endIndex": 16,
-        "scopes": [
-          "source.scala",
-          "keyword.operator.comparison.scala"
-        ]
-      },
-      {
-        "startIndex": 16,
-        "endIndex": 17,
-        "scopes": [
-          "source.scala"
-        ]
-      },
-      {
-        "startIndex": 17,
-        "endIndex": 18,
-        "scopes": [
-          "source.scala",
-          "constant.numeric.scala"
-        ]
-      },
-      {
-        "startIndex": 18,
-        "endIndex": 22,
-        "scopes": [
-          "source.scala"
-        ]
-      }
-    ]
-  },
-  {
-    "src": "  val p2p = 3      ",
-    "tokens": [
-      {
-        "startIndex": 0,
-        "endIndex": 2,
-        "scopes": [
-          "source.scala"
-        ]
-      },
-      {
-        "startIndex": 2,
-        "endIndex": 5,
-        "scopes": [
-          "source.scala",
-          "keyword.declaration.stable.scala"
-        ]
-      },
-      {
-        "startIndex": 5,
-        "endIndex": 6,
-        "scopes": [
-          "source.scala"
-        ]
-      },
-      {
-        "startIndex": 6,
-        "endIndex": 9,
-        "scopes": [
-          "source.scala",
-          "variable.other.declaration.scala"
-        ]
-      },
-      {
-        "startIndex": 9,
-        "endIndex": 10,
-        "scopes": [
-          "source.scala"
-        ]
-      },
-      {
-        "startIndex": 10,
-        "endIndex": 11,
-        "scopes": [
-          "source.scala",
-          "keyword.operator.comparison.scala"
-        ]
-      },
-      {
-        "startIndex": 11,
-        "endIndex": 12,
-        "scopes": [
-          "source.scala"
-        ]
-      },
-      {
-        "startIndex": 12,
-        "endIndex": 13,
-        "scopes": [
-          "source.scala",
-          "constant.numeric.scala"
-        ]
-      },
-      {
-        "startIndex": 13,
-        "endIndex": 20,
-        "scopes": [
-          "source.scala"
-        ]
-      }
-    ]
-  },
-  {
-    "src": "  val empty_? = 3",
-    "tokens": [
-      {
-        "startIndex": 0,
-        "endIndex": 2,
-        "scopes": [
-          "source.scala"
-        ]
-      },
-      {
-        "startIndex": 2,
-        "endIndex": 5,
-        "scopes": [
-          "source.scala",
-          "keyword.declaration.stable.scala"
-        ]
-      },
-      {
-        "startIndex": 5,
-        "endIndex": 6,
-        "scopes": [
-          "source.scala"
-        ]
-      },
-      {
-        "startIndex": 6,
-        "endIndex": 13,
-        "scopes": [
-          "source.scala",
-          "variable.other.declaration.scala"
-        ]
-      },
-      {
-        "startIndex": 13,
-        "endIndex": 14,
-        "scopes": [
-          "source.scala"
-        ]
-      },
-      {
-        "startIndex": 14,
-        "endIndex": 15,
-        "scopes": [
-          "source.scala",
-          "keyword.operator.comparison.scala"
-        ]
-      },
-      {
-        "startIndex": 15,
-        "endIndex": 16,
-        "scopes": [
-          "source.scala"
-        ]
-      },
-      {
-        "startIndex": 16,
-        "endIndex": 17,
-        "scopes": [
-          "source.scala",
-          "constant.numeric.scala"
-        ]
-      }
-    ]
-  },
-  {
-    "src": "  val + = 3         ",
-    "tokens": [
-      {
-        "startIndex": 0,
-        "endIndex": 2,
-        "scopes": [
-          "source.scala"
-        ]
-      },
-      {
-        "startIndex": 2,
-        "endIndex": 5,
-        "scopes": [
-          "source.scala",
-          "keyword.declaration.stable.scala"
-        ]
-      },
-      {
-        "startIndex": 5,
-        "endIndex": 6,
-        "scopes": [
-          "source.scala"
-        ]
-      },
-      {
-        "startIndex": 6,
-        "endIndex": 7,
-        "scopes": [
-          "source.scala",
-          "variable.other.declaration.scala"
-        ]
-      },
-      {
-        "startIndex": 7,
-        "endIndex": 8,
-        "scopes": [
-          "source.scala"
-        ]
-      },
-      {
-        "startIndex": 8,
-        "endIndex": 9,
-        "scopes": [
-          "source.scala",
-          "keyword.operator.comparison.scala"
-        ]
-      },
-      {
-        "startIndex": 9,
-        "endIndex": 10,
-        "scopes": [
-          "source.scala"
-        ]
-      },
-      {
-        "startIndex": 10,
-        "endIndex": 11,
-        "scopes": [
-          "source.scala",
-          "constant.numeric.scala"
-        ]
-      },
-      {
-        "startIndex": 11,
-        "endIndex": 21,
-        "scopes": [
-          "source.scala"
-        ]
-      }
-    ]
-  },
-  {
-    "src": "  val `yield` = 3       ",
-    "tokens": [
-      {
-        "startIndex": 0,
-        "endIndex": 2,
-        "scopes": [
-          "source.scala"
-        ]
-      },
-      {
-        "startIndex": 2,
-        "endIndex": 5,
-        "scopes": [
-          "source.scala",
-          "keyword.declaration.stable.scala"
-        ]
-      },
-      {
-        "startIndex": 5,
-        "endIndex": 6,
-        "scopes": [
-          "source.scala"
-        ]
-      },
-      {
-        "startIndex": 6,
-        "endIndex": 13,
-        "scopes": [
-          "source.scala",
-          "variable.other.declaration.scala"
-        ]
-      },
-      {
-        "startIndex": 13,
-        "endIndex": 14,
-        "scopes": [
-          "source.scala"
-        ]
-      },
-      {
-        "startIndex": 14,
-        "endIndex": 15,
-        "scopes": [
-          "source.scala",
-          "keyword.operator.comparison.scala"
-        ]
-      },
-      {
-        "startIndex": 15,
-        "endIndex": 16,
-        "scopes": [
-          "source.scala"
-        ]
-      },
-      {
-        "startIndex": 16,
-        "endIndex": 17,
-        "scopes": [
-          "source.scala",
-          "constant.numeric.scala"
-        ]
-      },
-      {
-        "startIndex": 17,
-        "endIndex": 25,
-        "scopes": [
-          "source.scala"
-        ]
-      }
-    ]
-  },
-  {
-    "src": "  val αρετη = 3     ",
-    "tokens": [
-      {
-        "startIndex": 0,
-        "endIndex": 12,
-        "scopes": [
-          "source.scala"
-        ]
-      },
-      {
-        "startIndex": 12,
-        "endIndex": 13,
-        "scopes": [
-          "source.scala",
-          "keyword.operator.comparison.scala"
-        ]
-      },
-      {
-        "startIndex": 13,
-        "endIndex": 14,
-        "scopes": [
-          "source.scala"
-        ]
-      },
-      {
-        "startIndex": 14,
-        "endIndex": 15,
-        "scopes": [
-          "source.scala",
-          "constant.numeric.scala"
-        ]
-      },
-      {
-        "startIndex": 15,
-        "endIndex": 21,
-        "scopes": [
-          "source.scala"
-        ]
-      }
-    ]
-  },
-  {
-    "src": "  val _y = 3       ",
-    "tokens": [
-      {
-        "startIndex": 0,
-        "endIndex": 2,
-        "scopes": [
-          "source.scala"
-        ]
-      },
-      {
-        "startIndex": 2,
-        "endIndex": 5,
-        "scopes": [
-          "source.scala",
-          "keyword.declaration.stable.scala"
-        ]
-      },
-      {
-        "startIndex": 5,
-        "endIndex": 6,
-        "scopes": [
-          "source.scala"
-        ]
-      },
-      {
-        "startIndex": 6,
-        "endIndex": 8,
-        "scopes": [
-          "source.scala",
-          "variable.other.declaration.scala"
-        ]
-      },
-      {
-        "startIndex": 8,
-        "endIndex": 9,
-        "scopes": [
-          "source.scala"
-        ]
-      },
-      {
-        "startIndex": 9,
-        "endIndex": 10,
-        "scopes": [
-          "source.scala",
-          "keyword.operator.comparison.scala"
-        ]
-      },
-      {
-        "startIndex": 10,
-        "endIndex": 11,
-        "scopes": [
-          "source.scala"
-        ]
-      },
-      {
-        "startIndex": 11,
-        "endIndex": 12,
-        "scopes": [
-          "source.scala",
-          "constant.numeric.scala"
-        ]
-      },
-      {
-        "startIndex": 12,
-        "endIndex": 20,
-        "scopes": [
-          "source.scala"
-        ]
-      }
-    ]
-  },
-  {
-    "src": "  val dot_product_* = 3",
-    "tokens": [
-      {
-        "startIndex": 0,
-        "endIndex": 2,
-        "scopes": [
-          "source.scala"
-        ]
-      },
-      {
-        "startIndex": 2,
-        "endIndex": 5,
-        "scopes": [
-          "source.scala",
-          "keyword.declaration.stable.scala"
-        ]
-      },
-      {
-        "startIndex": 5,
-        "endIndex": 6,
-        "scopes": [
-          "source.scala"
-        ]
-      },
-      {
-        "startIndex": 6,
-        "endIndex": 19,
-        "scopes": [
-          "source.scala",
-          "variable.other.declaration.scala"
-        ]
-      },
-      {
-        "startIndex": 19,
-        "endIndex": 20,
-        "scopes": [
-          "source.scala"
-        ]
-      },
-      {
-        "startIndex": 20,
-        "endIndex": 21,
-        "scopes": [
-          "source.scala",
-          "keyword.operator.comparison.scala"
-        ]
-      },
-      {
-        "startIndex": 21,
-        "endIndex": 22,
-        "scopes": [
-          "source.scala"
-        ]
-      },
-      {
-        "startIndex": 22,
-        "endIndex": 23,
-        "scopes": [
-          "source.scala",
-          "constant.numeric.scala"
-        ]
-      }
-    ]
-  },
-  {
-    "src": "  val __system = 3  ",
-    "tokens": [
-      {
-        "startIndex": 0,
-        "endIndex": 2,
-        "scopes": [
-          "source.scala"
-        ]
-      },
-      {
-        "startIndex": 2,
-        "endIndex": 5,
-        "scopes": [
-          "source.scala",
-          "keyword.declaration.stable.scala"
-        ]
-      },
-      {
-        "startIndex": 5,
-        "endIndex": 6,
-        "scopes": [
-          "source.scala"
-        ]
-      },
-      {
-        "startIndex": 6,
-        "endIndex": 14,
-        "scopes": [
-          "source.scala",
-          "variable.other.declaration.scala"
-        ]
-      },
-      {
-        "startIndex": 14,
-        "endIndex": 15,
-        "scopes": [
-          "source.scala"
-        ]
-      },
-      {
-        "startIndex": 15,
-        "endIndex": 16,
-        "scopes": [
-          "source.scala",
-          "keyword.operator.comparison.scala"
-        ]
-      },
-      {
-        "startIndex": 16,
-        "endIndex": 17,
-        "scopes": [
-          "source.scala"
-        ]
-      },
-      {
-        "startIndex": 17,
-        "endIndex": 18,
-        "scopes": [
-          "source.scala",
-          "constant.numeric.scala"
-        ]
-      },
-      {
-        "startIndex": 18,
-        "endIndex": 21,
-        "scopes": [
-          "source.scala"
-        ]
-      }
-    ]
-  },
-  {
-    "src": "  val _MAX_LEN_ = 3",
-    "tokens": [
-      {
-        "startIndex": 0,
-        "endIndex": 2,
-        "scopes": [
-          "source.scala"
-        ]
-      },
-      {
-        "startIndex": 2,
-        "endIndex": 5,
-        "scopes": [
-          "source.scala",
-          "keyword.declaration.stable.scala"
-        ]
-      },
-      {
-        "startIndex": 5,
-        "endIndex": 6,
-        "scopes": [
-          "source.scala"
-        ]
-      },
-      {
-        "startIndex": 6,
-        "endIndex": 15,
-        "scopes": [
-          "source.scala",
-          "variable.other.declaration.scala"
-        ]
-      },
-      {
-        "startIndex": 15,
-        "endIndex": 16,
-        "scopes": [
-          "source.scala"
-        ]
-      },
-      {
-        "startIndex": 16,
-        "endIndex": 17,
-        "scopes": [
-          "source.scala",
-          "keyword.operator.comparison.scala"
-        ]
-      },
-      {
-        "startIndex": 17,
-        "endIndex": 18,
-        "scopes": [
-          "source.scala"
-        ]
-      },
-      {
-        "startIndex": 18,
-        "endIndex": 19,
-        "scopes": [
-          "source.scala",
-          "constant.numeric.scala"
-        ]
-      }
-    ]
-  },
-  {
-    "src": "}",
-    "tokens": [
-      {
-        "startIndex": 0,
-        "endIndex": 1,
-        "scopes": [
-          "source.scala",
-          "punctuation.section.block.end.scala"
-        ]
-      }
-    ]
-  },
-  {
-    "src": "",
-    "tokens": [
-      {
-        "startIndex": 0,
-        "endIndex": 1,
-        "scopes": [
-          "source.scala"
-        ]
-      }
-    ]
-  },
-  {
-    "src": "object IntegerLiterals {",
-    "tokens": [
-      {
-        "startIndex": 0,
-        "endIndex": 6,
-        "scopes": [
-          "source.scala",
-          "keyword.declaration.scala"
-        ]
-      },
-      {
-        "startIndex": 6,
-        "endIndex": 7,
-        "scopes": [
-          "source.scala"
-        ]
-      },
-      {
-        "startIndex": 7,
-        "endIndex": 22,
-        "scopes": [
-          "source.scala",
-          "entity.name.class.declaration"
-        ]
-      },
-      {
-        "startIndex": 22,
-        "endIndex": 23,
-        "scopes": [
-          "source.scala"
-        ]
-      },
-      {
-        "startIndex": 23,
-        "endIndex": 24,
-        "scopes": [
-          "source.scala",
-          "punctuation.section.block.begin.scala"
-        ]
-      }
-    ]
-  },
-  {
-    "src": "  (0, 21,  0xFFFFFFFF, -42L)        ",
-    "tokens": [
-      {
-        "startIndex": 0,
-        "endIndex": 2,
-        "scopes": [
-          "source.scala"
-        ]
-      },
-      {
-        "startIndex": 2,
-        "endIndex": 3,
-        "scopes": [
-          "source.scala",
-          "meta.bracket.scala"
-        ]
-      },
-      {
-        "startIndex": 3,
-        "endIndex": 4,
-        "scopes": [
-          "source.scala",
-          "constant.numeric.scala"
-        ]
-      },
-      {
-        "startIndex": 4,
-        "endIndex": 6,
-        "scopes": [
-          "source.scala"
-        ]
-      },
-      {
-        "startIndex": 6,
-        "endIndex": 8,
-        "scopes": [
-          "source.scala",
-          "constant.numeric.scala"
-        ]
-      },
-      {
-        "startIndex": 8,
-        "endIndex": 11,
-        "scopes": [
-          "source.scala"
-        ]
-      },
-      {
-        "startIndex": 11,
-        "endIndex": 21,
-        "scopes": [
-          "source.scala",
-          "constant.numeric.scala"
-        ]
-      },
-      {
-        "startIndex": 21,
-        "endIndex": 23,
-        "scopes": [
-          "source.scala"
-        ]
-      },
-      {
-        "startIndex": 23,
-        "endIndex": 24,
-        "scopes": [
-          "source.scala",
-          "keyword.operator.arithmetic.scala"
-        ]
-      },
-      {
-        "startIndex": 24,
-        "endIndex": 27,
-        "scopes": [
-          "source.scala",
-          "constant.numeric.scala"
-        ]
-      },
-      {
-        "startIndex": 27,
-        "endIndex": 28,
-        "scopes": [
-          "source.scala",
-          "meta.bracket.scala"
-        ]
-      },
-      {
-        "startIndex": 28,
-        "endIndex": 37,
-        "scopes": [
-          "source.scala"
-        ]
-      }
-    ]
-  },
-  {
-    "src": "}",
-    "tokens": [
-      {
-        "startIndex": 0,
-        "endIndex": 1,
-        "scopes": [
-          "source.scala",
-          "punctuation.section.block.end.scala"
-        ]
-      }
-    ]
-  },
-  {
-    "src": "",
-    "tokens": [
-      {
-        "startIndex": 0,
-        "endIndex": 1,
-        "scopes": [
-          "source.scala"
-        ]
-      }
-    ]
-  },
-  {
-    "src": "object FloatingPointLiterals {",
-    "tokens": [
-      {
-        "startIndex": 0,
-        "endIndex": 6,
-        "scopes": [
-          "source.scala",
-          "keyword.declaration.scala"
-        ]
-      },
-      {
-        "startIndex": 6,
-        "endIndex": 7,
-        "scopes": [
-          "source.scala"
-        ]
-      },
-      {
-        "startIndex": 7,
-        "endIndex": 28,
-        "scopes": [
-          "source.scala",
-          "entity.name.class.declaration"
-        ]
-      },
-      {
-        "startIndex": 28,
-        "endIndex": 29,
-        "scopes": [
-          "source.scala"
-        ]
-      },
-      {
-        "startIndex": 29,
-        "endIndex": 30,
-        "scopes": [
-          "source.scala",
-          "punctuation.section.block.begin.scala"
-        ]
-      }
-    ]
-  },
-  {
-    "src": "  ( 0.0, 1e30f, 3.14159f, 1.0e-100, .1  )",
-    "tokens": [
-      {
-        "startIndex": 0,
-        "endIndex": 2,
-        "scopes": [
-          "source.scala"
-        ]
-      },
-      {
-        "startIndex": 2,
-        "endIndex": 3,
-        "scopes": [
-          "source.scala",
-          "meta.bracket.scala"
-        ]
-      },
-      {
-        "startIndex": 3,
-        "endIndex": 4,
-        "scopes": [
-          "source.scala"
-        ]
-      },
-      {
-        "startIndex": 4,
-        "endIndex": 7,
-        "scopes": [
-          "source.scala",
-          "constant.numeric.scala"
-        ]
-      },
-      {
-        "startIndex": 7,
-        "endIndex": 16,
-        "scopes": [
-          "source.scala"
-        ]
-      },
-      {
-        "startIndex": 16,
-        "endIndex": 24,
-        "scopes": [
-          "source.scala",
-          "constant.numeric.scala"
-        ]
-      },
-      {
-        "startIndex": 24,
-        "endIndex": 26,
-        "scopes": [
-          "source.scala"
-        ]
-      },
-      {
-        "startIndex": 26,
-        "endIndex": 34,
-        "scopes": [
-          "source.scala",
-          "constant.numeric.scala"
-        ]
-      },
-      {
-        "startIndex": 34,
-        "endIndex": 37,
-        "scopes": [
-          "source.scala"
-        ]
-      },
-      {
-        "startIndex": 37,
-        "endIndex": 38,
-        "scopes": [
-          "source.scala",
-          "constant.numeric.scala"
-        ]
-      },
-      {
-        "startIndex": 38,
-        "endIndex": 40,
-        "scopes": [
-          "source.scala"
-        ]
-      },
-      {
-        "startIndex": 40,
-        "endIndex": 41,
-        "scopes": [
-          "source.scala",
-          "meta.bracket.scala"
-        ]
-      }
-    ]
-  },
-  {
-    "src": "}",
-    "tokens": [
-      {
-        "startIndex": 0,
-        "endIndex": 1,
-        "scopes": [
-          "source.scala",
-          "punctuation.section.block.end.scala"
-        ]
-      }
-    ]
-  },
-  {
-    "src": "",
-    "tokens": [
-      {
-        "startIndex": 0,
-        "endIndex": 1,
-        "scopes": [
-          "source.scala"
-        ]
-      }
-    ]
-  },
-  {
-    "src": "object Boolean {",
-    "tokens": [
-      {
-        "startIndex": 0,
-        "endIndex": 6,
-        "scopes": [
-          "source.scala",
-          "keyword.declaration.scala"
-        ]
-      },
-      {
-        "startIndex": 6,
-        "endIndex": 7,
-        "scopes": [
-          "source.scala"
-        ]
-      },
-      {
-        "startIndex": 7,
-        "endIndex": 14,
-        "scopes": [
-          "source.scala",
-          "entity.name.class.declaration"
-        ]
-      },
-      {
-        "startIndex": 14,
-        "endIndex": 15,
-        "scopes": [
-          "source.scala"
-        ]
-      },
-      {
-        "startIndex": 15,
-        "endIndex": 16,
-        "scopes": [
-          "source.scala",
-          "punctuation.section.block.begin.scala"
-        ]
-      }
-    ]
-  },
-  {
-    "src": "    (true, false)",
-    "tokens": [
-      {
-        "startIndex": 0,
-        "endIndex": 4,
-        "scopes": [
-          "source.scala"
-        ]
-      },
-      {
-        "startIndex": 4,
-        "endIndex": 5,
-        "scopes": [
-          "source.scala",
-          "meta.bracket.scala"
-        ]
-      },
-      {
-        "startIndex": 5,
-        "endIndex": 9,
-        "scopes": [
-          "source.scala",
-          "constant.language.scala"
-        ]
-      },
-      {
-        "startIndex": 9,
-        "endIndex": 11,
-        "scopes": [
-          "source.scala"
-        ]
-      },
-      {
-        "startIndex": 11,
-        "endIndex": 16,
-        "scopes": [
-          "source.scala",
-          "constant.language.scala"
-        ]
-      },
-      {
-        "startIndex": 16,
-        "endIndex": 17,
-        "scopes": [
-          "source.scala",
-          "meta.bracket.scala"
-        ]
-      }
-    ]
-  },
-  {
-    "src": "}",
-    "tokens": [
-      {
-        "startIndex": 0,
-        "endIndex": 1,
-        "scopes": [
-          "source.scala",
-          "punctuation.section.block.end.scala"
-        ]
-      }
-    ]
-  },
-  {
-    "src": "",
-    "tokens": [
-      {
-        "startIndex": 0,
-        "endIndex": 1,
-        "scopes": [
-          "source.scala"
-        ]
-      }
-    ]
-  },
-  {
-    "src": "object CharacterLiterals {",
-    "tokens": [
-      {
-        "startIndex": 0,
-        "endIndex": 6,
-        "scopes": [
-          "source.scala",
-          "keyword.declaration.scala"
-        ]
-      },
-      {
-        "startIndex": 6,
-        "endIndex": 7,
-        "scopes": [
-          "source.scala"
-        ]
-      },
-      {
-        "startIndex": 7,
-        "endIndex": 24,
-        "scopes": [
-          "source.scala",
-          "entity.name.class.declaration"
-        ]
-      },
-      {
-        "startIndex": 24,
-        "endIndex": 25,
-        "scopes": [
-          "source.scala"
-        ]
-      },
-      {
-        "startIndex": 25,
-        "endIndex": 26,
-        "scopes": [
-          "source.scala",
-          "punctuation.section.block.begin.scala"
-        ]
-      }
-    ]
-  },
-  {
-    "src": "    ('a',    '\\u0041',    '\\n',    '\\t')",
-    "tokens": [
-      {
-        "startIndex": 0,
-        "endIndex": 4,
-        "scopes": [
-          "source.scala"
-        ]
-      },
-      {
-        "startIndex": 4,
-        "endIndex": 5,
-        "scopes": [
-          "source.scala",
-          "meta.bracket.scala"
-        ]
-      },
-      {
-        "startIndex": 5,
-        "endIndex": 6,
-        "scopes": [
-          "source.scala",
-          "constant.character.literal.scala",
-          "punctuation.definition.character.begin.scala"
-        ]
-      },
-      {
-        "startIndex": 6,
-        "endIndex": 7,
-        "scopes": [
-          "source.scala",
-          "constant.character.literal.scala"
-        ]
-      },
-      {
-        "startIndex": 7,
-        "endIndex": 8,
-        "scopes": [
-          "source.scala",
-          "constant.character.literal.scala",
-          "punctuation.definition.character.end.scala"
-        ]
-      },
-      {
-        "startIndex": 8,
-        "endIndex": 13,
-        "scopes": [
-          "source.scala"
-        ]
-      },
-      {
-        "startIndex": 13,
-        "endIndex": 14,
-        "scopes": [
-          "source.scala",
-          "constant.character.literal.scala",
-          "punctuation.definition.character.begin.scala"
-        ]
-      },
-      {
-        "startIndex": 14,
-        "endIndex": 20,
-        "scopes": [
-          "source.scala",
-          "constant.character.literal.scala",
-          "constant.character.escape.scala"
-        ]
-      },
-      {
-        "startIndex": 20,
-        "endIndex": 21,
-        "scopes": [
-          "source.scala",
-          "constant.character.literal.scala",
-          "punctuation.definition.character.end.scala"
-        ]
-      },
-      {
-        "startIndex": 21,
-        "endIndex": 26,
-        "scopes": [
-          "source.scala"
-        ]
-      },
-      {
-        "startIndex": 26,
-        "endIndex": 27,
-        "scopes": [
-          "source.scala",
-          "constant.character.literal.scala",
-          "punctuation.definition.character.begin.scala"
-        ]
-      },
-      {
-        "startIndex": 27,
-        "endIndex": 29,
-        "scopes": [
-          "source.scala",
-          "constant.character.literal.scala",
-          "constant.character.escape.scala"
-        ]
-      },
-      {
-        "startIndex": 29,
-        "endIndex": 30,
-        "scopes": [
-          "source.scala",
-          "constant.character.literal.scala",
-          "punctuation.definition.character.end.scala"
-        ]
-      },
-      {
-        "startIndex": 30,
-        "endIndex": 35,
-        "scopes": [
-          "source.scala"
-        ]
-      },
-      {
-        "startIndex": 35,
-        "endIndex": 36,
-        "scopes": [
-          "source.scala",
-          "constant.character.literal.scala",
-          "punctuation.definition.character.begin.scala"
-        ]
-      },
-      {
-        "startIndex": 36,
-        "endIndex": 38,
-        "scopes": [
-          "source.scala",
-          "constant.character.literal.scala",
-          "constant.character.escape.scala"
-        ]
-      },
-      {
-        "startIndex": 38,
-        "endIndex": 39,
-        "scopes": [
-          "source.scala",
-          "constant.character.literal.scala",
-          "punctuation.definition.character.end.scala"
-        ]
-      },
-      {
-        "startIndex": 39,
-        "endIndex": 40,
-        "scopes": [
-          "source.scala",
-          "meta.bracket.scala"
-        ]
-      }
-    ]
-  },
-  {
-    "src": "}",
-    "tokens": [
-      {
-        "startIndex": 0,
-        "endIndex": 1,
-        "scopes": [
-          "source.scala",
-          "punctuation.section.block.end.scala"
-        ]
-      }
-    ]
-  },
-  {
-    "src": "",
-    "tokens": [
-      {
-        "startIndex": 0,
-        "endIndex": 1,
-        "scopes": [
-          "source.scala"
-        ]
-      }
-    ]
-  },
-  {
-    "src": "object StringLiterals {",
-    "tokens": [
-      {
-        "startIndex": 0,
-        "endIndex": 6,
-        "scopes": [
-          "source.scala",
-          "keyword.declaration.scala"
-        ]
-      },
-      {
-        "startIndex": 6,
-        "endIndex": 7,
-        "scopes": [
-          "source.scala"
-        ]
-      },
-      {
-        "startIndex": 7,
-        "endIndex": 21,
-        "scopes": [
-          "source.scala",
-          "entity.name.class.declaration"
-        ]
-      },
-      {
-        "startIndex": 21,
-        "endIndex": 22,
-        "scopes": [
-          "source.scala"
-        ]
-      },
-      {
-        "startIndex": 22,
-        "endIndex": 23,
-        "scopes": [
-          "source.scala",
-          "punctuation.section.block.begin.scala"
-        ]
-      }
-    ]
-  },
-  {
-    "src": "    (\"Hello,\\nWorld!\",  \"This string contains a \\\" character.\")",
-    "tokens": [
-      {
-        "startIndex": 0,
-        "endIndex": 4,
-        "scopes": [
-          "source.scala"
-        ]
-      },
-      {
-        "startIndex": 4,
-        "endIndex": 5,
-        "scopes": [
-          "source.scala",
-          "meta.bracket.scala"
-        ]
-      },
-      {
-        "startIndex": 5,
-        "endIndex": 6,
-        "scopes": [
-          "source.scala",
-          "string.quoted.double.scala",
-          "punctuation.definition.string.begin.scala"
-        ]
-      },
-      {
-        "startIndex": 6,
-        "endIndex": 12,
-        "scopes": [
-          "source.scala",
-          "string.quoted.double.scala"
-        ]
-      },
-      {
-        "startIndex": 12,
-        "endIndex": 14,
-        "scopes": [
-          "source.scala",
-          "string.quoted.double.scala",
-          "constant.character.escape.scala"
-        ]
-      },
-      {
-        "startIndex": 14,
-        "endIndex": 20,
-        "scopes": [
-          "source.scala",
-          "string.quoted.double.scala"
-        ]
-      },
-      {
-        "startIndex": 20,
-        "endIndex": 21,
-        "scopes": [
-          "source.scala",
-          "string.quoted.double.scala",
-          "punctuation.definition.string.end.scala"
-        ]
-      },
-      {
-        "startIndex": 21,
-        "endIndex": 24,
-        "scopes": [
-          "source.scala"
-        ]
-      },
-      {
-        "startIndex": 24,
-        "endIndex": 25,
-        "scopes": [
-          "source.scala",
-          "string.quoted.double.scala",
-          "punctuation.definition.string.begin.scala"
-        ]
-      },
-      {
-        "startIndex": 25,
-        "endIndex": 48,
-        "scopes": [
-          "source.scala",
-          "string.quoted.double.scala"
-        ]
-      },
-      {
-        "startIndex": 48,
-        "endIndex": 50,
-        "scopes": [
-          "source.scala",
-          "string.quoted.double.scala",
-          "constant.character.escape.scala"
-        ]
-      },
-      {
-        "startIndex": 50,
-        "endIndex": 61,
-        "scopes": [
-          "source.scala",
-          "string.quoted.double.scala"
-        ]
-      },
-      {
-        "startIndex": 61,
-        "endIndex": 62,
-        "scopes": [
-          "source.scala",
-          "string.quoted.double.scala",
-          "punctuation.definition.string.end.scala"
-        ]
-      },
-      {
-        "startIndex": 62,
-        "endIndex": 63,
-        "scopes": [
-          "source.scala",
-          "meta.bracket.scala"
-        ]
-      }
-    ]
-  },
-  {
-    "src": "",
-    "tokens": [
-      {
-        "startIndex": 0,
-        "endIndex": 1,
-        "scopes": [
-          "source.scala"
-        ]
-      }
-    ]
-  },
-  {
-    "src": "    \"\"\"the present string",
-    "tokens": [
-      {
-        "startIndex": 0,
-        "endIndex": 4,
-        "scopes": [
-          "source.scala"
-        ]
-      },
-      {
-        "startIndex": 4,
-        "endIndex": 7,
-        "scopes": [
-          "source.scala",
-          "string.quoted.triple.scala",
-          "punctuation.definition.string.begin.scala"
-        ]
-      },
-      {
-        "startIndex": 7,
-        "endIndex": 26,
-        "scopes": [
-          "source.scala",
-          "string.quoted.triple.scala"
-        ]
-      }
-    ]
-  },
-  {
-    "src": "     spans three",
-    "tokens": [
-      {
-        "startIndex": 0,
-        "endIndex": 17,
-        "scopes": [
-          "source.scala",
-          "string.quoted.triple.scala"
-        ]
-      }
-    ]
-  },
-  {
-    "src": "     lines.\"\"\"",
-    "tokens": [
-      {
-        "startIndex": 0,
-        "endIndex": 11,
-        "scopes": [
-          "source.scala",
-          "string.quoted.triple.scala"
-        ]
-      },
-      {
-        "startIndex": 11,
-        "endIndex": 14,
-        "scopes": [
-          "source.scala",
-          "string.quoted.triple.scala",
-          "punctuation.definition.string.end.scala"
-        ]
-      }
-    ]
-  },
-  {
-    "src": "",
-    "tokens": [
-      {
-        "startIndex": 0,
-        "endIndex": 1,
-        "scopes": [
-          "source.scala"
-        ]
-      }
-    ]
-  },
-  {
-    "src": "    \"\"\"the present string",
-    "tokens": [
-      {
-        "startIndex": 0,
-        "endIndex": 4,
-        "scopes": [
-          "source.scala"
-        ]
-      },
-      {
-        "startIndex": 4,
-        "endIndex": 7,
-        "scopes": [
-          "source.scala",
-          "string.quoted.triple.scala",
-          "punctuation.definition.string.begin.scala"
-        ]
-      },
-      {
-        "startIndex": 7,
-        "endIndex": 26,
-        "scopes": [
-          "source.scala",
-          "string.quoted.triple.scala"
-        ]
-      }
-    ]
-  },
-  {
-    "src": "      |spans three",
-    "tokens": [
-      {
-        "startIndex": 0,
-        "endIndex": 19,
-        "scopes": [
-          "source.scala",
-          "string.quoted.triple.scala"
-        ]
-      }
-    ]
-  },
-  {
-    "src": "      |lines.\"\"\".stripMargin",
-    "tokens": [
-      {
-        "startIndex": 0,
-        "endIndex": 13,
-        "scopes": [
-          "source.scala",
-          "string.quoted.triple.scala"
-        ]
-      },
-      {
-        "startIndex": 13,
-        "endIndex": 16,
-        "scopes": [
-          "source.scala",
-          "string.quoted.triple.scala",
-          "punctuation.definition.string.end.scala"
-        ]
-      },
-      {
-        "startIndex": 16,
-        "endIndex": 29,
-        "scopes": [
-          "source.scala"
-        ]
-      }
-    ]
-  },
-  {
-    "src": "",
-    "tokens": [
-      {
-        "startIndex": 0,
-        "endIndex": 1,
-        "scopes": [
-          "source.scala"
-        ]
-      }
-    ]
-  },
-  {
-    "src": "",
-    "tokens": [
-      {
-        "startIndex": 0,
-        "endIndex": 1,
-        "scopes": [
-          "source.scala"
-        ]
-      }
-    ]
-  },
-  {
-    "src": "  val escapeSequences = \"\\b\\t\\n\\f\\r\\\"\\'\\\\\"",
-    "tokens": [
-      {
-        "startIndex": 0,
-        "endIndex": 2,
-        "scopes": [
-          "source.scala"
-        ]
-      },
-      {
-        "startIndex": 2,
-        "endIndex": 5,
-        "scopes": [
-          "source.scala",
-          "keyword.declaration.stable.scala"
-        ]
-      },
-      {
-        "startIndex": 5,
-        "endIndex": 6,
-        "scopes": [
-          "source.scala"
-        ]
-      },
-      {
-        "startIndex": 6,
-        "endIndex": 21,
-        "scopes": [
-          "source.scala",
-          "variable.other.declaration.scala"
-        ]
-      },
-      {
-        "startIndex": 21,
-        "endIndex": 22,
-        "scopes": [
-          "source.scala"
-        ]
-      },
-      {
-        "startIndex": 22,
-        "endIndex": 23,
-        "scopes": [
-          "source.scala",
-          "keyword.operator.comparison.scala"
-        ]
-      },
-      {
-        "startIndex": 23,
-        "endIndex": 24,
-        "scopes": [
-          "source.scala"
-        ]
-      },
-      {
-        "startIndex": 24,
-        "endIndex": 25,
-        "scopes": [
-          "source.scala",
-          "string.quoted.double.scala",
-          "punctuation.definition.string.begin.scala"
-        ]
-      },
-      {
-        "startIndex": 25,
-        "endIndex": 27,
-        "scopes": [
-          "source.scala",
-          "string.quoted.double.scala",
-          "constant.character.escape.scala"
-        ]
-      },
-      {
-        "startIndex": 27,
-        "endIndex": 29,
-        "scopes": [
-          "source.scala",
-          "string.quoted.double.scala",
-          "constant.character.escape.scala"
-        ]
-      },
-      {
-        "startIndex": 29,
-        "endIndex": 31,
-        "scopes": [
-          "source.scala",
-          "string.quoted.double.scala",
-          "constant.character.escape.scala"
-        ]
-      },
-      {
-        "startIndex": 31,
-        "endIndex": 33,
-        "scopes": [
-          "source.scala",
-          "string.quoted.double.scala",
-          "constant.character.escape.scala"
-        ]
-      },
-      {
-        "startIndex": 33,
-        "endIndex": 35,
-        "scopes": [
-          "source.scala",
-          "string.quoted.double.scala",
-          "constant.character.escape.scala"
-        ]
-      },
-      {
-        "startIndex": 35,
-        "endIndex": 37,
-        "scopes": [
-          "source.scala",
-          "string.quoted.double.scala",
-          "constant.character.escape.scala"
-        ]
-      },
-      {
-        "startIndex": 37,
-        "endIndex": 39,
-        "scopes": [
-          "source.scala",
-          "string.quoted.double.scala",
-          "constant.character.escape.scala"
-        ]
-      },
-      {
-        "startIndex": 39,
-        "endIndex": 41,
-        "scopes": [
-          "source.scala",
-          "string.quoted.double.scala",
-          "constant.character.escape.scala"
-        ]
-      },
-      {
-        "startIndex": 41,
-        "endIndex": 42,
-        "scopes": [
-          "source.scala",
-          "string.quoted.double.scala",
-          "punctuation.definition.string.end.scala"
-        ]
-      }
-    ]
-  },
-  {
-    "src": "",
-    "tokens": [
-      {
-        "startIndex": 0,
-        "endIndex": 1,
-        "scopes": [
-          "source.scala"
-        ]
-      }
-    ]
-  },
-  {
-    "src": "  s\"$x plain ${val x = y}\"",
-    "tokens": [
-      {
-        "startIndex": 0,
-        "endIndex": 2,
-        "scopes": [
-          "source.scala"
-        ]
-      },
-      {
-        "startIndex": 2,
-        "endIndex": 3,
-        "scopes": [
-          "source.scala",
-          "keyword.interpolation.scala"
-        ]
-      },
-      {
-        "startIndex": 3,
-        "endIndex": 4,
-        "scopes": [
-          "source.scala",
-          "string.quoted.double.interpolated.scala",
-          "punctuation.definition.string.begin.scala"
-        ]
-      },
-      {
-        "startIndex": 4,
-        "endIndex": 5,
-        "scopes": [
-          "source.scala",
-          "punctuation.definition.template-expression.begin.scala"
-        ]
-      },
-      {
-        "startIndex": 5,
-        "endIndex": 6,
-        "scopes": [
-          "source.scala"
-        ]
-      },
-      {
-        "startIndex": 6,
-        "endIndex": 7,
-        "scopes": [
-          "source.scala",
-          "string.quoted.double.interpolated.scala"
-        ]
-      },
-      {
-        "startIndex": 7,
-        "endIndex": 8,
-        "scopes": [
-          "source.scala",
-          "string.quoted.double.interpolated.scala"
-        ]
-      },
-      {
-        "startIndex": 8,
-        "endIndex": 9,
-        "scopes": [
-          "source.scala",
-          "string.quoted.double.interpolated.scala"
-        ]
-      },
-      {
-        "startIndex": 9,
-        "endIndex": 10,
-        "scopes": [
-          "source.scala",
-          "string.quoted.double.interpolated.scala"
-        ]
-      },
-      {
-        "startIndex": 10,
-        "endIndex": 11,
-        "scopes": [
-          "source.scala",
-          "string.quoted.double.interpolated.scala"
-        ]
-      },
-      {
-        "startIndex": 11,
-        "endIndex": 12,
-        "scopes": [
-          "source.scala",
-          "string.quoted.double.interpolated.scala"
-        ]
-      },
-      {
-        "startIndex": 12,
-        "endIndex": 13,
-        "scopes": [
-          "source.scala",
-          "string.quoted.double.interpolated.scala"
-        ]
-      },
-      {
-        "startIndex": 13,
-        "endIndex": 15,
-        "scopes": [
-          "source.scala",
-          "punctuation.definition.template-expression.scala",
-          "punctuation.definition.template-expression.begin.scala"
-        ]
-      },
-      {
-        "startIndex": 15,
-        "endIndex": 18,
-        "scopes": [
-          "source.scala",
-          "punctuation.definition.template-expression.scala",
-          "keyword.declaration.stable.scala"
-        ]
-      },
-      {
-        "startIndex": 18,
-        "endIndex": 19,
-        "scopes": [
-          "source.scala",
-          "punctuation.definition.template-expression.scala"
-        ]
-      },
-      {
-        "startIndex": 19,
-        "endIndex": 20,
-        "scopes": [
-          "source.scala",
-          "punctuation.definition.template-expression.scala",
-          "variable.other.declaration.scala"
-        ]
-      },
-      {
-        "startIndex": 20,
-        "endIndex": 21,
-        "scopes": [
-          "source.scala",
-          "punctuation.definition.template-expression.scala"
-        ]
-      },
-      {
-        "startIndex": 21,
-        "endIndex": 22,
-        "scopes": [
-          "source.scala",
-          "punctuation.definition.template-expression.scala",
-          "keyword.operator.comparison.scala"
-        ]
-      },
-      {
-        "startIndex": 22,
-        "endIndex": 24,
-        "scopes": [
-          "source.scala",
-          "punctuation.definition.template-expression.scala"
-        ]
-      },
-      {
-        "startIndex": 24,
-        "endIndex": 25,
-        "scopes": [
-          "source.scala",
-          "punctuation.definition.template-expression.scala",
-          "punctuation.definition.template-expression.end.scala"
-        ]
-      },
-      {
-        "startIndex": 25,
-        "endIndex": 26,
-        "scopes": [
-          "source.scala",
-          "string.quoted.double.interpolated.scala",
-          "punctuation.definition.string.end.scala"
-        ]
-      }
-    ]
-  },
-  {
-    "src": "  custom\"$x plain ${val x = y}\"",
-    "tokens": [
-      {
-        "startIndex": 0,
-        "endIndex": 2,
-        "scopes": [
-          "source.scala"
-        ]
-      },
-      {
-        "startIndex": 2,
-        "endIndex": 8,
-        "scopes": [
-          "source.scala",
-          "keyword.interpolation.scala"
-        ]
-      },
-      {
-        "startIndex": 8,
-        "endIndex": 9,
-        "scopes": [
-          "source.scala",
-          "string.quoted.double.interpolated.scala",
-          "punctuation.definition.string.begin.scala"
-        ]
-      },
-      {
-        "startIndex": 9,
-        "endIndex": 10,
-        "scopes": [
-          "source.scala",
-          "punctuation.definition.template-expression.begin.scala"
-        ]
-      },
-      {
-        "startIndex": 10,
-        "endIndex": 11,
-        "scopes": [
-          "source.scala"
-        ]
-      },
-      {
-        "startIndex": 11,
-        "endIndex": 12,
-        "scopes": [
-          "source.scala",
-          "string.quoted.double.interpolated.scala"
-        ]
-      },
-      {
-        "startIndex": 12,
-        "endIndex": 13,
-        "scopes": [
-          "source.scala",
-          "string.quoted.double.interpolated.scala"
-        ]
-      },
-      {
-        "startIndex": 13,
-        "endIndex": 14,
-        "scopes": [
-          "source.scala",
-          "string.quoted.double.interpolated.scala"
-        ]
-      },
-      {
-        "startIndex": 14,
-        "endIndex": 15,
-        "scopes": [
-          "source.scala",
-          "string.quoted.double.interpolated.scala"
-        ]
-      },
-      {
-        "startIndex": 15,
-        "endIndex": 16,
-        "scopes": [
-          "source.scala",
-          "string.quoted.double.interpolated.scala"
-        ]
-      },
-      {
-        "startIndex": 16,
-        "endIndex": 17,
-        "scopes": [
-          "source.scala",
-          "string.quoted.double.interpolated.scala"
-        ]
-      },
-      {
-        "startIndex": 17,
-        "endIndex": 18,
-        "scopes": [
-          "source.scala",
-          "string.quoted.double.interpolated.scala"
-        ]
-      },
-      {
-        "startIndex": 18,
-        "endIndex": 20,
-        "scopes": [
-          "source.scala",
-          "punctuation.definition.template-expression.scala",
-          "punctuation.definition.template-expression.begin.scala"
-        ]
-      },
-      {
-        "startIndex": 20,
-        "endIndex": 23,
-        "scopes": [
-          "source.scala",
-          "punctuation.definition.template-expression.scala",
-          "keyword.declaration.stable.scala"
-        ]
-      },
-      {
-        "startIndex": 23,
-        "endIndex": 24,
-        "scopes": [
-          "source.scala",
-          "punctuation.definition.template-expression.scala"
-        ]
-      },
-      {
-        "startIndex": 24,
-        "endIndex": 25,
-        "scopes": [
-          "source.scala",
-          "punctuation.definition.template-expression.scala",
-          "variable.other.declaration.scala"
-        ]
-      },
-      {
-        "startIndex": 25,
-        "endIndex": 26,
-        "scopes": [
-          "source.scala",
-          "punctuation.definition.template-expression.scala"
-        ]
-      },
-      {
-        "startIndex": 26,
-        "endIndex": 27,
-        "scopes": [
-          "source.scala",
-          "punctuation.definition.template-expression.scala",
-          "keyword.operator.comparison.scala"
-        ]
-      },
-      {
-        "startIndex": 27,
-        "endIndex": 29,
-        "scopes": [
-          "source.scala",
-          "punctuation.definition.template-expression.scala"
-        ]
-      },
-      {
-        "startIndex": 29,
-        "endIndex": 30,
-        "scopes": [
-          "source.scala",
-          "punctuation.definition.template-expression.scala",
-          "punctuation.definition.template-expression.end.scala"
-        ]
-      },
-      {
-        "startIndex": 30,
-        "endIndex": 31,
-        "scopes": [
-          "source.scala",
-          "string.quoted.double.interpolated.scala",
-          "punctuation.definition.string.end.scala"
-        ]
-      }
-    ]
-  },
-  {
-    "src": "",
-    "tokens": [
-      {
-        "startIndex": 0,
-        "endIndex": 1,
-        "scopes": [
-          "source.scala"
-        ]
-      }
-    ]
-  },
-  {
-    "src": "  s\"\"\"$x plain ${val x = y}\"\"\"",
-    "tokens": [
-      {
-        "startIndex": 0,
-        "endIndex": 2,
-        "scopes": [
-          "source.scala"
-        ]
-      },
-      {
-        "startIndex": 2,
-        "endIndex": 3,
-        "scopes": [
-          "source.scala",
-          "keyword.interpolation.scala"
-        ]
-      },
-      {
-        "startIndex": 3,
-        "endIndex": 6,
-        "scopes": [
-          "source.scala",
-          "string.quoted.triple.interpolated.scala",
-          "punctuation.definition.string.begin.scala"
-        ]
-      },
-      {
-        "startIndex": 6,
-        "endIndex": 7,
-        "scopes": [
-          "source.scala",
-          "punctuation.definition.template-expression.begin.scala"
-        ]
-      },
-      {
-        "startIndex": 7,
-        "endIndex": 8,
-        "scopes": [
-          "source.scala"
-        ]
-      },
-      {
-        "startIndex": 8,
-        "endIndex": 9,
-        "scopes": [
-          "source.scala",
-          "string.quoted.triple.interpolated.scala"
-        ]
-      },
-      {
-        "startIndex": 9,
-        "endIndex": 10,
-        "scopes": [
-          "source.scala",
-          "string.quoted.triple.interpolated.scala"
-        ]
-      },
-      {
-        "startIndex": 10,
-        "endIndex": 11,
-        "scopes": [
-          "source.scala",
-          "string.quoted.triple.interpolated.scala"
-        ]
-      },
-      {
-        "startIndex": 11,
-        "endIndex": 12,
-        "scopes": [
-          "source.scala",
-          "string.quoted.triple.interpolated.scala"
-        ]
-      },
-      {
-        "startIndex": 12,
-        "endIndex": 13,
-        "scopes": [
-          "source.scala",
-          "string.quoted.triple.interpolated.scala"
-        ]
-      },
-      {
-        "startIndex": 13,
-        "endIndex": 14,
-        "scopes": [
-          "source.scala",
-          "string.quoted.triple.interpolated.scala"
-        ]
-      },
-      {
-        "startIndex": 14,
-        "endIndex": 15,
-        "scopes": [
-          "source.scala",
-          "string.quoted.triple.interpolated.scala"
-        ]
-      },
-      {
-        "startIndex": 15,
-        "endIndex": 17,
-        "scopes": [
-          "source.scala",
-          "punctuation.definition.template-expression.scala",
-          "punctuation.definition.template-expression.begin.scala"
-        ]
-      },
-      {
-        "startIndex": 17,
-        "endIndex": 20,
-        "scopes": [
-          "source.scala",
-          "punctuation.definition.template-expression.scala",
-          "keyword.declaration.stable.scala"
-        ]
-      },
-      {
-        "startIndex": 20,
-        "endIndex": 21,
-        "scopes": [
-          "source.scala",
-          "punctuation.definition.template-expression.scala"
-        ]
-      },
-      {
-        "startIndex": 21,
-        "endIndex": 22,
-        "scopes": [
-          "source.scala",
-          "punctuation.definition.template-expression.scala",
-          "variable.other.declaration.scala"
-        ]
-      },
-      {
-        "startIndex": 22,
-        "endIndex": 23,
-        "scopes": [
-          "source.scala",
-          "punctuation.definition.template-expression.scala"
-        ]
-      },
-      {
-        "startIndex": 23,
-        "endIndex": 24,
-        "scopes": [
-          "source.scala",
-          "punctuation.definition.template-expression.scala",
-          "keyword.operator.comparison.scala"
-        ]
-      },
-      {
-        "startIndex": 24,
-        "endIndex": 26,
-        "scopes": [
-          "source.scala",
-          "punctuation.definition.template-expression.scala"
-        ]
-      },
-      {
-        "startIndex": 26,
-        "endIndex": 27,
-        "scopes": [
-          "source.scala",
-          "punctuation.definition.template-expression.scala",
-          "punctuation.definition.template-expression.end.scala"
-        ]
-      },
-      {
-        "startIndex": 27,
-        "endIndex": 30,
-        "scopes": [
-          "source.scala",
-          "string.quoted.triple.interpolated.scala",
-          "punctuation.definition.string.end.scala"
-        ]
-      }
-    ]
-  },
-  {
-    "src": "  custom\"\"\"$x plain ${val x = y}\"\"\"",
-    "tokens": [
-      {
-        "startIndex": 0,
-        "endIndex": 2,
-        "scopes": [
-          "source.scala"
-        ]
-      },
-      {
-        "startIndex": 2,
-        "endIndex": 8,
-        "scopes": [
-          "source.scala",
-          "keyword.interpolation.scala"
-        ]
-      },
-      {
-        "startIndex": 8,
-        "endIndex": 11,
-        "scopes": [
-          "source.scala",
-          "string.quoted.triple.interpolated.scala",
-          "punctuation.definition.string.begin.scala"
-        ]
-      },
-      {
-        "startIndex": 11,
-        "endIndex": 12,
-        "scopes": [
-          "source.scala",
-          "punctuation.definition.template-expression.begin.scala"
-        ]
-      },
-      {
-        "startIndex": 12,
-        "endIndex": 13,
-        "scopes": [
-          "source.scala"
-        ]
-      },
-      {
-        "startIndex": 13,
-        "endIndex": 14,
-        "scopes": [
-          "source.scala",
-          "string.quoted.triple.interpolated.scala"
-        ]
-      },
-      {
-        "startIndex": 14,
-        "endIndex": 15,
-        "scopes": [
-          "source.scala",
-          "string.quoted.triple.interpolated.scala"
-        ]
-      },
-      {
-        "startIndex": 15,
-        "endIndex": 16,
-        "scopes": [
-          "source.scala",
-          "string.quoted.triple.interpolated.scala"
-        ]
-      },
-      {
-        "startIndex": 16,
-        "endIndex": 17,
-        "scopes": [
-          "source.scala",
-          "string.quoted.triple.interpolated.scala"
-        ]
-      },
-      {
-        "startIndex": 17,
-        "endIndex": 18,
-        "scopes": [
-          "source.scala",
-          "string.quoted.triple.interpolated.scala"
-        ]
-      },
-      {
-        "startIndex": 18,
-        "endIndex": 19,
-        "scopes": [
-          "source.scala",
-          "string.quoted.triple.interpolated.scala"
-        ]
-      },
-      {
-        "startIndex": 19,
-        "endIndex": 20,
-        "scopes": [
-          "source.scala",
-          "string.quoted.triple.interpolated.scala"
-        ]
-      },
-      {
-        "startIndex": 20,
-        "endIndex": 22,
-        "scopes": [
-          "source.scala",
-          "punctuation.definition.template-expression.scala",
-          "punctuation.definition.template-expression.begin.scala"
-        ]
-      },
-      {
-        "startIndex": 22,
-        "endIndex": 25,
-        "scopes": [
-          "source.scala",
-          "punctuation.definition.template-expression.scala",
-          "keyword.declaration.stable.scala"
-        ]
-      },
-      {
-        "startIndex": 25,
-        "endIndex": 26,
-        "scopes": [
-          "source.scala",
-          "punctuation.definition.template-expression.scala"
-        ]
-      },
-      {
-        "startIndex": 26,
-        "endIndex": 27,
-        "scopes": [
-          "source.scala",
-          "punctuation.definition.template-expression.scala",
-          "variable.other.declaration.scala"
-        ]
-      },
-      {
-        "startIndex": 27,
-        "endIndex": 28,
-        "scopes": [
-          "source.scala",
-          "punctuation.definition.template-expression.scala"
-        ]
-      },
-      {
-        "startIndex": 28,
-        "endIndex": 29,
-        "scopes": [
-          "source.scala",
-          "punctuation.definition.template-expression.scala",
-          "keyword.operator.comparison.scala"
-        ]
-      },
-      {
-        "startIndex": 29,
-        "endIndex": 31,
-        "scopes": [
-          "source.scala",
-          "punctuation.definition.template-expression.scala"
-        ]
-      },
-      {
-        "startIndex": 31,
-        "endIndex": 32,
-        "scopes": [
-          "source.scala",
-          "punctuation.definition.template-expression.scala",
-          "punctuation.definition.template-expression.end.scala"
-        ]
-      },
-      {
-        "startIndex": 32,
-        "endIndex": 35,
-        "scopes": [
-          "source.scala",
-          "string.quoted.triple.interpolated.scala",
-          "punctuation.definition.string.end.scala"
-        ]
-      }
-    ]
-  },
-  {
-    "src": "}",
-    "tokens": [
-      {
-        "startIndex": 0,
-        "endIndex": 1,
-        "scopes": [
-          "source.scala",
-          "punctuation.section.block.end.scala"
-        ]
-      }
-    ]
-  },
-  {
-    "src": "",
-    "tokens": [
-      {
-        "startIndex": 0,
-        "endIndex": 1,
-        "scopes": [
-          "source.scala"
-        ]
-      }
-    ]
-  },
-  {
-    "src": "object Symbols {",
-    "tokens": [
-      {
-        "startIndex": 0,
-        "endIndex": 6,
-        "scopes": [
-          "source.scala",
-          "keyword.declaration.scala"
-        ]
-      },
-      {
-        "startIndex": 6,
-        "endIndex": 7,
-        "scopes": [
-          "source.scala"
-        ]
-      },
-      {
-        "startIndex": 7,
-        "endIndex": 14,
-        "scopes": [
-          "source.scala",
-          "entity.name.class.declaration"
-        ]
-      },
-      {
-        "startIndex": 14,
-        "endIndex": 15,
-        "scopes": [
-          "source.scala"
-        ]
-      },
-      {
-        "startIndex": 15,
-        "endIndex": 16,
-        "scopes": [
-          "source.scala",
-          "punctuation.section.block.begin.scala"
-        ]
-      }
-    ]
-  },
-  {
-    "src": "    ('x, 'X, 'αρετη, '=, '+ )",
-    "tokens": [
-      {
-        "startIndex": 0,
-        "endIndex": 4,
-        "scopes": [
-          "source.scala"
-        ]
-      },
-      {
-        "startIndex": 4,
-        "endIndex": 5,
-        "scopes": [
-          "source.scala",
-          "meta.bracket.scala"
-        ]
-      },
-      {
-        "startIndex": 5,
-        "endIndex": 7,
-        "scopes": [
-          "source.scala",
-          "constant.other.symbol.scala"
-        ]
-      },
-      {
-        "startIndex": 7,
-        "endIndex": 9,
-        "scopes": [
-          "source.scala"
-        ]
-      },
-      {
-        "startIndex": 9,
-        "endIndex": 11,
-        "scopes": [
-          "source.scala",
-          "constant.other.symbol.scala"
-        ]
-      },
-      {
-        "startIndex": 11,
-        "endIndex": 13,
-        "scopes": [
-          "source.scala"
-        ]
-      },
-      {
-        "startIndex": 13,
-        "endIndex": 19,
-        "scopes": [
-          "source.scala",
-          "constant.other.symbol.scala"
-        ]
-      },
-      {
-        "startIndex": 19,
-        "endIndex": 21,
-        "scopes": [
-          "source.scala"
-        ]
-      },
-      {
-        "startIndex": 21,
-        "endIndex": 22,
-        "scopes": [
-          "source.scala",
-          "constant.character.literal.scala",
-          "punctuation.definition.character.begin.scala"
-        ]
-      },
-      {
-        "startIndex": 22,
-        "endIndex": 25,
-        "scopes": [
-          "source.scala",
-          "constant.character.literal.scala",
-          "invalid.illegal.character-literal-too-long"
-        ]
-      },
-      {
-        "startIndex": 25,
-        "endIndex": 26,
-        "scopes": [
-          "source.scala",
-          "constant.character.literal.scala",
-          "punctuation.definition.character.end.scala"
-        ]
-      },
-      {
-        "startIndex": 26,
-        "endIndex": 27,
-        "scopes": [
-          "source.scala",
-          "keyword.operator.arithmetic.scala"
-        ]
-      },
-      {
-        "startIndex": 27,
-        "endIndex": 28,
-        "scopes": [
-          "source.scala"
-        ]
-      },
-      {
-        "startIndex": 28,
-        "endIndex": 29,
-        "scopes": [
-          "source.scala",
-          "meta.bracket.scala"
-        ]
-      }
-    ]
-  },
-  {
-    "src": "}",
-    "tokens": [
-      {
-        "startIndex": 0,
-        "endIndex": 1,
-        "scopes": [
-          "source.scala",
-          "punctuation.section.block.end.scala"
-        ]
-      }
-    ]
-  },
-  {
-    "src": "",
-    "tokens": [
-      {
-        "startIndex": 0,
-        "endIndex": 1,
-        "scopes": [
-          "source.scala"
-        ]
-      }
-    ]
-  },
-  {
-    "src": "// single line comment",
-    "tokens": [
-      {
-        "startIndex": 0,
-        "endIndex": 2,
-        "scopes": [
-          "source.scala",
-          "comment.line.double-slash.scala",
-          "punctuation.definition.comment.scala"
-        ]
-      },
-      {
-        "startIndex": 2,
-        "endIndex": 22,
-        "scopes": [
-          "source.scala",
-          "comment.line.double-slash.scala"
-        ]
-      }
-    ]
-  },
-  {
-    "src": "",
-    "tokens": [
-      {
-        "startIndex": 0,
-        "endIndex": 1,
-        "scopes": [
-          "source.scala"
-        ]
-      }
-    ]
-  },
-  {
-    "src": "  /*",
-    "tokens": [
-      {
-        "startIndex": 0,
-        "endIndex": 2,
-        "scopes": [
-          "source.scala"
-        ]
-      },
-      {
-        "startIndex": 2,
-        "endIndex": 4,
-        "scopes": [
-          "source.scala",
-          "comment.block.scala",
-          "punctuation.definition.comment.scala"
-        ]
-      }
-    ]
-  },
-  {
-    "src": "  ",
-    "tokens": [
-      {
-        "startIndex": 0,
-        "endIndex": 3,
-        "scopes": [
-          "source.scala",
-          "comment.block.scala"
-        ]
-      }
-    ]
-  },
-  {
-    "src": "multiline comment*/",
-    "tokens": [
-      {
-        "startIndex": 0,
-        "endIndex": 17,
-        "scopes": [
-          "source.scala",
-          "comment.block.scala"
-        ]
-      },
-      {
-        "startIndex": 17,
-        "endIndex": 19,
-        "scopes": [
-          "source.scala",
-          "comment.block.scala",
-          "punctuation.definition.comment.scala"
-        ]
-      }
-    ]
-  },
-  {
-    "src": "",
-    "tokens": [
-      {
-        "startIndex": 0,
-        "endIndex": 1,
-        "scopes": [
-          "source.scala"
-        ]
-      }
-    ]
-  },
-  {
-    "src": "  /**",
-    "tokens": [
-      {
-        "startIndex": 0,
-        "endIndex": 2,
-        "scopes": [
-          "source.scala",
-          "comment.block.documentation.scala"
-        ]
-      },
-      {
-        "startIndex": 2,
-        "endIndex": 5,
-        "scopes": [
-          "source.scala",
-          "comment.block.documentation.scala",
-          "punctuation.definition.comment.scala"
-        ]
-      }
-    ]
-  },
-  {
-    "src": "   * Scaladoc comment",
-    "tokens": [
-      {
-        "startIndex": 0,
-        "endIndex": 22,
-        "scopes": [
-          "source.scala",
-          "comment.block.documentation.scala"
-        ]
-      }
-    ]
-  },
-  {
-    "src": "   * @scaladoc @param ",
-    "tokens": [
-      {
-        "startIndex": 0,
-        "endIndex": 23,
-        "scopes": [
-          "source.scala",
-          "comment.block.documentation.scala"
-        ]
-      }
-    ]
-  },
-  {
-    "src": "   */",
-    "tokens": [
-      {
-        "startIndex": 0,
-        "endIndex": 3,
-        "scopes": [
-          "source.scala",
-          "comment.block.documentation.scala"
-        ]
-      },
-      {
-        "startIndex": 3,
-        "endIndex": 5,
-        "scopes": [
-          "source.scala",
-          "comment.block.documentation.scala",
-          "punctuation.definition.comment.scala"
-        ]
-      }
-    ]
-  },
-  {
-    "src": "",
-    "tokens": [
-      {
-        "startIndex": 0,
-        "endIndex": 1,
-        "scopes": [
-          "source.scala"
-        ]
-      }
-    ]
-  },
-  {
-    "src": "   /*  nested /* multi-line */ comment */",
-    "tokens": [
-      {
-        "startIndex": 0,
-        "endIndex": 3,
-        "scopes": [
-          "source.scala"
-        ]
-      },
-      {
-        "startIndex": 3,
-        "endIndex": 5,
-        "scopes": [
-          "source.scala",
-          "comment.block.scala",
-          "punctuation.definition.comment.scala"
-        ]
-      },
-      {
-        "startIndex": 5,
-        "endIndex": 28,
-        "scopes": [
-          "source.scala",
-          "comment.block.scala"
-        ]
-      },
-      {
-        "startIndex": 28,
-        "endIndex": 30,
-        "scopes": [
-          "source.scala",
-          "comment.block.scala",
-          "punctuation.definition.comment.scala"
-        ]
-      },
-      {
-        "startIndex": 30,
-        "endIndex": 39,
-        "scopes": [
-          "source.scala"
-        ]
-      },
-      {
-        "startIndex": 39,
-        "endIndex": 40,
-        "scopes": [
-          "source.scala",
-          "keyword.operator.arithmetic.scala"
-        ]
-      },
-      {
-        "startIndex": 40,
-        "endIndex": 41,
-        "scopes": [
-          "source.scala",
-          "keyword.operator.arithmetic.scala"
-        ]
-      }
-    ]
-  },
-  {
-    "src": "",
-    "tokens": [
-      {
-        "startIndex": 0,
-        "endIndex": 1,
-        "scopes": [
-          "source.scala"
-        ]
-      }
-    ]
-  },
-  {
-    "src": "",
-    "tokens": [
-      {
-        "startIndex": 0,
-        "endIndex": 1,
-        "scopes": [
-          "source.scala"
-        ]
-      }
-    ]
-  },
-  {
-    "src": "object Xml {",
-    "tokens": [
-      {
-        "startIndex": 0,
-        "endIndex": 6,
-        "scopes": [
-          "source.scala",
-          "keyword.declaration.scala"
-        ]
-      },
-      {
-        "startIndex": 6,
-        "endIndex": 7,
-        "scopes": [
-          "source.scala"
-        ]
-      },
-      {
-        "startIndex": 7,
-        "endIndex": 10,
-        "scopes": [
-          "source.scala",
-          "entity.name.class.declaration"
-        ]
-      },
-      {
-        "startIndex": 10,
-        "endIndex": 11,
-        "scopes": [
-          "source.scala"
-        ]
-      },
-      {
-        "startIndex": 11,
-        "endIndex": 12,
-        "scopes": [
-          "source.scala",
-          "punctuation.section.block.begin.scala"
-        ]
-      }
-    ]
-  },
-  {
-    "src": "    val b = <book>",
-    "tokens": [
-      {
-        "startIndex": 0,
-        "endIndex": 4,
-        "scopes": [
-          "source.scala"
-        ]
-      },
-      {
-        "startIndex": 4,
-        "endIndex": 7,
-        "scopes": [
-          "source.scala",
-          "keyword.declaration.stable.scala"
-        ]
-      },
-      {
-        "startIndex": 7,
-        "endIndex": 8,
-        "scopes": [
-          "source.scala"
-        ]
-      },
-      {
-        "startIndex": 8,
-        "endIndex": 9,
-        "scopes": [
-          "source.scala",
-          "variable.other.declaration.scala"
-        ]
-      },
-      {
-        "startIndex": 9,
-        "endIndex": 10,
-        "scopes": [
-          "source.scala"
-        ]
-      },
-      {
-        "startIndex": 10,
-        "endIndex": 11,
-        "scopes": [
-          "source.scala",
-          "keyword.operator.comparison.scala"
-        ]
-      },
-      {
-        "startIndex": 11,
-        "endIndex": 12,
-        "scopes": [
-          "source.scala"
-        ]
-      },
-      {
-        "startIndex": 12,
-        "endIndex": 13,
-        "scopes": [
-          "source.scala",
-          "meta.tag.xml",
-          "punctuation.definition.tag.xml"
-        ]
-      },
-      {
-        "startIndex": 13,
-        "endIndex": 17,
-        "scopes": [
-          "source.scala",
-          "meta.tag.xml",
-          "entity.name.tag.localname.xml"
-        ]
-      },
-      {
-        "startIndex": 17,
-        "endIndex": 18,
-        "scopes": [
-          "source.scala",
-          "meta.tag.xml",
-          "punctuation.definition.tag.xml"
-        ]
-      }
-    ]
-  },
-  {
-    "src": "          <title>The Scala Language Specification</title>",
-    "tokens": [
-      {
-        "startIndex": 0,
-        "endIndex": 10,
-        "scopes": [
-          "source.scala"
-        ]
-      },
-      {
-        "startIndex": 10,
-        "endIndex": 11,
-        "scopes": [
-          "source.scala",
-          "meta.tag.xml",
-          "punctuation.definition.tag.xml"
-        ]
-      },
-      {
-        "startIndex": 11,
-        "endIndex": 16,
-        "scopes": [
-          "source.scala",
-          "meta.tag.xml",
-          "entity.name.tag.localname.xml"
-        ]
-      },
-      {
-        "startIndex": 16,
-        "endIndex": 17,
-        "scopes": [
-          "source.scala",
-          "meta.tag.xml",
-          "punctuation.definition.tag.xml"
-        ]
-      },
-      {
-        "startIndex": 17,
-        "endIndex": 20,
-        "scopes": [
-          "source.scala",
-          "entity.name.class"
-        ]
-      },
-      {
-        "startIndex": 20,
-        "endIndex": 21,
-        "scopes": [
-          "source.scala"
-        ]
-      },
-      {
-        "startIndex": 21,
-        "endIndex": 26,
-        "scopes": [
-          "source.scala",
-          "entity.name.class"
-        ]
-      },
-      {
-        "startIndex": 26,
-        "endIndex": 27,
-        "scopes": [
-          "source.scala"
-        ]
-      },
-      {
-        "startIndex": 27,
-        "endIndex": 35,
-        "scopes": [
-          "source.scala",
-          "entity.name.class"
-        ]
-      },
-      {
-        "startIndex": 35,
-        "endIndex": 36,
-        "scopes": [
-          "source.scala"
-        ]
-      },
-      {
-        "startIndex": 36,
-        "endIndex": 49,
-        "scopes": [
-          "source.scala",
-          "entity.name.class"
-        ]
-      },
-      {
-        "startIndex": 49,
-        "endIndex": 51,
-        "scopes": [
-          "source.scala",
-          "meta.tag.xml",
-          "punctuation.definition.tag.xml"
-        ]
-      },
-      {
-        "startIndex": 51,
-        "endIndex": 56,
-        "scopes": [
-          "source.scala",
-          "meta.tag.xml",
-          "entity.name.tag.localname.xml"
-        ]
-      },
-      {
-        "startIndex": 56,
-        "endIndex": 57,
-        "scopes": [
-          "source.scala",
-          "meta.tag.xml",
-          "punctuation.definition.tag.xml"
-        ]
-      }
-    ]
-  },
-  {
-    "src": "          <version>{scalaBook.version}</version>",
-    "tokens": [
-      {
-        "startIndex": 0,
-        "endIndex": 10,
-        "scopes": [
-          "source.scala"
-        ]
-      },
-      {
-        "startIndex": 10,
-        "endIndex": 11,
-        "scopes": [
-          "source.scala",
-          "meta.tag.xml",
-          "punctuation.definition.tag.xml"
-        ]
-      },
-      {
-        "startIndex": 11,
-        "endIndex": 18,
-        "scopes": [
-          "source.scala",
-          "meta.tag.xml",
-          "entity.name.tag.localname.xml"
-        ]
-      },
-      {
-        "startIndex": 18,
-        "endIndex": 19,
-        "scopes": [
-          "source.scala",
-          "meta.tag.xml",
-          "punctuation.definition.tag.xml"
-        ]
-      },
-      {
-        "startIndex": 19,
-        "endIndex": 20,
-        "scopes": [
-          "source.scala",
-          "punctuation.section.block.begin.scala"
-        ]
-      },
-      {
-        "startIndex": 20,
-        "endIndex": 37,
-        "scopes": [
-          "source.scala"
-        ]
-      },
-      {
-        "startIndex": 37,
-        "endIndex": 38,
-        "scopes": [
-          "source.scala",
-          "punctuation.section.block.end.scala"
-        ]
-      },
-      {
-        "startIndex": 38,
-        "endIndex": 40,
-        "scopes": [
-          "source.scala",
-          "meta.tag.xml",
-          "punctuation.definition.tag.xml"
-        ]
-      },
-      {
-        "startIndex": 40,
-        "endIndex": 47,
-        "scopes": [
-          "source.scala",
-          "meta.tag.xml",
-          "entity.name.tag.localname.xml"
-        ]
-      },
-      {
-        "startIndex": 47,
-        "endIndex": 48,
-        "scopes": [
-          "source.scala",
-          "meta.tag.xml",
-          "punctuation.definition.tag.xml"
-        ]
-      }
-    ]
-  },
-  {
-    "src": "          <authors>{scalaBook.authors.mkList(\"\", \", \", \"\")}</authors>",
-    "tokens": [
-      {
-        "startIndex": 0,
-        "endIndex": 10,
-        "scopes": [
-          "source.scala"
-        ]
-      },
-      {
-        "startIndex": 10,
-        "endIndex": 11,
-        "scopes": [
-          "source.scala",
-          "meta.tag.xml",
-          "punctuation.definition.tag.xml"
-        ]
-      },
-      {
-        "startIndex": 11,
-        "endIndex": 18,
-        "scopes": [
-          "source.scala",
-          "meta.tag.xml",
-          "entity.name.tag.localname.xml"
-        ]
-      },
-      {
-        "startIndex": 18,
-        "endIndex": 19,
-        "scopes": [
-          "source.scala",
-          "meta.tag.xml",
-          "punctuation.definition.tag.xml"
-        ]
-      },
-      {
-        "startIndex": 19,
-        "endIndex": 20,
-        "scopes": [
-          "source.scala",
-          "punctuation.section.block.begin.scala"
-        ]
-      },
-      {
-        "startIndex": 20,
-        "endIndex": 44,
-        "scopes": [
-          "source.scala"
-        ]
-      },
-      {
-        "startIndex": 44,
-        "endIndex": 45,
-        "scopes": [
-          "source.scala",
-          "meta.bracket.scala"
-        ]
-      },
-      {
-        "startIndex": 45,
-        "endIndex": 46,
-        "scopes": [
-          "source.scala",
-          "string.quoted.double.scala",
-          "punctuation.definition.string.begin.scala"
-        ]
-      },
-      {
-        "startIndex": 46,
-        "endIndex": 47,
-        "scopes": [
-          "source.scala",
-          "string.quoted.double.scala",
-          "punctuation.definition.string.end.scala"
-        ]
-      },
-      {
-        "startIndex": 47,
-        "endIndex": 49,
-        "scopes": [
-          "source.scala"
-        ]
-      },
-      {
-        "startIndex": 49,
-        "endIndex": 50,
-        "scopes": [
-          "source.scala",
-          "string.quoted.double.scala",
-          "punctuation.definition.string.begin.scala"
-        ]
-      },
-      {
-        "startIndex": 50,
-        "endIndex": 52,
-        "scopes": [
-          "source.scala",
-          "string.quoted.double.scala"
-        ]
-      },
-      {
-        "startIndex": 52,
-        "endIndex": 53,
-        "scopes": [
-          "source.scala",
-          "string.quoted.double.scala",
-          "punctuation.definition.string.end.scala"
-        ]
-      },
-      {
-        "startIndex": 53,
-        "endIndex": 55,
-        "scopes": [
-          "source.scala"
-        ]
-      },
-      {
-        "startIndex": 55,
-        "endIndex": 56,
-        "scopes": [
-          "source.scala",
-          "string.quoted.double.scala",
-          "punctuation.definition.string.begin.scala"
-        ]
-      },
-      {
-        "startIndex": 56,
-        "endIndex": 57,
-        "scopes": [
-          "source.scala",
-          "string.quoted.double.scala",
-          "punctuation.definition.string.end.scala"
-        ]
-      },
-      {
-        "startIndex": 57,
-        "endIndex": 58,
-        "scopes": [
-          "source.scala",
-          "meta.bracket.scala"
-        ]
-      },
-      {
-        "startIndex": 58,
-        "endIndex": 59,
-        "scopes": [
-          "source.scala",
-          "punctuation.section.block.end.scala"
-        ]
-      },
-      {
-        "startIndex": 59,
-        "endIndex": 61,
-        "scopes": [
-          "source.scala",
-          "meta.tag.xml",
-          "punctuation.definition.tag.xml"
-        ]
-      },
-      {
-        "startIndex": 61,
-        "endIndex": 68,
-        "scopes": [
-          "source.scala",
-          "meta.tag.xml",
-          "entity.name.tag.localname.xml"
-        ]
-      },
-      {
-        "startIndex": 68,
-        "endIndex": 69,
-        "scopes": [
-          "source.scala",
-          "meta.tag.xml",
-          "punctuation.definition.tag.xml"
-        ]
-      }
-    ]
-  },
-  {
-    "src": "        </book>",
-    "tokens": [
-      {
-        "startIndex": 0,
-        "endIndex": 8,
-        "scopes": [
-          "source.scala"
-        ]
-      },
-      {
-        "startIndex": 8,
-        "endIndex": 10,
-        "scopes": [
-          "source.scala",
-          "meta.tag.xml",
-          "punctuation.definition.tag.xml"
-        ]
-      },
-      {
-        "startIndex": 10,
-        "endIndex": 14,
-        "scopes": [
-          "source.scala",
-          "meta.tag.xml",
-          "entity.name.tag.localname.xml"
-        ]
-      },
-      {
-        "startIndex": 14,
-        "endIndex": 15,
-        "scopes": [
-          "source.scala",
-          "meta.tag.xml",
-          "punctuation.definition.tag.xml"
-        ]
-      }
-    ]
-  },
-  {
-    "src": "}",
-    "tokens": [
-      {
-        "startIndex": 0,
-        "endIndex": 1,
-        "scopes": [
-          "source.scala",
-          "punctuation.section.block.end.scala"
-        ]
-      }
-    ]
-  },
-  {
-    "src": "",
-    "tokens": [
-      {
-        "startIndex": 0,
-        "endIndex": 1,
-        "scopes": [
-          "source.scala"
-        ]
-      }
-    ]
-  }
-]
+>
+>object ExampleIdentifiers {
+#^^^^^^ source.scala keyword.declaration.scala
+#      ^ source.scala
+#       ^^^^^^^^^^^^^^^^^^ source.scala entity.name.class.declaration
+#                         ^ source.scala
+#                          ^ source.scala punctuation.section.block.begin.scala
+>  val x = 3
+#^^ source.scala
+#  ^^^ source.scala keyword.declaration.stable.scala
+#     ^ source.scala
+#      ^ source.scala variable.other.declaration.scala
+#       ^ source.scala
+#        ^ source.scala keyword.operator.comparison.scala
+#         ^ source.scala
+#          ^ source.scala constant.numeric.scala
+>  val Object = 3        
+#^^ source.scala
+#  ^^^ source.scala keyword.declaration.stable.scala
+#     ^ source.scala
+#      ^^^^^^ source.scala constant.other.declaration.scala
+#            ^ source.scala
+#             ^ source.scala keyword.operator.comparison.scala
+#              ^ source.scala
+#               ^ source.scala constant.numeric.scala
+#                ^^^^^^^^^ source.scala
+>  val maxIndex = 3   
+#^^ source.scala
+#  ^^^ source.scala keyword.declaration.stable.scala
+#     ^ source.scala
+#      ^^^^^^^^ source.scala variable.other.declaration.scala
+#              ^ source.scala
+#               ^ source.scala keyword.operator.comparison.scala
+#                ^ source.scala
+#                 ^ source.scala constant.numeric.scala
+#                  ^^^^ source.scala
+>  val p2p = 3      
+#^^ source.scala
+#  ^^^ source.scala keyword.declaration.stable.scala
+#     ^ source.scala
+#      ^^^ source.scala variable.other.declaration.scala
+#         ^ source.scala
+#          ^ source.scala keyword.operator.comparison.scala
+#           ^ source.scala
+#            ^ source.scala constant.numeric.scala
+#             ^^^^^^^ source.scala
+>  val empty_? = 3
+#^^ source.scala
+#  ^^^ source.scala keyword.declaration.stable.scala
+#     ^ source.scala
+#      ^^^^^^^ source.scala variable.other.declaration.scala
+#             ^ source.scala
+#              ^ source.scala keyword.operator.comparison.scala
+#               ^ source.scala
+#                ^ source.scala constant.numeric.scala
+>  val + = 3         
+#^^ source.scala
+#  ^^^ source.scala keyword.declaration.stable.scala
+#     ^ source.scala
+#      ^ source.scala variable.other.declaration.scala
+#       ^ source.scala
+#        ^ source.scala keyword.operator.comparison.scala
+#         ^ source.scala
+#          ^ source.scala constant.numeric.scala
+#           ^^^^^^^^^^ source.scala
+>  val `yield` = 3       
+#^^ source.scala
+#  ^^^ source.scala keyword.declaration.stable.scala
+#     ^ source.scala
+#      ^^^^^^^ source.scala variable.other.declaration.scala
+#             ^ source.scala
+#              ^ source.scala keyword.operator.comparison.scala
+#               ^ source.scala
+#                ^ source.scala constant.numeric.scala
+#                 ^^^^^^^^ source.scala
+>  val αρετη = 3     
+#^^^^^^^^^^^^ source.scala
+#            ^ source.scala keyword.operator.comparison.scala
+#             ^ source.scala
+#              ^ source.scala constant.numeric.scala
+#               ^^^^^^ source.scala
+>  val _y = 3       
+#^^ source.scala
+#  ^^^ source.scala keyword.declaration.stable.scala
+#     ^ source.scala
+#      ^^ source.scala variable.other.declaration.scala
+#        ^ source.scala
+#         ^ source.scala keyword.operator.comparison.scala
+#          ^ source.scala
+#           ^ source.scala constant.numeric.scala
+#            ^^^^^^^^ source.scala
+>  val dot_product_* = 3
+#^^ source.scala
+#  ^^^ source.scala keyword.declaration.stable.scala
+#     ^ source.scala
+#      ^^^^^^^^^^^^^ source.scala variable.other.declaration.scala
+#                   ^ source.scala
+#                    ^ source.scala keyword.operator.comparison.scala
+#                     ^ source.scala
+#                      ^ source.scala constant.numeric.scala
+>  val __system = 3  
+#^^ source.scala
+#  ^^^ source.scala keyword.declaration.stable.scala
+#     ^ source.scala
+#      ^^^^^^^^ source.scala variable.other.declaration.scala
+#              ^ source.scala
+#               ^ source.scala keyword.operator.comparison.scala
+#                ^ source.scala
+#                 ^ source.scala constant.numeric.scala
+#                  ^^^ source.scala
+>  val _MAX_LEN_ = 3
+#^^ source.scala
+#  ^^^ source.scala keyword.declaration.stable.scala
+#     ^ source.scala
+#      ^^^^^^^^^ source.scala variable.other.declaration.scala
+#               ^ source.scala
+#                ^ source.scala keyword.operator.comparison.scala
+#                 ^ source.scala
+#                  ^ source.scala constant.numeric.scala
+>}
+#^ source.scala punctuation.section.block.end.scala
+>
+>object IntegerLiterals {
+#^^^^^^ source.scala keyword.declaration.scala
+#      ^ source.scala
+#       ^^^^^^^^^^^^^^^ source.scala entity.name.class.declaration
+#                      ^ source.scala
+#                       ^ source.scala punctuation.section.block.begin.scala
+>  (0, 21,  0xFFFFFFFF, -42L)        
+#^^ source.scala
+#  ^ source.scala meta.bracket.scala
+#   ^ source.scala constant.numeric.scala
+#    ^^ source.scala
+#      ^^ source.scala constant.numeric.scala
+#        ^^^ source.scala
+#           ^^^^^^^^^^ source.scala constant.numeric.scala
+#                     ^^ source.scala
+#                       ^ source.scala keyword.operator.arithmetic.scala
+#                        ^^^ source.scala constant.numeric.scala
+#                           ^ source.scala meta.bracket.scala
+#                            ^^^^^^^^^ source.scala
+>}
+#^ source.scala punctuation.section.block.end.scala
+>
+>object FloatingPointLiterals {
+#^^^^^^ source.scala keyword.declaration.scala
+#      ^ source.scala
+#       ^^^^^^^^^^^^^^^^^^^^^ source.scala entity.name.class.declaration
+#                            ^ source.scala
+#                             ^ source.scala punctuation.section.block.begin.scala
+>  ( 0.0, 1e30f, 3.14159f, 1.0e-100, .1  )
+#^^ source.scala
+#  ^ source.scala meta.bracket.scala
+#   ^ source.scala
+#    ^^^ source.scala constant.numeric.scala
+#       ^^^^^^^^^ source.scala
+#                ^^^^^^^^ source.scala constant.numeric.scala
+#                        ^^ source.scala
+#                          ^^^^^^^^ source.scala constant.numeric.scala
+#                                  ^^^ source.scala
+#                                     ^ source.scala constant.numeric.scala
+#                                      ^^ source.scala
+#                                        ^ source.scala meta.bracket.scala
+>}
+#^ source.scala punctuation.section.block.end.scala
+>
+>object Boolean {
+#^^^^^^ source.scala keyword.declaration.scala
+#      ^ source.scala
+#       ^^^^^^^ source.scala entity.name.class.declaration
+#              ^ source.scala
+#               ^ source.scala punctuation.section.block.begin.scala
+>    (true, false)
+#^^^^ source.scala
+#    ^ source.scala meta.bracket.scala
+#     ^^^^ source.scala constant.language.scala
+#         ^^ source.scala
+#           ^^^^^ source.scala constant.language.scala
+#                ^ source.scala meta.bracket.scala
+>}
+#^ source.scala punctuation.section.block.end.scala
+>
+>object CharacterLiterals {
+#^^^^^^ source.scala keyword.declaration.scala
+#      ^ source.scala
+#       ^^^^^^^^^^^^^^^^^ source.scala entity.name.class.declaration
+#                        ^ source.scala
+#                         ^ source.scala punctuation.section.block.begin.scala
+>    ('a',    '\u0041',    '\n',    '\t')
+#^^^^ source.scala
+#    ^ source.scala meta.bracket.scala
+#     ^ source.scala constant.character.literal.scala punctuation.definition.character.begin.scala
+#      ^ source.scala constant.character.literal.scala
+#       ^ source.scala constant.character.literal.scala punctuation.definition.character.end.scala
+#        ^^^^^ source.scala
+#             ^ source.scala constant.character.literal.scala punctuation.definition.character.begin.scala
+#              ^^^^^^ source.scala constant.character.literal.scala constant.character.escape.scala
+#                    ^ source.scala constant.character.literal.scala punctuation.definition.character.end.scala
+#                     ^^^^^ source.scala
+#                          ^ source.scala constant.character.literal.scala punctuation.definition.character.begin.scala
+#                           ^^ source.scala constant.character.literal.scala constant.character.escape.scala
+#                             ^ source.scala constant.character.literal.scala punctuation.definition.character.end.scala
+#                              ^^^^^ source.scala
+#                                   ^ source.scala constant.character.literal.scala punctuation.definition.character.begin.scala
+#                                    ^^ source.scala constant.character.literal.scala constant.character.escape.scala
+#                                      ^ source.scala constant.character.literal.scala punctuation.definition.character.end.scala
+#                                       ^ source.scala meta.bracket.scala
+>}
+#^ source.scala punctuation.section.block.end.scala
+>
+>object StringLiterals {
+#^^^^^^ source.scala keyword.declaration.scala
+#      ^ source.scala
+#       ^^^^^^^^^^^^^^ source.scala entity.name.class.declaration
+#                     ^ source.scala
+#                      ^ source.scala punctuation.section.block.begin.scala
+>    ("Hello,\nWorld!",  "This string contains a \" character.")
+#^^^^ source.scala
+#    ^ source.scala meta.bracket.scala
+#     ^ source.scala string.quoted.double.scala punctuation.definition.string.begin.scala
+#      ^^^^^^ source.scala string.quoted.double.scala
+#            ^^ source.scala string.quoted.double.scala constant.character.escape.scala
+#              ^^^^^^ source.scala string.quoted.double.scala
+#                    ^ source.scala string.quoted.double.scala punctuation.definition.string.end.scala
+#                     ^^^ source.scala
+#                        ^ source.scala string.quoted.double.scala punctuation.definition.string.begin.scala
+#                         ^^^^^^^^^^^^^^^^^^^^^^^ source.scala string.quoted.double.scala
+#                                                ^^ source.scala string.quoted.double.scala constant.character.escape.scala
+#                                                  ^^^^^^^^^^^ source.scala string.quoted.double.scala
+#                                                             ^ source.scala string.quoted.double.scala punctuation.definition.string.end.scala
+#                                                              ^ source.scala meta.bracket.scala
+>
+>    """the present string
+#^^^^ source.scala
+#    ^^^ source.scala string.quoted.triple.scala punctuation.definition.string.begin.scala
+#       ^^^^^^^^^^^^^^^^^^^ source.scala string.quoted.triple.scala
+>     spans three
+#^^^^^^^^^^^^^^^^^ source.scala string.quoted.triple.scala
+>     lines."""
+#^^^^^^^^^^^ source.scala string.quoted.triple.scala
+#           ^^^ source.scala string.quoted.triple.scala punctuation.definition.string.end.scala
+>
+>    """the present string
+#^^^^ source.scala
+#    ^^^ source.scala string.quoted.triple.scala punctuation.definition.string.begin.scala
+#       ^^^^^^^^^^^^^^^^^^^ source.scala string.quoted.triple.scala
+>      |spans three
+#^^^^^^^^^^^^^^^^^^^ source.scala string.quoted.triple.scala
+>      |lines.""".stripMargin
+#^^^^^^^^^^^^^ source.scala string.quoted.triple.scala
+#             ^^^ source.scala string.quoted.triple.scala punctuation.definition.string.end.scala
+#                ^^^^^^^^^^^^^ source.scala
+>
+>
+>  val escapeSequences = "\b\t\n\f\r\"\'\\"
+#^^ source.scala
+#  ^^^ source.scala keyword.declaration.stable.scala
+#     ^ source.scala
+#      ^^^^^^^^^^^^^^^ source.scala variable.other.declaration.scala
+#                     ^ source.scala
+#                      ^ source.scala keyword.operator.comparison.scala
+#                       ^ source.scala
+#                        ^ source.scala string.quoted.double.scala punctuation.definition.string.begin.scala
+#                         ^^ source.scala string.quoted.double.scala constant.character.escape.scala
+#                           ^^ source.scala string.quoted.double.scala constant.character.escape.scala
+#                             ^^ source.scala string.quoted.double.scala constant.character.escape.scala
+#                               ^^ source.scala string.quoted.double.scala constant.character.escape.scala
+#                                 ^^ source.scala string.quoted.double.scala constant.character.escape.scala
+#                                   ^^ source.scala string.quoted.double.scala constant.character.escape.scala
+#                                     ^^ source.scala string.quoted.double.scala constant.character.escape.scala
+#                                       ^^ source.scala string.quoted.double.scala constant.character.escape.scala
+#                                         ^ source.scala string.quoted.double.scala punctuation.definition.string.end.scala
+>
+>  s"$x plain ${val x = y}"
+#^^ source.scala
+#  ^ source.scala keyword.interpolation.scala
+#   ^ source.scala string.quoted.double.interpolated.scala punctuation.definition.string.begin.scala
+#    ^ source.scala punctuation.definition.template-expression.begin.scala
+#     ^ source.scala
+#      ^ source.scala string.quoted.double.interpolated.scala
+#       ^ source.scala string.quoted.double.interpolated.scala
+#        ^ source.scala string.quoted.double.interpolated.scala
+#         ^ source.scala string.quoted.double.interpolated.scala
+#          ^ source.scala string.quoted.double.interpolated.scala
+#           ^ source.scala string.quoted.double.interpolated.scala
+#            ^ source.scala string.quoted.double.interpolated.scala
+#             ^^ source.scala punctuation.definition.template-expression.scala punctuation.definition.template-expression.begin.scala
+#               ^^^ source.scala punctuation.definition.template-expression.scala keyword.declaration.stable.scala
+#                  ^ source.scala punctuation.definition.template-expression.scala
+#                   ^ source.scala punctuation.definition.template-expression.scala variable.other.declaration.scala
+#                    ^ source.scala punctuation.definition.template-expression.scala
+#                     ^ source.scala punctuation.definition.template-expression.scala keyword.operator.comparison.scala
+#                      ^^ source.scala punctuation.definition.template-expression.scala
+#                        ^ source.scala punctuation.definition.template-expression.scala punctuation.definition.template-expression.end.scala
+#                         ^ source.scala string.quoted.double.interpolated.scala punctuation.definition.string.end.scala
+>  custom"$x plain ${val x = y}"
+#^^ source.scala
+#  ^^^^^^ source.scala keyword.interpolation.scala
+#        ^ source.scala string.quoted.double.interpolated.scala punctuation.definition.string.begin.scala
+#         ^ source.scala punctuation.definition.template-expression.begin.scala
+#          ^ source.scala
+#           ^ source.scala string.quoted.double.interpolated.scala
+#            ^ source.scala string.quoted.double.interpolated.scala
+#             ^ source.scala string.quoted.double.interpolated.scala
+#              ^ source.scala string.quoted.double.interpolated.scala
+#               ^ source.scala string.quoted.double.interpolated.scala
+#                ^ source.scala string.quoted.double.interpolated.scala
+#                 ^ source.scala string.quoted.double.interpolated.scala
+#                  ^^ source.scala punctuation.definition.template-expression.scala punctuation.definition.template-expression.begin.scala
+#                    ^^^ source.scala punctuation.definition.template-expression.scala keyword.declaration.stable.scala
+#                       ^ source.scala punctuation.definition.template-expression.scala
+#                        ^ source.scala punctuation.definition.template-expression.scala variable.other.declaration.scala
+#                         ^ source.scala punctuation.definition.template-expression.scala
+#                          ^ source.scala punctuation.definition.template-expression.scala keyword.operator.comparison.scala
+#                           ^^ source.scala punctuation.definition.template-expression.scala
+#                             ^ source.scala punctuation.definition.template-expression.scala punctuation.definition.template-expression.end.scala
+#                              ^ source.scala string.quoted.double.interpolated.scala punctuation.definition.string.end.scala
+>
+>  s"""$x plain ${val x = y}"""
+#^^ source.scala
+#  ^ source.scala keyword.interpolation.scala
+#   ^^^ source.scala string.quoted.triple.interpolated.scala punctuation.definition.string.begin.scala
+#      ^ source.scala punctuation.definition.template-expression.begin.scala
+#       ^ source.scala
+#        ^ source.scala string.quoted.triple.interpolated.scala
+#         ^ source.scala string.quoted.triple.interpolated.scala
+#          ^ source.scala string.quoted.triple.interpolated.scala
+#           ^ source.scala string.quoted.triple.interpolated.scala
+#            ^ source.scala string.quoted.triple.interpolated.scala
+#             ^ source.scala string.quoted.triple.interpolated.scala
+#              ^ source.scala string.quoted.triple.interpolated.scala
+#               ^^ source.scala punctuation.definition.template-expression.scala punctuation.definition.template-expression.begin.scala
+#                 ^^^ source.scala punctuation.definition.template-expression.scala keyword.declaration.stable.scala
+#                    ^ source.scala punctuation.definition.template-expression.scala
+#                     ^ source.scala punctuation.definition.template-expression.scala variable.other.declaration.scala
+#                      ^ source.scala punctuation.definition.template-expression.scala
+#                       ^ source.scala punctuation.definition.template-expression.scala keyword.operator.comparison.scala
+#                        ^^ source.scala punctuation.definition.template-expression.scala
+#                          ^ source.scala punctuation.definition.template-expression.scala punctuation.definition.template-expression.end.scala
+#                           ^^^ source.scala string.quoted.triple.interpolated.scala punctuation.definition.string.end.scala
+>  custom"""$x plain ${val x = y}"""
+#^^ source.scala
+#  ^^^^^^ source.scala keyword.interpolation.scala
+#        ^^^ source.scala string.quoted.triple.interpolated.scala punctuation.definition.string.begin.scala
+#           ^ source.scala punctuation.definition.template-expression.begin.scala
+#            ^ source.scala
+#             ^ source.scala string.quoted.triple.interpolated.scala
+#              ^ source.scala string.quoted.triple.interpolated.scala
+#               ^ source.scala string.quoted.triple.interpolated.scala
+#                ^ source.scala string.quoted.triple.interpolated.scala
+#                 ^ source.scala string.quoted.triple.interpolated.scala
+#                  ^ source.scala string.quoted.triple.interpolated.scala
+#                   ^ source.scala string.quoted.triple.interpolated.scala
+#                    ^^ source.scala punctuation.definition.template-expression.scala punctuation.definition.template-expression.begin.scala
+#                      ^^^ source.scala punctuation.definition.template-expression.scala keyword.declaration.stable.scala
+#                         ^ source.scala punctuation.definition.template-expression.scala
+#                          ^ source.scala punctuation.definition.template-expression.scala variable.other.declaration.scala
+#                           ^ source.scala punctuation.definition.template-expression.scala
+#                            ^ source.scala punctuation.definition.template-expression.scala keyword.operator.comparison.scala
+#                             ^^ source.scala punctuation.definition.template-expression.scala
+#                               ^ source.scala punctuation.definition.template-expression.scala punctuation.definition.template-expression.end.scala
+#                                ^^^ source.scala string.quoted.triple.interpolated.scala punctuation.definition.string.end.scala
+>}
+#^ source.scala punctuation.section.block.end.scala
+>
+>object Symbols {
+#^^^^^^ source.scala keyword.declaration.scala
+#      ^ source.scala
+#       ^^^^^^^ source.scala entity.name.class.declaration
+#              ^ source.scala
+#               ^ source.scala punctuation.section.block.begin.scala
+>    ('x, 'X, 'αρετη, '=, '+ )
+#^^^^ source.scala
+#    ^ source.scala meta.bracket.scala
+#     ^^ source.scala constant.other.symbol.scala
+#       ^^ source.scala
+#         ^^ source.scala constant.other.symbol.scala
+#           ^^ source.scala
+#             ^^^^^^ source.scala constant.other.symbol.scala
+#                   ^^ source.scala
+#                     ^ source.scala constant.character.literal.scala punctuation.definition.character.begin.scala
+#                      ^^^ source.scala constant.character.literal.scala invalid.illegal.character-literal-too-long
+#                         ^ source.scala constant.character.literal.scala punctuation.definition.character.end.scala
+#                          ^ source.scala keyword.operator.arithmetic.scala
+#                           ^ source.scala
+#                            ^ source.scala meta.bracket.scala
+>}
+#^ source.scala punctuation.section.block.end.scala
+>
+>// single line comment
+#^^ source.scala comment.line.double-slash.scala punctuation.definition.comment.scala
+#  ^^^^^^^^^^^^^^^^^^^^ source.scala comment.line.double-slash.scala
+>
+>  /*
+#^^ source.scala
+#  ^^ source.scala comment.block.scala punctuation.definition.comment.scala
+>  
+>multiline comment*/
+#^^^^^^^^^^^^^^^^^ source.scala comment.block.scala
+#                 ^^ source.scala comment.block.scala punctuation.definition.comment.scala
+>
+>  /**
+#^^ source.scala comment.block.documentation.scala
+#  ^^^ source.scala comment.block.documentation.scala punctuation.definition.comment.scala
+>   * Scaladoc comment
+#^^^^^^^^^^^^^^^^^^^^^^ source.scala comment.block.documentation.scala
+>   * @scaladoc @param 
+#^^^^^^^^^^^^^^^^^^^^^^^ source.scala comment.block.documentation.scala
+>   */
+#^^^ source.scala comment.block.documentation.scala
+#   ^^ source.scala comment.block.documentation.scala punctuation.definition.comment.scala
+>
+>   /*  nested /* multi-line */ comment */
+#^^^ source.scala
+#   ^^ source.scala comment.block.scala punctuation.definition.comment.scala
+#     ^^^^^^^^^^^^^^^^^^^^^^^ source.scala comment.block.scala
+#                            ^^ source.scala comment.block.scala punctuation.definition.comment.scala
+#                              ^^^^^^^^^ source.scala
+#                                       ^ source.scala keyword.operator.arithmetic.scala
+#                                        ^ source.scala keyword.operator.arithmetic.scala
+>
+>
+>object Xml {
+#^^^^^^ source.scala keyword.declaration.scala
+#      ^ source.scala
+#       ^^^ source.scala entity.name.class.declaration
+#          ^ source.scala
+#           ^ source.scala punctuation.section.block.begin.scala
+>    val b = <book>
+#^^^^ source.scala
+#    ^^^ source.scala keyword.declaration.stable.scala
+#       ^ source.scala
+#        ^ source.scala variable.other.declaration.scala
+#         ^ source.scala
+#          ^ source.scala keyword.operator.comparison.scala
+#           ^ source.scala
+#            ^ source.scala meta.tag.xml punctuation.definition.tag.xml
+#             ^^^^ source.scala meta.tag.xml entity.name.tag.localname.xml
+#                 ^ source.scala meta.tag.xml punctuation.definition.tag.xml
+>          <title>The Scala Language Specification</title>
+#^^^^^^^^^^ source.scala
+#          ^ source.scala meta.tag.xml punctuation.definition.tag.xml
+#           ^^^^^ source.scala meta.tag.xml entity.name.tag.localname.xml
+#                ^ source.scala meta.tag.xml punctuation.definition.tag.xml
+#                 ^^^ source.scala entity.name.class
+#                    ^ source.scala
+#                     ^^^^^ source.scala entity.name.class
+#                          ^ source.scala
+#                           ^^^^^^^^ source.scala entity.name.class
+#                                   ^ source.scala
+#                                    ^^^^^^^^^^^^^ source.scala entity.name.class
+#                                                 ^^ source.scala meta.tag.xml punctuation.definition.tag.xml
+#                                                   ^^^^^ source.scala meta.tag.xml entity.name.tag.localname.xml
+#                                                        ^ source.scala meta.tag.xml punctuation.definition.tag.xml
+>          <version>{scalaBook.version}</version>
+#^^^^^^^^^^ source.scala
+#          ^ source.scala meta.tag.xml punctuation.definition.tag.xml
+#           ^^^^^^^ source.scala meta.tag.xml entity.name.tag.localname.xml
+#                  ^ source.scala meta.tag.xml punctuation.definition.tag.xml
+#                   ^ source.scala punctuation.section.block.begin.scala
+#                    ^^^^^^^^^^^^^^^^^ source.scala
+#                                     ^ source.scala punctuation.section.block.end.scala
+#                                      ^^ source.scala meta.tag.xml punctuation.definition.tag.xml
+#                                        ^^^^^^^ source.scala meta.tag.xml entity.name.tag.localname.xml
+#                                               ^ source.scala meta.tag.xml punctuation.definition.tag.xml
+>          <authors>{scalaBook.authors.mkList("", ", ", "")}</authors>
+#^^^^^^^^^^ source.scala
+#          ^ source.scala meta.tag.xml punctuation.definition.tag.xml
+#           ^^^^^^^ source.scala meta.tag.xml entity.name.tag.localname.xml
+#                  ^ source.scala meta.tag.xml punctuation.definition.tag.xml
+#                   ^ source.scala punctuation.section.block.begin.scala
+#                    ^^^^^^^^^^^^^^^^^^^^^^^^ source.scala
+#                                            ^ source.scala meta.bracket.scala
+#                                             ^ source.scala string.quoted.double.scala punctuation.definition.string.begin.scala
+#                                              ^ source.scala string.quoted.double.scala punctuation.definition.string.end.scala
+#                                               ^^ source.scala
+#                                                 ^ source.scala string.quoted.double.scala punctuation.definition.string.begin.scala
+#                                                  ^^ source.scala string.quoted.double.scala
+#                                                    ^ source.scala string.quoted.double.scala punctuation.definition.string.end.scala
+#                                                     ^^ source.scala
+#                                                       ^ source.scala string.quoted.double.scala punctuation.definition.string.begin.scala
+#                                                        ^ source.scala string.quoted.double.scala punctuation.definition.string.end.scala
+#                                                         ^ source.scala meta.bracket.scala
+#                                                          ^ source.scala punctuation.section.block.end.scala
+#                                                           ^^ source.scala meta.tag.xml punctuation.definition.tag.xml
+#                                                             ^^^^^^^ source.scala meta.tag.xml entity.name.tag.localname.xml
+#                                                                    ^ source.scala meta.tag.xml punctuation.definition.tag.xml
+>        </book>
+#^^^^^^^^ source.scala
+#        ^^ source.scala meta.tag.xml punctuation.definition.tag.xml
+#          ^^^^ source.scala meta.tag.xml entity.name.tag.localname.xml
+#              ^ source.scala meta.tag.xml punctuation.definition.tag.xml
+>}
+#^ source.scala punctuation.section.block.end.scala
+>
