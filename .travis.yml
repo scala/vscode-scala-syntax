@@ -10,7 +10,7 @@ stages:
 jobs:
   include:
     - stage: build
-      script: yarn build
+      script: yarn build && yarn test
     - stage: release
       script: bin/ci-release.sh
 
