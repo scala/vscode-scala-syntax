@@ -1,0 +1,2530 @@
+>package org.scala.syntax
+#^^^^^^^ source.scala meta.package.scala keyword.other.import.scala
+#       ^ source.scala meta.package.scala
+#        ^^^ source.scala meta.package.scala entity.name.package.scala
+#           ^ source.scala meta.package.scala punctuation.definition.package
+#            ^^^^^ source.scala meta.package.scala entity.name.package.scala
+#                 ^ source.scala meta.package.scala punctuation.definition.package
+#                  ^^^^^^ source.scala meta.package.scala entity.name.package.scala
+>package test
+#^^^^^^^ source.scala meta.package.scala keyword.other.import.scala
+#       ^ source.scala meta.package.scala
+#        ^^^^ source.scala meta.package.scala entity.name.package.scala
+>
+>
+>class TreeMap[A <: Comparable[A], B] { }
+#^^^^^ source.scala keyword.declaration.scala
+#     ^ source.scala
+#      ^^^^^^^ source.scala entity.name.class.declaration
+#             ^ source.scala meta.bracket.scala
+#              ^ source.scala entity.name.class
+#               ^ source.scala
+#                ^ source.scala keyword.operator.comparison.scala
+#                 ^ source.scala keyword.operator.scala
+#                  ^ source.scala
+#                   ^^^^^^^^^^ source.scala entity.name.class
+#                             ^ source.scala meta.bracket.scala
+#                              ^ source.scala entity.name.class
+#                               ^ source.scala meta.bracket.scala
+#                                ^^ source.scala
+#                                  ^ source.scala entity.name.class
+#                                   ^ source.scala meta.bracket.scala
+#                                    ^ source.scala
+#                                     ^ source.scala punctuation.section.block.begin.scala
+#                                      ^ source.scala
+#                                       ^ source.scala punctuation.section.block.end.scala
+>class List[A] { }
+#^^^^^ source.scala keyword.declaration.scala
+#     ^ source.scala
+#      ^^^^ source.scala entity.name.class.declaration
+#          ^ source.scala meta.bracket.scala
+#           ^ source.scala entity.name.class
+#            ^ source.scala meta.bracket.scala
+#             ^ source.scala
+#              ^ source.scala punctuation.section.block.begin.scala
+#               ^ source.scala
+#                ^ source.scala punctuation.section.block.end.scala
+>class I extends Comparable[I] {}
+#^^^^^ source.scala keyword.declaration.scala
+#     ^ source.scala
+#      ^ source.scala entity.name.class.declaration
+#       ^ source.scala
+#        ^^^^^^^ source.scala keyword.declaration.scala
+#               ^ source.scala
+#                ^^^^^^^^^^ source.scala entity.other.inherited-class.scala
+#                          ^ source.scala meta.bracket.scala
+#                           ^ source.scala entity.name.class
+#                            ^ source.scala meta.bracket.scala
+#                             ^ source.scala
+#                              ^ source.scala punctuation.section.block.begin.scala
+#                               ^ source.scala punctuation.section.block.end.scala
+>
+>class F[M[_], X] { }
+#^^^^^ source.scala keyword.declaration.scala
+#     ^ source.scala
+#      ^ source.scala entity.name.class.declaration
+#       ^ source.scala meta.bracket.scala
+#        ^ source.scala entity.name.class
+#         ^ source.scala meta.bracket.scala
+#          ^ source.scala
+#           ^ source.scala meta.bracket.scala
+#            ^^ source.scala
+#              ^ source.scala entity.name.class
+#               ^ source.scala meta.bracket.scala
+#                ^ source.scala
+#                 ^ source.scala punctuation.section.block.begin.scala
+#                  ^ source.scala
+#                   ^ source.scala punctuation.section.block.end.scala
+>class S[K <: String] {}
+#^^^^^ source.scala keyword.declaration.scala
+#     ^ source.scala
+#      ^ source.scala entity.name.class.declaration
+#       ^ source.scala meta.bracket.scala
+#        ^ source.scala entity.name.class
+#         ^ source.scala
+#          ^ source.scala keyword.operator.comparison.scala
+#           ^ source.scala keyword.operator.scala
+#            ^ source.scala
+#             ^^^^^^ source.scala storage.type.scala
+#                   ^ source.scala meta.bracket.scala
+#                    ^ source.scala
+#                     ^ source.scala punctuation.section.block.begin.scala
+#                      ^ source.scala punctuation.section.block.end.scala
+>class G[M[ Z <: I ], I] { }
+#^^^^^ source.scala keyword.declaration.scala
+#     ^ source.scala
+#      ^ source.scala entity.name.class.declaration
+#       ^ source.scala meta.bracket.scala
+#        ^ source.scala entity.name.class
+#         ^ source.scala meta.bracket.scala
+#          ^ source.scala
+#           ^ source.scala entity.name.class
+#            ^ source.scala
+#             ^ source.scala keyword.operator.comparison.scala
+#              ^ source.scala keyword.operator.scala
+#               ^ source.scala
+#                ^ source.scala entity.name.class
+#                 ^ source.scala
+#                  ^ source.scala meta.bracket.scala
+#                   ^^ source.scala
+#                     ^ source.scala entity.name.class
+#                      ^ source.scala meta.bracket.scala
+#                       ^ source.scala
+#                        ^ source.scala punctuation.section.block.begin.scala
+#                         ^ source.scala
+#                          ^ source.scala punctuation.section.block.end.scala
+>
+>case class Bird (val name: String @suspendable) extends Object {
+#^^^^ source.scala keyword.declaration.scala
+#    ^ source.scala
+#     ^^^^^ source.scala keyword.declaration.scala
+#          ^ source.scala
+#           ^^^^ source.scala entity.name.class.declaration
+#               ^ source.scala
+#                ^ source.scala meta.bracket.scala
+#                 ^^^ source.scala keyword.declaration.stable.scala
+#                    ^ source.scala
+#                     ^^^^ source.scala variable.other.declaration.scala
+#                         ^ source.scala keyword.operator.scala
+#                          ^ source.scala
+#                           ^^^^^^ source.scala storage.type.scala
+#                                 ^ source.scala
+#                                  ^ source.scala keyword.operator.scala
+#                                   ^^^^^^^^^^^ source.scala
+#                                              ^ source.scala meta.bracket.scala
+#                                               ^ source.scala
+#                                                ^^^^^^^ source.scala keyword.declaration.scala
+#                                                       ^ source.scala
+#                                                        ^^^^^^ source.scala entity.other.inherited-class.scala
+#                                                              ^ source.scala
+#                                                               ^ source.scala punctuation.section.block.begin.scala
+>    def fly(height: Int @suspendable) = ???
+#^^^^ source.scala
+#    ^^^ source.scala keyword.declaration.scala
+#       ^ source.scala
+#        ^^^ source.scala entity.name.function.declaration
+#           ^ source.scala meta.bracket.scala
+#            ^^^^^^ source.scala variable.parameter.scala
+#                  ^ source.scala meta.colon.scala
+#                   ^ source.scala
+#                    ^^^ source.scala storage.type.primitive.scala
+#                       ^ source.scala
+#                        ^ source.scala keyword.operator.scala
+#                         ^^^^^^^^^^^ source.scala
+#                                    ^ source.scala meta.bracket.scala
+#                                     ^ source.scala
+#                                      ^ source.scala keyword.operator.comparison.scala
+#                                       ^ source.scala
+#                                        ^^^ source.scala keyword.operator.scala
+>    def walk[T1 : T2](_distance: Int, empty_? : Int, `yield`: String, αρετη: Boolean)(implicit fa: Functor[T1]) = ???
+#^^^^ source.scala
+#    ^^^ source.scala keyword.declaration.scala
+#       ^ source.scala
+#        ^^^^ source.scala entity.name.function.declaration
+#            ^ source.scala meta.bracket.scala
+#             ^^ source.scala entity.name.class
+#               ^ source.scala
+#                ^ source.scala keyword.operator.scala
+#                 ^ source.scala
+#                  ^^ source.scala entity.name.class
+#                    ^ source.scala meta.bracket.scala
+#                     ^ source.scala meta.bracket.scala
+#                      ^^^^^^^^^ source.scala variable.parameter.scala
+#                               ^ source.scala meta.colon.scala
+#                                ^ source.scala
+#                                 ^^^ source.scala storage.type.primitive.scala
+#                                    ^^ source.scala
+#                                      ^^^^^^^ source.scala
+#                                             ^ source.scala
+#                                              ^ source.scala keyword.operator.scala
+#                                               ^ source.scala
+#                                                ^^^ source.scala storage.type.primitive.scala
+#                                                   ^^ source.scala
+#                                                     ^^^^^^^ source.scala variable.parameter.scala
+#                                                            ^ source.scala meta.colon.scala
+#                                                             ^ source.scala
+#                                                              ^^^^^^ source.scala storage.type.scala
+#                                                                    ^^^^^^^ source.scala
+#                                                                           ^ source.scala keyword.operator.scala
+#                                                                            ^ source.scala
+#                                                                             ^^^^^^^ source.scala storage.type.primitive.scala
+#                                                                                    ^ source.scala meta.bracket.scala
+#                                                                                     ^ source.scala meta.bracket.scala
+#                                                                                      ^^^^^^^^ source.scala storage.modifier.other
+#                                                                                              ^ source.scala
+#                                                                                               ^^ source.scala variable.parameter.scala
+#                                                                                                 ^ source.scala meta.colon.scala
+#                                                                                                  ^ source.scala
+#                                                                                                   ^^^^^^^ source.scala entity.name.class
+#                                                                                                          ^ source.scala meta.bracket.scala
+#                                                                                                           ^^ source.scala entity.name.class
+#                                                                                                             ^ source.scala meta.bracket.scala
+#                                                                                                              ^ source.scala meta.bracket.scala
+#                                                                                                               ^ source.scala
+#                                                                                                                ^ source.scala keyword.operator.comparison.scala
+#                                                                                                                 ^ source.scala
+#                                                                                                                  ^^^ source.scala keyword.operator.scala
+>    def c (x: Int) (y: String, z: String): String = ???
+#^^^^ source.scala
+#    ^^^ source.scala keyword.declaration.scala
+#       ^ source.scala
+#        ^ source.scala entity.name.function.declaration
+#         ^ source.scala
+#          ^ source.scala meta.bracket.scala
+#           ^ source.scala variable.parameter.scala
+#            ^ source.scala meta.colon.scala
+#             ^ source.scala
+#              ^^^ source.scala storage.type.primitive.scala
+#                 ^ source.scala meta.bracket.scala
+#                  ^ source.scala
+#                   ^ source.scala meta.bracket.scala
+#                    ^ source.scala variable.parameter.scala
+#                     ^ source.scala meta.colon.scala
+#                      ^ source.scala
+#                       ^^^^^^ source.scala storage.type.scala
+#                             ^^ source.scala
+#                               ^ source.scala variable.parameter.scala
+#                                ^ source.scala meta.colon.scala
+#                                 ^ source.scala
+#                                  ^^^^^^ source.scala storage.type.scala
+#                                        ^ source.scala meta.bracket.scala
+#                                         ^ source.scala keyword.operator.scala
+#                                          ^ source.scala
+#                                           ^^^^^^ source.scala storage.type.scala
+#                                                 ^ source.scala
+#                                                  ^ source.scala keyword.operator.comparison.scala
+#                                                   ^ source.scala
+#                                                    ^^^ source.scala keyword.operator.scala
+>    def union[A <: Comparable[A]] (x: Set[A], xs: Set[A]): Set[A]
+#^^^^ source.scala
+#    ^^^ source.scala keyword.declaration.scala
+#       ^ source.scala
+#        ^^^^^ source.scala entity.name.function.declaration
+#             ^ source.scala meta.bracket.scala
+#              ^ source.scala entity.name.class
+#               ^ source.scala
+#                ^ source.scala keyword.operator.comparison.scala
+#                 ^ source.scala keyword.operator.scala
+#                  ^ source.scala
+#                   ^^^^^^^^^^ source.scala entity.name.class
+#                             ^ source.scala meta.bracket.scala
+#                              ^ source.scala entity.name.class
+#                               ^ source.scala meta.bracket.scala
+#                                ^ source.scala meta.bracket.scala
+#                                 ^ source.scala
+#                                  ^ source.scala meta.bracket.scala
+#                                   ^ source.scala variable.parameter.scala
+#                                    ^ source.scala meta.colon.scala
+#                                     ^ source.scala
+#                                      ^^^ source.scala entity.name.class
+#                                         ^ source.scala meta.bracket.scala
+#                                          ^ source.scala entity.name.class
+#                                           ^ source.scala meta.bracket.scala
+#                                            ^^ source.scala
+#                                              ^^ source.scala variable.parameter.scala
+#                                                ^ source.scala meta.colon.scala
+#                                                 ^ source.scala
+#                                                  ^^^ source.scala entity.name.class
+#                                                     ^ source.scala meta.bracket.scala
+#                                                      ^ source.scala entity.name.class
+#                                                       ^ source.scala meta.bracket.scala
+#                                                        ^ source.scala meta.bracket.scala
+#                                                         ^ source.scala keyword.operator.scala
+#                                                          ^ source.scala
+#                                                           ^^^ source.scala entity.name.class
+#                                                              ^ source.scala meta.bracket.scala
+#                                                               ^ source.scala entity.name.class
+#                                                                ^ source.scala meta.bracket.scala
+>}
+#^ source.scala punctuation.section.block.end.scala
+>
+>trait Iterable[+X] {
+#^^^^^ source.scala keyword.declaration.scala
+#     ^ source.scala
+#      ^^^^^^^^ source.scala entity.name.class.declaration
+#              ^ source.scala meta.bracket.scala
+#               ^ source.scala keyword.operator.arithmetic.scala
+#                ^ source.scala entity.name.class
+#                 ^ source.scala meta.bracket.scala
+#                  ^ source.scala
+#                   ^ source.scala punctuation.section.block.begin.scala
+>    def flatMap[newType[+X] <: Iterable[X], S](f: X => newType[S]): newType[S]
+#^^^^ source.scala
+#    ^^^ source.scala keyword.declaration.scala
+#       ^ source.scala
+#        ^^^^^^^ source.scala entity.name.function.declaration
+#               ^ source.scala meta.bracket.scala
+#                ^^^^^^^ source.scala
+#                       ^ source.scala meta.bracket.scala
+#                        ^ source.scala keyword.operator.arithmetic.scala
+#                         ^ source.scala entity.name.class
+#                          ^ source.scala meta.bracket.scala
+#                           ^ source.scala
+#                            ^ source.scala keyword.operator.comparison.scala
+#                             ^ source.scala keyword.operator.scala
+#                              ^ source.scala
+#                               ^^^^^^^^ source.scala entity.name.class
+#                                       ^ source.scala meta.bracket.scala
+#                                        ^ source.scala entity.name.class
+#                                         ^ source.scala meta.bracket.scala
+#                                          ^^ source.scala
+#                                            ^ source.scala entity.name.class
+#                                             ^ source.scala meta.bracket.scala
+#                                              ^ source.scala meta.bracket.scala
+#                                               ^ source.scala variable.parameter.scala
+#                                                ^ source.scala meta.colon.scala
+#                                                 ^ source.scala
+#                                                  ^ source.scala entity.name.class
+#                                                   ^ source.scala
+#                                                    ^ source.scala keyword.operator.comparison.scala
+#                                                     ^ source.scala keyword.operator.comparison.scala
+#                                                      ^^^^^^^^ source.scala
+#                                                              ^ source.scala meta.bracket.scala
+#                                                               ^ source.scala entity.name.class
+#                                                                ^ source.scala meta.bracket.scala
+#                                                                 ^ source.scala meta.bracket.scala
+#                                                                  ^ source.scala keyword.operator.scala
+#                                                                   ^^^^^^^^ source.scala
+#                                                                           ^ source.scala meta.bracket.scala
+#                                                                            ^ source.scala entity.name.class
+#                                                                             ^ source.scala meta.bracket.scala
+>}
+#^ source.scala punctuation.section.block.end.scala
+>
+>package org.scala {
+#^^^^^^^ source.scala meta.package.scala keyword.other.import.scala
+#       ^ source.scala meta.package.scala
+#        ^^^ source.scala meta.package.scala entity.name.package.scala
+#           ^ source.scala meta.package.scala punctuation.definition.package
+#            ^^^^^ source.scala meta.package.scala entity.name.package.scala
+#                 ^^^ source.scala meta.package.scala
+>  class List[+T]
+#^^ source.scala
+#  ^^^^^ source.scala keyword.declaration.scala
+#       ^ source.scala
+#        ^^^^ source.scala entity.name.class.declaration
+#            ^ source.scala meta.bracket.scala
+#             ^ source.scala keyword.operator.arithmetic.scala
+#              ^ source.scala entity.name.class
+#               ^ source.scala meta.bracket.scala
+>  class Set[-T]
+#^^ source.scala
+#  ^^^^^ source.scala keyword.declaration.scala
+#       ^ source.scala
+#        ^^^ source.scala entity.name.class.declaration
+#           ^ source.scala meta.bracket.scala
+#            ^ source.scala keyword.operator.arithmetic.scala
+#             ^ source.scala entity.name.class
+#              ^ source.scala meta.bracket.scala
+>}
+#^ source.scala punctuation.section.block.end.scala
+>
+>class A[+T] {}
+#^^^^^ source.scala keyword.declaration.scala
+#     ^ source.scala
+#      ^ source.scala entity.name.class.declaration
+#       ^ source.scala meta.bracket.scala
+#        ^ source.scala keyword.operator.arithmetic.scala
+#         ^ source.scala entity.name.class
+#          ^ source.scala meta.bracket.scala
+#           ^ source.scala
+#            ^ source.scala punctuation.section.block.begin.scala
+#             ^ source.scala punctuation.section.block.end.scala
+>class B extends A[B]
+#^^^^^ source.scala keyword.declaration.scala
+#     ^ source.scala
+#      ^ source.scala entity.name.class.declaration
+#       ^ source.scala
+#        ^^^^^^^ source.scala keyword.declaration.scala
+#               ^ source.scala
+#                ^ source.scala entity.other.inherited-class.scala
+#                 ^ source.scala meta.bracket.scala
+#                  ^ source.scala entity.name.class
+#                   ^ source.scala meta.bracket.scala
+>class C extends A[C]
+#^^^^^ source.scala keyword.declaration.scala
+#     ^ source.scala
+#      ^ source.scala entity.name.class.declaration
+#       ^ source.scala
+#        ^^^^^^^ source.scala keyword.declaration.scala
+#               ^ source.scala
+#                ^ source.scala entity.other.inherited-class.scala
+#                 ^ source.scala meta.bracket.scala
+#                  ^ source.scala entity.name.class
+#                   ^ source.scala meta.bracket.scala
+>
+>
+>
+>abstract class AbstractClass
+#^^^^^^^^ source.scala storage.modifier.other
+#        ^ source.scala
+#         ^^^^^ source.scala keyword.declaration.scala
+#              ^ source.scala
+#               ^^^^^^^^^^^^^ source.scala entity.name.class.declaration
+>sealed trait Sealed
+#^^^^^^ source.scala storage.modifier.other
+#      ^ source.scala
+#       ^^^^^ source.scala keyword.declaration.scala
+#            ^ source.scala
+#             ^^^^^^ source.scala entity.name.class.declaration
+>
+>object Types {
+#^^^^^^ source.scala keyword.declaration.scala
+#      ^ source.scala
+#       ^^^^^ source.scala entity.name.class.declaration
+#            ^ source.scala
+#             ^ source.scala punctuation.section.block.begin.scala
+>    val x : String @suspendable = ""
+#^^^^ source.scala
+#    ^^^ source.scala keyword.declaration.stable.scala
+#       ^ source.scala
+#        ^ source.scala variable.other.declaration.scala
+#         ^ source.scala
+#          ^ source.scala keyword.operator.scala
+#           ^ source.scala
+#            ^^^^^^ source.scala storage.type.scala
+#                  ^ source.scala
+#                   ^ source.scala keyword.operator.scala
+#                    ^^^^^^^^^^^^ source.scala
+#                                ^ source.scala keyword.operator.comparison.scala
+#                                 ^ source.scala
+#                                  ^ source.scala string.quoted.double.scala punctuation.definition.string.begin.scala
+#                                   ^ source.scala string.quoted.double.scala punctuation.definition.string.end.scala
+>
+>    def infix() : T1 \/ T2 = ???
+#^^^^ source.scala
+#    ^^^ source.scala keyword.declaration.scala
+#       ^ source.scala
+#        ^^^^^ source.scala entity.name.function.declaration
+#             ^^ source.scala meta.parentheses.scala meta.bracket.scala
+#               ^ source.scala
+#                ^ source.scala keyword.operator.scala
+#                 ^ source.scala
+#                  ^^ source.scala entity.name.class
+#                    ^^ source.scala
+#                      ^ source.scala keyword.operator.arithmetic.scala
+#                       ^ source.scala
+#                        ^^ source.scala entity.name.class
+#                          ^ source.scala
+#                           ^ source.scala keyword.operator.comparison.scala
+#                            ^ source.scala
+#                             ^^^ source.scala keyword.operator.scala
+>
+>   type Z1  = Ref[T] forSome { type T <: java.lang.Number }
+#^^^ source.scala
+#   ^^^^ source.scala keyword.declaration.scala
+#       ^ source.scala
+#        ^^ source.scala entity.name.type.declaration
+#          ^^ source.scala
+#            ^ source.scala keyword.operator.comparison.scala
+#             ^ source.scala
+#              ^^^ source.scala entity.name.class
+#                 ^ source.scala meta.bracket.scala
+#                  ^ source.scala entity.name.class
+#                   ^ source.scala meta.bracket.scala
+#                    ^^^^^^^^^ source.scala
+#                             ^ source.scala punctuation.section.block.begin.scala
+#                              ^ source.scala
+#                               ^^^^ source.scala keyword.declaration.scala
+#                                   ^ source.scala
+#                                    ^ source.scala entity.name.type.declaration
+#                                     ^ source.scala
+#                                      ^ source.scala keyword.operator.comparison.scala
+#                                       ^ source.scala keyword.operator.scala
+#                                        ^^^^^^^^^^^ source.scala
+#                                                   ^^^^^^ source.scala entity.name.class
+#                                                         ^ source.scala
+#                                                          ^ source.scala punctuation.section.block.end.scala
+>   type Z2  = Ref[x.T] forSome { val x: Outer }
+#^^^ source.scala
+#   ^^^^ source.scala keyword.declaration.scala
+#       ^ source.scala
+#        ^^ source.scala entity.name.type.declaration
+#          ^^ source.scala
+#            ^ source.scala keyword.operator.comparison.scala
+#             ^ source.scala
+#              ^^^ source.scala entity.name.class
+#                 ^ source.scala meta.bracket.scala
+#                  ^^ source.scala
+#                    ^ source.scala entity.name.class
+#                     ^ source.scala meta.bracket.scala
+#                      ^^^^^^^^^ source.scala
+#                               ^ source.scala punctuation.section.block.begin.scala
+#                                ^ source.scala
+#                                 ^^^ source.scala keyword.declaration.stable.scala
+#                                    ^ source.scala
+#                                     ^ source.scala variable.other.declaration.scala
+#                                      ^ source.scala keyword.operator.scala
+#                                       ^ source.scala
+#                                        ^^^^^ source.scala entity.name.class
+#                                             ^ source.scala
+#                                              ^ source.scala punctuation.section.block.end.scala
+>   type Z3  = Ref[x_type # T] forSome { type x_type <: Outer with Singleton }
+#^^^ source.scala
+#   ^^^^ source.scala keyword.declaration.scala
+#       ^ source.scala
+#        ^^ source.scala entity.name.type.declaration
+#          ^^ source.scala
+#            ^ source.scala keyword.operator.comparison.scala
+#             ^ source.scala
+#              ^^^ source.scala entity.name.class
+#                 ^ source.scala meta.bracket.scala
+#                  ^^^^^^^^^ source.scala
+#                           ^ source.scala entity.name.class
+#                            ^ source.scala meta.bracket.scala
+#                             ^^^^^^^^^ source.scala
+#                                      ^ source.scala punctuation.section.block.begin.scala
+#                                       ^ source.scala
+#                                        ^^^^ source.scala keyword.declaration.scala
+#                                            ^ source.scala
+#                                             ^^^^^^ source.scala entity.name.type.declaration
+#                                                   ^ source.scala
+#                                                    ^ source.scala keyword.operator.comparison.scala
+#                                                     ^ source.scala keyword.operator.scala
+#                                                      ^ source.scala
+#                                                       ^^^^^ source.scala entity.name.class
+#                                                            ^ source.scala
+#                                                             ^^^^ source.scala keyword.declaration.scala
+#                                                                 ^ source.scala
+#                                                                  ^^^^^^^^^ source.scala entity.other.inherited-class.scala
+#                                                                           ^ source.scala
+#                                                                            ^ source.scala punctuation.section.block.end.scala
+>
+>   def complexBounds[A, B >: A, C >: A <: B]()
+#^^^ source.scala
+#   ^^^ source.scala keyword.declaration.scala
+#      ^ source.scala
+#       ^^^^^^^^^^^^^ source.scala entity.name.function.declaration
+#                    ^ source.scala meta.bracket.scala
+#                     ^ source.scala entity.name.class
+#                      ^^ source.scala
+#                        ^ source.scala entity.name.class
+#                         ^ source.scala
+#                          ^ source.scala keyword.operator.comparison.scala
+#                           ^ source.scala keyword.operator.scala
+#                            ^ source.scala
+#                             ^ source.scala entity.name.class
+#                              ^^ source.scala
+#                                ^ source.scala entity.name.class
+#                                 ^ source.scala
+#                                  ^ source.scala keyword.operator.comparison.scala
+#                                   ^ source.scala keyword.operator.scala
+#                                    ^ source.scala
+#                                     ^ source.scala entity.name.class
+#                                      ^ source.scala
+#                                       ^ source.scala keyword.operator.comparison.scala
+#                                        ^ source.scala keyword.operator.scala
+#                                         ^ source.scala
+#                                          ^ source.scala entity.name.class
+#                                           ^ source.scala meta.bracket.scala
+#                                            ^^ source.scala meta.parentheses.scala meta.bracket.scala
+>   def complexBounds2[M[X <: Bound[X]], Bound[_]]
+#^^^ source.scala
+#   ^^^ source.scala keyword.declaration.scala
+#      ^ source.scala
+#       ^^^^^^^^^^^^^^ source.scala entity.name.function.declaration
+#                     ^ source.scala meta.bracket.scala
+#                      ^ source.scala entity.name.class
+#                       ^ source.scala meta.bracket.scala
+#                        ^ source.scala entity.name.class
+#                         ^ source.scala
+#                          ^ source.scala keyword.operator.comparison.scala
+#                           ^ source.scala keyword.operator.scala
+#                            ^ source.scala
+#                             ^^^^^ source.scala entity.name.class
+#                                  ^ source.scala meta.bracket.scala
+#                                   ^ source.scala entity.name.class
+#                                    ^ source.scala meta.bracket.scala
+#                                     ^ source.scala meta.bracket.scala
+#                                      ^^ source.scala
+#                                        ^^^^^ source.scala entity.name.class
+#                                             ^ source.scala meta.bracket.scala
+#                                              ^ source.scala
+#                                               ^ source.scala meta.bracket.scala
+#                                                ^ source.scala meta.bracket.scala
+>   def complexBounds3[@specialized T, U]()
+#^^^ source.scala
+#   ^^^ source.scala keyword.declaration.scala
+#      ^ source.scala
+#       ^^^^^^^^^^^^^^ source.scala entity.name.function.declaration
+#                     ^ source.scala meta.bracket.scala
+#                      ^ source.scala keyword.operator.scala
+#                       ^^^^^^^^^^^^ source.scala
+#                                   ^ source.scala entity.name.class
+#                                    ^^ source.scala
+#                                      ^ source.scala entity.name.class
+#                                       ^ source.scala meta.bracket.scala
+#                                        ^^ source.scala meta.parentheses.scala meta.bracket.scala
+>
+>   def compare[T](a: T = 0)(b: T = a) = (a == b)
+#^^^ source.scala
+#   ^^^ source.scala keyword.declaration.scala
+#      ^ source.scala
+#       ^^^^^^^ source.scala entity.name.function.declaration
+#              ^ source.scala meta.bracket.scala
+#               ^ source.scala entity.name.class
+#                ^ source.scala meta.bracket.scala
+#                 ^ source.scala meta.bracket.scala
+#                  ^ source.scala variable.parameter.scala
+#                   ^ source.scala meta.colon.scala
+#                    ^ source.scala
+#                     ^ source.scala entity.name.class
+#                      ^ source.scala
+#                       ^ source.scala keyword.operator.comparison.scala
+#                        ^ source.scala
+#                         ^ source.scala constant.numeric.scala
+#                          ^ source.scala meta.bracket.scala
+#                           ^ source.scala meta.bracket.scala
+#                            ^ source.scala variable.parameter.scala
+#                             ^ source.scala meta.colon.scala
+#                              ^ source.scala
+#                               ^ source.scala entity.name.class
+#                                ^ source.scala
+#                                 ^ source.scala keyword.operator.comparison.scala
+#                                  ^^ source.scala
+#                                    ^ source.scala meta.bracket.scala
+#                                     ^ source.scala
+#                                      ^ source.scala keyword.operator.comparison.scala
+#                                       ^ source.scala
+#                                        ^ source.scala meta.bracket.scala
+#                                         ^^ source.scala
+#                                           ^^ source.scala keyword.operator.comparison.scala
+#                                             ^^ source.scala
+#                                               ^ source.scala meta.bracket.scala
+>   def f(a: Int = 0)(b: Int = a + 1) = b
+#^^^ source.scala
+#   ^^^ source.scala keyword.declaration.scala
+#      ^ source.scala
+#       ^ source.scala entity.name.function.declaration
+#        ^ source.scala meta.bracket.scala
+#         ^ source.scala variable.parameter.scala
+#          ^ source.scala meta.colon.scala
+#           ^ source.scala
+#            ^^^ source.scala storage.type.primitive.scala
+#               ^ source.scala
+#                ^ source.scala keyword.operator.comparison.scala
+#                 ^ source.scala
+#                  ^ source.scala constant.numeric.scala
+#                   ^ source.scala meta.bracket.scala
+#                    ^ source.scala meta.bracket.scala
+#                     ^ source.scala variable.parameter.scala
+#                      ^ source.scala meta.colon.scala
+#                       ^ source.scala
+#                        ^^^ source.scala storage.type.primitive.scala
+#                           ^ source.scala
+#                            ^ source.scala keyword.operator.comparison.scala
+#                             ^^^ source.scala
+#                                ^ source.scala keyword.operator.arithmetic.scala
+#                                 ^ source.scala
+#                                  ^ source.scala constant.numeric.scala
+#                                   ^ source.scala meta.bracket.scala
+#                                    ^ source.scala
+#                                     ^ source.scala keyword.operator.comparison.scala
+#                                      ^^^ source.scala
+>
+>   def whileLoop (cond: => Boolean) (stat: => Unit): Unit
+#^^^ source.scala
+#   ^^^ source.scala keyword.declaration.scala
+#      ^ source.scala
+#       ^^^^^^^^^ source.scala entity.name.function.declaration
+#                ^ source.scala
+#                 ^ source.scala meta.bracket.scala
+#                  ^^^^ source.scala variable.parameter.scala
+#                      ^ source.scala meta.colon.scala
+#                       ^ source.scala
+#                        ^ source.scala keyword.operator.comparison.scala
+#                         ^ source.scala keyword.operator.comparison.scala
+#                          ^ source.scala
+#                           ^^^^^^^ source.scala storage.type.primitive.scala
+#                                  ^ source.scala meta.bracket.scala
+#                                   ^ source.scala
+#                                    ^ source.scala meta.bracket.scala
+#                                     ^^^^ source.scala variable.parameter.scala
+#                                         ^ source.scala meta.colon.scala
+#                                          ^ source.scala
+#                                           ^ source.scala keyword.operator.comparison.scala
+#                                            ^ source.scala keyword.operator.comparison.scala
+#                                             ^ source.scala
+#                                              ^^^^ source.scala storage.type.primitive.scala
+#                                                  ^ source.scala meta.bracket.scala
+#                                                   ^ source.scala keyword.operator.scala
+#                                                    ^ source.scala
+#                                                     ^^^^ source.scala storage.type.primitive.scala
+>
+>   def sum(args: Int*) = {
+#^^^ source.scala
+#   ^^^ source.scala keyword.declaration.scala
+#      ^ source.scala
+#       ^^^ source.scala entity.name.function.declaration
+#          ^ source.scala meta.bracket.scala
+#           ^^^^ source.scala variable.parameter.scala
+#               ^ source.scala meta.colon.scala
+#                ^ source.scala
+#                 ^^^ source.scala storage.type.primitive.scala
+#                    ^ source.scala keyword.operator.arithmetic.scala
+#                     ^ source.scala meta.bracket.scala
+#                      ^ source.scala
+#                       ^ source.scala keyword.operator.comparison.scala
+#                        ^ source.scala
+#                         ^ source.scala punctuation.section.block.begin.scala
+>    var result = 0
+#^^^^ source.scala
+#    ^^^ source.scala keyword.declaration.volatile.scala
+#       ^ source.scala
+#        ^^^^^^ source.scala variable.other.declaration.scala
+#              ^ source.scala
+#               ^ source.scala keyword.operator.comparison.scala
+#                ^ source.scala
+#                 ^ source.scala constant.numeric.scala
+>    for (arg <- args) result += arg
+#^^^^ source.scala
+#    ^^^ source.scala keyword.control.flow.scala
+#       ^ source.scala
+#        ^ source.scala meta.bracket.scala
+#         ^^^^ source.scala
+#             ^ source.scala keyword.operator.comparison.scala
+#              ^ source.scala keyword.operator.arithmetic.scala
+#               ^^^^^ source.scala
+#                    ^ source.scala meta.bracket.scala
+#                     ^^^^^^^^ source.scala
+#                             ^ source.scala keyword.operator.arithmetic.scala
+#                              ^ source.scala keyword.operator.comparison.scala
+#                               ^^^^^ source.scala
+>    result
+#^^^^^^^^^^^ source.scala
+>  }
+#^^ source.scala
+#  ^ source.scala punctuation.section.block.end.scala
+>
+>  def write(str: String) { System.out.println(str) }
+#^^ source.scala
+#  ^^^ source.scala keyword.declaration.scala
+#     ^ source.scala
+#      ^^^^^ source.scala entity.name.function.declaration
+#           ^ source.scala meta.bracket.scala
+#            ^^^ source.scala variable.parameter.scala
+#               ^ source.scala meta.colon.scala
+#                ^ source.scala
+#                 ^^^^^^ source.scala storage.type.scala
+#                       ^ source.scala meta.bracket.scala
+#                        ^ source.scala
+#                         ^ source.scala punctuation.section.block.begin.scala
+#                          ^ source.scala
+#                           ^^^^^^ source.scala entity.name.class
+#                                 ^^^^^^^^^^^^ source.scala
+#                                             ^ source.scala meta.bracket.scala
+#                                              ^^^ source.scala
+#                                                 ^ source.scala meta.bracket.scala
+#                                                  ^ source.scala
+#                                                   ^ source.scala punctuation.section.block.end.scala
+>  def write(str: String): Unit = { System.out.println(str) }
+#^^ source.scala
+#  ^^^ source.scala keyword.declaration.scala
+#     ^ source.scala
+#      ^^^^^ source.scala entity.name.function.declaration
+#           ^ source.scala meta.bracket.scala
+#            ^^^ source.scala variable.parameter.scala
+#               ^ source.scala meta.colon.scala
+#                ^ source.scala
+#                 ^^^^^^ source.scala storage.type.scala
+#                       ^ source.scala meta.bracket.scala
+#                        ^ source.scala keyword.operator.scala
+#                         ^ source.scala
+#                          ^^^^ source.scala storage.type.primitive.scala
+#                              ^ source.scala
+#                               ^ source.scala keyword.operator.comparison.scala
+#                                ^ source.scala
+#                                 ^ source.scala punctuation.section.block.begin.scala
+#                                  ^ source.scala
+#                                   ^^^^^^ source.scala entity.name.class
+#                                         ^^^^^^^^^^^^ source.scala
+#                                                     ^ source.scala meta.bracket.scala
+#                                                      ^^^ source.scala
+#                                                         ^ source.scala meta.bracket.scala
+#                                                          ^ source.scala
+#                                                           ^ source.scala punctuation.section.block.end.scala
+>
+>   
+>
+>    type Pair[+A, +B] = Tuple2[A, B]
+#^^^^ source.scala
+#    ^^^^ source.scala keyword.declaration.scala
+#        ^ source.scala
+#         ^^^^ source.scala entity.name.type.declaration
+#             ^ source.scala meta.bracket.scala
+#              ^ source.scala keyword.operator.arithmetic.scala
+#               ^ source.scala entity.name.class
+#                ^^ source.scala
+#                  ^ source.scala keyword.operator.arithmetic.scala
+#                   ^ source.scala entity.name.class
+#                    ^ source.scala meta.bracket.scala
+#                     ^ source.scala
+#                      ^ source.scala keyword.operator.comparison.scala
+#                       ^ source.scala
+#                        ^^^^^^ source.scala entity.name.class
+#                              ^ source.scala meta.bracket.scala
+#                               ^ source.scala entity.name.class
+#                                ^^ source.scala
+#                                  ^ source.scala entity.name.class
+#                                   ^ source.scala meta.bracket.scala
+>    object Pair {
+#^^^^ source.scala
+#    ^^^^^^ source.scala keyword.declaration.scala
+#          ^ source.scala
+#           ^^^^ source.scala entity.name.class.declaration
+#               ^ source.scala
+#                ^ source.scala punctuation.section.block.begin.scala
+>      { import M.{one, z => zero, _}; add(zero, one) }
+#^^^^^^ source.scala
+#      ^ source.scala punctuation.section.block.begin.scala
+#       ^ source.scala
+#        ^^^^^^ source.scala meta.import.scala keyword.other.import.scala
+#              ^ source.scala meta.import.scala
+#               ^ source.scala meta.import.scala entity.name.import.scala
+#                ^ source.scala meta.import.scala punctuation.definition.import
+#                 ^ source.scala meta.import.scala meta.import.selector.scala meta.bracket.scala
+#                  ^^^ source.scala meta.import.scala meta.import.selector.scala entity.name.import.scala
+#                     ^ source.scala meta.import.scala meta.import.selector.scala
+#                      ^ source.scala meta.import.scala meta.import.selector.scala
+#                       ^ source.scala meta.import.scala meta.import.selector.scala entity.name.import.renamed-from.scala
+#                        ^ source.scala meta.import.scala meta.import.selector.scala
+#                         ^^ source.scala meta.import.scala meta.import.selector.scala keyword.other.arrow.scala
+#                           ^ source.scala meta.import.scala meta.import.selector.scala
+#                            ^^^^ source.scala meta.import.scala meta.import.selector.scala entity.name.import.renamed-to.scala
+#                                ^^ source.scala meta.import.scala meta.import.selector.scala
+#                                  ^ source.scala meta.import.scala meta.import.selector.scala entity.name.import.scala
+#                                   ^ source.scala meta.import.scala meta.import.selector.scala meta.bracket.scala
+#                                    ^ source.scala meta.import.scala
+#                                     ^^^^ source.scala
+#                                         ^ source.scala meta.bracket.scala
+#                                          ^^^^^^^^^ source.scala
+#                                                   ^ source.scala meta.bracket.scala
+#                                                    ^ source.scala
+#                                                     ^ source.scala punctuation.section.block.end.scala
+>        def apply[A, B](x: A, y: B) = Tuple2(x, y)
+#^^^^^^^^ source.scala
+#        ^^^ source.scala keyword.declaration.scala
+#           ^ source.scala
+#            ^^^^^ source.scala entity.name.function.declaration
+#                 ^ source.scala meta.bracket.scala
+#                  ^ source.scala entity.name.class
+#                   ^^ source.scala
+#                     ^ source.scala entity.name.class
+#                      ^ source.scala meta.bracket.scala
+#                       ^ source.scala meta.bracket.scala
+#                        ^ source.scala variable.parameter.scala
+#                         ^ source.scala meta.colon.scala
+#                          ^ source.scala
+#                           ^ source.scala entity.name.class
+#                            ^^ source.scala
+#                              ^ source.scala variable.parameter.scala
+#                               ^ source.scala meta.colon.scala
+#                                ^ source.scala
+#                                 ^ source.scala entity.name.class
+#                                  ^ source.scala meta.bracket.scala
+#                                   ^ source.scala
+#                                    ^ source.scala keyword.operator.comparison.scala
+#                                     ^ source.scala
+#                                      ^^^^^^ source.scala entity.name.class
+#                                            ^ source.scala meta.bracket.scala
+#                                             ^^^^ source.scala
+#                                                 ^ source.scala meta.bracket.scala
+>        def unapply[A, B](x: Tuple2[A, B]): Option[Tuple2[A, B]] = Some(x)
+#^^^^^^^^ source.scala
+#        ^^^ source.scala keyword.declaration.scala
+#           ^ source.scala
+#            ^^^^^^^ source.scala entity.name.function.declaration
+#                   ^ source.scala meta.bracket.scala
+#                    ^ source.scala entity.name.class
+#                     ^^ source.scala
+#                       ^ source.scala entity.name.class
+#                        ^ source.scala meta.bracket.scala
+#                         ^ source.scala meta.bracket.scala
+#                          ^ source.scala variable.parameter.scala
+#                           ^ source.scala meta.colon.scala
+#                            ^ source.scala
+#                             ^^^^^^ source.scala entity.name.class
+#                                   ^ source.scala meta.bracket.scala
+#                                    ^ source.scala entity.name.class
+#                                     ^^ source.scala
+#                                       ^ source.scala entity.name.class
+#                                        ^ source.scala meta.bracket.scala
+#                                         ^ source.scala meta.bracket.scala
+#                                          ^ source.scala keyword.operator.scala
+#                                           ^ source.scala
+#                                            ^^^^^^ source.scala entity.name.class
+#                                                  ^ source.scala meta.bracket.scala
+#                                                   ^^^^^^ source.scala entity.name.class
+#                                                         ^ source.scala meta.bracket.scala
+#                                                          ^ source.scala entity.name.class
+#                                                           ^^ source.scala
+#                                                             ^ source.scala entity.name.class
+#                                                              ^ source.scala meta.bracket.scala
+#                                                               ^ source.scala meta.bracket.scala
+#                                                                ^ source.scala
+#                                                                 ^ source.scala keyword.operator.comparison.scala
+#                                                                  ^ source.scala
+#                                                                   ^^^^ source.scala entity.name.class
+#                                                                       ^ source.scala meta.bracket.scala
+#                                                                        ^ source.scala
+#                                                                         ^ source.scala meta.bracket.scala
+>    }
+#^^^^ source.scala
+#    ^ source.scala punctuation.section.block.end.scala
+>}
+#^ source.scala punctuation.section.block.end.scala
+>
+>object ValueDefinitions {
+#^^^^^^ source.scala keyword.declaration.scala
+#      ^ source.scala
+#       ^^^^^^^^^^^^^^^^ source.scala entity.name.class.declaration
+#                       ^ source.scala
+#                        ^ source.scala punctuation.section.block.begin.scala
+>  val pi = 3.1415
+#^^ source.scala
+#  ^^^ source.scala keyword.declaration.stable.scala
+#     ^ source.scala
+#      ^^ source.scala variable.other.declaration.scala
+#        ^ source.scala
+#         ^ source.scala keyword.operator.comparison.scala
+#          ^ source.scala
+#           ^^^^^^ source.scala constant.numeric.scala
+>  val pi: Double = 3.1415   // equivalent to first definition
+#^^ source.scala
+#  ^^^ source.scala keyword.declaration.stable.scala
+#     ^ source.scala
+#      ^^ source.scala variable.other.declaration.scala
+#        ^ source.scala keyword.operator.scala
+#         ^ source.scala
+#          ^^^^^^ source.scala storage.type.primitive.scala
+#                ^ source.scala
+#                 ^ source.scala keyword.operator.comparison.scala
+#                  ^ source.scala
+#                   ^^^^^^ source.scala constant.numeric.scala
+#                         ^^^ source.scala
+#                            ^^ source.scala comment.line.double-slash.scala punctuation.definition.comment.scala
+#                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.scala comment.line.double-slash.scala
+>  val Some(x) = f()         // a pattern definition
+#^^ source.scala
+#  ^^^ source.scala keyword.declaration.stable.scala
+#     ^ source.scala
+#      ^^^^ source.scala constant.other.declaration.scala
+#          ^ source.scala meta.bracket.scala
+#           ^ source.scala
+#            ^ source.scala meta.bracket.scala
+#             ^ source.scala
+#              ^ source.scala keyword.operator.comparison.scala
+#               ^^ source.scala
+#                 ^^ source.scala meta.parentheses.scala meta.bracket.scala
+#                   ^^^^^^^^^ source.scala
+#                            ^^ source.scala comment.line.double-slash.scala punctuation.definition.comment.scala
+#                              ^^^^^^^^^^^^^^^^^^^^^ source.scala comment.line.double-slash.scala
+>  val x :: xs = mylist      // an infix pattern definition
+#^^ source.scala
+#  ^^^ source.scala keyword.declaration.stable.scala
+#     ^ source.scala
+#      ^ source.scala variable.other.declaration.scala
+#       ^ source.scala
+#        ^^ source.scala keyword.operator.scala
+#          ^^^^ source.scala
+#              ^ source.scala keyword.operator.comparison.scala
+#               ^^^^^^^^^^^^^ source.scala
+#                            ^^ source.scala comment.line.double-slash.scala punctuation.definition.comment.scala
+#                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.scala comment.line.double-slash.scala
+>}
+#^ source.scala punctuation.section.block.end.scala
+>
+>class Iter extends StringIterator with RichIterator {  }
+#^^^^^ source.scala keyword.declaration.scala
+#     ^ source.scala
+#      ^^^^ source.scala entity.name.class.declaration
+#          ^ source.scala
+#           ^^^^^^^ source.scala keyword.declaration.scala
+#                  ^ source.scala
+#                   ^^^^^^^^^^^^^^ source.scala entity.other.inherited-class.scala
+#                                 ^ source.scala
+#                                  ^^^^ source.scala keyword.declaration.scala
+#                                      ^ source.scala
+#                                       ^^^^^^^^^^^^ source.scala entity.other.inherited-class.scala
+#                                                   ^ source.scala
+#                                                    ^ source.scala punctuation.section.block.begin.scala
+#                                                     ^^ source.scala
+#                                                       ^ source.scala punctuation.section.block.end.scala
+>trait A extends Root { type T <: A }
+#^^^^^ source.scala keyword.declaration.scala
+#     ^ source.scala
+#      ^ source.scala entity.name.class.declaration
+#       ^ source.scala
+#        ^^^^^^^ source.scala keyword.declaration.scala
+#               ^ source.scala
+#                ^^^^ source.scala entity.other.inherited-class.scala
+#                    ^ source.scala
+#                     ^ source.scala punctuation.section.block.begin.scala
+#                      ^ source.scala
+#                       ^^^^ source.scala keyword.declaration.scala
+#                           ^ source.scala
+#                            ^ source.scala entity.name.type.declaration
+#                             ^ source.scala
+#                              ^ source.scala keyword.operator.comparison.scala
+#                               ^ source.scala keyword.operator.scala
+#                                ^ source.scala
+#                                 ^ source.scala entity.name.class
+#                                  ^ source.scala
+#                                   ^ source.scala punctuation.section.block.end.scala
+>
+>class Modifiers {
+#^^^^^ source.scala keyword.declaration.scala
+#     ^ source.scala
+#      ^^^^^^^^^ source.scala entity.name.class.declaration
+#               ^ source.scala
+#                ^ source.scala punctuation.section.block.begin.scala
+>    final val x = e
+#^^^^ source.scala
+#    ^^^^^ source.scala storage.modifier.other
+#         ^ source.scala
+#          ^^^ source.scala keyword.declaration.stable.scala
+#             ^ source.scala
+#              ^ source.scala variable.other.declaration.scala
+#               ^ source.scala
+#                ^ source.scala keyword.operator.comparison.scala
+#                 ^^^ source.scala
+>    override def f()
+#^^^^ source.scala
+#    ^^^^^^^^ source.scala storage.modifier.other
+#            ^ source.scala
+#             ^^^ source.scala keyword.declaration.scala
+#                ^ source.scala
+#                 ^ source.scala entity.name.function.declaration
+#                  ^^ source.scala meta.parentheses.scala meta.bracket.scala
+>    private val y = ""
+#^^^^ source.scala
+#    ^^^^^^^ source.scala storage.modifier.access
+#           ^ source.scala
+#            ^^^ source.scala keyword.declaration.stable.scala
+#               ^ source.scala
+#                ^ source.scala variable.other.declaration.scala
+#                 ^ source.scala
+#                  ^ source.scala keyword.operator.comparison.scala
+#                   ^ source.scala
+#                    ^ source.scala string.quoted.double.scala punctuation.definition.string.begin.scala
+#                     ^ source.scala string.quoted.double.scala punctuation.definition.string.end.scala
+>    abstract override def g()
+#^^^^ source.scala
+#    ^^^^^^^^ source.scala storage.modifier.other
+#            ^ source.scala
+#             ^^^^^^^^ source.scala storage.modifier.other
+#                     ^ source.scala
+#                      ^^^ source.scala keyword.declaration.scala
+#                         ^ source.scala
+#                          ^ source.scala entity.name.function.declaration
+#                           ^^ source.scala meta.parentheses.scala meta.bracket.scala
+>    private lazy final val h = 3
+#^^^^ source.scala
+#    ^^^^^^^ source.scala storage.modifier.access
+#           ^ source.scala
+#            ^^^^ source.scala storage.modifier.other
+#                ^ source.scala
+#                 ^^^^^ source.scala storage.modifier.other
+#                      ^ source.scala
+#                       ^^^ source.scala keyword.declaration.stable.scala
+#                          ^ source.scala
+#                           ^ source.scala variable.other.declaration.scala
+#                            ^ source.scala
+#                             ^ source.scala keyword.operator.comparison.scala
+#                              ^ source.scala
+#                               ^ source.scala constant.numeric.scala
+>}
+#^ source.scala punctuation.section.block.end.scala
+>
+>object m {
+#^^^^^^ source.scala keyword.declaration.scala
+#      ^ source.scala
+#       ^ source.scala entity.name.class.declaration
+#        ^ source.scala
+#         ^ source.scala punctuation.section.block.begin.scala
+>    abstract sealed class C (x: Int) {
+#^^^^ source.scala
+#    ^^^^^^^^ source.scala storage.modifier.other
+#            ^ source.scala
+#             ^^^^^^ source.scala storage.modifier.other
+#                   ^ source.scala
+#                    ^^^^^ source.scala keyword.declaration.scala
+#                         ^ source.scala
+#                          ^ source.scala entity.name.class.declaration
+#                           ^ source.scala
+#                            ^ source.scala meta.bracket.scala
+#                             ^ source.scala variable.parameter.scala
+#                              ^ source.scala meta.colon.scala
+#                               ^ source.scala
+#                                ^^^ source.scala storage.type.primitive.scala
+#                                   ^ source.scala meta.bracket.scala
+#                                    ^ source.scala
+#                                     ^ source.scala punctuation.section.block.begin.scala
+>      def nextC = new C(x + 1) {}
+#^^^^^^ source.scala
+#      ^^^ source.scala keyword.declaration.scala
+#         ^ source.scala
+#          ^^^^^ source.scala entity.name.function.declaration
+#               ^ source.scala
+#                ^ source.scala keyword.operator.comparison.scala
+#                 ^ source.scala
+#                  ^^^ source.scala keyword.declaration.scala
+#                     ^ source.scala
+#                      ^ source.scala entity.name.class
+#                       ^ source.scala meta.bracket.scala
+#                        ^^ source.scala
+#                          ^ source.scala keyword.operator.arithmetic.scala
+#                           ^ source.scala
+#                            ^ source.scala constant.numeric.scala
+#                             ^ source.scala meta.bracket.scala
+#                              ^ source.scala
+#                               ^ source.scala punctuation.section.block.begin.scala
+#                                ^ source.scala punctuation.section.block.end.scala
+>    }
+#^^^^ source.scala
+#    ^ source.scala punctuation.section.block.end.scala
+>    val empty = new C(0) {}
+#^^^^ source.scala
+#    ^^^ source.scala keyword.declaration.stable.scala
+#       ^ source.scala
+#        ^^^^^ source.scala variable.other.declaration.scala
+#             ^ source.scala
+#              ^ source.scala keyword.operator.comparison.scala
+#               ^ source.scala
+#                ^^^ source.scala keyword.declaration.scala
+#                   ^ source.scala
+#                    ^ source.scala entity.name.class
+#                     ^ source.scala meta.bracket.scala
+#                      ^ source.scala constant.numeric.scala
+#                       ^ source.scala meta.bracket.scala
+#                        ^ source.scala
+#                         ^ source.scala punctuation.section.block.begin.scala
+#                          ^ source.scala punctuation.section.block.end.scala
+>}
+#^ source.scala punctuation.section.block.end.scala
+>
+>class LinkedList[A]() { self: List with Seq =>
+#^^^^^ source.scala keyword.declaration.scala
+#     ^ source.scala
+#      ^^^^^^^^^^ source.scala entity.name.class.declaration
+#                ^ source.scala meta.bracket.scala
+#                 ^ source.scala entity.name.class
+#                  ^ source.scala meta.bracket.scala
+#                   ^^ source.scala meta.parentheses.scala meta.bracket.scala
+#                     ^ source.scala
+#                      ^ source.scala punctuation.section.block.begin.scala
+#                       ^ source.scala
+#                        ^^^^ source.scala variable.language.scala
+#                            ^ source.scala keyword.operator.scala
+#                             ^ source.scala
+#                              ^^^^ source.scala entity.name.class
+#                                  ^ source.scala
+#                                   ^^^^ source.scala keyword.declaration.scala
+#                                       ^ source.scala
+#                                        ^^^ source.scala entity.other.inherited-class.scala
+#                                           ^ source.scala
+#                                            ^ source.scala keyword.operator.comparison.scala
+#                                             ^ source.scala keyword.operator.comparison.scala
+>    var head = ???
+#^^^^ source.scala
+#    ^^^ source.scala keyword.declaration.volatile.scala
+#       ^ source.scala
+#        ^^^^ source.scala variable.other.declaration.scala
+#            ^ source.scala
+#             ^ source.scala keyword.operator.comparison.scala
+#              ^ source.scala
+#               ^^^ source.scala keyword.operator.scala
+>    var tail = null
+#^^^^ source.scala
+#    ^^^ source.scala keyword.declaration.volatile.scala
+#       ^ source.scala
+#        ^^^^ source.scala variable.other.declaration.scala
+#            ^ source.scala
+#             ^ source.scala keyword.operator.comparison.scala
+#              ^ source.scala
+#               ^^^^ source.scala constant.language.scala
+>    def isEmpty = tail != null
+#^^^^ source.scala
+#    ^^^ source.scala keyword.declaration.scala
+#       ^ source.scala
+#        ^^^^^^^ source.scala entity.name.function.declaration
+#               ^ source.scala
+#                ^ source.scala keyword.operator.comparison.scala
+#                 ^^^^^^ source.scala
+#                       ^^ source.scala keyword.operator.comparison.scala
+#                         ^ source.scala
+#                          ^^^^ source.scala constant.language.scala
+>    def this(head: A) = { this(); this.head = head }
+#^^^^ source.scala
+#    ^^^ source.scala keyword.declaration.scala
+#       ^ source.scala
+#        ^^^^ source.scala entity.name.function.declaration
+#            ^ source.scala meta.bracket.scala
+#             ^^^^ source.scala variable.parameter.scala
+#                 ^ source.scala meta.colon.scala
+#                  ^ source.scala
+#                   ^ source.scala entity.name.class
+#                    ^ source.scala meta.bracket.scala
+#                     ^ source.scala
+#                      ^ source.scala keyword.operator.comparison.scala
+#                       ^ source.scala
+#                        ^ source.scala punctuation.section.block.begin.scala
+#                         ^ source.scala
+#                          ^^^^ source.scala variable.language.scala
+#                              ^^ source.scala meta.parentheses.scala meta.bracket.scala
+#                                ^^ source.scala
+#                                  ^^^^ source.scala variable.language.scala
+#                                      ^^^^^^ source.scala
+#                                            ^ source.scala keyword.operator.comparison.scala
+#                                             ^^^^^^ source.scala
+#                                                   ^ source.scala punctuation.section.block.end.scala
+>    def this(head: A, tail: List[A]) = { this(head); this.tail = tail }
+#^^^^ source.scala
+#    ^^^ source.scala keyword.declaration.scala
+#       ^ source.scala
+#        ^^^^ source.scala entity.name.function.declaration
+#            ^ source.scala meta.bracket.scala
+#             ^^^^ source.scala variable.parameter.scala
+#                 ^ source.scala meta.colon.scala
+#                  ^ source.scala
+#                   ^ source.scala entity.name.class
+#                    ^^ source.scala
+#                      ^^^^ source.scala variable.parameter.scala
+#                          ^ source.scala meta.colon.scala
+#                           ^ source.scala
+#                            ^^^^ source.scala entity.name.class
+#                                ^ source.scala meta.bracket.scala
+#                                 ^ source.scala entity.name.class
+#                                  ^ source.scala meta.bracket.scala
+#                                   ^ source.scala meta.bracket.scala
+#                                    ^ source.scala
+#                                     ^ source.scala keyword.operator.comparison.scala
+#                                      ^ source.scala
+#                                       ^ source.scala punctuation.section.block.begin.scala
+#                                        ^ source.scala
+#                                         ^^^^ source.scala variable.language.scala
+#                                             ^ source.scala meta.bracket.scala
+#                                              ^^^^ source.scala
+#                                                  ^ source.scala meta.bracket.scala
+#                                                   ^^ source.scala
+#                                                     ^^^^ source.scala variable.language.scala
+#                                                         ^^^^^^ source.scala
+#                                                               ^ source.scala keyword.operator.comparison.scala
+#                                                                ^^^^^^ source.scala
+#                                                                      ^ source.scala punctuation.section.block.end.scala
+>}
+#^ source.scala punctuation.section.block.end.scala
+>
+>case class Lambda(x: String, e: Expr) extends Expr
+#^^^^ source.scala keyword.declaration.scala
+#    ^ source.scala
+#     ^^^^^ source.scala keyword.declaration.scala
+#          ^ source.scala
+#           ^^^^^^ source.scala entity.name.class.declaration
+#                 ^ source.scala meta.bracket.scala
+#                  ^ source.scala variable.parameter.scala
+#                   ^ source.scala meta.colon.scala
+#                    ^ source.scala
+#                     ^^^^^^ source.scala storage.type.scala
+#                           ^^ source.scala
+#                             ^ source.scala variable.parameter.scala
+#                              ^ source.scala meta.colon.scala
+#                               ^ source.scala
+#                                ^^^^ source.scala entity.name.class
+#                                    ^ source.scala meta.bracket.scala
+#                                     ^ source.scala
+#                                      ^^^^^^^ source.scala keyword.declaration.scala
+#                                             ^ source.scala
+#                                              ^^^^ source.scala entity.other.inherited-class.scala
+>
+>trait Comparable[T <: Comparable[T]] { self: T =>
+#^^^^^ source.scala keyword.declaration.scala
+#     ^ source.scala
+#      ^^^^^^^^^^ source.scala entity.name.class.declaration
+#                ^ source.scala meta.bracket.scala
+#                 ^ source.scala entity.name.class
+#                  ^ source.scala
+#                   ^ source.scala keyword.operator.comparison.scala
+#                    ^ source.scala keyword.operator.scala
+#                     ^ source.scala
+#                      ^^^^^^^^^^ source.scala entity.name.class
+#                                ^ source.scala meta.bracket.scala
+#                                 ^ source.scala entity.name.class
+#                                  ^ source.scala meta.bracket.scala
+#                                   ^ source.scala meta.bracket.scala
+#                                    ^ source.scala
+#                                     ^ source.scala punctuation.section.block.begin.scala
+#                                      ^ source.scala
+#                                       ^^^^ source.scala variable.language.scala
+#                                           ^ source.scala keyword.operator.scala
+#                                            ^ source.scala
+#                                             ^ source.scala entity.name.class
+#                                              ^ source.scala
+#                                               ^ source.scala keyword.operator.comparison.scala
+#                                                ^ source.scala keyword.operator.comparison.scala
+>    def < (that: T): Boolean
+#^^^^ source.scala
+#    ^^^ source.scala keyword.declaration.scala
+#       ^ source.scala
+#        ^ source.scala entity.name.function.declaration
+#         ^ source.scala
+#          ^ source.scala meta.bracket.scala
+#           ^^^^ source.scala variable.parameter.scala
+#               ^ source.scala meta.colon.scala
+#                ^ source.scala
+#                 ^ source.scala entity.name.class
+#                  ^ source.scala meta.bracket.scala
+#                   ^ source.scala keyword.operator.scala
+#                    ^ source.scala
+#                     ^^^^^^^ source.scala storage.type.primitive.scala
+>    def <=(that: T): Boolean = this < that || this == that
+#^^^^ source.scala
+#    ^^^ source.scala keyword.declaration.scala
+#       ^ source.scala
+#        ^ source.scala entity.name.function.declaration
+#         ^ source.scala keyword.operator.comparison.scala
+#          ^ source.scala meta.bracket.scala
+#           ^^^^ source.scala variable.parameter.scala
+#               ^ source.scala meta.colon.scala
+#                ^ source.scala
+#                 ^ source.scala entity.name.class
+#                  ^ source.scala meta.bracket.scala
+#                   ^ source.scala keyword.operator.scala
+#                    ^ source.scala
+#                     ^^^^^^^ source.scala storage.type.primitive.scala
+#                            ^ source.scala
+#                             ^ source.scala keyword.operator.comparison.scala
+#                              ^ source.scala
+#                               ^^^^ source.scala variable.language.scala
+#                                   ^ source.scala
+#                                    ^ source.scala keyword.operator.comparison.scala
+#                                     ^^^^^^ source.scala
+#                                           ^^ source.scala keyword.operator.logical.scala
+#                                             ^ source.scala
+#                                              ^^^^ source.scala variable.language.scala
+#                                                  ^ source.scala
+#                                                   ^^ source.scala keyword.operator.comparison.scala
+#                                                     ^^^^^^ source.scala
+>    def > (that: T): Boolean = that < this
+#^^^^ source.scala
+#    ^^^ source.scala keyword.declaration.scala
+#       ^ source.scala
+#        ^ source.scala entity.name.function.declaration
+#         ^ source.scala
+#          ^ source.scala meta.bracket.scala
+#           ^^^^ source.scala variable.parameter.scala
+#               ^ source.scala meta.colon.scala
+#                ^ source.scala
+#                 ^ source.scala entity.name.class
+#                  ^ source.scala meta.bracket.scala
+#                   ^ source.scala keyword.operator.scala
+#                    ^ source.scala
+#                     ^^^^^^^ source.scala storage.type.primitive.scala
+#                            ^ source.scala
+#                             ^ source.scala keyword.operator.comparison.scala
+#                              ^^^^^^ source.scala
+#                                    ^ source.scala keyword.operator.comparison.scala
+#                                     ^ source.scala
+#                                      ^^^^ source.scala variable.language.scala
+>    def >=(that: T): Boolean = that <= this
+#^^^^ source.scala
+#    ^^^ source.scala keyword.declaration.scala
+#       ^ source.scala
+#        ^ source.scala entity.name.function.declaration
+#         ^ source.scala keyword.operator.comparison.scala
+#          ^ source.scala meta.bracket.scala
+#           ^^^^ source.scala variable.parameter.scala
+#               ^ source.scala meta.colon.scala
+#                ^ source.scala
+#                 ^ source.scala entity.name.class
+#                  ^ source.scala meta.bracket.scala
+#                   ^ source.scala keyword.operator.scala
+#                    ^ source.scala
+#                     ^^^^^^^ source.scala storage.type.primitive.scala
+#                            ^ source.scala
+#                             ^ source.scala keyword.operator.comparison.scala
+#                              ^^^^^^ source.scala
+#                                    ^^ source.scala keyword.operator.comparison.scala
+#                                      ^ source.scala
+#                                       ^^^^ source.scala variable.language.scala
+>}
+#^ source.scala punctuation.section.block.end.scala
+>
+>class A extends Root { override def x = "A" ; def superA = super.x }
+#^^^^^ source.scala keyword.declaration.scala
+#     ^ source.scala
+#      ^ source.scala entity.name.class.declaration
+#       ^ source.scala
+#        ^^^^^^^ source.scala keyword.declaration.scala
+#               ^ source.scala
+#                ^^^^ source.scala entity.other.inherited-class.scala
+#                    ^ source.scala
+#                     ^ source.scala punctuation.section.block.begin.scala
+#                      ^ source.scala
+#                       ^^^^^^^^ source.scala storage.modifier.other
+#                               ^ source.scala
+#                                ^^^ source.scala keyword.declaration.scala
+#                                   ^ source.scala
+#                                    ^ source.scala entity.name.function.declaration
+#                                     ^ source.scala
+#                                      ^ source.scala keyword.operator.comparison.scala
+#                                       ^ source.scala
+#                                        ^ source.scala string.quoted.double.scala punctuation.definition.string.begin.scala
+#                                         ^ source.scala string.quoted.double.scala
+#                                          ^ source.scala string.quoted.double.scala punctuation.definition.string.end.scala
+#                                           ^^^ source.scala
+#                                              ^^^ source.scala keyword.declaration.scala
+#                                                 ^ source.scala
+#                                                  ^^^^^^ source.scala entity.name.function.declaration
+#                                                        ^ source.scala
+#                                                         ^ source.scala keyword.operator.comparison.scala
+#                                                          ^ source.scala
+#                                                           ^^^^^ source.scala variable.language.scala
+#                                                                ^^^ source.scala
+#                                                                   ^ source.scala punctuation.section.block.end.scala
+>
+>object Appl {
+#^^^^^^ source.scala keyword.declaration.scala
+#      ^ source.scala
+#       ^^^^ source.scala entity.name.class.declaration
+#           ^ source.scala
+#            ^ source.scala punctuation.section.block.begin.scala
+>    def sum(xs: Int*) = (0 /: xs) ((x, y) => x + y)
+#^^^^ source.scala
+#    ^^^ source.scala keyword.declaration.scala
+#       ^ source.scala
+#        ^^^ source.scala entity.name.function.declaration
+#           ^ source.scala meta.bracket.scala
+#            ^^ source.scala variable.parameter.scala
+#              ^ source.scala meta.colon.scala
+#               ^ source.scala
+#                ^^^ source.scala storage.type.primitive.scala
+#                   ^ source.scala keyword.operator.arithmetic.scala
+#                    ^ source.scala meta.bracket.scala
+#                     ^ source.scala
+#                      ^ source.scala keyword.operator.comparison.scala
+#                       ^ source.scala
+#                        ^ source.scala meta.bracket.scala
+#                         ^ source.scala constant.numeric.scala
+#                          ^ source.scala
+#                           ^ source.scala keyword.operator.arithmetic.scala
+#                            ^ source.scala keyword.operator.scala
+#                             ^^^ source.scala
+#                                ^ source.scala meta.bracket.scala
+#                                 ^ source.scala
+#                                  ^ source.scala meta.bracket.scala
+#                                   ^ source.scala meta.bracket.scala
+#                                    ^^^^ source.scala
+#                                        ^ source.scala meta.bracket.scala
+#                                         ^ source.scala
+#                                          ^ source.scala keyword.operator.comparison.scala
+#                                           ^ source.scala keyword.operator.comparison.scala
+#                                            ^^^ source.scala
+#                                               ^ source.scala keyword.operator.arithmetic.scala
+#                                                ^^ source.scala
+#                                                  ^ source.scala meta.bracket.scala
+>    sum(List(1, 2, 3, 4): _*)
+#^^^^^^^ source.scala
+#       ^ source.scala meta.bracket.scala
+#        ^^^^ source.scala entity.name.class
+#            ^ source.scala meta.bracket.scala
+#             ^ source.scala constant.numeric.scala
+#              ^^ source.scala
+#                ^ source.scala constant.numeric.scala
+#                 ^^ source.scala
+#                   ^ source.scala constant.numeric.scala
+#                    ^^ source.scala
+#                      ^ source.scala constant.numeric.scala
+#                       ^ source.scala meta.bracket.scala
+#                        ^ source.scala keyword.operator.scala
+#                         ^^ source.scala
+#                           ^ source.scala keyword.operator.arithmetic.scala
+#                            ^ source.scala meta.bracket.scala
+>
+>    val x : S = new Z
+#^^^^ source.scala
+#    ^^^ source.scala keyword.declaration.stable.scala
+#       ^ source.scala
+#        ^ source.scala variable.other.declaration.scala
+#         ^ source.scala
+#          ^ source.scala keyword.operator.scala
+#           ^ source.scala
+#            ^ source.scala entity.name.class
+#             ^ source.scala
+#              ^ source.scala keyword.operator.comparison.scala
+#               ^ source.scala
+#                ^^^ source.scala keyword.declaration.scala
+#                   ^ source.scala
+#                    ^ source.scala entity.name.class
+>    val y : S = new Z {
+#^^^^ source.scala
+#    ^^^ source.scala keyword.declaration.stable.scala
+#       ^ source.scala
+#        ^ source.scala variable.other.declaration.scala
+#         ^ source.scala
+#          ^ source.scala keyword.operator.scala
+#           ^ source.scala
+#            ^ source.scala entity.name.class
+#             ^ source.scala
+#              ^ source.scala keyword.operator.comparison.scala
+#               ^ source.scala
+#                ^^^ source.scala keyword.declaration.scala
+#                   ^ source.scala
+#                    ^ source.scala entity.name.class
+#                     ^ source.scala
+#                      ^ source.scala punctuation.section.block.begin.scala
+>        val x = 5
+#^^^^^^^^ source.scala
+#        ^^^ source.scala keyword.declaration.stable.scala
+#           ^ source.scala
+#            ^ source.scala variable.other.declaration.scala
+#             ^ source.scala
+#              ^ source.scala keyword.operator.comparison.scala
+#               ^ source.scala
+#                ^ source.scala constant.numeric.scala
+>    }
+#^^^^ source.scala
+#    ^ source.scala punctuation.section.block.end.scala
+>
+>    def matmul(xss: Array[Array[Double]], yss: Array[Array[Double]]) = {
+#^^^^ source.scala
+#    ^^^ source.scala keyword.declaration.scala
+#       ^ source.scala
+#        ^^^^^^ source.scala entity.name.function.declaration
+#              ^ source.scala meta.bracket.scala
+#               ^^^ source.scala variable.parameter.scala
+#                  ^ source.scala meta.colon.scala
+#                   ^ source.scala
+#                    ^^^^^ source.scala entity.name.class
+#                         ^ source.scala meta.bracket.scala
+#                          ^^^^^ source.scala entity.name.class
+#                               ^ source.scala meta.bracket.scala
+#                                ^^^^^^ source.scala storage.type.primitive.scala
+#                                      ^ source.scala meta.bracket.scala
+#                                       ^ source.scala meta.bracket.scala
+#                                        ^^ source.scala
+#                                          ^^^ source.scala variable.parameter.scala
+#                                             ^ source.scala meta.colon.scala
+#                                              ^ source.scala
+#                                               ^^^^^ source.scala entity.name.class
+#                                                    ^ source.scala meta.bracket.scala
+#                                                     ^^^^^ source.scala entity.name.class
+#                                                          ^ source.scala meta.bracket.scala
+#                                                           ^^^^^^ source.scala storage.type.primitive.scala
+#                                                                 ^ source.scala meta.bracket.scala
+#                                                                  ^ source.scala meta.bracket.scala
+#                                                                   ^ source.scala meta.bracket.scala
+#                                                                    ^ source.scala
+#                                                                     ^ source.scala keyword.operator.comparison.scala
+#                                                                      ^ source.scala
+#                                                                       ^ source.scala punctuation.section.block.begin.scala
+>        val zss: Array[Array[Double]] = new Array(xss.length, yss(0).length)
+#^^^^^^^^ source.scala
+#        ^^^ source.scala keyword.declaration.stable.scala
+#           ^ source.scala
+#            ^^^ source.scala variable.other.declaration.scala
+#               ^ source.scala keyword.operator.scala
+#                ^ source.scala
+#                 ^^^^^ source.scala entity.name.class
+#                      ^ source.scala meta.bracket.scala
+#                       ^^^^^ source.scala entity.name.class
+#                            ^ source.scala meta.bracket.scala
+#                             ^^^^^^ source.scala storage.type.primitive.scala
+#                                   ^ source.scala meta.bracket.scala
+#                                    ^ source.scala meta.bracket.scala
+#                                     ^ source.scala
+#                                      ^ source.scala keyword.operator.comparison.scala
+#                                       ^ source.scala
+#                                        ^^^ source.scala keyword.declaration.scala
+#                                           ^ source.scala
+#                                            ^^^^^ source.scala entity.name.class
+#                                                 ^ source.scala meta.bracket.scala
+#                                                  ^^^^^^^^^^^^^^^ source.scala
+#                                                                 ^ source.scala meta.bracket.scala
+#                                                                  ^ source.scala constant.numeric.scala
+#                                                                   ^ source.scala meta.bracket.scala
+#                                                                    ^^^^^^^ source.scala
+#                                                                           ^ source.scala meta.bracket.scala
+>        var i = 0
+#^^^^^^^^ source.scala
+#        ^^^ source.scala keyword.declaration.volatile.scala
+#           ^ source.scala
+#            ^ source.scala variable.other.declaration.scala
+#             ^ source.scala
+#              ^ source.scala keyword.operator.comparison.scala
+#               ^ source.scala
+#                ^ source.scala constant.numeric.scala
+>        while (i < xss.length) {
+#^^^^^^^^ source.scala
+#        ^^^^^ source.scala keyword.control.flow.scala
+#             ^ source.scala
+#              ^ source.scala meta.bracket.scala
+#               ^^ source.scala
+#                 ^ source.scala keyword.operator.comparison.scala
+#                  ^^^^^^^^^^^ source.scala
+#                             ^ source.scala meta.bracket.scala
+#                              ^ source.scala
+#                               ^ source.scala punctuation.section.block.begin.scala
+>          var j = 0
+#^^^^^^^^^^ source.scala
+#          ^^^ source.scala keyword.declaration.volatile.scala
+#             ^ source.scala
+#              ^ source.scala variable.other.declaration.scala
+#               ^ source.scala
+#                ^ source.scala keyword.operator.comparison.scala
+#                 ^ source.scala
+#                  ^ source.scala constant.numeric.scala
+>          while (j < yss(0).length) {
+#^^^^^^^^^^ source.scala
+#          ^^^^^ source.scala keyword.control.flow.scala
+#               ^ source.scala
+#                ^ source.scala meta.bracket.scala
+#                 ^^ source.scala
+#                   ^ source.scala keyword.operator.comparison.scala
+#                    ^^^^ source.scala
+#                        ^ source.scala meta.bracket.scala
+#                         ^ source.scala constant.numeric.scala
+#                          ^ source.scala meta.bracket.scala
+#                           ^^^^^^^ source.scala
+#                                  ^ source.scala meta.bracket.scala
+#                                   ^ source.scala
+#                                    ^ source.scala punctuation.section.block.begin.scala
+>            var acc = 0.0
+#^^^^^^^^^^^^ source.scala
+#            ^^^ source.scala keyword.declaration.volatile.scala
+#               ^ source.scala
+#                ^^^ source.scala variable.other.declaration.scala
+#                   ^ source.scala
+#                    ^ source.scala keyword.operator.comparison.scala
+#                     ^ source.scala
+#                      ^^^ source.scala constant.numeric.scala
+>            var k = 0
+#^^^^^^^^^^^^ source.scala
+#            ^^^ source.scala keyword.declaration.volatile.scala
+#               ^ source.scala
+#                ^ source.scala variable.other.declaration.scala
+#                 ^ source.scala
+#                  ^ source.scala keyword.operator.comparison.scala
+#                   ^ source.scala
+#                    ^ source.scala constant.numeric.scala
+>            while (k < yss.length) {
+#^^^^^^^^^^^^ source.scala
+#            ^^^^^ source.scala keyword.control.flow.scala
+#                 ^ source.scala
+#                  ^ source.scala meta.bracket.scala
+#                   ^^ source.scala
+#                     ^ source.scala keyword.operator.comparison.scala
+#                      ^^^^^^^^^^^ source.scala
+#                                 ^ source.scala meta.bracket.scala
+#                                  ^ source.scala
+#                                   ^ source.scala punctuation.section.block.begin.scala
+>              acc = acc + xss(i)(k) * yss(k)(j)
+#^^^^^^^^^^^^^^^^^^ source.scala
+#                  ^ source.scala keyword.operator.comparison.scala
+#                   ^^^^^ source.scala
+#                        ^ source.scala keyword.operator.arithmetic.scala
+#                         ^^^^ source.scala
+#                             ^ source.scala meta.bracket.scala
+#                              ^ source.scala
+#                               ^ source.scala meta.bracket.scala
+#                                ^ source.scala meta.bracket.scala
+#                                 ^ source.scala
+#                                  ^ source.scala meta.bracket.scala
+#                                   ^ source.scala
+#                                    ^ source.scala keyword.operator.arithmetic.scala
+#                                     ^^^^ source.scala
+#                                         ^ source.scala meta.bracket.scala
+#                                          ^ source.scala
+#                                           ^ source.scala meta.bracket.scala
+#                                            ^ source.scala meta.bracket.scala
+#                                             ^ source.scala
+#                                              ^ source.scala meta.bracket.scala
+>              k += 1
+#^^^^^^^^^^^^^^^^ source.scala
+#                ^ source.scala keyword.operator.arithmetic.scala
+#                 ^ source.scala keyword.operator.comparison.scala
+#                  ^ source.scala
+#                   ^ source.scala constant.numeric.scala
+>            }
+#^^^^^^^^^^^^ source.scala
+#            ^ source.scala punctuation.section.block.end.scala
+>            zss(i)(j) = acc
+#^^^^^^^^^^^^^^^ source.scala
+#               ^ source.scala meta.bracket.scala
+#                ^ source.scala
+#                 ^ source.scala meta.bracket.scala
+#                  ^ source.scala meta.bracket.scala
+#                   ^ source.scala
+#                    ^ source.scala meta.bracket.scala
+#                     ^ source.scala
+#                      ^ source.scala keyword.operator.comparison.scala
+#                       ^^^^^ source.scala
+>            j += 1
+#^^^^^^^^^^^^^^ source.scala
+#              ^ source.scala keyword.operator.arithmetic.scala
+#               ^ source.scala keyword.operator.comparison.scala
+#                ^ source.scala
+#                 ^ source.scala constant.numeric.scala
+>          }
+#^^^^^^^^^^ source.scala
+#          ^ source.scala punctuation.section.block.end.scala
+>          i += 1
+#^^^^^^^^^^^^ source.scala
+#            ^ source.scala keyword.operator.arithmetic.scala
+#             ^ source.scala keyword.operator.comparison.scala
+#              ^ source.scala
+#               ^ source.scala constant.numeric.scala
+>        }
+#^^^^^^^^ source.scala
+#        ^ source.scala punctuation.section.block.end.scala
+>        zss
+#^^^^^^^^^^^^ source.scala
+>    }
+#^^^^ source.scala
+#    ^ source.scala punctuation.section.block.end.scala
+>
+>    def whileLoop(cond: => Boolean)(body: => Unit): Unit  =
+#^^^^ source.scala
+#    ^^^ source.scala keyword.declaration.scala
+#       ^ source.scala
+#        ^^^^^^^^^ source.scala entity.name.function.declaration
+#                 ^ source.scala meta.bracket.scala
+#                  ^^^^ source.scala variable.parameter.scala
+#                      ^ source.scala meta.colon.scala
+#                       ^ source.scala
+#                        ^ source.scala keyword.operator.comparison.scala
+#                         ^ source.scala keyword.operator.comparison.scala
+#                          ^ source.scala
+#                           ^^^^^^^ source.scala storage.type.primitive.scala
+#                                  ^ source.scala meta.bracket.scala
+#                                   ^ source.scala meta.bracket.scala
+#                                    ^^^^ source.scala variable.parameter.scala
+#                                        ^ source.scala meta.colon.scala
+#                                         ^ source.scala
+#                                          ^ source.scala keyword.operator.comparison.scala
+#                                           ^ source.scala keyword.operator.comparison.scala
+#                                            ^ source.scala
+#                                             ^^^^ source.scala storage.type.primitive.scala
+#                                                 ^ source.scala meta.bracket.scala
+#                                                  ^ source.scala keyword.operator.scala
+#                                                   ^ source.scala
+#                                                    ^^^^ source.scala storage.type.primitive.scala
+#                                                        ^^ source.scala
+#                                                          ^ source.scala keyword.operator.comparison.scala
+>      if (cond) { body ; whileLoop(cond)(body) } else {}
+#^^^^^^ source.scala
+#      ^^ source.scala keyword.control.flow.scala
+#        ^ source.scala
+#         ^ source.scala meta.bracket.scala
+#          ^^^^ source.scala
+#              ^ source.scala meta.bracket.scala
+#               ^ source.scala
+#                ^ source.scala punctuation.section.block.begin.scala
+#                 ^^^^^^^^^^^^^^^^^ source.scala
+#                                  ^ source.scala meta.bracket.scala
+#                                   ^^^^ source.scala
+#                                       ^ source.scala meta.bracket.scala
+#                                        ^ source.scala meta.bracket.scala
+#                                         ^^^^ source.scala
+#                                             ^ source.scala meta.bracket.scala
+#                                              ^ source.scala
+#                                               ^ source.scala punctuation.section.block.end.scala
+#                                                ^ source.scala
+#                                                 ^^^^ source.scala keyword.control.flow.scala
+#                                                     ^ source.scala
+#                                                      ^ source.scala punctuation.section.block.begin.scala
+#                                                       ^ source.scala punctuation.section.block.end.scala
+>
+>    do {x += 2} while (x < 100)
+#^^^^ source.scala
+#    ^^ source.scala keyword.control.flow.scala
+#      ^ source.scala
+#       ^ source.scala punctuation.section.block.begin.scala
+#        ^^ source.scala
+#          ^ source.scala keyword.operator.arithmetic.scala
+#           ^ source.scala keyword.operator.comparison.scala
+#            ^ source.scala
+#             ^ source.scala constant.numeric.scala
+#              ^ source.scala punctuation.section.block.end.scala
+#               ^ source.scala
+#                ^^^^^ source.scala keyword.control.flow.scala
+#                     ^ source.scala
+#                      ^ source.scala meta.bracket.scala
+#                       ^^ source.scala
+#                         ^ source.scala keyword.operator.comparison.scala
+#                          ^ source.scala
+#                           ^^^ source.scala constant.numeric.scala
+#                              ^ source.scala meta.bracket.scala
+>
+>    for  { i <- 1 until n
+#^^^^ source.scala
+#    ^^^ source.scala keyword.control.flow.scala
+#       ^^ source.scala
+#         ^ source.scala punctuation.section.block.begin.scala
+#          ^^^ source.scala
+#             ^ source.scala keyword.operator.comparison.scala
+#              ^ source.scala keyword.operator.arithmetic.scala
+#               ^ source.scala
+#                ^ source.scala constant.numeric.scala
+#                 ^^^^^^^^^ source.scala
+>        j <- 1 until i
+#^^^^^^^^^^ source.scala
+#          ^ source.scala keyword.operator.comparison.scala
+#           ^ source.scala keyword.operator.arithmetic.scala
+#            ^ source.scala
+#             ^ source.scala constant.numeric.scala
+#              ^^^^^^^^^ source.scala
+>        if isPrime(i+j)
+#^^^^^^^^ source.scala
+#        ^^ source.scala keyword.control.flow.scala
+#          ^^^^^^^^ source.scala
+#                  ^ source.scala meta.bracket.scala
+#                   ^ source.scala
+#                    ^ source.scala keyword.operator.arithmetic.scala
+#                     ^ source.scala
+#                      ^ source.scala meta.bracket.scala
+>    } yield (i, j)
+#^^^^ source.scala
+#    ^ source.scala punctuation.section.block.end.scala
+#     ^ source.scala
+#      ^^^^^ source.scala keyword.control.flow.scala
+#           ^ source.scala
+#            ^ source.scala meta.bracket.scala
+#             ^^^^ source.scala
+#                 ^ source.scala meta.bracket.scala
+>
+>    (1 until n)
+#^^^^ source.scala
+#    ^ source.scala meta.bracket.scala
+#     ^ source.scala constant.numeric.scala
+#      ^^^^^^^^ source.scala
+#              ^ source.scala meta.bracket.scala
+>    .flatMap {
+#^^^^^^^^^^^^^ source.scala
+#             ^ source.scala punctuation.section.block.begin.scala
+>     case i => (1 until i)
+#^^^^^ source.scala
+#     ^^^^ source.scala keyword.control.flow.scala
+#         ^^^ source.scala
+#            ^ source.scala keyword.operator.comparison.scala
+#             ^ source.scala keyword.operator.comparison.scala
+#              ^ source.scala
+#               ^ source.scala meta.bracket.scala
+#                ^ source.scala constant.numeric.scala
+#                 ^^^^^^^^ source.scala
+#                         ^ source.scala meta.bracket.scala
+>       .withFilter { j => isPrime(i+j) }
+#^^^^^^^^^^^^^^^^^^^ source.scala
+#                   ^ source.scala punctuation.section.block.begin.scala
+#                    ^^^ source.scala
+#                       ^ source.scala keyword.operator.comparison.scala
+#                        ^ source.scala keyword.operator.comparison.scala
+#                         ^^^^^^^^ source.scala
+#                                 ^ source.scala meta.bracket.scala
+#                                  ^ source.scala
+#                                   ^ source.scala keyword.operator.arithmetic.scala
+#                                    ^ source.scala
+#                                     ^ source.scala meta.bracket.scala
+#                                      ^ source.scala
+#                                       ^ source.scala punctuation.section.block.end.scala
+>       .map { case j => (i, j) } }
+#^^^^^^^^^^^^ source.scala
+#            ^ source.scala punctuation.section.block.begin.scala
+#             ^ source.scala
+#              ^^^^ source.scala keyword.control.flow.scala
+#                  ^^^ source.scala
+#                     ^ source.scala keyword.operator.comparison.scala
+#                      ^ source.scala keyword.operator.comparison.scala
+#                       ^ source.scala
+#                        ^ source.scala meta.bracket.scala
+#                         ^^^^ source.scala
+#                             ^ source.scala meta.bracket.scala
+#                              ^ source.scala
+#                               ^ source.scala punctuation.section.block.end.scala
+#                                ^ source.scala
+#                                 ^ source.scala punctuation.section.block.end.scala
+>
+>    try {
+#^^^^ source.scala
+#    ^^^ source.scala keyword.control.exception.scala
+#       ^ source.scala
+#        ^ source.scala punctuation.section.block.begin.scala
+>        throw ex;
+#^^^^^^^^ source.scala
+#        ^^^^^ source.scala keyword.control.flow.jump.scala
+#             ^^^^^ source.scala
+>    } catch {
+#^^^^ source.scala
+#    ^ source.scala punctuation.section.block.end.scala
+#     ^ source.scala
+#      ^^^^^ source.scala keyword.control.exception.scala
+#           ^ source.scala
+#            ^ source.scala punctuation.section.block.begin.scala
+>        case NonFatal(e) => throw e;
+#^^^^^^^^ source.scala
+#        ^^^^ source.scala keyword.control.flow.scala
+#            ^ source.scala
+#             ^^^^^^^^ source.scala entity.name.class
+#                     ^ source.scala meta.bracket.scala
+#                      ^ source.scala
+#                       ^ source.scala meta.bracket.scala
+#                        ^ source.scala
+#                         ^ source.scala keyword.operator.comparison.scala
+#                          ^ source.scala keyword.operator.comparison.scala
+#                           ^ source.scala
+#                            ^^^^^ source.scala keyword.control.flow.jump.scala
+#                                 ^^^^ source.scala
+>        case other => throw other
+#^^^^^^^^ source.scala
+#        ^^^^ source.scala keyword.control.flow.scala
+#            ^^^^^^^ source.scala
+#                   ^ source.scala keyword.operator.comparison.scala
+#                    ^ source.scala keyword.operator.comparison.scala
+#                     ^ source.scala
+#                      ^^^^^ source.scala keyword.control.flow.jump.scala
+#                           ^^^^^^^ source.scala
+>    }
+#^^^^ source.scala
+#    ^ source.scala punctuation.section.block.end.scala
+>}
+#^ source.scala punctuation.section.block.end.scala
+>
+>object Inline {
+#^^^^^^ source.scala keyword.declaration.scala
+#      ^ source.scala
+#       ^^^^^^ source.scala entity.name.class.declaration
+#             ^ source.scala
+#              ^ source.scala punctuation.section.block.begin.scala
+>    val summ = (x: Int,y: Int) => x + y 
+#^^^^ source.scala
+#    ^^^ source.scala keyword.declaration.stable.scala
+#       ^ source.scala
+#        ^^^^ source.scala variable.other.declaration.scala
+#            ^ source.scala
+#             ^ source.scala keyword.operator.comparison.scala
+#              ^ source.scala
+#               ^ source.scala meta.bracket.scala
+#                ^ source.scala variable.parameter.scala
+#                 ^ source.scala meta.colon.scala
+#                  ^ source.scala
+#                   ^^^ source.scala storage.type.primitive.scala
+#                      ^ source.scala
+#                       ^ source.scala variable.parameter.scala
+#                        ^ source.scala meta.colon.scala
+#                         ^ source.scala
+#                          ^^^ source.scala storage.type.primitive.scala
+#                             ^ source.scala meta.bracket.scala
+#                              ^ source.scala
+#                               ^ source.scala keyword.operator.comparison.scala
+#                                ^ source.scala keyword.operator.comparison.scala
+#                                 ^^^ source.scala
+#                                    ^ source.scala keyword.operator.arithmetic.scala
+#                                     ^^^^ source.scala
+>}
+#^ source.scala punctuation.section.block.end.scala
+>
+>object Monoids {
+#^^^^^^ source.scala keyword.declaration.scala
+#      ^ source.scala
+#       ^^^^^^^ source.scala entity.name.class.declaration
+#              ^ source.scala
+#               ^ source.scala punctuation.section.block.begin.scala
+>    implicit object stringMonoid extends Monoid[String] {
+#^^^^ source.scala
+#    ^^^^^^^^ source.scala storage.modifier.other
+#            ^ source.scala
+#             ^^^^^^ source.scala keyword.declaration.scala
+#                   ^ source.scala
+#                    ^^^^^^^^^^^^ source.scala entity.name.class.declaration
+#                                ^ source.scala
+#                                 ^^^^^^^ source.scala keyword.declaration.scala
+#                                        ^ source.scala
+#                                         ^^^^^^ source.scala entity.other.inherited-class.scala
+#                                               ^ source.scala meta.bracket.scala
+#                                                ^^^^^^ source.scala storage.type.scala
+#                                                      ^ source.scala meta.bracket.scala
+#                                                       ^ source.scala
+#                                                        ^ source.scala punctuation.section.block.begin.scala
+>      def add(x: String, y: String): String = x.concat(y)
+#^^^^^^ source.scala
+#      ^^^ source.scala keyword.declaration.scala
+#         ^ source.scala
+#          ^^^ source.scala entity.name.function.declaration
+#             ^ source.scala meta.bracket.scala
+#              ^ source.scala variable.parameter.scala
+#               ^ source.scala meta.colon.scala
+#                ^ source.scala
+#                 ^^^^^^ source.scala storage.type.scala
+#                       ^^ source.scala
+#                         ^ source.scala variable.parameter.scala
+#                          ^ source.scala meta.colon.scala
+#                           ^ source.scala
+#                            ^^^^^^ source.scala storage.type.scala
+#                                  ^ source.scala meta.bracket.scala
+#                                   ^ source.scala keyword.operator.scala
+#                                    ^ source.scala
+#                                     ^^^^^^ source.scala storage.type.scala
+#                                           ^ source.scala
+#                                            ^ source.scala keyword.operator.comparison.scala
+#                                             ^^^^^^^^^ source.scala
+#                                                      ^ source.scala meta.bracket.scala
+#                                                       ^ source.scala
+#                                                        ^ source.scala meta.bracket.scala
+>      def unit: String = ""
+#^^^^^^ source.scala
+#      ^^^ source.scala keyword.declaration.scala
+#         ^ source.scala
+#          ^^^^ source.scala entity.name.function.declaration
+#              ^ source.scala keyword.operator.scala
+#               ^ source.scala
+#                ^^^^^^ source.scala storage.type.scala
+#                      ^ source.scala
+#                       ^ source.scala keyword.operator.comparison.scala
+#                        ^ source.scala
+#                         ^ source.scala string.quoted.double.scala punctuation.definition.string.begin.scala
+#                          ^ source.scala string.quoted.double.scala punctuation.definition.string.end.scala
+>    }
+#^^^^ source.scala
+#    ^ source.scala punctuation.section.block.end.scala
+>}
+#^ source.scala punctuation.section.block.end.scala
+>
+>object A1 {
+#^^^^^^ source.scala keyword.declaration.scala
+#      ^ source.scala
+#       ^^ source.scala entity.name.class.declaration
+#         ^ source.scala
+#          ^ source.scala punctuation.section.block.begin.scala
+>    def sum[A](xs: List[A])(implicit m: Monoid[A]): A =
+#^^^^ source.scala
+#    ^^^ source.scala keyword.declaration.scala
+#       ^ source.scala
+#        ^^^ source.scala entity.name.function.declaration
+#           ^ source.scala meta.bracket.scala
+#            ^ source.scala entity.name.class
+#             ^ source.scala meta.bracket.scala
+#              ^ source.scala meta.bracket.scala
+#               ^^ source.scala variable.parameter.scala
+#                 ^ source.scala meta.colon.scala
+#                  ^ source.scala
+#                   ^^^^ source.scala entity.name.class
+#                       ^ source.scala meta.bracket.scala
+#                        ^ source.scala entity.name.class
+#                         ^ source.scala meta.bracket.scala
+#                          ^ source.scala meta.bracket.scala
+#                           ^ source.scala meta.bracket.scala
+#                            ^^^^^^^^ source.scala storage.modifier.other
+#                                    ^ source.scala
+#                                     ^ source.scala variable.parameter.scala
+#                                      ^ source.scala meta.colon.scala
+#                                       ^ source.scala
+#                                        ^^^^^^ source.scala entity.name.class
+#                                              ^ source.scala meta.bracket.scala
+#                                               ^ source.scala entity.name.class
+#                                                ^ source.scala meta.bracket.scala
+#                                                 ^ source.scala meta.bracket.scala
+#                                                  ^ source.scala keyword.operator.scala
+#                                                   ^ source.scala
+#                                                    ^ source.scala entity.name.class
+#                                                     ^ source.scala
+#                                                      ^ source.scala keyword.operator.comparison.scala
+>      if (xs.isEmpty) m.unit
+#^^^^^^ source.scala
+#      ^^ source.scala keyword.control.flow.scala
+#        ^ source.scala
+#         ^ source.scala meta.bracket.scala
+#          ^^^^^^^^^^ source.scala
+#                    ^ source.scala meta.bracket.scala
+#                     ^^^^^^^^ source.scala
+>      else m.add(xs.head, sum(xs.tail))
+#^^^^^^ source.scala
+#      ^^^^ source.scala keyword.control.flow.scala
+#          ^^^^^^ source.scala
+#                ^ source.scala meta.bracket.scala
+#                 ^^^^^^^^^^^^ source.scala
+#                             ^ source.scala meta.bracket.scala
+#                              ^^^^^^^ source.scala
+#                                     ^ source.scala meta.bracket.scala
+#                                      ^ source.scala meta.bracket.scala
+>
+>    implicit def list2ordered[A](x: List[A])
+#^^^^ source.scala
+#    ^^^^^^^^ source.scala storage.modifier.other
+#            ^ source.scala
+#             ^^^ source.scala keyword.declaration.scala
+#                ^ source.scala
+#                 ^^^^^^^^^^^^ source.scala entity.name.function.declaration
+#                             ^ source.scala meta.bracket.scala
+#                              ^ source.scala entity.name.class
+#                               ^ source.scala meta.bracket.scala
+#                                ^ source.scala meta.bracket.scala
+#                                 ^ source.scala variable.parameter.scala
+#                                  ^ source.scala meta.colon.scala
+#                                   ^ source.scala
+#                                    ^^^^ source.scala entity.name.class
+#                                        ^ source.scala meta.bracket.scala
+#                                         ^ source.scala entity.name.class
+#                                          ^ source.scala meta.bracket.scala
+#                                           ^ source.scala meta.bracket.scala
+>      (implicit elem2ordered: A => Ordered[A]): Ordered[List[A]]
+#^^^^^^ source.scala
+#      ^ source.scala meta.bracket.scala
+#       ^^^^^^^^ source.scala storage.modifier.other
+#               ^ source.scala
+#                ^^^^^^^^^^^^ source.scala variable.parameter.scala
+#                            ^ source.scala meta.colon.scala
+#                             ^ source.scala
+#                              ^ source.scala entity.name.class
+#                               ^ source.scala
+#                                ^ source.scala keyword.operator.comparison.scala
+#                                 ^ source.scala keyword.operator.comparison.scala
+#                                  ^ source.scala
+#                                   ^^^^^^^ source.scala entity.name.class
+#                                          ^ source.scala meta.bracket.scala
+#                                           ^ source.scala entity.name.class
+#                                            ^ source.scala meta.bracket.scala
+#                                             ^ source.scala meta.bracket.scala
+#                                              ^ source.scala keyword.operator.scala
+#                                               ^ source.scala
+#                                                ^^^^^^^ source.scala entity.name.class
+#                                                       ^ source.scala meta.bracket.scala
+#                                                        ^^^^ source.scala entity.name.class
+#                                                            ^ source.scala meta.bracket.scala
+#                                                             ^ source.scala entity.name.class
+#                                                              ^ source.scala meta.bracket.scala
+#                                                               ^ source.scala meta.bracket.scala
+>}
+#^ source.scala punctuation.section.block.end.scala
+>
+>object PatternMatching {
+#^^^^^^ source.scala keyword.declaration.scala
+#      ^ source.scala
+#       ^^^^^^^^^^^^^^^ source.scala entity.name.class.declaration
+#                      ^ source.scala
+#                       ^ source.scala punctuation.section.block.begin.scala
+>    def f(x: Int, y: Int) = x match {
+#^^^^ source.scala
+#    ^^^ source.scala keyword.declaration.scala
+#       ^ source.scala
+#        ^ source.scala entity.name.function.declaration
+#         ^ source.scala meta.bracket.scala
+#          ^ source.scala variable.parameter.scala
+#           ^ source.scala meta.colon.scala
+#            ^ source.scala
+#             ^^^ source.scala storage.type.primitive.scala
+#                ^^ source.scala
+#                  ^ source.scala variable.parameter.scala
+#                   ^ source.scala meta.colon.scala
+#                    ^ source.scala
+#                     ^^^ source.scala storage.type.primitive.scala
+#                        ^ source.scala meta.bracket.scala
+#                         ^ source.scala
+#                          ^ source.scala keyword.operator.comparison.scala
+#                           ^^^ source.scala
+#                              ^^^^^ source.scala keyword.control.flow.scala
+#                                   ^ source.scala
+#                                    ^ source.scala punctuation.section.block.begin.scala
+>        case `y` => 
+#^^^^^^^^ source.scala
+#        ^^^^ source.scala keyword.control.flow.scala
+#            ^^^^^ source.scala
+#                 ^ source.scala keyword.operator.comparison.scala
+#                  ^ source.scala keyword.operator.comparison.scala
+#                   ^^ source.scala
+>        case  s @ Seq(_, _, _) => 
+#^^^^^^^^ source.scala
+#        ^^^^ source.scala keyword.control.flow.scala
+#            ^^^^ source.scala
+#                ^ source.scala keyword.operator.scala
+#                 ^ source.scala
+#                  ^^^ source.scala entity.name.class
+#                     ^ source.scala meta.bracket.scala
+#                      ^^^^^^^ source.scala
+#                             ^ source.scala meta.bracket.scala
+#                              ^ source.scala
+#                               ^ source.scala keyword.operator.comparison.scala
+#                                ^ source.scala keyword.operator.comparison.scala
+#                                 ^^ source.scala
+>        case Seq(first, tail @ _*) =>
+#^^^^^^^^ source.scala
+#        ^^^^ source.scala keyword.control.flow.scala
+#            ^ source.scala
+#             ^^^ source.scala entity.name.class
+#                ^ source.scala meta.bracket.scala
+#                 ^^^^^^^^^^^^ source.scala
+#                             ^ source.scala keyword.operator.scala
+#                              ^^ source.scala
+#                                ^ source.scala keyword.operator.arithmetic.scala
+#                                 ^ source.scala meta.bracket.scala
+#                                  ^ source.scala
+#                                   ^ source.scala keyword.operator.comparison.scala
+#                                    ^ source.scala keyword.operator.comparison.scala
+>        case first +: tail =>
+#^^^^^^^^ source.scala
+#        ^^^^ source.scala keyword.control.flow.scala
+#            ^^^^^^^ source.scala
+#                   ^ source.scala keyword.operator.arithmetic.scala
+#                    ^ source.scala keyword.operator.scala
+#                     ^^^^^^ source.scala
+#                           ^ source.scala keyword.operator.comparison.scala
+#                            ^ source.scala keyword.operator.comparison.scala
+>        case 3 | 5 | 6 =>
+#^^^^^^^^ source.scala
+#        ^^^^ source.scala keyword.control.flow.scala
+#            ^ source.scala
+#             ^ source.scala constant.numeric.scala
+#              ^ source.scala
+#               ^ source.scala keyword.operator.scala
+#                ^ source.scala
+#                 ^ source.scala constant.numeric.scala
+#                  ^ source.scala
+#                   ^ source.scala keyword.operator.scala
+#                    ^ source.scala
+#                     ^ source.scala constant.numeric.scala
+#                      ^ source.scala
+#                       ^ source.scala keyword.operator.comparison.scala
+#                        ^ source.scala keyword.operator.comparison.scala
+>        case y: Number => y.n
+#^^^^^^^^ source.scala
+#        ^^^^ source.scala keyword.control.flow.scala
+#            ^ source.scala
+#             ^ source.scala variable.parameter.scala
+#              ^ source.scala meta.colon.scala
+#               ^ source.scala
+#                ^^^^^^ source.scala entity.name.class
+#                      ^ source.scala
+#                       ^ source.scala keyword.operator.comparison.scala
+#                        ^ source.scala keyword.operator.comparison.scala
+#                         ^^^^^ source.scala
+>        case Lit(n)        => n
+#^^^^^^^^ source.scala
+#        ^^^^ source.scala keyword.control.flow.scala
+#            ^ source.scala
+#             ^^^ source.scala entity.name.class
+#                ^ source.scala meta.bracket.scala
+#                 ^ source.scala
+#                  ^ source.scala meta.bracket.scala
+#                   ^^^^^^^^ source.scala
+#                           ^ source.scala keyword.operator.comparison.scala
+#                            ^ source.scala keyword.operator.comparison.scala
+#                             ^^^ source.scala
+>        case IsZero(u)     => eval(u) == 0
+#^^^^^^^^ source.scala
+#        ^^^^ source.scala keyword.control.flow.scala
+#            ^ source.scala
+#             ^^^^^^ source.scala entity.name.class
+#                   ^ source.scala meta.bracket.scala
+#                    ^ source.scala
+#                     ^ source.scala meta.bracket.scala
+#                      ^^^^^ source.scala
+#                           ^ source.scala keyword.operator.comparison.scala
+#                            ^ source.scala keyword.operator.comparison.scala
+#                             ^^^^^ source.scala
+#                                  ^ source.scala meta.bracket.scala
+#                                   ^ source.scala
+#                                    ^ source.scala meta.bracket.scala
+#                                     ^ source.scala
+#                                      ^^ source.scala keyword.operator.comparison.scala
+#                                        ^ source.scala
+#                                         ^ source.scala constant.numeric.scala
+>        case _ => 15
+#^^^^^^^^ source.scala
+#        ^^^^ source.scala keyword.control.flow.scala
+#            ^^^ source.scala
+#               ^ source.scala keyword.operator.comparison.scala
+#                ^ source.scala keyword.operator.comparison.scala
+#                 ^ source.scala
+#                  ^^ source.scala constant.numeric.scala
+>    }
+#^^^^ source.scala
+#    ^ source.scala punctuation.section.block.end.scala
+>
+>}
+#^ source.scala punctuation.section.block.end.scala
+>
+>package p1 {
+#^^^^^^^ source.scala meta.package.scala keyword.other.import.scala
+#       ^ source.scala meta.package.scala
+#        ^^ source.scala meta.package.scala entity.name.package.scala
+#          ^^^ source.scala meta.package.scala
+>    package p2 {
+#^^^^ source.scala
+#    ^^^^^^^ source.scala meta.package.scala keyword.other.import.scala
+#           ^ source.scala meta.package.scala
+#            ^^ source.scala meta.package.scala entity.name.package.scala
+#              ^^^ source.scala meta.package.scala
+>        object Kitten
+#^^^^^^^^ source.scala
+#        ^^^^^^ source.scala keyword.declaration.scala
+#              ^ source.scala
+#               ^^^^^^ source.scala entity.name.class.declaration
+>    }
+#^^^^ source.scala
+#    ^ source.scala punctuation.section.block.end.scala
+>}
+#^ source.scala punctuation.section.block.end.scala
+>
+>package a.b {
+#^^^^^^^ source.scala meta.package.scala keyword.other.import.scala
+#       ^ source.scala meta.package.scala
+#        ^ source.scala meta.package.scala entity.name.package.scala
+#         ^ source.scala meta.package.scala punctuation.definition.package
+#          ^ source.scala meta.package.scala entity.name.package.scala
+#           ^^^ source.scala meta.package.scala
+>    class A {
+#^^^^ source.scala
+#    ^^^^^ source.scala keyword.declaration.scala
+#         ^ source.scala
+#          ^ source.scala entity.name.class.declaration
+#           ^ source.scala
+#            ^ source.scala punctuation.section.block.begin.scala
+>      val x = new _root_.b.B
+#^^^^^^ source.scala
+#      ^^^ source.scala keyword.declaration.stable.scala
+#         ^ source.scala
+#          ^ source.scala variable.other.declaration.scala
+#           ^ source.scala
+#            ^ source.scala keyword.operator.comparison.scala
+#             ^ source.scala
+#              ^^^ source.scala keyword.declaration.scala
+#                 ^ source.scala
+#                  ^^^^^^^^^^ source.scala entity.name.class
+>    }
+#^^^^ source.scala
+#    ^ source.scala punctuation.section.block.end.scala
+>}
+#^ source.scala punctuation.section.block.end.scala
+>
+>object HelloWorld {
+#^^^^^^ source.scala keyword.declaration.scala
+#      ^ source.scala
+#       ^^^^^^^^^^ source.scala entity.name.class.declaration
+#                 ^ source.scala
+#                  ^ source.scala punctuation.section.block.begin.scala
+>    def main(args: Array[String]) { println("Hello World") }
+#^^^^ source.scala
+#    ^^^ source.scala keyword.declaration.scala
+#       ^ source.scala
+#        ^^^^ source.scala entity.name.function.declaration
+#            ^ source.scala meta.bracket.scala
+#             ^^^^ source.scala variable.parameter.scala
+#                 ^ source.scala meta.colon.scala
+#                  ^ source.scala
+#                   ^^^^^ source.scala entity.name.class
+#                        ^ source.scala meta.bracket.scala
+#                         ^^^^^^ source.scala storage.type.scala
+#                               ^ source.scala meta.bracket.scala
+#                                ^ source.scala meta.bracket.scala
+#                                 ^ source.scala
+#                                  ^ source.scala punctuation.section.block.begin.scala
+#                                   ^^^^^^^^ source.scala
+#                                           ^ source.scala meta.bracket.scala
+#                                            ^ source.scala string.quoted.double.scala punctuation.definition.string.begin.scala
+#                                             ^^^^^^^^^^^ source.scala string.quoted.double.scala
+#                                                        ^ source.scala string.quoted.double.scala punctuation.definition.string.end.scala
+#                                                         ^ source.scala meta.bracket.scala
+#                                                          ^ source.scala
+#                                                           ^ source.scala punctuation.section.block.end.scala
+>}
+#^ source.scala punctuation.section.block.end.scala
+>
+>object HelloWorld extends App {
+#^^^^^^ source.scala keyword.declaration.scala
+#      ^ source.scala
+#       ^^^^^^^^^^ source.scala entity.name.class.declaration
+#                 ^ source.scala
+#                  ^^^^^^^ source.scala keyword.declaration.scala
+#                         ^ source.scala
+#                          ^^^ source.scala entity.other.inherited-class.scala
+#                             ^ source.scala
+#                              ^ source.scala punctuation.section.block.begin.scala
+>    println("Hello World")
+#^^^^^^^^^^^ source.scala
+#           ^ source.scala meta.bracket.scala
+#            ^ source.scala string.quoted.double.scala punctuation.definition.string.begin.scala
+#             ^^^^^^^^^^^ source.scala string.quoted.double.scala
+#                        ^ source.scala string.quoted.double.scala punctuation.definition.string.end.scala
+#                         ^ source.scala meta.bracket.scala
+>}
+#^ source.scala punctuation.section.block.end.scala
+>
+>@SerialVersionUID(12345)
+#^ source.scala keyword.operator.scala
+# ^^^^^^^^^^^^^^^^ source.scala entity.name.class
+#                 ^ source.scala meta.bracket.scala
+#                  ^^^^^ source.scala constant.numeric.scala
+#                       ^ source.scala meta.bracket.scala
+>object Annotations {
+#^^^^^^ source.scala keyword.declaration.scala
+#      ^ source.scala
+#       ^^^^^^^^^^^ source.scala entity.name.class.declaration
+#                  ^ source.scala
+#                   ^ source.scala punctuation.section.block.begin.scala
+>    @deprecated("Use D", "1.0") class C {  }
+#^^^^ source.scala
+#    ^ source.scala keyword.operator.scala
+#     ^^^^^^^^^^ source.scala
+#               ^ source.scala meta.bracket.scala
+#                ^ source.scala string.quoted.double.scala punctuation.definition.string.begin.scala
+#                 ^^^^^ source.scala string.quoted.double.scala
+#                      ^ source.scala string.quoted.double.scala punctuation.definition.string.end.scala
+#                       ^^ source.scala
+#                         ^ source.scala string.quoted.double.scala punctuation.definition.string.begin.scala
+#                          ^^^ source.scala string.quoted.double.scala
+#                             ^ source.scala string.quoted.double.scala punctuation.definition.string.end.scala
+#                              ^ source.scala meta.bracket.scala
+#                               ^ source.scala
+#                                ^^^^^ source.scala keyword.declaration.scala
+#                                     ^ source.scala
+#                                      ^ source.scala entity.name.class.declaration
+#                                       ^ source.scala
+#                                        ^ source.scala punctuation.section.block.begin.scala
+#                                         ^^ source.scala
+#                                           ^ source.scala punctuation.section.block.end.scala
+>    @transient @volatile var m: Int       
+#^^^^ source.scala
+#    ^ source.scala keyword.operator.scala
+#     ^^^^^^^^^^ source.scala
+#               ^ source.scala keyword.operator.scala
+#                ^^^^^^^^^ source.scala
+#                         ^^^ source.scala keyword.declaration.volatile.scala
+#                            ^ source.scala
+#                             ^ source.scala variable.other.declaration.scala
+#                              ^ source.scala keyword.operator.scala
+#                               ^ source.scala
+#                                ^^^ source.scala storage.type.primitive.scala
+#                                   ^^^^^^^^ source.scala
+>
+>    def f(x: Option[Int]) = (x: @unchecked) match {
+#^^^^ source.scala
+#    ^^^ source.scala keyword.declaration.scala
+#       ^ source.scala
+#        ^ source.scala entity.name.function.declaration
+#         ^ source.scala meta.bracket.scala
+#          ^ source.scala variable.parameter.scala
+#           ^ source.scala meta.colon.scala
+#            ^ source.scala
+#             ^^^^^^ source.scala entity.name.class
+#                   ^ source.scala meta.bracket.scala
+#                    ^^^ source.scala storage.type.primitive.scala
+#                       ^ source.scala meta.bracket.scala
+#                        ^ source.scala meta.bracket.scala
+#                         ^ source.scala
+#                          ^ source.scala keyword.operator.comparison.scala
+#                           ^ source.scala
+#                            ^ source.scala meta.bracket.scala
+#                             ^ source.scala variable.parameter.scala
+#                              ^ source.scala meta.colon.scala
+#                               ^ source.scala
+#                                ^ source.scala keyword.operator.scala
+#                                 ^^^^^^^^^ source.scala
+#                                          ^ source.scala meta.bracket.scala
+#                                           ^ source.scala
+#                                            ^^^^^ source.scala keyword.control.flow.scala
+#                                                 ^ source.scala
+#                                                  ^ source.scala punctuation.section.block.begin.scala
+>        case Some(y) => y
+#^^^^^^^^ source.scala
+#        ^^^^ source.scala keyword.control.flow.scala
+#            ^ source.scala
+#             ^^^^ source.scala entity.name.class
+#                 ^ source.scala meta.bracket.scala
+#                  ^ source.scala
+#                   ^ source.scala meta.bracket.scala
+#                    ^ source.scala
+#                     ^ source.scala keyword.operator.comparison.scala
+#                      ^ source.scala keyword.operator.comparison.scala
+#                       ^^^ source.scala
+>    }
+#^^^^ source.scala
+#    ^ source.scala punctuation.section.block.end.scala
+>
+>    trait Function0[@specialized(Unit, Int, Double) T] {
+#^^^^ source.scala
+#    ^^^^^ source.scala keyword.declaration.scala
+#         ^ source.scala
+#          ^^^^^^^^^ source.scala entity.name.class.declaration
+#                   ^ source.scala meta.bracket.scala
+#                    ^ source.scala keyword.operator.scala
+#                     ^^^^^^^^^^^ source.scala
+#                                ^ source.scala meta.bracket.scala
+#                                 ^^^^ source.scala storage.type.primitive.scala
+#                                     ^^ source.scala
+#                                       ^^^ source.scala storage.type.primitive.scala
+#                                          ^^ source.scala
+#                                            ^^^^^^ source.scala storage.type.primitive.scala
+#                                                  ^ source.scala meta.bracket.scala
+#                                                   ^ source.scala
+#                                                    ^ source.scala entity.name.class
+#                                                     ^ source.scala meta.bracket.scala
+#                                                      ^ source.scala
+#                                                       ^ source.scala punctuation.section.block.begin.scala
+>        def apply: T
+#^^^^^^^^ source.scala
+#        ^^^ source.scala keyword.declaration.scala
+#           ^ source.scala
+#            ^^^^^ source.scala entity.name.function.declaration
+#                 ^ source.scala keyword.operator.scala
+#                  ^ source.scala
+#                   ^ source.scala entity.name.class
+>    }
+#^^^^ source.scala
+#    ^ source.scala punctuation.section.block.end.scala
+>
+>    @UserDefinedUpperCase def x
+#^^^^ source.scala
+#    ^ source.scala keyword.operator.scala
+#     ^^^^^^^^^^^^^^^^^^^^ source.scala entity.name.class
+#                         ^ source.scala
+#                          ^^^ source.scala keyword.declaration.scala
+#                             ^ source.scala
+#                              ^ source.scala entity.name.function.declaration
+>    @userDefinedLowerCase def y
+#^^^^ source.scala
+#    ^ source.scala keyword.operator.scala
+#     ^^^^^^^^^^^^^^^^^^^^^ source.scala
+#                          ^^^ source.scala keyword.declaration.scala
+#                             ^ source.scala
+#                              ^ source.scala entity.name.function.declaration
+>}
+#^ source.scala punctuation.section.block.end.scala

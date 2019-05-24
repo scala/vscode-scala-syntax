@@ -1,0 +1,495 @@
+>
+>object ExampleIdentifiers {
+#^^^^^^ source.scala keyword.declaration.scala
+#      ^ source.scala
+#       ^^^^^^^^^^^^^^^^^^ source.scala entity.name.class.declaration
+#                         ^ source.scala
+#                          ^ source.scala punctuation.section.block.begin.scala
+>  val x = 3
+#^^ source.scala
+#  ^^^ source.scala keyword.declaration.stable.scala
+#     ^ source.scala
+#      ^ source.scala variable.other.declaration.scala
+#       ^ source.scala
+#        ^ source.scala keyword.operator.comparison.scala
+#         ^ source.scala
+#          ^ source.scala constant.numeric.scala
+>  val Object = 3        
+#^^ source.scala
+#  ^^^ source.scala keyword.declaration.stable.scala
+#     ^ source.scala
+#      ^^^^^^ source.scala constant.other.declaration.scala
+#            ^ source.scala
+#             ^ source.scala keyword.operator.comparison.scala
+#              ^ source.scala
+#               ^ source.scala constant.numeric.scala
+#                ^^^^^^^^^ source.scala
+>  val maxIndex = 3   
+#^^ source.scala
+#  ^^^ source.scala keyword.declaration.stable.scala
+#     ^ source.scala
+#      ^^^^^^^^ source.scala variable.other.declaration.scala
+#              ^ source.scala
+#               ^ source.scala keyword.operator.comparison.scala
+#                ^ source.scala
+#                 ^ source.scala constant.numeric.scala
+#                  ^^^^ source.scala
+>  val p2p = 3      
+#^^ source.scala
+#  ^^^ source.scala keyword.declaration.stable.scala
+#     ^ source.scala
+#      ^^^ source.scala variable.other.declaration.scala
+#         ^ source.scala
+#          ^ source.scala keyword.operator.comparison.scala
+#           ^ source.scala
+#            ^ source.scala constant.numeric.scala
+#             ^^^^^^^ source.scala
+>  val empty_? = 3
+#^^ source.scala
+#  ^^^ source.scala keyword.declaration.stable.scala
+#     ^ source.scala
+#      ^^^^^^^ source.scala variable.other.declaration.scala
+#             ^ source.scala
+#              ^ source.scala keyword.operator.comparison.scala
+#               ^ source.scala
+#                ^ source.scala constant.numeric.scala
+>  val + = 3         
+#^^ source.scala
+#  ^^^ source.scala keyword.declaration.stable.scala
+#     ^ source.scala
+#      ^ source.scala variable.other.declaration.scala
+#       ^ source.scala
+#        ^ source.scala keyword.operator.comparison.scala
+#         ^ source.scala
+#          ^ source.scala constant.numeric.scala
+#           ^^^^^^^^^^ source.scala
+>  val `yield` = 3       
+#^^ source.scala
+#  ^^^ source.scala keyword.declaration.stable.scala
+#     ^ source.scala
+#      ^^^^^^^ source.scala variable.other.declaration.scala
+#             ^ source.scala
+#              ^ source.scala keyword.operator.comparison.scala
+#               ^ source.scala
+#                ^ source.scala constant.numeric.scala
+#                 ^^^^^^^^ source.scala
+>  val αρετη = 3     
+#^^^^^^^^^^^^ source.scala
+#            ^ source.scala keyword.operator.comparison.scala
+#             ^ source.scala
+#              ^ source.scala constant.numeric.scala
+#               ^^^^^^ source.scala
+>  val _y = 3       
+#^^ source.scala
+#  ^^^ source.scala keyword.declaration.stable.scala
+#     ^ source.scala
+#      ^^ source.scala variable.other.declaration.scala
+#        ^ source.scala
+#         ^ source.scala keyword.operator.comparison.scala
+#          ^ source.scala
+#           ^ source.scala constant.numeric.scala
+#            ^^^^^^^^ source.scala
+>  val dot_product_* = 3
+#^^ source.scala
+#  ^^^ source.scala keyword.declaration.stable.scala
+#     ^ source.scala
+#      ^^^^^^^^^^^^^ source.scala variable.other.declaration.scala
+#                   ^ source.scala
+#                    ^ source.scala keyword.operator.comparison.scala
+#                     ^ source.scala
+#                      ^ source.scala constant.numeric.scala
+>  val __system = 3  
+#^^ source.scala
+#  ^^^ source.scala keyword.declaration.stable.scala
+#     ^ source.scala
+#      ^^^^^^^^ source.scala variable.other.declaration.scala
+#              ^ source.scala
+#               ^ source.scala keyword.operator.comparison.scala
+#                ^ source.scala
+#                 ^ source.scala constant.numeric.scala
+#                  ^^^ source.scala
+>  val _MAX_LEN_ = 3
+#^^ source.scala
+#  ^^^ source.scala keyword.declaration.stable.scala
+#     ^ source.scala
+#      ^^^^^^^^^ source.scala variable.other.declaration.scala
+#               ^ source.scala
+#                ^ source.scala keyword.operator.comparison.scala
+#                 ^ source.scala
+#                  ^ source.scala constant.numeric.scala
+>}
+#^ source.scala punctuation.section.block.end.scala
+>
+>object IntegerLiterals {
+#^^^^^^ source.scala keyword.declaration.scala
+#      ^ source.scala
+#       ^^^^^^^^^^^^^^^ source.scala entity.name.class.declaration
+#                      ^ source.scala
+#                       ^ source.scala punctuation.section.block.begin.scala
+>  (0, 21,  0xFFFFFFFF, -42L)        
+#^^ source.scala
+#  ^ source.scala meta.bracket.scala
+#   ^ source.scala constant.numeric.scala
+#    ^^ source.scala
+#      ^^ source.scala constant.numeric.scala
+#        ^^^ source.scala
+#           ^^^^^^^^^^ source.scala constant.numeric.scala
+#                     ^^ source.scala
+#                       ^ source.scala keyword.operator.arithmetic.scala
+#                        ^^^ source.scala constant.numeric.scala
+#                           ^ source.scala meta.bracket.scala
+#                            ^^^^^^^^^ source.scala
+>}
+#^ source.scala punctuation.section.block.end.scala
+>
+>object FloatingPointLiterals {
+#^^^^^^ source.scala keyword.declaration.scala
+#      ^ source.scala
+#       ^^^^^^^^^^^^^^^^^^^^^ source.scala entity.name.class.declaration
+#                            ^ source.scala
+#                             ^ source.scala punctuation.section.block.begin.scala
+>  ( 0.0, 1e30f, 3.14159f, 1.0e-100, .1  )
+#^^ source.scala
+#  ^ source.scala meta.bracket.scala
+#   ^ source.scala
+#    ^^^ source.scala constant.numeric.scala
+#       ^^^^^^^^^ source.scala
+#                ^^^^^^^^ source.scala constant.numeric.scala
+#                        ^^ source.scala
+#                          ^^^^^^^^ source.scala constant.numeric.scala
+#                                  ^^^ source.scala
+#                                     ^ source.scala constant.numeric.scala
+#                                      ^^ source.scala
+#                                        ^ source.scala meta.bracket.scala
+>}
+#^ source.scala punctuation.section.block.end.scala
+>
+>object Boolean {
+#^^^^^^ source.scala keyword.declaration.scala
+#      ^ source.scala
+#       ^^^^^^^ source.scala entity.name.class.declaration
+#              ^ source.scala
+#               ^ source.scala punctuation.section.block.begin.scala
+>    (true, false)
+#^^^^ source.scala
+#    ^ source.scala meta.bracket.scala
+#     ^^^^ source.scala constant.language.scala
+#         ^^ source.scala
+#           ^^^^^ source.scala constant.language.scala
+#                ^ source.scala meta.bracket.scala
+>}
+#^ source.scala punctuation.section.block.end.scala
+>
+>object CharacterLiterals {
+#^^^^^^ source.scala keyword.declaration.scala
+#      ^ source.scala
+#       ^^^^^^^^^^^^^^^^^ source.scala entity.name.class.declaration
+#                        ^ source.scala
+#                         ^ source.scala punctuation.section.block.begin.scala
+>    ('a',    '\u0041',    '\n',    '\t')
+#^^^^ source.scala
+#    ^ source.scala meta.bracket.scala
+#     ^ source.scala constant.character.literal.scala punctuation.definition.character.begin.scala
+#      ^ source.scala constant.character.literal.scala
+#       ^ source.scala constant.character.literal.scala punctuation.definition.character.end.scala
+#        ^^^^^ source.scala
+#             ^ source.scala constant.character.literal.scala punctuation.definition.character.begin.scala
+#              ^^^^^^ source.scala constant.character.literal.scala constant.character.escape.scala
+#                    ^ source.scala constant.character.literal.scala punctuation.definition.character.end.scala
+#                     ^^^^^ source.scala
+#                          ^ source.scala constant.character.literal.scala punctuation.definition.character.begin.scala
+#                           ^^ source.scala constant.character.literal.scala constant.character.escape.scala
+#                             ^ source.scala constant.character.literal.scala punctuation.definition.character.end.scala
+#                              ^^^^^ source.scala
+#                                   ^ source.scala constant.character.literal.scala punctuation.definition.character.begin.scala
+#                                    ^^ source.scala constant.character.literal.scala constant.character.escape.scala
+#                                      ^ source.scala constant.character.literal.scala punctuation.definition.character.end.scala
+#                                       ^ source.scala meta.bracket.scala
+>}
+#^ source.scala punctuation.section.block.end.scala
+>
+>object StringLiterals {
+#^^^^^^ source.scala keyword.declaration.scala
+#      ^ source.scala
+#       ^^^^^^^^^^^^^^ source.scala entity.name.class.declaration
+#                     ^ source.scala
+#                      ^ source.scala punctuation.section.block.begin.scala
+>    ("Hello,\nWorld!",  "This string contains a \" character.")
+#^^^^ source.scala
+#    ^ source.scala meta.bracket.scala
+#     ^ source.scala string.quoted.double.scala punctuation.definition.string.begin.scala
+#      ^^^^^^ source.scala string.quoted.double.scala
+#            ^^ source.scala string.quoted.double.scala constant.character.escape.scala
+#              ^^^^^^ source.scala string.quoted.double.scala
+#                    ^ source.scala string.quoted.double.scala punctuation.definition.string.end.scala
+#                     ^^^ source.scala
+#                        ^ source.scala string.quoted.double.scala punctuation.definition.string.begin.scala
+#                         ^^^^^^^^^^^^^^^^^^^^^^^ source.scala string.quoted.double.scala
+#                                                ^^ source.scala string.quoted.double.scala constant.character.escape.scala
+#                                                  ^^^^^^^^^^^ source.scala string.quoted.double.scala
+#                                                             ^ source.scala string.quoted.double.scala punctuation.definition.string.end.scala
+#                                                              ^ source.scala meta.bracket.scala
+>
+>    """the present string
+#^^^^ source.scala
+#    ^^^ source.scala string.quoted.triple.scala punctuation.definition.string.begin.scala
+#       ^^^^^^^^^^^^^^^^^^^ source.scala string.quoted.triple.scala
+>     spans three
+#^^^^^^^^^^^^^^^^^ source.scala string.quoted.triple.scala
+>     lines."""
+#^^^^^^^^^^^ source.scala string.quoted.triple.scala
+#           ^^^ source.scala string.quoted.triple.scala punctuation.definition.string.end.scala
+>
+>    """the present string
+#^^^^ source.scala
+#    ^^^ source.scala string.quoted.triple.scala punctuation.definition.string.begin.scala
+#       ^^^^^^^^^^^^^^^^^^^ source.scala string.quoted.triple.scala
+>      |spans three
+#^^^^^^^^^^^^^^^^^^^ source.scala string.quoted.triple.scala
+>      |lines.""".stripMargin
+#^^^^^^^^^^^^^ source.scala string.quoted.triple.scala
+#             ^^^ source.scala string.quoted.triple.scala punctuation.definition.string.end.scala
+#                ^^^^^^^^^^^^^ source.scala
+>
+>
+>  val escapeSequences = "\b\t\n\f\r\"\'\\"
+#^^ source.scala
+#  ^^^ source.scala keyword.declaration.stable.scala
+#     ^ source.scala
+#      ^^^^^^^^^^^^^^^ source.scala variable.other.declaration.scala
+#                     ^ source.scala
+#                      ^ source.scala keyword.operator.comparison.scala
+#                       ^ source.scala
+#                        ^ source.scala string.quoted.double.scala punctuation.definition.string.begin.scala
+#                         ^^ source.scala string.quoted.double.scala constant.character.escape.scala
+#                           ^^ source.scala string.quoted.double.scala constant.character.escape.scala
+#                             ^^ source.scala string.quoted.double.scala constant.character.escape.scala
+#                               ^^ source.scala string.quoted.double.scala constant.character.escape.scala
+#                                 ^^ source.scala string.quoted.double.scala constant.character.escape.scala
+#                                   ^^ source.scala string.quoted.double.scala constant.character.escape.scala
+#                                     ^^ source.scala string.quoted.double.scala constant.character.escape.scala
+#                                       ^^ source.scala string.quoted.double.scala constant.character.escape.scala
+#                                         ^ source.scala string.quoted.double.scala punctuation.definition.string.end.scala
+>
+>  s"$x plain ${val x = y}"
+#^^ source.scala
+#  ^ source.scala keyword.interpolation.scala
+#   ^ source.scala string.quoted.double.interpolated.scala punctuation.definition.string.begin.scala
+#    ^ source.scala punctuation.definition.template-expression.begin.scala
+#     ^ source.scala
+#      ^ source.scala string.quoted.double.interpolated.scala
+#       ^ source.scala string.quoted.double.interpolated.scala
+#        ^ source.scala string.quoted.double.interpolated.scala
+#         ^ source.scala string.quoted.double.interpolated.scala
+#          ^ source.scala string.quoted.double.interpolated.scala
+#           ^ source.scala string.quoted.double.interpolated.scala
+#            ^ source.scala string.quoted.double.interpolated.scala
+#             ^^ source.scala punctuation.definition.template-expression.scala punctuation.definition.template-expression.begin.scala
+#               ^^^ source.scala punctuation.definition.template-expression.scala keyword.declaration.stable.scala
+#                  ^ source.scala punctuation.definition.template-expression.scala
+#                   ^ source.scala punctuation.definition.template-expression.scala variable.other.declaration.scala
+#                    ^ source.scala punctuation.definition.template-expression.scala
+#                     ^ source.scala punctuation.definition.template-expression.scala keyword.operator.comparison.scala
+#                      ^^ source.scala punctuation.definition.template-expression.scala
+#                        ^ source.scala punctuation.definition.template-expression.scala punctuation.definition.template-expression.end.scala
+#                         ^ source.scala string.quoted.double.interpolated.scala punctuation.definition.string.end.scala
+>  custom"$x plain ${val x = y}"
+#^^ source.scala
+#  ^^^^^^ source.scala keyword.interpolation.scala
+#        ^ source.scala string.quoted.double.interpolated.scala punctuation.definition.string.begin.scala
+#         ^ source.scala punctuation.definition.template-expression.begin.scala
+#          ^ source.scala
+#           ^ source.scala string.quoted.double.interpolated.scala
+#            ^ source.scala string.quoted.double.interpolated.scala
+#             ^ source.scala string.quoted.double.interpolated.scala
+#              ^ source.scala string.quoted.double.interpolated.scala
+#               ^ source.scala string.quoted.double.interpolated.scala
+#                ^ source.scala string.quoted.double.interpolated.scala
+#                 ^ source.scala string.quoted.double.interpolated.scala
+#                  ^^ source.scala punctuation.definition.template-expression.scala punctuation.definition.template-expression.begin.scala
+#                    ^^^ source.scala punctuation.definition.template-expression.scala keyword.declaration.stable.scala
+#                       ^ source.scala punctuation.definition.template-expression.scala
+#                        ^ source.scala punctuation.definition.template-expression.scala variable.other.declaration.scala
+#                         ^ source.scala punctuation.definition.template-expression.scala
+#                          ^ source.scala punctuation.definition.template-expression.scala keyword.operator.comparison.scala
+#                           ^^ source.scala punctuation.definition.template-expression.scala
+#                             ^ source.scala punctuation.definition.template-expression.scala punctuation.definition.template-expression.end.scala
+#                              ^ source.scala string.quoted.double.interpolated.scala punctuation.definition.string.end.scala
+>
+>  s"""$x plain ${val x = y}"""
+#^^ source.scala
+#  ^ source.scala keyword.interpolation.scala
+#   ^^^ source.scala string.quoted.triple.interpolated.scala punctuation.definition.string.begin.scala
+#      ^ source.scala punctuation.definition.template-expression.begin.scala
+#       ^ source.scala
+#        ^ source.scala string.quoted.triple.interpolated.scala
+#         ^ source.scala string.quoted.triple.interpolated.scala
+#          ^ source.scala string.quoted.triple.interpolated.scala
+#           ^ source.scala string.quoted.triple.interpolated.scala
+#            ^ source.scala string.quoted.triple.interpolated.scala
+#             ^ source.scala string.quoted.triple.interpolated.scala
+#              ^ source.scala string.quoted.triple.interpolated.scala
+#               ^^ source.scala punctuation.definition.template-expression.scala punctuation.definition.template-expression.begin.scala
+#                 ^^^ source.scala punctuation.definition.template-expression.scala keyword.declaration.stable.scala
+#                    ^ source.scala punctuation.definition.template-expression.scala
+#                     ^ source.scala punctuation.definition.template-expression.scala variable.other.declaration.scala
+#                      ^ source.scala punctuation.definition.template-expression.scala
+#                       ^ source.scala punctuation.definition.template-expression.scala keyword.operator.comparison.scala
+#                        ^^ source.scala punctuation.definition.template-expression.scala
+#                          ^ source.scala punctuation.definition.template-expression.scala punctuation.definition.template-expression.end.scala
+#                           ^^^ source.scala string.quoted.triple.interpolated.scala punctuation.definition.string.end.scala
+>  custom"""$x plain ${val x = y}"""
+#^^ source.scala
+#  ^^^^^^ source.scala keyword.interpolation.scala
+#        ^^^ source.scala string.quoted.triple.interpolated.scala punctuation.definition.string.begin.scala
+#           ^ source.scala punctuation.definition.template-expression.begin.scala
+#            ^ source.scala
+#             ^ source.scala string.quoted.triple.interpolated.scala
+#              ^ source.scala string.quoted.triple.interpolated.scala
+#               ^ source.scala string.quoted.triple.interpolated.scala
+#                ^ source.scala string.quoted.triple.interpolated.scala
+#                 ^ source.scala string.quoted.triple.interpolated.scala
+#                  ^ source.scala string.quoted.triple.interpolated.scala
+#                   ^ source.scala string.quoted.triple.interpolated.scala
+#                    ^^ source.scala punctuation.definition.template-expression.scala punctuation.definition.template-expression.begin.scala
+#                      ^^^ source.scala punctuation.definition.template-expression.scala keyword.declaration.stable.scala
+#                         ^ source.scala punctuation.definition.template-expression.scala
+#                          ^ source.scala punctuation.definition.template-expression.scala variable.other.declaration.scala
+#                           ^ source.scala punctuation.definition.template-expression.scala
+#                            ^ source.scala punctuation.definition.template-expression.scala keyword.operator.comparison.scala
+#                             ^^ source.scala punctuation.definition.template-expression.scala
+#                               ^ source.scala punctuation.definition.template-expression.scala punctuation.definition.template-expression.end.scala
+#                                ^^^ source.scala string.quoted.triple.interpolated.scala punctuation.definition.string.end.scala
+>}
+#^ source.scala punctuation.section.block.end.scala
+>
+>object Symbols {
+#^^^^^^ source.scala keyword.declaration.scala
+#      ^ source.scala
+#       ^^^^^^^ source.scala entity.name.class.declaration
+#              ^ source.scala
+#               ^ source.scala punctuation.section.block.begin.scala
+>    ('x, 'X, 'αρετη, '=, '+ )
+#^^^^ source.scala
+#    ^ source.scala meta.bracket.scala
+#     ^^ source.scala constant.other.symbol.scala
+#       ^^ source.scala
+#         ^^ source.scala constant.other.symbol.scala
+#           ^^ source.scala
+#             ^^^^^^ source.scala constant.other.symbol.scala
+#                   ^^ source.scala
+#                     ^ source.scala constant.character.literal.scala punctuation.definition.character.begin.scala
+#                      ^^^ source.scala constant.character.literal.scala invalid.illegal.character-literal-too-long
+#                         ^ source.scala constant.character.literal.scala punctuation.definition.character.end.scala
+#                          ^ source.scala keyword.operator.arithmetic.scala
+#                           ^ source.scala
+#                            ^ source.scala meta.bracket.scala
+>}
+#^ source.scala punctuation.section.block.end.scala
+>
+>// single line comment
+#^^ source.scala comment.line.double-slash.scala punctuation.definition.comment.scala
+#  ^^^^^^^^^^^^^^^^^^^^ source.scala comment.line.double-slash.scala
+>
+>  /*
+#^^ source.scala
+#  ^^ source.scala comment.block.scala punctuation.definition.comment.scala
+>  
+>multiline comment*/
+#^^^^^^^^^^^^^^^^^ source.scala comment.block.scala
+#                 ^^ source.scala comment.block.scala punctuation.definition.comment.scala
+>
+>  /**
+#^^ source.scala comment.block.documentation.scala
+#  ^^^ source.scala comment.block.documentation.scala punctuation.definition.comment.scala
+>   * Scaladoc comment
+#^^^^^^^^^^^^^^^^^^^^^^ source.scala comment.block.documentation.scala
+>   * @scaladoc @param 
+#^^^^^^^^^^^^^^^^^^^^^^^ source.scala comment.block.documentation.scala
+>   */
+#^^^ source.scala comment.block.documentation.scala
+#   ^^ source.scala comment.block.documentation.scala punctuation.definition.comment.scala
+>
+>   /*  nested /* multi-line */ comment */
+#^^^ source.scala
+#   ^^ source.scala comment.block.scala punctuation.definition.comment.scala
+#     ^^^^^^^^^^^^^^^^^^^^^^^ source.scala comment.block.scala
+#                            ^^ source.scala comment.block.scala punctuation.definition.comment.scala
+#                              ^^^^^^^^^ source.scala
+#                                       ^ source.scala keyword.operator.arithmetic.scala
+#                                        ^ source.scala keyword.operator.arithmetic.scala
+>
+>
+>object Xml {
+#^^^^^^ source.scala keyword.declaration.scala
+#      ^ source.scala
+#       ^^^ source.scala entity.name.class.declaration
+#          ^ source.scala
+#           ^ source.scala punctuation.section.block.begin.scala
+>    val b = <book>
+#^^^^ source.scala
+#    ^^^ source.scala keyword.declaration.stable.scala
+#       ^ source.scala
+#        ^ source.scala variable.other.declaration.scala
+#         ^ source.scala
+#          ^ source.scala keyword.operator.comparison.scala
+#           ^ source.scala
+#            ^ source.scala meta.tag.xml punctuation.definition.tag.xml
+#             ^^^^ source.scala meta.tag.xml entity.name.tag.localname.xml
+#                 ^ source.scala meta.tag.xml punctuation.definition.tag.xml
+>          <title>The Scala Language Specification</title>
+#^^^^^^^^^^ source.scala
+#          ^ source.scala meta.tag.xml punctuation.definition.tag.xml
+#           ^^^^^ source.scala meta.tag.xml entity.name.tag.localname.xml
+#                ^ source.scala meta.tag.xml punctuation.definition.tag.xml
+#                 ^^^ source.scala entity.name.class
+#                    ^ source.scala
+#                     ^^^^^ source.scala entity.name.class
+#                          ^ source.scala
+#                           ^^^^^^^^ source.scala entity.name.class
+#                                   ^ source.scala
+#                                    ^^^^^^^^^^^^^ source.scala entity.name.class
+#                                                 ^^ source.scala meta.tag.xml punctuation.definition.tag.xml
+#                                                   ^^^^^ source.scala meta.tag.xml entity.name.tag.localname.xml
+#                                                        ^ source.scala meta.tag.xml punctuation.definition.tag.xml
+>          <version>{scalaBook.version}</version>
+#^^^^^^^^^^ source.scala
+#          ^ source.scala meta.tag.xml punctuation.definition.tag.xml
+#           ^^^^^^^ source.scala meta.tag.xml entity.name.tag.localname.xml
+#                  ^ source.scala meta.tag.xml punctuation.definition.tag.xml
+#                   ^ source.scala punctuation.section.block.begin.scala
+#                    ^^^^^^^^^^^^^^^^^ source.scala
+#                                     ^ source.scala punctuation.section.block.end.scala
+#                                      ^^ source.scala meta.tag.xml punctuation.definition.tag.xml
+#                                        ^^^^^^^ source.scala meta.tag.xml entity.name.tag.localname.xml
+#                                               ^ source.scala meta.tag.xml punctuation.definition.tag.xml
+>          <authors>{scalaBook.authors.mkList("", ", ", "")}</authors>
+#^^^^^^^^^^ source.scala
+#          ^ source.scala meta.tag.xml punctuation.definition.tag.xml
+#           ^^^^^^^ source.scala meta.tag.xml entity.name.tag.localname.xml
+#                  ^ source.scala meta.tag.xml punctuation.definition.tag.xml
+#                   ^ source.scala punctuation.section.block.begin.scala
+#                    ^^^^^^^^^^^^^^^^^^^^^^^^ source.scala
+#                                            ^ source.scala meta.bracket.scala
+#                                             ^ source.scala string.quoted.double.scala punctuation.definition.string.begin.scala
+#                                              ^ source.scala string.quoted.double.scala punctuation.definition.string.end.scala
+#                                               ^^ source.scala
+#                                                 ^ source.scala string.quoted.double.scala punctuation.definition.string.begin.scala
+#                                                  ^^ source.scala string.quoted.double.scala
+#                                                    ^ source.scala string.quoted.double.scala punctuation.definition.string.end.scala
+#                                                     ^^ source.scala
+#                                                       ^ source.scala string.quoted.double.scala punctuation.definition.string.begin.scala
+#                                                        ^ source.scala string.quoted.double.scala punctuation.definition.string.end.scala
+#                                                         ^ source.scala meta.bracket.scala
+#                                                          ^ source.scala punctuation.section.block.end.scala
+#                                                           ^^ source.scala meta.tag.xml punctuation.definition.tag.xml
+#                                                             ^^^^^^^ source.scala meta.tag.xml entity.name.tag.localname.xml
+#                                                                    ^ source.scala meta.tag.xml punctuation.definition.tag.xml
+>        </book>
+#^^^^^^^^ source.scala
+#        ^^ source.scala meta.tag.xml punctuation.definition.tag.xml
+#          ^^^^ source.scala meta.tag.xml entity.name.tag.localname.xml
+#              ^ source.scala meta.tag.xml punctuation.definition.tag.xml
+>}
+#^ source.scala punctuation.section.block.end.scala
+>

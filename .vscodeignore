@@ -5,3 +5,4 @@ tests/**
 src/**
 node_modules
 .gitkeep
+scripts

@@ -48,11 +48,13 @@
         "ts-node": "^8.1.0",
         "tsc": "^1.20150623.0",
         "typescript": "^3.3.3",
+        "vscode-tmgrammar-test": "0.0.5",
         "vsce": "^1.59.0"
     },
     "scripts": {
         "vscode:prepublish": "test -f ./syntaxes/Scala.tmLanguage.json",
         "vscode:publish": "vsce publish --yarn",
-        "build": "ts-node src/typescript/GenerateTmLanguageFile.ts > ./syntaxes/Scala.tmLanguage.json"
+        "build": "ts-node src/typescript/GenerateTmLanguageFile.ts > ./syntaxes/Scala.tmLanguage.json",
+        "test": "node scripts/unit.js && node scripts/snap.js"
     }
 }
