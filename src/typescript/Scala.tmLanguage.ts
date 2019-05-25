@@ -6,6 +6,9 @@ const digit  = "[0-9]"
 const letterOrDigit = `${letter}|${digit}`
 const alphaId = `${letter}+`
 const simpleInterpolatedVariable  = `${letter}(?:${letterOrDigit})*` // see SIP-11 https://docs.scala-lang.org/sips/string-interpolation.html
+const opchar = `[!#%&*+\\-\\/:<>=?@^|~[\\p{Sm}\\p{So}]]`
+const idrest = `${letter}(?:${letterOrDigit})*(?:((?<=_))${opchar}+)?`
+const plainid = `(?:${idrest}|(?:${opchar})+)`
 
 export const scalaTmLanguage: TmLanguage = {
   fileTypes: [
@@ -601,7 +604,7 @@ export const scalaTmLanguage: TmLanguage = {
       }
     },
     'scala-symbol': {
-      match: "'\\w+(?=[^'\\w]|$)",
+      match: `(?>'${plainid})(?!')`,
       name: 'constant.other.symbol.scala'
     },
     'meta-brackets': {
