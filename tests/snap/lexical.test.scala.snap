@@ -378,10 +378,9 @@
 #           ^^ source.scala
 #             ^^^^^^ source.scala constant.other.symbol.scala
 #                   ^^ source.scala
-#                     ^ source.scala constant.character.literal.scala punctuation.definition.character.begin.scala
-#                      ^^^ source.scala constant.character.literal.scala invalid.illegal.character-literal-too-long
-#                         ^ source.scala constant.character.literal.scala punctuation.definition.character.end.scala
-#                          ^ source.scala keyword.operator.arithmetic.scala
+#                     ^^ source.scala constant.other.symbol.scala
+#                       ^^ source.scala
+#                         ^^ source.scala constant.other.symbol.scala
 #                           ^ source.scala
 #                            ^ source.scala meta.bracket.scala
 >}
