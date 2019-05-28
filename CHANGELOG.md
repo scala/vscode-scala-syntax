@@ -1,5 +1,14 @@
 ## Scala Syntax (official) Changelog
 
+### v0.3.2 (2019/05/28 07:13 +00:00)
+- [86f3239](https://github.com/scala/vscode-scala-syntax/commit/86f32392e9b8584bc7afe60d4f9d2fe7df8fc15d) fix #5 broken ids with unicode characters. Updated identifiers regexes for val,def,import,parameter-list,package,type. Minor clean up. Added unit test for unicode (@PanAeon)
+- [2d16efe](https://github.com/scala/vscode-scala-syntax/commit/2d16efef91f3d5a8751e9b89b76e4803cea1e163) fix #10 broken single quote symbol. add .metals to .gitignore (@PanAeon)
+- [93a7147](https://github.com/scala/vscode-scala-syntax/commit/93a7147f043259e6ea9d4757c9ff25fd0e7fe437) update vscode-tmgrammar-test to 0.0.5.'snap' file format change (@PanAeon)
+- [fa35d48](https://github.com/scala/vscode-scala-syntax/commit/fa35d48e1e90ee81071c2ddd44cb0067a33d728b) add test step to travis (@PanAeon)
+- [aecb9c3](https://github.com/scala/vscode-scala-syntax/commit/aecb9c3bfe9cf57701ab8370215f69a5af328e25) Add snapshot test with various examples from scala spec (@PanAeon)
+- [4bde54b](https://github.com/scala/vscode-scala-syntax/commit/4bde54bc67a42ccff5cc0a94d34108a2623b0c2d) Add vscode-tmgrammar-test module, include tests in ci, add unit and snapshot tests for lexical constructs (@PanAeon)
+- [7ff15a6](https://github.com/scala/vscode-scala-syntax/commit/7ff15a6e2053bd55a424fb24b60db32a0dc26fc3) Update release notes for v0.3.1
+
 ### v0.3.1 (2019/05/14 09:22 +00:00)
 - [6453d96](https://github.com/scala/vscode-scala-syntax/commit/6453d9636fc8558b4e2ac1f933d252853d2fda97) Review fixes, add missing scope to the interpolated string's quotes (@PanAeon)
 - [a4fb9a0](https://github.com/scala/vscode-scala-syntax/commit/a4fb9a0c33ca337b0833bbbf40213a9f0a593891) generalize string interpolation to processed strings, i.e. <id>"..." (@PanAeon)
