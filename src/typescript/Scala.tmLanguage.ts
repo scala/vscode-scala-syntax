@@ -1,14 +1,20 @@
 "use strict";
 import { TmLanguage } from "./TMLanguageModel";
 
-const letter = "[_a-zA-Z\\$\\p{Lo}\\p{Lt}\\p{Nl}\\p{Ll}\\p{Lu}]"
+const upperLetter = "[A-Z\\p{Lt}\\p{Lu}]"
+const lowerLetter = "[_a-z\\$\\p{Lo}\\p{Nl}\\p{Ll}]"
+const letter = `[${upperLetter}${lowerLetter}]`
 const digit  = "[0-9]"
 const letterOrDigit = `${letter}|${digit}`
 const alphaId = `${letter}+`
 const simpleInterpolatedVariable  = `${letter}(?:${letterOrDigit})*` // see SIP-11 https://docs.scala-lang.org/sips/string-interpolation.html
 const opchar = `[!#%&*+\\-\\/:<>=?@^|~[\\p{Sm}\\p{So}]]`
-const idrest = `${letter}(?:${letterOrDigit})*(?:((?<=_))${opchar}+)?`
+const idrest = `${letter}(?:${letterOrDigit})*(?:(?<=_)${opchar}+)?`
+const idUpper = `${upperLetter}(?:${letterOrDigit})*(?:(?<=_)${opchar}+)?`
+const idLower = `${lowerLetter}(?:${letterOrDigit})*(?:(?<=_)${opchar}+)?`
 const plainid = `(?:${idrest}|(?:${opchar})+)`
+const backQuotedId = "`[^`]+`"
+
 
 export const scalaTmLanguage: TmLanguage = {
   fileTypes: [
@@ -41,7 +47,7 @@ export const scalaTmLanguage: TmLanguage = {
           include: '#comments'
         },
         {
-          match: '(`[^`]+`|[_$a-zA-Z][_$a-zA-Z0-9]*)',
+          match: `(${backQuotedId}|${plainid})`,
           name: 'entity.name.import.scala'
         },
         {
@@ -58,7 +64,7 @@ export const scalaTmLanguage: TmLanguage = {
           },
           patterns: [
             {
-              match: '(?x) \\s*\n\t\t\t\t      (`[^`]+`|[_$a-zA-Z][_$a-zA-Z0-9]*) \\s*\n\t\t\t\t      (=>) \\s*\n\t\t\t\t      (`[^`]+`|[_$a-zA-Z][_$a-zA-Z0-9]*) \\s*\n\t\t\t        ',
+              match: `(?x)\\s*(${backQuotedId}|${plainid})\\s*(=>)\\s*(${backQuotedId}|${plainid})\\s*`,
               captures: {
                 '1': {
                   name: 'entity.name.import.renamed-from.scala'
@@ -118,7 +124,7 @@ export const scalaTmLanguage: TmLanguage = {
           include: '#block-comments'
         },
         {
-          match: '(?x)\n\t\t\t(?! /\\*)\n\t\t\t(?! \\*/)\n\t\t  '
+          match: '(?x)(?! /\\*)(?! \\*/)'
         }
       ],
       name: 'comment.block.scala'
@@ -201,7 +207,7 @@ export const scalaTmLanguage: TmLanguage = {
     },
     'special-identifier': {
       match: '\\b[_$a-zA-Z][_$a-zA-Z0-9]*(?:_[^\\t .,;()\\[\\]{}\'"`\\w])',
-      comment: '\n\t\t    Match special scala style identifiers that can end with and underscore and\n\t\t    a a not letter such as blank_?.  This way the symbol will not be colored\n\t\t    differently.\n\t\t  '
+      comment: 'Match special scala style identifiers that can end with and underscore and a a not letter such as blank_?.  This way the symbol will not be colored differently.'
     },
     strings: {
       patterns: [
@@ -449,7 +455,7 @@ export const scalaTmLanguage: TmLanguage = {
     declarations: {
       patterns: [
         {
-          match: '(?x)\n\t\t\t\t\t\t\\b(def)\\s+\n\t\t\t\t\t\t(`[^`]+`|[_$a-zA-Z][_$a-zA-Z0-9]*(?:_[^\\t .,;()\\[\\]{}\'"`\\w])(?=[(\\t ])|[_$a-zA-Z][_$a-zA-Z0-9]*|[-?~><^+*%:!#|/@\\\\]+)',
+          match: `(?x)\\b(def)\\s+(${backQuotedId}|${plainid})`,
           captures: {
             '1': {
               name: 'keyword.declaration.scala'
@@ -485,7 +491,7 @@ export const scalaTmLanguage: TmLanguage = {
           }
         },
         {
-          match: '\\b(type)\\s+(`[^`]+`|[_$a-zA-Z][_$a-zA-Z0-9]*(?:_[^\\s])(?=[\\t ])|[_$a-zA-Z][_$a-zA-Z0-9]*|[-?~><^+*%:!#|/@\\\\]+)',
+          match: `\\b(type)\\s+(${backQuotedId}|${plainid})`,
           captures: {
             '1': {
               name: 'keyword.declaration.scala'
@@ -496,18 +502,19 @@ export const scalaTmLanguage: TmLanguage = {
           }
         },
         {
-          match: '\\b(val)\\s+(?:([A-Z][_a-zA-Z0-9]*))\\b',
+          match: `\\b(val)\\s+(${idUpper})\\b`,
           captures: {
             '1': {
               name: 'keyword.declaration.stable.scala'
-            },
+            }
+            ,
             '2': {
               name: 'constant.other.declaration.scala'
             }
           }
         },
         {
-          match: '\\b(?:(val)|(var))\\s+(?:(`[^`]+`|[_$a-zA-Z][_$a-zA-Z0-9]*(?:_[^\\t .,;()\\[\\]{}\'"`\\w])(?=[\\t ])|[_$a-zA-Z][_$a-zA-Z0-9]*|[-?~><^+*%:!#|/@\\\\]+)|(?=\\())',
+          match: `\\b(?:(val)|(var))\\s+(?:(${backQuotedId}|${plainid})|(?=\\())`,
           captures: {
             '1': {
               name: 'keyword.declaration.stable.scala'
@@ -547,7 +554,7 @@ export const scalaTmLanguage: TmLanguage = {
               include: '#comments'
             },
             {
-              match: '(`[^`]+`|[_$a-zA-Z][_$a-zA-Z0-9]*)',
+              match: `(${backQuotedId}|${plainid})`,
               name: 'entity.name.package.scala'
             },
             {
@@ -812,7 +819,7 @@ export const scalaTmLanguage: TmLanguage = {
     'parameter-list': {
       patterns: [
         {
-          match: '(?<=[^\\._$a-zA-Z0-9])(`[^`]+`|[_$a-z][_$a-zA-Z0-9]*(?:_[^\\s])(?=[\\t ])|[_$a-z][_$a-zA-Z0-9]*|[-?~><^+*%:!#|/@\\\\]+)\\s*(:)\\s+',
+          match: `(?<=[^\\._$a-zA-Z0-9])(${backQuotedId}|${idLower})\\s*(:)\\s+`,
           captures: {
             '1': {
               name: 'variable.parameter.scala'
@@ -820,8 +827,7 @@ export const scalaTmLanguage: TmLanguage = {
             '2': {
               name: 'meta.colon.scala'
             }
-          },
-          comment: 'We do not match param names that start with a Capitol letter'
+          }
         }
       ]
     },
@@ -852,7 +858,7 @@ export const scalaTmLanguage: TmLanguage = {
               include: '#xml-embedded-content'
             }
           ],
-          comment: 'We do not allow a tag name to start with a - since this would\n\t\t\t\t               likely conflict with the <- operator. This is not very common\n\t\t\t\t               for tag names anyway.  Also code such as -- if (val <val2 || val> val3)\n\t\t\t\t               will falsly be recognized as an xml tag.  The solution is to put a\n\t\t\t\t               space on either side of the comparison operator',
+          comment: 'We do not allow a tag name to start with a - since this would likely conflict with the <- operator. This is not very common for tag names anyway.  Also code such as -- if (val <val2 || val> val3) will falsly be recognized as an xml tag.  The solution is to put a space on either side of the comparison operator',
           endCaptures: {
             '1': {
               name: 'punctuation.definition.tag.xml'
