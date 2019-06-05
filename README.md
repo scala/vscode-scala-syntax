@@ -8,6 +8,8 @@ files.
 
 ![Syntax Highlighting Demo](https://i.imgur.com/TDx0mC3.png)
 
+This repo also powers the Scala syntax highlighting on GitHub. (It is vendored in [github/linguist](https://github.com/github/linguist).)
+
 ## Based on
 
 - Plugin: https://github.com/daltonjorge/vscode-scala
