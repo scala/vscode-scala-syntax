@@ -174,9 +174,9 @@
 #                                ^ source.scala
 #                                 ^^^ source.scala storage.type.primitive.scala
 #                                    ^^ source.scala
-#                                      ^^^^^^^ source.scala
+#                                      ^^^^^^^ source.scala variable.parameter.scala
 #                                             ^ source.scala
-#                                              ^ source.scala keyword.operator.scala
+#                                              ^ source.scala meta.colon.scala
 #                                               ^ source.scala
 #                                                ^^^ source.scala storage.type.primitive.scala
 #                                                   ^^ source.scala
