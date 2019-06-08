@@ -1,18 +1,21 @@
 "use strict";
 import { TmLanguage } from "./TMLanguageModel";
 
-const upperLetter = "[A-Z\\p{Lt}\\p{Lu}]"
-const lowerLetter = "[_a-z\\$\\p{Lo}\\p{Nl}\\p{Ll}]"
-const letter = `[${upperLetter}${lowerLetter}]`
-const digit  = "[0-9]"
-const letterOrDigit = `${letter}|${digit}`
+const upperLetterChars = "A-Z\\p{Lt}\\p{Lu}"
+const upperLetter = `[${upperLetterChars}]`
+const lowerLetterChars = "_a-z\\$\\p{Lo}\\p{Nl}\\p{Ll}"
+const lowerLetter = `[${lowerLetterChars}]`
+const letterChars = `${upperLetterChars}${lowerLetterChars}`
+const letter = `[${letterChars}]`
+const letterOrDigitChars = `${letterChars}0-9`
+const letterOrDigit = `[${letterOrDigitChars}]`
 const alphaId = `${letter}+`
-const simpleInterpolatedVariable  = `${letter}(?:${letterOrDigit})*` // see SIP-11 https://docs.scala-lang.org/sips/string-interpolation.html
-const opchar = `[!#%&*+\\-\\/:<>=?@^|~[\\p{Sm}\\p{So}]]`
-const idrest = `${letter}(?:${letterOrDigit})*(?:(?<=_)${opchar}+)?`
-const idUpper = `${upperLetter}(?:${letterOrDigit})*(?:(?<=_)${opchar}+)?`
-const idLower = `${lowerLetter}(?:${letterOrDigit})*(?:(?<=_)${opchar}+)?`
-const plainid = `(?:${idrest}|(?:${opchar})+)`
+const simpleInterpolatedVariable  = `${letter}${letterOrDigit}*` // see SIP-11 https://docs.scala-lang.org/sips/string-interpolation.html
+const opchar = `[!#%&*+\\-\\/:<>=?@^|~\\p{Sm}\\p{So}]`
+const idrest = `${letter}${letterOrDigit}*(?:(?<=_)${opchar}+)?`
+const idUpper = `${upperLetter}${letterOrDigit}*(?:(?<=_)${opchar}+)?`
+const idLower = `${lowerLetter}${letterOrDigit}*(?:(?<=_)${opchar}+)?`
+const plainid = `(?:${idrest}|${opchar}+)`
 const backQuotedId = "`[^`]+`"
 
 
@@ -180,9 +183,6 @@ export const scalaTmLanguage: TmLanguage = {
           include: '#scala-quoted'
         },
         {
-          include: '#special-identifier'
-        },
-        {
           include: '#char-literal'
         },
         {
@@ -204,10 +204,6 @@ export const scalaTmLanguage: TmLanguage = {
           include: '#meta-colons'
         }
       ]
-    },
-    'special-identifier': {
-      match: '\\b[_$a-zA-Z][_$a-zA-Z0-9]*(?:_[^\\t .,;()\\[\\]{}\'"`\\w])',
-      comment: 'Match special scala style identifiers that can end with and underscore and a a not letter such as blank_?.  This way the symbol will not be colored differently.'
     },
     strings: {
       patterns: [
@@ -918,7 +914,6 @@ export const scalaTmLanguage: TmLanguage = {
     }
   },
   uuid: '158C0929-299A-40C8-8D89-316BE0C446E8',
-  "$schema" : "https://raw.githubusercontent.com/Septh/tmlanguage/master/tmLanguage.schema.json",
   patterns: [
     {
       include: '#code'
