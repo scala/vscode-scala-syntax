@@ -119,19 +119,6 @@ export const scalaTmLanguage: TmLanguage = {
         }
       ]
     },
-    'block-comments': {
-      end: '\\*/',
-      begin: '/\\*',
-      patterns: [
-        {
-          include: '#block-comments'
-        },
-        {
-          match: '(?x)(?! /\\*)(?! \\*/)'
-        }
-      ],
-      name: 'comment.block.scala'
-    },
     'script-header': {
       match: '^#!(.*)$',
       captures: {
@@ -697,7 +684,7 @@ export const scalaTmLanguage: TmLanguage = {
               }
             },
             {
-              match: '@(return|see|note|example|usecase|author|version|since|todo|deprecated|migration|define|inheritdoc)\\b',
+              match: '@(return|see|note|example|constructor|usecase|author|version|since|todo|deprecated|migration|define|inheritdoc)\\b',
               name: 'keyword.other.documentation.scaladoc.scala'
             },
             {
@@ -707,12 +694,15 @@ export const scalaTmLanguage: TmLanguage = {
                   name: 'punctuation.definition.documentation.link.scala'
                 },
                 '2': {
-                  name: 'entity.other.documentation.link.scala'
+                  name: 'string.other.link.title.markdown'
                 },
                 '3': {
                   name: 'punctuation.definition.documentation.link.scala'
                 }
               }
+            },
+            {
+              "include": "#comments"
             }
           ],
           endCaptures: {
@@ -730,6 +720,11 @@ export const scalaTmLanguage: TmLanguage = {
               name: 'punctuation.definition.comment.scala'
             }
           },
+          patterns: [
+            {
+              "include": "#comments"
+            }
+          ],
           name: 'comment.block.scala'
         },
         {
