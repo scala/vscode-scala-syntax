@@ -2166,7 +2166,9 @@
 >        case `y` => 
 #^^^^^^^^ source.scala
 #        ^^^^ source.scala keyword.control.flow.scala
-#            ^^^^^ source.scala
+#            ^ source.scala
+#             ^^^ source.scala
+#                ^ source.scala
 #                 ^ source.scala keyword.operator.comparison.scala
 #                  ^ source.scala keyword.operator.comparison.scala
 #                   ^^ source.scala
