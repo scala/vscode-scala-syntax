@@ -10,6 +10,15 @@ files.
 
 This repo also powers the Scala syntax highlighting on GitHub. (It is vendored in [github/linguist](https://github.com/github/linguist).)
 
+### Team
+
+The current maintainers (people who can merge pull requests) are:
+
+- Olafur Pall Geirsson - [`@olafurpg`](https://github.com/olafurpg)
+- Nicolas Stucki- [`@nicolasstucki`](https://github.com/nicolasstucki)
+- Vitalii Voloshyn - [`@PanAeon`](https://github.com/PanAeon)
+- all other members of the Scala organization on GitHub
+
 ## Based on
 
 - Plugin: https://github.com/daltonjorge/vscode-scala
