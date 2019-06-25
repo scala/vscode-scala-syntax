@@ -1,5 +1,13 @@
 ## Scala Syntax (official) Changelog
 
+### 0.3.3 (2019/06/25 12:55 +00:00)
+- [f50e487](https://github.com/scala/vscode-scala-syntax/commit/f50e487e8cdce9b41b0d33f8e9949764c08b0e5d) Add top level rule for identifiers inside the backticks (@PanAeon)
+- [be15605](https://github.com/scala/vscode-scala-syntax/commit/be15605de49de729a0c6760cd17f9184fbb43892) Commiting missing changes (@PanAeon)
+- [6fecc7d](https://github.com/scala/vscode-scala-syntax/commit/6fecc7d08d4f79faf904467dd840a4e4e89b4620) Fix nested comments, make links highlighted in the scaladoc, add @constructor keyword, remove dead code, add snap tests for comments. (@PanAeon)
+- [0be6724](https://github.com/scala/vscode-scala-syntax/commit/0be6724d87303aeed41f6aa9dac07283cf9b92d4) Fix nested character classes. Remove $schema field. Remove redundant 'special-identifier' rule. (@PanAeon)
+- [7affc4e](https://github.com/scala/vscode-scala-syntax/commit/7affc4ed719a3760db745958f83aa744405e1e55) this repo powers highlighting on GitHub (@SethTisue)
+- [53610fa](https://github.com/scala/vscode-scala-syntax/commit/53610fa130166351c1c1545798c453a9860e2f0d) Update release notes for v0.3.2
+
 ### v0.3.2 (2019/05/28 07:13 +00:00)
 - [86f3239](https://github.com/scala/vscode-scala-syntax/commit/86f32392e9b8584bc7afe60d4f9d2fe7df8fc15d) fix #5 broken ids with unicode characters. Updated identifiers regexes for val,def,import,parameter-list,package,type. Minor clean up. Added unit test for unicode (@PanAeon)
 - [2d16efe](https://github.com/scala/vscode-scala-syntax/commit/2d16efef91f3d5a8751e9b89b76e4803cea1e163) fix #10 broken single quote symbol. add .metals to .gitignore (@PanAeon)
