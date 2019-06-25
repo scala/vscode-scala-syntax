@@ -416,11 +416,12 @@
 >   /*  nested /* multi-line */ comment */
 #^^^ source.scala
 #   ^^ source.scala comment.block.scala punctuation.definition.comment.scala
-#     ^^^^^^^^^^^^^^^^^^^^^^^ source.scala comment.block.scala
-#                            ^^ source.scala comment.block.scala punctuation.definition.comment.scala
-#                              ^^^^^^^^^ source.scala
-#                                       ^ source.scala keyword.operator.arithmetic.scala
-#                                        ^ source.scala keyword.operator.arithmetic.scala
+#     ^^^^^^^^^ source.scala comment.block.scala
+#              ^^ source.scala comment.block.scala comment.block.scala punctuation.definition.comment.scala
+#                ^^^^^^^^^^^^ source.scala comment.block.scala comment.block.scala
+#                            ^^ source.scala comment.block.scala comment.block.scala punctuation.definition.comment.scala
+#                              ^^^^^^^^^ source.scala comment.block.scala
+#                                       ^^ source.scala comment.block.scala punctuation.definition.comment.scala
 >
 >
 >object Xml {

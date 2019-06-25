@@ -1,0 +1,524 @@
+>/// SYNTAX TEST "source.scala"
+#^^ source.scala comment.line.double-slash.scala punctuation.definition.comment.scala
+#  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.scala comment.line.double-slash.scala
+>#!/usr/bin/env scala
+#^^ source.scala comment.block.shebang.scala
+#  ^^^^^^^^^^^^^^^^^^ source.scala comment.block.shebang.scala string.unquoted.shebang.scala
+>
+>// single line comments
+#^^ source.scala comment.line.double-slash.scala punctuation.definition.comment.scala
+#  ^^^^^^^^^^^^^^^^^^^^^ source.scala comment.line.double-slash.scala
+>
+>/*  /**/ /** */ /* comments within comments */ */
+#^^ source.scala comment.block.scala punctuation.definition.comment.scala
+#  ^^ source.scala comment.block.scala
+#    ^^^^ source.scala comment.block.scala comment.block.empty.scala punctuation.definition.comment.scala
+#        ^ source.scala comment.block.scala
+#         ^^ source.scala comment.block.scala comment.block.scala punctuation.definition.comment.scala
+#           ^^ source.scala comment.block.scala comment.block.scala
+#             ^^ source.scala comment.block.scala comment.block.scala punctuation.definition.comment.scala
+#               ^ source.scala comment.block.scala
+#                ^^ source.scala comment.block.scala comment.block.scala punctuation.definition.comment.scala
+#                  ^^^^^^^^^^^^^^^^^^^^^^^^^^ source.scala comment.block.scala comment.block.scala
+#                                            ^^ source.scala comment.block.scala comment.block.scala punctuation.definition.comment.scala
+#                                              ^ source.scala comment.block.scala
+#                                               ^^ source.scala comment.block.scala punctuation.definition.comment.scala
+>
+>/**   /* */ /** **/ **/
+#^^^ source.scala comment.block.documentation.scala punctuation.definition.comment.scala
+#   ^^^ source.scala comment.block.documentation.scala
+#      ^^ source.scala comment.block.documentation.scala comment.block.scala punctuation.definition.comment.scala
+#        ^ source.scala comment.block.documentation.scala comment.block.scala
+#         ^^ source.scala comment.block.documentation.scala comment.block.scala punctuation.definition.comment.scala
+#           ^ source.scala comment.block.documentation.scala
+#            ^^ source.scala comment.block.documentation.scala comment.block.scala punctuation.definition.comment.scala
+#              ^^^ source.scala comment.block.documentation.scala comment.block.scala
+#                 ^^ source.scala comment.block.documentation.scala comment.block.scala punctuation.definition.comment.scala
+#                   ^^ source.scala comment.block.documentation.scala
+#                     ^^ source.scala comment.block.documentation.scala punctuation.definition.comment.scala
+>
+>
+>/************************
+#^^^ source.scala comment.block.documentation.scala punctuation.definition.comment.scala
+#   ^^^^^^^^^^^^^^^^^^^^^^^ source.scala comment.block.documentation.scala
+> *
+#^^^ source.scala comment.block.documentation.scala
+> * [[scala.Option]]
+#^^^ source.scala comment.block.documentation.scala
+#   ^^ source.scala comment.block.documentation.scala punctuation.definition.documentation.link.scala
+#     ^^^^^^^^^^^^ source.scala comment.block.documentation.scala string.other.link.title.markdown
+#                 ^^ source.scala comment.block.documentation.scala punctuation.definition.documentation.link.scala
+> * @return smth
+#^^^ source.scala comment.block.documentation.scala
+#   ^^^^^^^ source.scala comment.block.documentation.scala keyword.other.documentation.scaladoc.scala
+#          ^^^^^^ source.scala comment.block.documentation.scala
+> ***********************/
+#^^^^^^^^^^^^^^^^^^^^^^^ source.scala comment.block.documentation.scala
+#                       ^^ source.scala comment.block.documentation.scala punctuation.definition.comment.scala
+>
+>case class C(val x: Int) {
+#^^^^ source.scala keyword.declaration.scala
+#    ^ source.scala
+#     ^^^^^ source.scala keyword.declaration.scala
+#          ^ source.scala
+#           ^ source.scala entity.name.class.declaration
+#            ^ source.scala meta.bracket.scala
+#             ^^^ source.scala keyword.declaration.stable.scala
+#                ^ source.scala
+#                 ^ source.scala variable.other.declaration.scala
+#                  ^ source.scala keyword.operator.scala
+#                   ^ source.scala
+#                    ^^^ source.scala storage.type.primitive.scala
+#                       ^ source.scala meta.bracket.scala
+#                        ^ source.scala
+#                         ^ source.scala punctuation.section.block.begin.scala
+>    def f(p:Double) : String = {
+#^^^^ source.scala
+#    ^^^ source.scala keyword.declaration.scala
+#       ^ source.scala
+#        ^ source.scala entity.name.function.declaration
+#         ^ source.scala meta.bracket.scala
+#          ^ source.scala
+#           ^ source.scala keyword.operator.scala
+#            ^^^^^^ source.scala storage.type.primitive.scala
+#                  ^ source.scala meta.bracket.scala
+#                   ^ source.scala
+#                    ^ source.scala keyword.operator.scala
+#                     ^ source.scala
+#                      ^^^^^^ source.scala storage.type.scala
+#                            ^ source.scala
+#                             ^ source.scala keyword.operator.comparison.scala
+#                              ^ source.scala
+#                               ^ source.scala punctuation.section.block.begin.scala
+>
+>    }
+#^^^^ source.scala
+#    ^ source.scala punctuation.section.block.end.scala
+>}
+#^ source.scala punctuation.section.block.end.scala
+>
+>/** Provides classes for dealing with complex numbers.  Also provides
+#^^^ source.scala comment.block.documentation.scala punctuation.definition.comment.scala
+#   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.scala comment.block.documentation.scala
+> *  implicits for converting to and from `Int`.
+#^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.scala comment.block.documentation.scala
+> *
+#^^^ source.scala comment.block.documentation.scala
+> *  ==Overview==
+#^^^^^^^^^^^^^^^^^ source.scala comment.block.documentation.scala
+> *  The main class to use is [[my.package.complex.Complex]], as so
+#^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.scala comment.block.documentation.scala
+#                             ^^ source.scala comment.block.documentation.scala punctuation.definition.documentation.link.scala
+#                               ^^^^^^^^^^^^^^^^^^^^^^^^^^ source.scala comment.block.documentation.scala string.other.link.title.markdown
+#                                                         ^^ source.scala comment.block.documentation.scala punctuation.definition.documentation.link.scala
+#                                                           ^^^^^^^^ source.scala comment.block.documentation.scala
+> *  {{{
+#^^^^^^^^ source.scala comment.block.documentation.scala
+> *  scala> val complex = Complex(4,3)
+#^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.scala comment.block.documentation.scala
+> *  complex: my.package.complex.Complex = 4 + 3i
+#^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.scala comment.block.documentation.scala
+> *  }}}
+#^^^^^^^^ source.scala comment.block.documentation.scala
+> *
+#^^^ source.scala comment.block.documentation.scala
+> *  If you include [[my.package.complex.ComplexConversions]], you can
+#^^^^^^^^^^^^^^^^^^^ source.scala comment.block.documentation.scala
+#                   ^^ source.scala comment.block.documentation.scala punctuation.definition.documentation.link.scala
+#                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.scala comment.block.documentation.scala string.other.link.title.markdown
+#                                                          ^^ source.scala comment.block.documentation.scala punctuation.definition.documentation.link.scala
+#                                                            ^^^^^^^^^^ source.scala comment.block.documentation.scala
+> *  convert numbers more directly
+#^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.scala comment.block.documentation.scala
+> *  {{{
+#^^^^^^^^ source.scala comment.block.documentation.scala
+> *  scala> import my.package.complex.ComplexConversions._
+#^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.scala comment.block.documentation.scala
+> *  scala> val complex = 4 + 3.i
+#^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.scala comment.block.documentation.scala
+> *  complex: my.package.complex.Complex = 4 + 3i
+#^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.scala comment.block.documentation.scala
+> *  }}}
+#^^^^^^^^ source.scala comment.block.documentation.scala
+> */
+#^ source.scala comment.block.documentation.scala
+# ^^ source.scala comment.block.documentation.scala punctuation.definition.comment.scala
+>package complex {}
+#^^^^^^^ source.scala meta.package.scala keyword.other.import.scala
+#       ^ source.scala meta.package.scala
+#        ^^^^^^^ source.scala meta.package.scala entity.name.package.scala
+#               ^^^^ source.scala meta.package.scala
+>
+>/** A person who uses our application.
+#^^^ source.scala comment.block.documentation.scala punctuation.definition.comment.scala
+#   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.scala comment.block.documentation.scala
+> *
+#^^^ source.scala comment.block.documentation.scala
+> *  @constructor create a new person with a name and age.
+#^^^^ source.scala comment.block.documentation.scala
+#    ^^^^^^^^^^^^ source.scala comment.block.documentation.scala keyword.other.documentation.scaladoc.scala
+#                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.scala comment.block.documentation.scala
+> *  @tparam T useless param
+#^^^^ source.scala comment.block.documentation.scala
+#    ^^^^^^^ source.scala comment.block.documentation.scala keyword.other.documentation.scaladoc.scala
+#           ^ source.scala comment.block.documentation.scala
+#            ^ source.scala comment.block.documentation.scala entity.name.class
+#             ^^^^^^^^^^^^^^^ source.scala comment.block.documentation.scala
+> *  @param name the person's name
+#^^^^ source.scala comment.block.documentation.scala
+#    ^^^^^^ source.scala comment.block.documentation.scala keyword.other.documentation.scaladoc.scala
+#          ^ source.scala comment.block.documentation.scala
+#           ^^^^ source.scala comment.block.documentation.scala variable.parameter.scala
+#               ^^^^^^^^^^^^^^^^^^^ source.scala comment.block.documentation.scala
+> *  @param age the person's age in years
+#^^^^ source.scala comment.block.documentation.scala
+#    ^^^^^^ source.scala comment.block.documentation.scala keyword.other.documentation.scaladoc.scala
+#          ^ source.scala comment.block.documentation.scala
+#           ^^^ source.scala comment.block.documentation.scala variable.parameter.scala
+#              ^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.scala comment.block.documentation.scala
+> *  @throws java.lang.Exception
+#^^^^ source.scala comment.block.documentation.scala
+#    ^^^^^^^ source.scala comment.block.documentation.scala keyword.other.documentation.scaladoc.scala
+#           ^ source.scala comment.block.documentation.scala
+#            ^^^^^^^^^^^^^^^^^^^ source.scala comment.block.documentation.scala entity.name.class
+> * 
+#^^^^ source.scala comment.block.documentation.scala
+> * @see reference other sources of information like external document links or related entities in the documentation.
+#^^^ source.scala comment.block.documentation.scala
+#   ^^^^ source.scala comment.block.documentation.scala keyword.other.documentation.scaladoc.scala
+#       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.scala comment.block.documentation.scala
+> * @note add a note for pre or post conditions, or any other notable restrictions or expectations.
+#^^^ source.scala comment.block.documentation.scala
+#   ^^^^^ source.scala comment.block.documentation.scala keyword.other.documentation.scaladoc.scala
+#        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.scala comment.block.documentation.scala
+> * @example for providing example code or related example documentation.
+#^^^ source.scala comment.block.documentation.scala
+#   ^^^^^^^^ source.scala comment.block.documentation.scala keyword.other.documentation.scaladoc.scala
+#           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.scala comment.block.documentation.scala
+> * @usecase  def apply(name: String, age: Int) : Unit 
+#^^^ source.scala comment.block.documentation.scala
+#   ^^^^^^^^ source.scala comment.block.documentation.scala keyword.other.documentation.scaladoc.scala
+#           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.scala comment.block.documentation.scala
+> * 
+#^^^^ source.scala comment.block.documentation.scala
+> * @groupname group name
+#^^^^^^^^^^^^^^^^^^^^^^^^^ source.scala comment.block.documentation.scala
+> * @groupprio group 2
+#^^^^^^^^^^^^^^^^^^^^^^ source.scala comment.block.documentation.scala
+> * @groupdesc group desc
+#^^^^^^^^^^^^^^^^^^^^^^^^^ source.scala comment.block.documentation.scala
+> * @group group
+#^^^^^^^^^^^^^^^^ source.scala comment.block.documentation.scala
+> * @contentDiagram
+#^^^^^^^^^^^^^^^^^^^ source.scala comment.block.documentation.scala
+> * 
+#^^^^ source.scala comment.block.documentation.scala
+> * 
+#^^^^ source.scala comment.block.documentation.scala
+> *   @author provide author information for the following entity
+#^^^^^ source.scala comment.block.documentation.scala
+#     ^^^^^^^ source.scala comment.block.documentation.scala keyword.other.documentation.scaladoc.scala
+#            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.scala comment.block.documentation.scala
+> *   @version the version of the system or API that this entity is a part of.
+#^^^^^ source.scala comment.block.documentation.scala
+#     ^^^^^^^^ source.scala comment.block.documentation.scala keyword.other.documentation.scaladoc.scala
+#             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.scala comment.block.documentation.scala
+> *   @since like @version but defines the system or API that this entity was first defined in.
+#^^^^^ source.scala comment.block.documentation.scala
+#     ^^^^^^ source.scala comment.block.documentation.scala keyword.other.documentation.scaladoc.scala
+#           ^^^^^^ source.scala comment.block.documentation.scala
+#                 ^^^^^^^^ source.scala comment.block.documentation.scala keyword.other.documentation.scaladoc.scala
+#                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.scala comment.block.documentation.scala
+> *   @todo for documenting unimplemented features or unimplemented aspects of an entity.
+#^^^^^ source.scala comment.block.documentation.scala
+#     ^^^^^ source.scala comment.block.documentation.scala keyword.other.documentation.scaladoc.scala
+#          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.scala comment.block.documentation.scala
+> *   @deprecated marks the entity as deprecated, providing both the replacement implementation that should be used and the version/date at which this entity was deprecated.
+#^^^^^ source.scala comment.block.documentation.scala
+#     ^^^^^^^^^^^ source.scala comment.block.documentation.scala keyword.other.documentation.scaladoc.scala
+#                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.scala comment.block.documentation.scala
+> *   @migration like deprecated but provides advanced warning of planned changes ahead of deprecation. Same fields as @deprecated.
+#^^^^^ source.scala comment.block.documentation.scala
+#     ^^^^^^^^^^ source.scala comment.block.documentation.scala keyword.other.documentation.scaladoc.scala
+#               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.scala comment.block.documentation.scala
+#                                                                                                                      ^^^^^^^^^^^ source.scala comment.block.documentation.scala keyword.other.documentation.scaladoc.scala
+#                                                                                                                                 ^^ source.scala comment.block.documentation.scala
+> *   @inheritdoc take comments from a superclass as defaults if comments are not provided locally.
+#^^^^^ source.scala comment.block.documentation.scala
+#     ^^^^^^^^^^^ source.scala comment.block.documentation.scala keyword.other.documentation.scaladoc.scala
+#                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.scala comment.block.documentation.scala
+> *   @documentable Expand a type alias and abstract type into a full template page. - TODO: Test the “abstract type” claim - no examples of this in the Scala code base
+#^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.scala comment.block.documentation.scala
+> *
+#^^^ source.scala comment.block.documentation.scala
+> *   @define <name> <definition>
+#^^^^^ source.scala comment.block.documentation.scala
+#     ^^^^^^^ source.scala comment.block.documentation.scala keyword.other.documentation.scaladoc.scala
+#            ^^^^^^^^^^^^^^^^^^^^^ source.scala comment.block.documentation.scala
+> *   
+#^^^^^^ source.scala comment.block.documentation.scala
+> *   @shortDescription ???
+#^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.scala comment.block.documentation.scala
+> *   @hideImplicitConversion ???
+#^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.scala comment.block.documentation.scala
+> *
+#^^^ source.scala comment.block.documentation.scala
+> */
+#^ source.scala comment.block.documentation.scala
+# ^^ source.scala comment.block.documentation.scala punctuation.definition.comment.scala
+>class Person[T](name: String, age: Int) {
+#^^^^^ source.scala keyword.declaration.scala
+#     ^ source.scala
+#      ^^^^^^ source.scala entity.name.class.declaration
+#            ^ source.scala meta.bracket.scala
+#             ^ source.scala entity.name.class
+#              ^ source.scala meta.bracket.scala
+#               ^ source.scala meta.bracket.scala
+#                ^^^^ source.scala variable.parameter.scala
+#                    ^ source.scala meta.colon.scala
+#                     ^ source.scala
+#                      ^^^^^^ source.scala storage.type.scala
+#                            ^^ source.scala
+#                              ^^^ source.scala variable.parameter.scala
+#                                 ^ source.scala meta.colon.scala
+#                                  ^ source.scala
+#                                   ^^^ source.scala storage.type.primitive.scala
+#                                      ^ source.scala meta.bracket.scala
+#                                       ^ source.scala
+#                                        ^ source.scala punctuation.section.block.begin.scala
+>}
+#^ source.scala punctuation.section.block.end.scala
+>
+>/** Factory for [[mypackage.Person]] instances. */
+#^^^ source.scala comment.block.documentation.scala punctuation.definition.comment.scala
+#   ^^^^^^^^^^^^^ source.scala comment.block.documentation.scala
+#                ^^ source.scala comment.block.documentation.scala punctuation.definition.documentation.link.scala
+#                  ^^^^^^^^^^^^^^^^ source.scala comment.block.documentation.scala string.other.link.title.markdown
+#                                  ^^ source.scala comment.block.documentation.scala punctuation.definition.documentation.link.scala
+#                                    ^^^^^^^^^^^^ source.scala comment.block.documentation.scala
+#                                                ^^ source.scala comment.block.documentation.scala punctuation.definition.comment.scala
+>object Person {
+#^^^^^^ source.scala keyword.declaration.scala
+#      ^ source.scala
+#       ^^^^^^ source.scala entity.name.class.declaration
+#             ^ source.scala
+#              ^ source.scala punctuation.section.block.begin.scala
+>    /** Creates a person with a given name and age.
+#^^^^ source.scala comment.block.documentation.scala
+#    ^^^ source.scala comment.block.documentation.scala punctuation.definition.comment.scala
+#       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.scala comment.block.documentation.scala
+>     *
+#^^^^^^^ source.scala comment.block.documentation.scala
+>     *  @param name their name
+#^^^^^^^^ source.scala comment.block.documentation.scala
+#        ^^^^^^ source.scala comment.block.documentation.scala keyword.other.documentation.scaladoc.scala
+#              ^ source.scala comment.block.documentation.scala
+#               ^^^^ source.scala comment.block.documentation.scala variable.parameter.scala
+#                   ^^^^^^^^^^^^ source.scala comment.block.documentation.scala
+>     *  @param age the age of the person to create
+#^^^^^^^^ source.scala comment.block.documentation.scala
+#        ^^^^^^ source.scala comment.block.documentation.scala keyword.other.documentation.scaladoc.scala
+#              ^ source.scala comment.block.documentation.scala
+#               ^^^ source.scala comment.block.documentation.scala variable.parameter.scala
+#                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.scala comment.block.documentation.scala
+>     */
+#^^^^^ source.scala comment.block.documentation.scala
+#     ^^ source.scala comment.block.documentation.scala punctuation.definition.comment.scala
+>    def apply(name: String, age: Int) = {}
+#^^^^ source.scala
+#    ^^^ source.scala keyword.declaration.scala
+#       ^ source.scala
+#        ^^^^^ source.scala entity.name.function.declaration
+#             ^ source.scala meta.bracket.scala
+#              ^^^^ source.scala variable.parameter.scala
+#                  ^ source.scala meta.colon.scala
+#                   ^ source.scala
+#                    ^^^^^^ source.scala storage.type.scala
+#                          ^^ source.scala
+#                            ^^^ source.scala variable.parameter.scala
+#                               ^ source.scala meta.colon.scala
+#                                ^ source.scala
+#                                 ^^^ source.scala storage.type.primitive.scala
+#                                    ^ source.scala meta.bracket.scala
+#                                     ^ source.scala
+#                                      ^ source.scala keyword.operator.comparison.scala
+#                                       ^ source.scala
+#                                        ^ source.scala punctuation.section.block.begin.scala
+#                                         ^ source.scala punctuation.section.block.end.scala
+>  
+>    /** Creates a person with a given name and birthdate
+#^^^^ source.scala comment.block.documentation.scala
+#    ^^^ source.scala comment.block.documentation.scala punctuation.definition.comment.scala
+#       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.scala comment.block.documentation.scala
+>     *
+#^^^^^^^ source.scala comment.block.documentation.scala
+>     *  @param name their name
+#^^^^^^^^ source.scala comment.block.documentation.scala
+#        ^^^^^^ source.scala comment.block.documentation.scala keyword.other.documentation.scaladoc.scala
+#              ^ source.scala comment.block.documentation.scala
+#               ^^^^ source.scala comment.block.documentation.scala variable.parameter.scala
+#                   ^^^^^^^^^^^^ source.scala comment.block.documentation.scala
+>     *  @param birthDate the person's birthdate
+#^^^^^^^^ source.scala comment.block.documentation.scala
+#        ^^^^^^ source.scala comment.block.documentation.scala keyword.other.documentation.scaladoc.scala
+#              ^ source.scala comment.block.documentation.scala
+#               ^^^^^^^^^ source.scala comment.block.documentation.scala variable.parameter.scala
+#                        ^^^^^^^^^^^^^^^^^^^^^^^^ source.scala comment.block.documentation.scala
+>     *  @return a new Person instance with the age determined by the
+#^^^^^^^^ source.scala comment.block.documentation.scala
+#        ^^^^^^^ source.scala comment.block.documentation.scala keyword.other.documentation.scaladoc.scala
+#               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.scala comment.block.documentation.scala
+>     *          birthdate and current date.
+#^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.scala comment.block.documentation.scala
+>     */
+#^^^^^ source.scala comment.block.documentation.scala
+#     ^^ source.scala comment.block.documentation.scala punctuation.definition.comment.scala
+>    def apply(name: String, birthDate: java.util.Date) = {}
+#^^^^ source.scala
+#    ^^^ source.scala keyword.declaration.scala
+#       ^ source.scala
+#        ^^^^^ source.scala entity.name.function.declaration
+#             ^ source.scala meta.bracket.scala
+#              ^^^^ source.scala variable.parameter.scala
+#                  ^ source.scala meta.colon.scala
+#                   ^ source.scala
+#                    ^^^^^^ source.scala storage.type.scala
+#                          ^^ source.scala
+#                            ^^^^^^^^^ source.scala variable.parameter.scala
+#                                     ^ source.scala meta.colon.scala
+#                                      ^ source.scala
+#                                       ^^^^^^^^^^ source.scala
+#                                                 ^^^^ source.scala entity.name.class
+#                                                     ^ source.scala meta.bracket.scala
+#                                                      ^ source.scala
+#                                                       ^ source.scala keyword.operator.comparison.scala
+#                                                        ^ source.scala
+#                                                         ^ source.scala punctuation.section.block.begin.scala
+#                                                          ^ source.scala punctuation.section.block.end.scala
+>  }
+#^^ source.scala
+#  ^ source.scala punctuation.section.block.end.scala
+>
+>/** Implicit conversions and helpers for [[mypackage.Complex]] instances.
+#^^^ source.scala comment.block.documentation.scala punctuation.definition.comment.scala
+#   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.scala comment.block.documentation.scala
+#                                         ^^ source.scala comment.block.documentation.scala punctuation.definition.documentation.link.scala
+#                                           ^^^^^^^^^^^^^^^^^ source.scala comment.block.documentation.scala string.other.link.title.markdown
+#                                                            ^^ source.scala comment.block.documentation.scala punctuation.definition.documentation.link.scala
+#                                                              ^^^^^^^^^^^^ source.scala comment.block.documentation.scala
+> *
+#^^^ source.scala comment.block.documentation.scala
+> *  {{{
+#^^^^^^^^ source.scala comment.block.documentation.scala
+> *  import ComplexImplicits._
+#^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.scala comment.block.documentation.scala
+> *  val c: Complex = 4 + 3.i
+#^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.scala comment.block.documentation.scala
+> *  }}}
+#^^^^^^^^ source.scala comment.block.documentation.scala
+> */
+#^ source.scala comment.block.documentation.scala
+# ^^ source.scala comment.block.documentation.scala punctuation.definition.comment.scala
+>object ComplexImplicits {}
+#^^^^^^ source.scala keyword.declaration.scala
+#      ^ source.scala
+#       ^^^^^^^^^^^^^^^^ source.scala entity.name.class.declaration
+#                       ^ source.scala
+#                        ^ source.scala punctuation.section.block.begin.scala
+#                         ^ source.scala punctuation.section.block.end.scala
+>
+>/**
+#^^^ source.scala comment.block.documentation.scala punctuation.definition.comment.scala
+>  *  =Heading=, ==Sub-Heading==
+#^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.scala comment.block.documentation.scala
+>  * 
+#^^^^^ source.scala comment.block.documentation.scala
+>  * `monospace`
+#^^^^^^^^^^^^^^^^ source.scala comment.block.documentation.scala
+>  * ''italic text''
+#^^^^^^^^^^^^^^^^^^^^ source.scala comment.block.documentation.scala
+>  * '''bold text'''
+#^^^^^^^^^^^^^^^^^^^^ source.scala comment.block.documentation.scala
+>  * __underline__
+#^^^^^^^^^^^^^^^^^^ source.scala comment.block.documentation.scala
+>  * ^superscript^
+#^^^^^^^^^^^^^^^^^^ source.scala comment.block.documentation.scala
+>  * ,,subscript,,
+#^^^^^^^^^^^^^^^^^^ source.scala comment.block.documentation.scala
+>  * [[entity link]], e.g. [[scala.collection.Seq]]
+#^^^^ source.scala comment.block.documentation.scala
+#    ^^ source.scala comment.block.documentation.scala punctuation.definition.documentation.link.scala
+#      ^^^^^^^^^^^ source.scala comment.block.documentation.scala string.other.link.title.markdown
+#                 ^^ source.scala comment.block.documentation.scala punctuation.definition.documentation.link.scala
+#                   ^^^^^^^ source.scala comment.block.documentation.scala
+#                          ^^ source.scala comment.block.documentation.scala punctuation.definition.documentation.link.scala
+#                            ^^^^^^^^^^^^^^^^^^^^ source.scala comment.block.documentation.scala string.other.link.title.markdown
+#                                                ^^ source.scala comment.block.documentation.scala punctuation.definition.documentation.link.scala
+>  * [[http://external.link External Link]],
+#^^^^ source.scala comment.block.documentation.scala
+#    ^^ source.scala comment.block.documentation.scala punctuation.definition.documentation.link.scala
+#      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.scala comment.block.documentation.scala string.other.link.title.markdown
+#                                        ^^ source.scala comment.block.documentation.scala punctuation.definition.documentation.link.scala
+#                                          ^^ source.scala comment.block.documentation.scala
+>  *   e.g. [[http://scala-lang.org Scala Language Site]]
+#^^^^^^^^^^^ source.scala comment.block.documentation.scala
+#           ^^ source.scala comment.block.documentation.scala punctuation.definition.documentation.link.scala
+#             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.scala comment.block.documentation.scala string.other.link.title.markdown
+#                                                      ^^ source.scala comment.block.documentation.scala punctuation.definition.documentation.link.scala
+>  *  
+#^^^^^^ source.scala comment.block.documentation.scala
+>  */
+#^^ source.scala comment.block.documentation.scala
+#  ^^ source.scala comment.block.documentation.scala punctuation.definition.comment.scala
+>object Markup {
+#^^^^^^ source.scala keyword.declaration.scala
+#      ^ source.scala
+#       ^^^^^^ source.scala entity.name.class.declaration
+#             ^ source.scala
+#              ^ source.scala punctuation.section.block.begin.scala
+>  /** Here is an unordered list:
+#^^ source.scala comment.block.documentation.scala
+#  ^^^ source.scala comment.block.documentation.scala punctuation.definition.comment.scala
+#     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.scala comment.block.documentation.scala
+>  * 
+#^^^^^ source.scala comment.block.documentation.scala
+>  *   - First item
+#^^^^^^^^^^^^^^^^^^^ source.scala comment.block.documentation.scala
+>  *   - Second item
+#^^^^^^^^^^^^^^^^^^^^ source.scala comment.block.documentation.scala
+>  *     - Sub-item to the second
+#^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.scala comment.block.documentation.scala
+>  *     - Another sub-item
+#^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.scala comment.block.documentation.scala
+>  *   - Third item
+#^^^^^^^^^^^^^^^^^^^ source.scala comment.block.documentation.scala
+>  *
+#^^^^ source.scala comment.block.documentation.scala
+>  * Here is an ordered list:
+#^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.scala comment.block.documentation.scala
+>  *
+#^^^^ source.scala comment.block.documentation.scala
+>  *   1. First numbered item
+#^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.scala comment.block.documentation.scala
+>  *   1. Second numbered item
+#^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.scala comment.block.documentation.scala
+>  *     i. Sub-item to the second
+#^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.scala comment.block.documentation.scala
+>  *     i. Another sub-item
+#^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.scala comment.block.documentation.scala
+>  *   1. Third item
+#^^^^^^^^^^^^^^^^^^^^ source.scala comment.block.documentation.scala
+>  */
+#^^ source.scala comment.block.documentation.scala
+#  ^^ source.scala comment.block.documentation.scala punctuation.definition.comment.scala
+>  def lists = ()
+#^^ source.scala
+#  ^^^ source.scala keyword.declaration.scala
+#     ^ source.scala
+#      ^^^^^ source.scala entity.name.function.declaration
+#           ^ source.scala
+#            ^ source.scala keyword.operator.comparison.scala
+#             ^ source.scala
+#              ^^ source.scala meta.parentheses.scala meta.bracket.scala
+>}
+#^ source.scala punctuation.section.block.end.scala
