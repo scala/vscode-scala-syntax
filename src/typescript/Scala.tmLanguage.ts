@@ -182,6 +182,9 @@ export const scalaTmLanguage: TmLanguage = {
           include: '#qualifiedClassName'
         },
         {
+          include: '#backQuotedVariable'
+        },
+        {
           include: '#meta-brackets'
         },
         {
@@ -623,6 +626,12 @@ export const scalaTmLanguage: TmLanguage = {
           name: 'entity.name.class'
         }
       }
+    },
+    backQuotedVariable: {
+      // capture back quoted variables in code so special symbols inside them do not
+      // interfere with the rest of the rules. But don't assign any extra scope, to make them
+      // consistent with the rest of variables
+      match: `${backQuotedId}` 
     },
     'storage-modifiers': {
       patterns: [
