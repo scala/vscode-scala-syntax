@@ -653,6 +653,34 @@ export const scalaTmLanguage: TmLanguage = {
     comments: {
       patterns: [
         {
+          "include": "#block-comments"
+        },
+        {
+          end: '(?!\\G)',
+          begin: '(^[ \\t]+)?(?=//)',
+          beginCaptures: {
+            '1': {
+              name: 'punctuation.whitespace.comment.leading.scala'
+            }
+          },
+          patterns: [
+            {
+              end: '\\n',
+              begin: '//',
+              beginCaptures: {
+                '0': {
+                  name: 'punctuation.definition.comment.scala'
+                }
+              },
+              name: 'comment.line.double-slash.scala'
+            }
+          ]
+        }
+      ]
+    },
+    'block-comments': {
+      patterns: [
+        {
           match: '/\\*\\*/',
           captures: {
             '0': {
@@ -711,7 +739,7 @@ export const scalaTmLanguage: TmLanguage = {
               }
             },
             {
-              "include": "#comments"
+              "include": "#block-comments"
             }
           ],
           endCaptures: {
@@ -731,32 +759,11 @@ export const scalaTmLanguage: TmLanguage = {
           },
           patterns: [
             {
-              "include": "#comments"
+              "include": "#block-comments"
             }
           ],
           name: 'comment.block.scala'
         },
-        {
-          end: '(?!\\G)',
-          begin: '(^[ \\t]+)?(?=//)',
-          beginCaptures: {
-            '1': {
-              name: 'punctuation.whitespace.comment.leading.scala'
-            }
-          },
-          patterns: [
-            {
-              end: '\\n',
-              begin: '//',
-              beginCaptures: {
-                '0': {
-                  name: 'punctuation.definition.comment.scala'
-                }
-              },
-              name: 'comment.line.double-slash.scala'
-            }
-          ]
-        }
       ]
     },
     'xml-embedded-content': {
