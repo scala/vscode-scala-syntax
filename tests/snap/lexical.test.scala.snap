@@ -193,21 +193,21 @@
 >    ('a',    '\u0041',    '\n',    '\t')
 #^^^^ source.scala
 #    ^ source.scala meta.bracket.scala
-#     ^ source.scala constant.character.literal.scala punctuation.definition.character.begin.scala
-#      ^ source.scala constant.character.literal.scala
-#       ^ source.scala constant.character.literal.scala punctuation.definition.character.end.scala
+#     ^ source.scala string.quoted.other constant.character.literal.scala punctuation.definition.character.begin.scala
+#      ^ source.scala string.quoted.other constant.character.literal.scala
+#       ^ source.scala string.quoted.other constant.character.literal.scala punctuation.definition.character.end.scala
 #        ^^^^^ source.scala
-#             ^ source.scala constant.character.literal.scala punctuation.definition.character.begin.scala
-#              ^^^^^^ source.scala constant.character.literal.scala constant.character.escape.scala
-#                    ^ source.scala constant.character.literal.scala punctuation.definition.character.end.scala
+#             ^ source.scala string.quoted.other constant.character.literal.scala punctuation.definition.character.begin.scala
+#              ^^^^^^ source.scala string.quoted.other constant.character.literal.scala constant.character.escape.scala
+#                    ^ source.scala string.quoted.other constant.character.literal.scala punctuation.definition.character.end.scala
 #                     ^^^^^ source.scala
-#                          ^ source.scala constant.character.literal.scala punctuation.definition.character.begin.scala
-#                           ^^ source.scala constant.character.literal.scala constant.character.escape.scala
-#                             ^ source.scala constant.character.literal.scala punctuation.definition.character.end.scala
+#                          ^ source.scala string.quoted.other constant.character.literal.scala punctuation.definition.character.begin.scala
+#                           ^^ source.scala string.quoted.other constant.character.literal.scala constant.character.escape.scala
+#                             ^ source.scala string.quoted.other constant.character.literal.scala punctuation.definition.character.end.scala
 #                              ^^^^^ source.scala
-#                                   ^ source.scala constant.character.literal.scala punctuation.definition.character.begin.scala
-#                                    ^^ source.scala constant.character.literal.scala constant.character.escape.scala
-#                                      ^ source.scala constant.character.literal.scala punctuation.definition.character.end.scala
+#                                   ^ source.scala string.quoted.other constant.character.literal.scala punctuation.definition.character.begin.scala
+#                                    ^^ source.scala string.quoted.other constant.character.literal.scala constant.character.escape.scala
+#                                      ^ source.scala string.quoted.other constant.character.literal.scala punctuation.definition.character.end.scala
 #                                       ^ source.scala meta.bracket.scala
 >}
 #^ source.scala punctuation.section.block.end.scala

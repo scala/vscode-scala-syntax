@@ -583,7 +583,7 @@ export const scalaTmLanguage: TmLanguage = {
           name: 'punctuation.definition.character.end.scala'
         }
       },
-      name: 'constant.character.literal.scala'
+      name: 'string.quoted.other constant.character.literal.scala'
     },
     initialization: {
       match: '\\b(new)\\s+([^\\s,\\{\\}\\(\\)\\[\\]]+)',

@@ -170,3 +170,9 @@ object Xml {
           <authors>{scalaBook.authors.mkList("", ", ", "")}</authors>
         </book>
 }
+
+class Parens {
+  capture("layout(" ~ oneOrMore(CharPredicate.All -- ")" -- ')') ~ ")")
+//                                                           ^ string.quoted.other constant.character.literal.scala
+  capture("layout(" ~ oneOrMore(CharPredicate.All -- ")" -- `)`) ~ ")")
+}
