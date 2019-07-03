@@ -1,7 +1,13 @@
 ## Scala Syntax (official) Changelog
 
+### 0.3.4 (2019/06/30 16:26 +00:00)
+- [b3bbdf0](https://github.com/scala/vscode-scala-syntax/commit/b3bbdf0e7dfad0cecdf9166ff38ddd4f3bae0143) Fix opening paren matches with closing paren in character literal (@PanAeon)
+- [eef0470](https://github.com/scala/vscode-scala-syntax/commit/eef04706197f3c972de087eeaa4cd7536c9b2a99) Fix bug with // inside of a block comment (@PanAeon)
+- [6c49b5e](https://github.com/scala/vscode-scala-syntax/commit/6c49b5eb2e3342b785cdec94114e83a73105f6e5) Update release notes for 0.3.3
+
 ### 0.3.3 (2019/06/25 12:55 +00:00)
 - [f50e487](https://github.com/scala/vscode-scala-syntax/commit/f50e487e8cdce9b41b0d33f8e9949764c08b0e5d) Add top level rule for identifiers inside the backticks (@PanAeon)
+- [c84000f](https://github.com/scala/vscode-scala-syntax/commit/c84000fbfa1c70e91011d4aff90c7222fe96d73a) Welcome PanAeon to the team! (@olafurpg)
 - [be15605](https://github.com/scala/vscode-scala-syntax/commit/be15605de49de729a0c6760cd17f9184fbb43892) Commiting missing changes (@PanAeon)
 - [6fecc7d](https://github.com/scala/vscode-scala-syntax/commit/6fecc7d08d4f79faf904467dd840a4e4e89b4620) Fix nested comments, make links highlighted in the scaladoc, add @constructor keyword, remove dead code, add snap tests for comments. (@PanAeon)
 - [0be6724](https://github.com/scala/vscode-scala-syntax/commit/0be6724d87303aeed41f6aa9dac07283cf9b92d4) Fix nested character classes. Remove $schema field. Remove redundant 'special-identifier' rule. (@PanAeon)
