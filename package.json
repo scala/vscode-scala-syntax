@@ -42,13 +42,13 @@
         ]
     },
     "devDependencies": {
-        "@types/node": "^11.11.4",
-        "ajv": "^6.10.0",
+        "@types/node": "^12.6.8",
+        "ajv": "^6.10.2",
         "github-changes": "^1.1.2",
-        "ts-node": "^8.1.0",
+        "ts-node": "^8.3.0",
         "tsc": "^1.20150623.0",
-        "typescript": "^3.3.3",
-        "vsce": "^1.59.0",
+        "typescript": "^3.5.3",
+        "vsce": "^1.66.0",
         "vscode-tmgrammar-test": "0.0.5"
     },
     "scripts": {
