@@ -389,8 +389,12 @@ export const scalaTmLanguage: TmLanguage = {
           name: 'support.function.type-of.scala'
         },
         {
-          match: '\\b(else|if|do|while|for|yield|match|case)\\b',
+          match: '\\b(else|if|then|do|while|for|yield|match|case)\\b',
           name: 'keyword.control.flow.scala'
+        },
+        {
+          match: `^\\s*end(?=\\s+(if|while|for|match|${plainid})\\s*(//.*|/\\*(?!.*\\*/\\s*\\S.*).*)?$)`,
+          name: 'keyword.control.flow.end.scala'
         },
         {
           match: '\\b(catch|finally|try)\\b',
@@ -631,7 +635,7 @@ export const scalaTmLanguage: TmLanguage = {
       // capture back quoted variables in code so special symbols inside them do not
       // interfere with the rest of the rules. But don't assign any extra scope, to make them
       // consistent with the rest of variables
-      match: `${backQuotedId}` 
+      match: `${backQuotedId}`
     },
     'storage-modifiers': {
       patterns: [
