@@ -2,13 +2,13 @@
     "name": "scala",
     "displayName": "Scala Syntax (official)",
     "description": "Official Scala Syntax",
-    "version": "0.3.4",
+    "version": "0.3.5",
     "publisher": "scala-lang",
     "license": "SEE LICENSE IN LICENSE.md",
     "engines": {
         "vscode": "^1.5.0"
     },
-    "homepage": "https://github.com/scala/vscode-scala-syntax/blob/master/syntax/README.md",
+    "homepage": "https://github.com/scala/vscode-scala-syntax/blob/master/README.md",
     "repository": {
         "type": "git",
         "url": "https://github.com/scala/vscode-scala-syntax.git"
