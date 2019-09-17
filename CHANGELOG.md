@@ -1,5 +1,15 @@
 ## Scala Syntax (official) Changelog
 
+### 0.3.5 (2019/09/17 13:38 +00:00)
+- [d0b9bbd](https://github.com/scala/vscode-scala-syntax/commit/d0b9bbd010a302a4429b8432c50cdcb26515d833) Remove outdated `as` (Dotty syntax) (@nicolasstucki)
+- [195db9e](https://github.com/scala/vscode-scala-syntax/commit/195db9e5e0dddc9c771b91e7d1f4770dcc3595ca) Update version to 0.3.5 (@nicolasstucki)
+- [71ba0d8](https://github.com/scala/vscode-scala-syntax/commit/71ba0d86b333182edf1c8dd4556b1a7d8a132910) Fix homepage (@nicolasstucki)
+- [6525f7d](https://github.com/scala/vscode-scala-syntax/commit/6525f7d949401310d62402a4f8b0978e8c961489) Fix #47: Support `then` keyword and `end` soft keyword (@nicolasstucki)
+- [b9b645a](https://github.com/scala/vscode-scala-syntax/commit/b9b645a99469d68ed45a20bb0fec76e17619e3d1) Make `inline`, `opaque`, `as` and `derives` soft keywords (@nicolasstucki)
+- [59908f2](https://github.com/scala/vscode-scala-syntax/commit/59908f2b7e17946477995e6b907442e72f45320e) Security updates (@nicolasstucki)
+- [294e24e](https://github.com/scala/vscode-scala-syntax/commit/294e24e77b3c1c5910bce938a4b2c3d3d6e3f2c0) Add missing keywords from Dotty 0.17.0-RC1 (@nicolasstucki)
+- [f3d587d](https://github.com/scala/vscode-scala-syntax/commit/f3d587d75ac8ca92c006ff72a76c8a4a0158ed76) Update release notes for 0.3.4
+
 ### 0.3.4 (2019/06/30 16:26 +00:00)
 - [b3bbdf0](https://github.com/scala/vscode-scala-syntax/commit/b3bbdf0e7dfad0cecdf9166ff38ddd4f3bae0143) Fix opening paren matches with closing paren in character literal (@PanAeon)
 - [eef0470](https://github.com/scala/vscode-scala-syntax/commit/eef04706197f3c972de087eeaa4cd7536c9b2a99) Fix bug with // inside of a block comment (@PanAeon)
