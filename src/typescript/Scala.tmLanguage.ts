@@ -50,6 +50,10 @@ export const scalaTmLanguage: TmLanguage = {
           include: '#comments'
         },
         {
+          match: `(given)(?=\\s)`,
+          name: 'keyword.given.import.scala'
+        },
+        {
           match: `(${backQuotedId}|${plainid})`,
           name: 'entity.name.import.scala'
         },
@@ -77,6 +81,17 @@ export const scalaTmLanguage: TmLanguage = {
                 },
                 '3': {
                   name: 'entity.name.import.renamed-to.scala'
+                }
+              }
+            },
+            {
+              match: `(given)(\\s+${plainid})?(?=\\s*[,}])`,
+              captures: {
+                '1': {
+                  name: 'keyword.given.import.scala'
+                },
+                '2': {
+                  name: 'entity.name.type.import.scala'
                 }
               }
             },
