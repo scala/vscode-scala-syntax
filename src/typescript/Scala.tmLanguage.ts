@@ -434,7 +434,7 @@ export const scalaTmLanguage: TmLanguage = {
       ]
     },
     'scala-quoted': {
-      match: "'\\{'|'\\('|'\\['|'\\{|'\\(|'\\[",
+      match: "('\\{|'\\[)(?!')",
       name: 'constant.other.quoted.scala'
     },
     'xml-doublequotedString': {
