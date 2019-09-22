@@ -572,7 +572,7 @@ export const scalaTmLanguage: TmLanguage = {
       ]
     },
     'char-literal': {
-      end: "'",
+      end: "'|([^'\\s]*\\s(?=[^'(//)]))|$",
       begin: "'",
       beginCaptures: {
         '0': {
