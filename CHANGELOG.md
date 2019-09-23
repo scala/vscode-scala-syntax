@@ -1,5 +1,11 @@
 ## Scala Syntax (official) Changelog
 
+### 0.3.6 (2019/09/23 11:04 +00:00)
+- [a3d8f36](https://github.com/scala/vscode-scala-syntax/commit/a3d8f36947f8d582f451ff56f8637bc7dcbb14bc) Stop illegal char after end of line (@nicolasstucki)
+- [643cbc3](https://github.com/scala/vscode-scala-syntax/commit/643cbc3156b3ef0ee19ab68345104a6fbc4ff814) Fix #57: Fix handling of scala.quoted opening quotes (@nicolasstucki)
+- [666c463](https://github.com/scala/vscode-scala-syntax/commit/666c4637fcbf246154d2d334f247358d8fc7dcac) Fix #55: Add given imports syntax (@nicolasstucki)
+- [505de8e](https://github.com/scala/vscode-scala-syntax/commit/505de8eb333f9b4399904067807dadeaded3a5e2) Update release notes for 0.3.5
+
 ### 0.3.5 (2019/09/17 13:38 +00:00)
 - [d0b9bbd](https://github.com/scala/vscode-scala-syntax/commit/d0b9bbd010a302a4429b8432c50cdcb26515d833) Remove outdated `as` (Dotty syntax) (@nicolasstucki)
 - [195db9e](https://github.com/scala/vscode-scala-syntax/commit/195db9e5e0dddc9c771b91e7d1f4770dcc3595ca) Update version to 0.3.5 (@nicolasstucki)
