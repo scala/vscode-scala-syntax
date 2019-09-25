@@ -85,7 +85,7 @@
 #          ^ source.scala keyword.operator.comparison.scala
 #           ^ source.scala keyword.operator.scala
 #            ^ source.scala
-#             ^^^^^^ source.scala storage.type.scala
+#             ^^^^^^ source.scala entity.name.class
 #                   ^ source.scala meta.bracket.scala
 #                    ^ source.scala
 #                     ^ source.scala punctuation.section.block.begin.scala
@@ -127,7 +127,7 @@
 #                     ^^^^ source.scala variable.other.declaration.scala
 #                         ^ source.scala keyword.operator.scala
 #                          ^ source.scala
-#                           ^^^^^^ source.scala storage.type.scala
+#                           ^^^^^^ source.scala entity.name.class
 #                                 ^ source.scala
 #                                  ^ source.scala keyword.operator.scala
 #                                   ^^^^^^^^^^^ source.scala
@@ -147,7 +147,7 @@
 #            ^^^^^^ source.scala variable.parameter.scala
 #                  ^ source.scala meta.colon.scala
 #                   ^ source.scala
-#                    ^^^ source.scala storage.type.primitive.scala
+#                    ^^^ source.scala entity.name.class
 #                       ^ source.scala
 #                        ^ source.scala keyword.operator.scala
 #                         ^^^^^^^^^^^ source.scala
@@ -172,23 +172,23 @@
 #                      ^^^^^^^^^ source.scala variable.parameter.scala
 #                               ^ source.scala meta.colon.scala
 #                                ^ source.scala
-#                                 ^^^ source.scala storage.type.primitive.scala
+#                                 ^^^ source.scala entity.name.class
 #                                    ^^ source.scala
 #                                      ^^^^^^^ source.scala variable.parameter.scala
 #                                             ^ source.scala
 #                                              ^ source.scala meta.colon.scala
 #                                               ^ source.scala
-#                                                ^^^ source.scala storage.type.primitive.scala
+#                                                ^^^ source.scala entity.name.class
 #                                                   ^^ source.scala
 #                                                     ^^^^^^^ source.scala variable.parameter.scala
 #                                                            ^ source.scala meta.colon.scala
 #                                                             ^ source.scala
-#                                                              ^^^^^^ source.scala storage.type.scala
+#                                                              ^^^^^^ source.scala entity.name.class
 #                                                                    ^^ source.scala
 #                                                                      ^^^^^ source.scala variable.parameter.scala
 #                                                                           ^ source.scala meta.colon.scala
 #                                                                            ^ source.scala
-#                                                                             ^^^^^^^ source.scala storage.type.primitive.scala
+#                                                                             ^^^^^^^ source.scala entity.name.class
 #                                                                                    ^ source.scala meta.bracket.scala
 #                                                                                     ^ source.scala meta.bracket.scala
 #                                                                                      ^^^^^^^^ source.scala storage.modifier.other
@@ -215,23 +215,23 @@
 #           ^ source.scala variable.parameter.scala
 #            ^ source.scala meta.colon.scala
 #             ^ source.scala
-#              ^^^ source.scala storage.type.primitive.scala
+#              ^^^ source.scala entity.name.class
 #                 ^ source.scala meta.bracket.scala
 #                  ^ source.scala
 #                   ^ source.scala meta.bracket.scala
 #                    ^ source.scala variable.parameter.scala
 #                     ^ source.scala meta.colon.scala
 #                      ^ source.scala
-#                       ^^^^^^ source.scala storage.type.scala
+#                       ^^^^^^ source.scala entity.name.class
 #                             ^^ source.scala
 #                               ^ source.scala variable.parameter.scala
 #                                ^ source.scala meta.colon.scala
 #                                 ^ source.scala
-#                                  ^^^^^^ source.scala storage.type.scala
+#                                  ^^^^^^ source.scala entity.name.class
 #                                        ^ source.scala meta.bracket.scala
 #                                         ^ source.scala keyword.operator.scala
 #                                          ^ source.scala
-#                                           ^^^^^^ source.scala storage.type.scala
+#                                           ^^^^^^ source.scala entity.name.class
 #                                                 ^ source.scala
 #                                                  ^ source.scala keyword.operator.comparison.scala
 #                                                   ^ source.scala
@@ -423,7 +423,7 @@
 #         ^ source.scala
 #          ^ source.scala keyword.operator.scala
 #           ^ source.scala
-#            ^^^^^^ source.scala storage.type.scala
+#            ^^^^^^ source.scala entity.name.class
 #                  ^ source.scala
 #                   ^ source.scala keyword.operator.scala
 #                    ^^^^^^^^^^^^ source.scala
@@ -641,7 +641,7 @@
 #         ^ source.scala variable.parameter.scala
 #          ^ source.scala meta.colon.scala
 #           ^ source.scala
-#            ^^^ source.scala storage.type.primitive.scala
+#            ^^^ source.scala entity.name.class
 #               ^ source.scala
 #                ^ source.scala keyword.operator.comparison.scala
 #                 ^ source.scala
@@ -651,7 +651,7 @@
 #                     ^ source.scala variable.parameter.scala
 #                      ^ source.scala meta.colon.scala
 #                       ^ source.scala
-#                        ^^^ source.scala storage.type.primitive.scala
+#                        ^^^ source.scala entity.name.class
 #                           ^ source.scala
 #                            ^ source.scala keyword.operator.comparison.scala
 #                             ^^^ source.scala
@@ -676,7 +676,7 @@
 #                        ^ source.scala keyword.operator.comparison.scala
 #                         ^ source.scala keyword.operator.comparison.scala
 #                          ^ source.scala
-#                           ^^^^^^^ source.scala storage.type.primitive.scala
+#                           ^^^^^^^ source.scala entity.name.class
 #                                  ^ source.scala meta.bracket.scala
 #                                   ^ source.scala
 #                                    ^ source.scala meta.bracket.scala
@@ -686,11 +686,11 @@
 #                                           ^ source.scala keyword.operator.comparison.scala
 #                                            ^ source.scala keyword.operator.comparison.scala
 #                                             ^ source.scala
-#                                              ^^^^ source.scala storage.type.primitive.scala
+#                                              ^^^^ source.scala entity.name.class
 #                                                  ^ source.scala meta.bracket.scala
 #                                                   ^ source.scala keyword.operator.scala
 #                                                    ^ source.scala
-#                                                     ^^^^ source.scala storage.type.primitive.scala
+#                                                     ^^^^ source.scala entity.name.class
 >
 >   def sum(args: Int*) = {
 #^^^ source.scala
@@ -701,7 +701,7 @@
 #           ^^^^ source.scala variable.parameter.scala
 #               ^ source.scala meta.colon.scala
 #                ^ source.scala
-#                 ^^^ source.scala storage.type.primitive.scala
+#                 ^^^ source.scala entity.name.class
 #                    ^ source.scala keyword.operator.arithmetic.scala
 #                     ^ source.scala meta.bracket.scala
 #                      ^ source.scala
@@ -746,7 +746,7 @@
 #            ^^^ source.scala variable.parameter.scala
 #               ^ source.scala meta.colon.scala
 #                ^ source.scala
-#                 ^^^^^^ source.scala storage.type.scala
+#                 ^^^^^^ source.scala entity.name.class
 #                       ^ source.scala meta.bracket.scala
 #                        ^ source.scala
 #                         ^ source.scala punctuation.section.block.begin.scala
@@ -767,11 +767,11 @@
 #            ^^^ source.scala variable.parameter.scala
 #               ^ source.scala meta.colon.scala
 #                ^ source.scala
-#                 ^^^^^^ source.scala storage.type.scala
+#                 ^^^^^^ source.scala entity.name.class
 #                       ^ source.scala meta.bracket.scala
 #                        ^ source.scala keyword.operator.scala
 #                         ^ source.scala
-#                          ^^^^ source.scala storage.type.primitive.scala
+#                          ^^^^ source.scala entity.name.class
 #                              ^ source.scala
 #                               ^ source.scala keyword.operator.comparison.scala
 #                                ^ source.scala
@@ -937,7 +937,7 @@
 #      ^^ source.scala variable.other.declaration.scala
 #        ^ source.scala keyword.operator.scala
 #         ^ source.scala
-#          ^^^^^^ source.scala storage.type.primitive.scala
+#          ^^^^^^ source.scala entity.name.class
 #                ^ source.scala
 #                 ^ source.scala keyword.operator.comparison.scala
 #                  ^ source.scala
@@ -1097,7 +1097,7 @@
 #                             ^ source.scala variable.parameter.scala
 #                              ^ source.scala meta.colon.scala
 #                               ^ source.scala
-#                                ^^^ source.scala storage.type.primitive.scala
+#                                ^^^ source.scala entity.name.class
 #                                   ^ source.scala meta.bracket.scala
 #                                    ^ source.scala
 #                                     ^ source.scala punctuation.section.block.begin.scala
@@ -1155,8 +1155,8 @@
 #                     ^ source.scala
 #                      ^ source.scala punctuation.section.block.begin.scala
 #                       ^ source.scala
-#                        ^^^^ source.scala variable.language.scala
-#                            ^ source.scala keyword.operator.scala
+#                        ^^^^ source.scala variable.parameter.scala
+#                            ^ source.scala meta.colon.scala
 #                             ^ source.scala
 #                              ^^^^ source.scala entity.name.class
 #                                  ^ source.scala
@@ -1266,7 +1266,7 @@
 #                  ^ source.scala variable.parameter.scala
 #                   ^ source.scala meta.colon.scala
 #                    ^ source.scala
-#                     ^^^^^^ source.scala storage.type.scala
+#                     ^^^^^^ source.scala entity.name.class
 #                           ^^ source.scala
 #                             ^ source.scala variable.parameter.scala
 #                              ^ source.scala meta.colon.scala
@@ -1296,8 +1296,8 @@
 #                                    ^ source.scala
 #                                     ^ source.scala punctuation.section.block.begin.scala
 #                                      ^ source.scala
-#                                       ^^^^ source.scala variable.language.scala
-#                                           ^ source.scala keyword.operator.scala
+#                                       ^^^^ source.scala variable.parameter.scala
+#                                           ^ source.scala meta.colon.scala
 #                                            ^ source.scala
 #                                             ^ source.scala entity.name.class
 #                                              ^ source.scala
@@ -1317,7 +1317,7 @@
 #                  ^ source.scala meta.bracket.scala
 #                   ^ source.scala keyword.operator.scala
 #                    ^ source.scala
-#                     ^^^^^^^ source.scala storage.type.primitive.scala
+#                     ^^^^^^^ source.scala entity.name.class
 >    def <=(that: T): Boolean = this < that || this == that
 #^^^^ source.scala
 #    ^^^ source.scala keyword.declaration.scala
@@ -1331,7 +1331,7 @@
 #                  ^ source.scala meta.bracket.scala
 #                   ^ source.scala keyword.operator.scala
 #                    ^ source.scala
-#                     ^^^^^^^ source.scala storage.type.primitive.scala
+#                     ^^^^^^^ source.scala entity.name.class
 #                            ^ source.scala
 #                             ^ source.scala keyword.operator.comparison.scala
 #                              ^ source.scala
@@ -1359,7 +1359,7 @@
 #                  ^ source.scala meta.bracket.scala
 #                   ^ source.scala keyword.operator.scala
 #                    ^ source.scala
-#                     ^^^^^^^ source.scala storage.type.primitive.scala
+#                     ^^^^^^^ source.scala entity.name.class
 #                            ^ source.scala
 #                             ^ source.scala keyword.operator.comparison.scala
 #                              ^^^^^^ source.scala
@@ -1379,7 +1379,7 @@
 #                  ^ source.scala meta.bracket.scala
 #                   ^ source.scala keyword.operator.scala
 #                    ^ source.scala
-#                     ^^^^^^^ source.scala storage.type.primitive.scala
+#                     ^^^^^^^ source.scala entity.name.class
 #                            ^ source.scala
 #                             ^ source.scala keyword.operator.comparison.scala
 #                              ^^^^^^ source.scala
@@ -1437,7 +1437,7 @@
 #            ^^ source.scala variable.parameter.scala
 #              ^ source.scala meta.colon.scala
 #               ^ source.scala
-#                ^^^ source.scala storage.type.primitive.scala
+#                ^^^ source.scala entity.name.class
 #                   ^ source.scala keyword.operator.arithmetic.scala
 #                    ^ source.scala meta.bracket.scala
 #                     ^ source.scala
@@ -1538,7 +1538,7 @@
 #                         ^ source.scala meta.bracket.scala
 #                          ^^^^^ source.scala entity.name.class
 #                               ^ source.scala meta.bracket.scala
-#                                ^^^^^^ source.scala storage.type.primitive.scala
+#                                ^^^^^^ source.scala entity.name.class
 #                                      ^ source.scala meta.bracket.scala
 #                                       ^ source.scala meta.bracket.scala
 #                                        ^^ source.scala
@@ -1549,7 +1549,7 @@
 #                                                    ^ source.scala meta.bracket.scala
 #                                                     ^^^^^ source.scala entity.name.class
 #                                                          ^ source.scala meta.bracket.scala
-#                                                           ^^^^^^ source.scala storage.type.primitive.scala
+#                                                           ^^^^^^ source.scala entity.name.class
 #                                                                 ^ source.scala meta.bracket.scala
 #                                                                  ^ source.scala meta.bracket.scala
 #                                                                   ^ source.scala meta.bracket.scala
@@ -1568,7 +1568,7 @@
 #                      ^ source.scala meta.bracket.scala
 #                       ^^^^^ source.scala entity.name.class
 #                            ^ source.scala meta.bracket.scala
-#                             ^^^^^^ source.scala storage.type.primitive.scala
+#                             ^^^^^^ source.scala entity.name.class
 #                                   ^ source.scala meta.bracket.scala
 #                                    ^ source.scala meta.bracket.scala
 #                                     ^ source.scala
@@ -1734,7 +1734,7 @@
 #                        ^ source.scala keyword.operator.comparison.scala
 #                         ^ source.scala keyword.operator.comparison.scala
 #                          ^ source.scala
-#                           ^^^^^^^ source.scala storage.type.primitive.scala
+#                           ^^^^^^^ source.scala entity.name.class
 #                                  ^ source.scala meta.bracket.scala
 #                                   ^ source.scala meta.bracket.scala
 #                                    ^^^^ source.scala variable.parameter.scala
@@ -1743,11 +1743,11 @@
 #                                          ^ source.scala keyword.operator.comparison.scala
 #                                           ^ source.scala keyword.operator.comparison.scala
 #                                            ^ source.scala
-#                                             ^^^^ source.scala storage.type.primitive.scala
+#                                             ^^^^ source.scala entity.name.class
 #                                                 ^ source.scala meta.bracket.scala
 #                                                  ^ source.scala keyword.operator.scala
 #                                                   ^ source.scala
-#                                                    ^^^^ source.scala storage.type.primitive.scala
+#                                                    ^^^^ source.scala entity.name.class
 #                                                        ^^ source.scala
 #                                                          ^ source.scala keyword.operator.comparison.scala
 >      if (cond) { body ; whileLoop(cond)(body) } else {}
@@ -1946,12 +1946,12 @@
 #                ^ source.scala variable.parameter.scala
 #                 ^ source.scala meta.colon.scala
 #                  ^ source.scala
-#                   ^^^ source.scala storage.type.primitive.scala
+#                   ^^^ source.scala entity.name.class
 #                      ^ source.scala
 #                       ^ source.scala variable.parameter.scala
 #                        ^ source.scala meta.colon.scala
 #                         ^ source.scala
-#                          ^^^ source.scala storage.type.primitive.scala
+#                          ^^^ source.scala entity.name.class
 #                             ^ source.scala meta.bracket.scala
 #                              ^ source.scala
 #                               ^ source.scala keyword.operator.comparison.scala
@@ -1980,7 +1980,7 @@
 #                                        ^ source.scala
 #                                         ^^^^^^ source.scala entity.other.inherited-class.scala
 #                                               ^ source.scala meta.bracket.scala
-#                                                ^^^^^^ source.scala storage.type.scala
+#                                                ^^^^^^ source.scala entity.name.class
 #                                                      ^ source.scala meta.bracket.scala
 #                                                       ^ source.scala
 #                                                        ^ source.scala punctuation.section.block.begin.scala
@@ -1993,16 +1993,16 @@
 #              ^ source.scala variable.parameter.scala
 #               ^ source.scala meta.colon.scala
 #                ^ source.scala
-#                 ^^^^^^ source.scala storage.type.scala
+#                 ^^^^^^ source.scala entity.name.class
 #                       ^^ source.scala
 #                         ^ source.scala variable.parameter.scala
 #                          ^ source.scala meta.colon.scala
 #                           ^ source.scala
-#                            ^^^^^^ source.scala storage.type.scala
+#                            ^^^^^^ source.scala entity.name.class
 #                                  ^ source.scala meta.bracket.scala
 #                                   ^ source.scala keyword.operator.scala
 #                                    ^ source.scala
-#                                     ^^^^^^ source.scala storage.type.scala
+#                                     ^^^^^^ source.scala entity.name.class
 #                                           ^ source.scala
 #                                            ^ source.scala keyword.operator.comparison.scala
 #                                             ^^^^^^^^^ source.scala
@@ -2016,7 +2016,7 @@
 #          ^^^^ source.scala entity.name.function.declaration
 #              ^ source.scala keyword.operator.scala
 #               ^ source.scala
-#                ^^^^^^ source.scala storage.type.scala
+#                ^^^^^^ source.scala entity.name.class
 #                      ^ source.scala
 #                       ^ source.scala keyword.operator.comparison.scala
 #                        ^ source.scala
@@ -2150,12 +2150,12 @@
 #          ^ source.scala variable.parameter.scala
 #           ^ source.scala meta.colon.scala
 #            ^ source.scala
-#             ^^^ source.scala storage.type.primitive.scala
+#             ^^^ source.scala entity.name.class
 #                ^^ source.scala
 #                  ^ source.scala variable.parameter.scala
 #                   ^ source.scala meta.colon.scala
 #                    ^ source.scala
-#                     ^^^ source.scala storage.type.primitive.scala
+#                     ^^^ source.scala entity.name.class
 #                        ^ source.scala meta.bracket.scala
 #                         ^ source.scala
 #                          ^ source.scala keyword.operator.comparison.scala
@@ -2353,7 +2353,7 @@
 #                  ^ source.scala
 #                   ^^^^^ source.scala entity.name.class
 #                        ^ source.scala meta.bracket.scala
-#                         ^^^^^^ source.scala storage.type.scala
+#                         ^^^^^^ source.scala entity.name.class
 #                               ^ source.scala meta.bracket.scala
 #                                ^ source.scala meta.bracket.scala
 #                                 ^ source.scala
@@ -2433,7 +2433,7 @@
 #                             ^ source.scala variable.other.declaration.scala
 #                              ^ source.scala keyword.operator.scala
 #                               ^ source.scala
-#                                ^^^ source.scala storage.type.primitive.scala
+#                                ^^^ source.scala entity.name.class
 #                                   ^^^^^^^^ source.scala
 >
 >    def f(x: Option[Int]) = (x: @unchecked) match {
@@ -2447,7 +2447,7 @@
 #            ^ source.scala
 #             ^^^^^^ source.scala entity.name.class
 #                   ^ source.scala meta.bracket.scala
-#                    ^^^ source.scala storage.type.primitive.scala
+#                    ^^^ source.scala entity.name.class
 #                       ^ source.scala meta.bracket.scala
 #                        ^ source.scala meta.bracket.scala
 #                         ^ source.scala
@@ -2489,11 +2489,11 @@
 #                    ^ source.scala keyword.operator.scala
 #                     ^^^^^^^^^^^ source.scala
 #                                ^ source.scala meta.bracket.scala
-#                                 ^^^^ source.scala storage.type.primitive.scala
+#                                 ^^^^ source.scala entity.name.class
 #                                     ^^ source.scala
-#                                       ^^^ source.scala storage.type.primitive.scala
+#                                       ^^^ source.scala entity.name.class
 #                                          ^^ source.scala
-#                                            ^^^^^^ source.scala storage.type.primitive.scala
+#                                            ^^^^^^ source.scala entity.name.class
 #                                                  ^ source.scala meta.bracket.scala
 #                                                   ^ source.scala
 #                                                    ^ source.scala entity.name.class

@@ -113,7 +113,7 @@ export const scalaTmLanguage: TmLanguage = {
     constants: {
       patterns: [
         {
-          match: '\\b(false|null|true|Nil|None)\\b',
+          match: '\\b(false|null|true)\\b',
           name: 'constant.language.scala'
         },
         {
@@ -121,16 +121,8 @@ export const scalaTmLanguage: TmLanguage = {
           name: 'constant.numeric.scala'
         },
         {
-          match: '\\b(this|super|self)\\b',
+          match: '\\b(this|super)\\b',
           name: 'variable.language.scala'
-        },
-        {
-          match: '\\b(Unit|Boolean|Byte|Char|Short|Int|Float|Long|Double)\\b',
-          name: 'storage.type.primitive.scala'
-        },
-        {
-          match: '\\b(String|Symbol)\\b',
-          name: 'storage.type.scala'
         }
       ]
     },
