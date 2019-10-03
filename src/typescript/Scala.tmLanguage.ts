@@ -507,7 +507,7 @@ export const scalaTmLanguage: TmLanguage = {
           }
         },
         {
-          match: `\\b(val)\\s+(${idUpper})\\b`,
+          match: `\\b(val)\\s+(${idUpper}(\\s*,\\s*${idUpper})*)\\b`,
           captures: {
             '1': {
               name: 'keyword.declaration.stable.scala'
