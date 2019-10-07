@@ -1,7 +1,13 @@
 ## Scala Syntax (official) Changelog
 
+### 0.3.7 (2019/10/07 07:20 +00:00)
+- [a34b4d4](https://github.com/scala/vscode-scala-syntax/commit/a34b4d4d96c8e8ea4cf729bfac4fe15ab7cb74bb) Fix #62: Do not tag some classes as storage keywords (@nicolasstucki)
+- [25af05a](https://github.com/scala/vscode-scala-syntax/commit/25af05af5c5c9ce079dfa9da8af7deb7f7063f02) Fix #51: Support vals with multi-assignment (@nicolasstucki)
+- [6aa481b](https://github.com/scala/vscode-scala-syntax/commit/6aa481b435dd0fbb27d1c2e323cc3013d2ba3046) Update release notes for 0.3.6
+
 ### 0.3.6 (2019/09/23 11:04 +00:00)
 - [a3d8f36](https://github.com/scala/vscode-scala-syntax/commit/a3d8f36947f8d582f451ff56f8637bc7dcbb14bc) Stop illegal char after end of line (@nicolasstucki)
+- [aaa8332](https://github.com/scala/vscode-scala-syntax/commit/aaa833286c239c06dce74b33ea2a03efdc60b24f) Fix #45: Use npx to execute github-changes (@nicolasstucki)
 - [643cbc3](https://github.com/scala/vscode-scala-syntax/commit/643cbc3156b3ef0ee19ab68345104a6fbc4ff814) Fix #57: Fix handling of scala.quoted opening quotes (@nicolasstucki)
 - [666c463](https://github.com/scala/vscode-scala-syntax/commit/666c4637fcbf246154d2d334f247358d8fc7dcac) Fix #55: Add given imports syntax (@nicolasstucki)
 - [505de8e](https://github.com/scala/vscode-scala-syntax/commit/505de8eb333f9b4399904067807dadeaded3a5e2) Update release notes for 0.3.5
