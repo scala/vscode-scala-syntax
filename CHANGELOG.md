@@ -1,5 +1,9 @@
 ## Scala Syntax (official) Changelog
 
+### 0.3.8 (2019/10/07 07:40 +00:00)
+- [14d22e4](https://github.com/scala/vscode-scala-syntax/commit/14d22e4f897b611266c1ba726473ecc31f0665cb) Revert "Fix #45: Use npx to execute github-changes" (@nicolasstucki)
+- [8f1deeb](https://github.com/scala/vscode-scala-syntax/commit/8f1deeb58ed8fa2d64bac7cc9a54d8bfbb14c49d) Update release notes for 0.3.7
+
 ### 0.3.7 (2019/10/07 07:20 +00:00)
 - [a34b4d4](https://github.com/scala/vscode-scala-syntax/commit/a34b4d4d96c8e8ea4cf729bfac4fe15ab7cb74bb) Fix #62: Do not tag some classes as storage keywords (@nicolasstucki)
 - [25af05a](https://github.com/scala/vscode-scala-syntax/commit/25af05af5c5c9ce079dfa9da8af7deb7f7063f02) Fix #51: Support vals with multi-assignment (@nicolasstucki)
