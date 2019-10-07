@@ -6,18 +6,18 @@ class Φδφκξ(x : Int, δφξκξ: Int, val y: Int, val φξ: Int) {
 //         ^  meta.bracket.scala
 //          ^  variable.parameter.scala
 //            ^  meta.colon.scala
-//              ^^^  storage.type.primitive.scala
+//              ^^^  entity.name.class
 //                   ^^^^^  variable.parameter.scala
 //                        ^  meta.colon.scala
-//                          ^^^  storage.type.primitive.scala
+//                          ^^^  entity.name.class
 //                               ^^^  keyword.declaration.stable.scala
 //                                   ^  variable.other.declaration.scala
 //                                    ^  keyword.operator.scala
-//                                      ^^^  storage.type.primitive.scala
+//                                      ^^^  entity.name.class
 //                                           ^^^  keyword.declaration.stable.scala
 //                                               ^^  variable.other.declaration.scala
 //                                                 ^  keyword.operator.scala
-//                                                   ^^^  storage.type.primitive.scala
+//                                                   ^^^  entity.name.class
 //                                                      ^  meta.bracket.scala
 //                                                        ^  punctuation.section.block.begin.scala
   def δφξ() = 3
@@ -39,7 +39,7 @@ class Φδφκξ(x : Int, δφξκξ: Int, val y: Int, val φξ: Int) {
 //       ^  meta.bracket.scala
 //        ^^^^^  variable.parameter.scala
 //             ^  meta.colon.scala
-//               ^^^  storage.type.primitive.scala
+//               ^^^  entity.name.class
 //                  ^  meta.bracket.scala
 //                    ^  keyword.operator.comparison.scala
 //                      ^^  meta.parentheses.scala meta.bracket.scala
@@ -49,7 +49,7 @@ class Φδφκξ(x : Int, δφξκξ: Int, val y: Int, val φξ: Int) {
 //       ^  meta.bracket.scala
 //        ^^  variable.parameter.scala
 //          ^  meta.colon.scala
-//            ^^^  storage.type.primitive.scala
+//            ^^^  entity.name.class
 //               ^  meta.bracket.scala
 //                 ^  keyword.operator.comparison.scala
 //                   ^^  meta.parentheses.scala meta.bracket.scala
@@ -83,7 +83,7 @@ case class **(x: Int) {}
 //           ^  meta.bracket.scala
 //            ^  variable.parameter.scala
 //             ^  meta.colon.scala
-//               ^^^  storage.type.primitive.scala
+//               ^^^  entity.name.class
 //                  ^  meta.bracket.scala
 
 trait f_*[A,x] {
@@ -98,12 +98,12 @@ trait f_*[A,x] {
 //^^^^  keyword.declaration.scala
 //     ^  entity.name.type.declaration
 //       ^  keyword.operator.comparison.scala
-//         ^^^  storage.type.primitive.scala
+//         ^^^  entity.name.class
   type x_* = Int
 //^^^^  keyword.declaration.scala
 //     ^^^  entity.name.type.declaration
 //         ^  keyword.operator.comparison.scala
-//           ^^^  storage.type.primitive.scala
+//           ^^^  entity.name.class
  }
 
 

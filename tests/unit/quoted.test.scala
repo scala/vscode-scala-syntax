@@ -7,5 +7,5 @@
 
    '[ String ]
 // ^^ constant.other.quoted.scala
-//    ^^^^^^ storage.type.scala
+//    ^^^^^^ entity.name.class
 //           ^ meta.bracket.scala
