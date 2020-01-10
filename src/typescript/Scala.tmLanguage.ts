@@ -651,7 +651,7 @@ export const scalaTmLanguage: TmLanguage = {
           name: 'storage.modifier.access'
         },
         {
-          match: '\\b(synchronized|@volatile|abstract|final|lazy|sealed|implicit|given|erased|enum|inline |opaque |override|@transient|@native)\\b',
+          match: '\\b(synchronized|@volatile|abstract|final|lazy|sealed|implicit|given|enum|inline |opaque |override|@transient|@native)\\b',
           name: 'storage.modifier.other'
         }
       ]
