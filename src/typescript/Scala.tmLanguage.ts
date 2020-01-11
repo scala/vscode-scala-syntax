@@ -192,6 +192,9 @@ export const scalaTmLanguage: TmLanguage = {
           include: '#backQuotedVariable'
         },
         {
+          include: '#curly-braces'
+        },
+        {
           include: '#meta-brackets'
         },
         {
@@ -610,6 +613,25 @@ export const scalaTmLanguage: TmLanguage = {
     'scala-symbol': {
       match: `(?>'${plainid})(?!')`,
       name: 'constant.other.symbol.scala'
+    },
+    'curly-braces': {
+      begin: '\\{',
+      end: '\\}',
+      beginCaptures: {
+        '0': {
+          name: 'punctuation.section.block.begin.scala'
+        }
+      },
+      endCaptures: {
+        '0': {
+          name: 'punctuation.section.block.end.scala'
+        }
+      },
+      patterns: [
+        {
+          include: '#code'
+        }
+      ]
     },
     'meta-brackets': {
       patterns: [
