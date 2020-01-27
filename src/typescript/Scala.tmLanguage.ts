@@ -327,6 +327,7 @@ export const scalaTmLanguage: TmLanguage = {
           match: "\\$\\$"
         },
         {
+          name: "meta.template.expression.scala",
           match: `(\\$)(${simpleInterpolatedVariable})`,
           captures: {
             "1": {
@@ -335,7 +336,7 @@ export const scalaTmLanguage: TmLanguage = {
           }
         },
         {
-            name: "punctuation.definition.template-expression.scala",
+            name: "meta.template.expression.scala",
             begin: "\\$\\{",
             beginCaptures: { "0": { name: "punctuation.definition.template-expression.begin.scala" } },
             end: "\\}",
@@ -344,7 +345,8 @@ export const scalaTmLanguage: TmLanguage = {
                 {
                     include: "#code"
                 }
-            ]
+            ],
+            contentName: "meta.embedded.line.scala"
         }
       ]
     },

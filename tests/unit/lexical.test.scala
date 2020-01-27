@@ -90,10 +90,12 @@ object StringLiterals {
 //  ^ punctuation.definition.template-expression.begin.scala 
 //   ^ - string.quoted.double.interpolated.scala string.quoted.double.scala
 //    ^^^^^^^ string.quoted.double.interpolated.scala
+//           ^^^^^^^^^^^^ meta.template.expression.scala
 //           ^^ punctuation.definition.template-expression.begin.scala
+//             ^^^^^^^^^ meta.embedded.line.scala
 //             ^^^ keyword.declaration.stable.scala
 //             ^^^^^^^^^   - string.quoted.double.interpolated.scala string.quoted.double.scala
-//                      ^ punctuation.definition.template-expression.scala  punctuation.definition.template-expression.end.scala
+//                      ^ punctuation.definition.template-expression.end.scala
 //                       ^   string.quoted.double.interpolated.scala  punctuation.definition.string.end.scala                   
 
   custom"$x plain ${val x = y}"
@@ -102,35 +104,13 @@ object StringLiterals {
 //       ^ punctuation.definition.template-expression.begin.scala 
 //        ^ - string.quoted.double.interpolated.scala string.quoted.double.scala
 //         ^^^^^^^ string.quoted.double.interpolated.scala
+//                ^^^^^^^^^^^^ meta.template.expression.scala
 //                ^^ punctuation.definition.template-expression.begin.scala
+//                  ^^^^^^^^^ meta.embedded.line.scala
 //                  ^^^ keyword.declaration.stable.scala
 //                  ^^^^^^^^^   - string.quoted.double.interpolated.scala string.quoted.double.scala
-//                           ^ punctuation.definition.template-expression.scala  punctuation.definition.template-expression.end.scala
+//                           ^ punctuation.definition.template-expression.end.scala
 //                            ^   string.quoted.double.interpolated.scala  punctuation.definition.string.end.scala   
-
-  s"""$x plain ${val x = y}"""
-//^ keyword.interpolation.scala
-// ^^^ punctuation.definition.string.begin.scala 
-//    ^ punctuation.definition.template-expression.begin.scala 
-//     ^ - string.quoted.triple.interpolated.scala string.quoted.triple.scala
-//      ^^^^^^^ string.quoted.triple.interpolated.scala
-//             ^^ punctuation.definition.template-expression.begin.scala
-//               ^^^ keyword.declaration.stable.scala
-//               ^^^^^^^^^   - string.quoted.triple.interpolated.scala string.quoted.triple.scala
-//                        ^ punctuation.definition.template-expression.scala  punctuation.definition.template-expression.end.scala
-//                         ^^^   string.quoted.triple.interpolated.scala  punctuation.definition.string.end.scala    
-  custom"""$x plain ${val x = y}"""
-//^^^^^^ keyword.interpolation.scala
-//      ^^^ punctuation.definition.string.begin.scala 
-//         ^ punctuation.definition.template-expression.begin.scala 
-//          ^ - string.quoted.triple.interpolated.scala string.quoted.triple.scala
-//           ^^^^^^^ string.quoted.triple.interpolated.scala
-//                  ^^ punctuation.definition.template-expression.begin.scala
-//                    ^^^ keyword.declaration.stable.scala
-//                    ^^^^^^^^^   - string.quoted.triple.interpolated.scala string.quoted.triple.scala
-//                             ^ punctuation.definition.template-expression.scala  punctuation.definition.template-expression.end.scala
-//                              ^^^   string.quoted.triple.interpolated.scala  punctuation.definition.string.end.scala 
-}
 
 object Symbols {
     ('x, 'X, 'αρετη, '=, '+ )
