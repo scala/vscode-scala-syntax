@@ -10,7 +10,8 @@ const letter = `[${letterChars}]`
 const letterOrDigitChars = `${letterChars}0-9`
 const letterOrDigit = `[${letterOrDigitChars}]`
 const alphaId = `${letter}+`
-const simpleInterpolatedVariable  = `${letter}${letterOrDigit}*` // see SIP-11 https://docs.scala-lang.org/sips/string-interpolation.html
+const letterOrDigitNoDollarSign = `[${letterOrDigit.replace("\\$", "")}]`
+const simpleInterpolatedVariable  = `${letter}${letterOrDigitNoDollarSign}*` // see SIP-11 https://docs.scala-lang.org/sips/string-interpolation.html
 const opchar = `[!#%&*+\\-\\/:<>=?@^|~\\p{Sm}\\p{So}]`
 const idrest = `${letter}${letterOrDigit}*(?:(?<=_)${opchar}+)?`
 const idUpper = `${upperLetter}${letterOrDigit}*(?:(?<=_)${opchar}+)?`
@@ -326,6 +327,7 @@ export const scalaTmLanguage: TmLanguage = {
           match: "\\$\\$"
         },
         {
+          name: "meta.template.expression.scala",
           match: `(\\$)(${simpleInterpolatedVariable})`,
           captures: {
             "1": {
@@ -334,7 +336,7 @@ export const scalaTmLanguage: TmLanguage = {
           }
         },
         {
-            name: "punctuation.definition.template-expression.scala",
+            name: "meta.template.expression.scala",
             begin: "\\$\\{",
             beginCaptures: { "0": { name: "punctuation.definition.template-expression.begin.scala" } },
             end: "\\}",
@@ -343,7 +345,8 @@ export const scalaTmLanguage: TmLanguage = {
                 {
                     include: "#code"
                 }
-            ]
+            ],
+            contentName: "meta.embedded.line.scala"
         }
       ]
     },

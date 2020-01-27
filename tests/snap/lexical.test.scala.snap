@@ -279,8 +279,8 @@
 #^^ source.scala
 #  ^ source.scala keyword.interpolation.scala
 #   ^ source.scala string.quoted.double.interpolated.scala punctuation.definition.string.begin.scala
-#    ^ source.scala punctuation.definition.template-expression.begin.scala
-#     ^ source.scala
+#    ^ source.scala meta.template.expression.scala punctuation.definition.template-expression.begin.scala
+#     ^ source.scala meta.template.expression.scala
 #      ^ source.scala string.quoted.double.interpolated.scala
 #       ^ source.scala string.quoted.double.interpolated.scala
 #        ^ source.scala string.quoted.double.interpolated.scala
@@ -288,21 +288,21 @@
 #          ^ source.scala string.quoted.double.interpolated.scala
 #           ^ source.scala string.quoted.double.interpolated.scala
 #            ^ source.scala string.quoted.double.interpolated.scala
-#             ^^ source.scala punctuation.definition.template-expression.scala punctuation.definition.template-expression.begin.scala
-#               ^^^ source.scala punctuation.definition.template-expression.scala keyword.declaration.stable.scala
-#                  ^ source.scala punctuation.definition.template-expression.scala
-#                   ^ source.scala punctuation.definition.template-expression.scala variable.other.declaration.scala
-#                    ^ source.scala punctuation.definition.template-expression.scala
-#                     ^ source.scala punctuation.definition.template-expression.scala keyword.operator.comparison.scala
-#                      ^^ source.scala punctuation.definition.template-expression.scala
-#                        ^ source.scala punctuation.definition.template-expression.scala punctuation.definition.template-expression.end.scala
+#             ^^ source.scala meta.template.expression.scala punctuation.definition.template-expression.begin.scala
+#               ^^^ source.scala meta.template.expression.scala meta.embedded.line.scala keyword.declaration.stable.scala
+#                  ^ source.scala meta.template.expression.scala meta.embedded.line.scala
+#                   ^ source.scala meta.template.expression.scala meta.embedded.line.scala variable.other.declaration.scala
+#                    ^ source.scala meta.template.expression.scala meta.embedded.line.scala
+#                     ^ source.scala meta.template.expression.scala meta.embedded.line.scala keyword.operator.comparison.scala
+#                      ^^ source.scala meta.template.expression.scala meta.embedded.line.scala
+#                        ^ source.scala meta.template.expression.scala punctuation.definition.template-expression.end.scala
 #                         ^ source.scala string.quoted.double.interpolated.scala punctuation.definition.string.end.scala
 >  custom"$x plain ${val x = y}"
 #^^ source.scala
 #  ^^^^^^ source.scala keyword.interpolation.scala
 #        ^ source.scala string.quoted.double.interpolated.scala punctuation.definition.string.begin.scala
-#         ^ source.scala punctuation.definition.template-expression.begin.scala
-#          ^ source.scala
+#         ^ source.scala meta.template.expression.scala punctuation.definition.template-expression.begin.scala
+#          ^ source.scala meta.template.expression.scala
 #           ^ source.scala string.quoted.double.interpolated.scala
 #            ^ source.scala string.quoted.double.interpolated.scala
 #             ^ source.scala string.quoted.double.interpolated.scala
@@ -310,22 +310,22 @@
 #               ^ source.scala string.quoted.double.interpolated.scala
 #                ^ source.scala string.quoted.double.interpolated.scala
 #                 ^ source.scala string.quoted.double.interpolated.scala
-#                  ^^ source.scala punctuation.definition.template-expression.scala punctuation.definition.template-expression.begin.scala
-#                    ^^^ source.scala punctuation.definition.template-expression.scala keyword.declaration.stable.scala
-#                       ^ source.scala punctuation.definition.template-expression.scala
-#                        ^ source.scala punctuation.definition.template-expression.scala variable.other.declaration.scala
-#                         ^ source.scala punctuation.definition.template-expression.scala
-#                          ^ source.scala punctuation.definition.template-expression.scala keyword.operator.comparison.scala
-#                           ^^ source.scala punctuation.definition.template-expression.scala
-#                             ^ source.scala punctuation.definition.template-expression.scala punctuation.definition.template-expression.end.scala
+#                  ^^ source.scala meta.template.expression.scala punctuation.definition.template-expression.begin.scala
+#                    ^^^ source.scala meta.template.expression.scala meta.embedded.line.scala keyword.declaration.stable.scala
+#                       ^ source.scala meta.template.expression.scala meta.embedded.line.scala
+#                        ^ source.scala meta.template.expression.scala meta.embedded.line.scala variable.other.declaration.scala
+#                         ^ source.scala meta.template.expression.scala meta.embedded.line.scala
+#                          ^ source.scala meta.template.expression.scala meta.embedded.line.scala keyword.operator.comparison.scala
+#                           ^^ source.scala meta.template.expression.scala meta.embedded.line.scala
+#                             ^ source.scala meta.template.expression.scala punctuation.definition.template-expression.end.scala
 #                              ^ source.scala string.quoted.double.interpolated.scala punctuation.definition.string.end.scala
 >
 >  s"""$x plain ${val x = y}"""
 #^^ source.scala
 #  ^ source.scala keyword.interpolation.scala
 #   ^^^ source.scala string.quoted.triple.interpolated.scala punctuation.definition.string.begin.scala
-#      ^ source.scala punctuation.definition.template-expression.begin.scala
-#       ^ source.scala
+#      ^ source.scala meta.template.expression.scala punctuation.definition.template-expression.begin.scala
+#       ^ source.scala meta.template.expression.scala
 #        ^ source.scala string.quoted.triple.interpolated.scala
 #         ^ source.scala string.quoted.triple.interpolated.scala
 #          ^ source.scala string.quoted.triple.interpolated.scala
@@ -333,21 +333,21 @@
 #            ^ source.scala string.quoted.triple.interpolated.scala
 #             ^ source.scala string.quoted.triple.interpolated.scala
 #              ^ source.scala string.quoted.triple.interpolated.scala
-#               ^^ source.scala punctuation.definition.template-expression.scala punctuation.definition.template-expression.begin.scala
-#                 ^^^ source.scala punctuation.definition.template-expression.scala keyword.declaration.stable.scala
-#                    ^ source.scala punctuation.definition.template-expression.scala
-#                     ^ source.scala punctuation.definition.template-expression.scala variable.other.declaration.scala
-#                      ^ source.scala punctuation.definition.template-expression.scala
-#                       ^ source.scala punctuation.definition.template-expression.scala keyword.operator.comparison.scala
-#                        ^^ source.scala punctuation.definition.template-expression.scala
-#                          ^ source.scala punctuation.definition.template-expression.scala punctuation.definition.template-expression.end.scala
+#               ^^ source.scala meta.template.expression.scala punctuation.definition.template-expression.begin.scala
+#                 ^^^ source.scala meta.template.expression.scala meta.embedded.line.scala keyword.declaration.stable.scala
+#                    ^ source.scala meta.template.expression.scala meta.embedded.line.scala
+#                     ^ source.scala meta.template.expression.scala meta.embedded.line.scala variable.other.declaration.scala
+#                      ^ source.scala meta.template.expression.scala meta.embedded.line.scala
+#                       ^ source.scala meta.template.expression.scala meta.embedded.line.scala keyword.operator.comparison.scala
+#                        ^^ source.scala meta.template.expression.scala meta.embedded.line.scala
+#                          ^ source.scala meta.template.expression.scala punctuation.definition.template-expression.end.scala
 #                           ^^^ source.scala string.quoted.triple.interpolated.scala punctuation.definition.string.end.scala
 >  custom"""$x plain ${val x = y}"""
 #^^ source.scala
 #  ^^^^^^ source.scala keyword.interpolation.scala
 #        ^^^ source.scala string.quoted.triple.interpolated.scala punctuation.definition.string.begin.scala
-#           ^ source.scala punctuation.definition.template-expression.begin.scala
-#            ^ source.scala
+#           ^ source.scala meta.template.expression.scala punctuation.definition.template-expression.begin.scala
+#            ^ source.scala meta.template.expression.scala
 #             ^ source.scala string.quoted.triple.interpolated.scala
 #              ^ source.scala string.quoted.triple.interpolated.scala
 #               ^ source.scala string.quoted.triple.interpolated.scala
@@ -355,14 +355,14 @@
 #                 ^ source.scala string.quoted.triple.interpolated.scala
 #                  ^ source.scala string.quoted.triple.interpolated.scala
 #                   ^ source.scala string.quoted.triple.interpolated.scala
-#                    ^^ source.scala punctuation.definition.template-expression.scala punctuation.definition.template-expression.begin.scala
-#                      ^^^ source.scala punctuation.definition.template-expression.scala keyword.declaration.stable.scala
-#                         ^ source.scala punctuation.definition.template-expression.scala
-#                          ^ source.scala punctuation.definition.template-expression.scala variable.other.declaration.scala
-#                           ^ source.scala punctuation.definition.template-expression.scala
-#                            ^ source.scala punctuation.definition.template-expression.scala keyword.operator.comparison.scala
-#                             ^^ source.scala punctuation.definition.template-expression.scala
-#                               ^ source.scala punctuation.definition.template-expression.scala punctuation.definition.template-expression.end.scala
+#                    ^^ source.scala meta.template.expression.scala punctuation.definition.template-expression.begin.scala
+#                      ^^^ source.scala meta.template.expression.scala meta.embedded.line.scala keyword.declaration.stable.scala
+#                         ^ source.scala meta.template.expression.scala meta.embedded.line.scala
+#                          ^ source.scala meta.template.expression.scala meta.embedded.line.scala variable.other.declaration.scala
+#                           ^ source.scala meta.template.expression.scala meta.embedded.line.scala
+#                            ^ source.scala meta.template.expression.scala meta.embedded.line.scala keyword.operator.comparison.scala
+#                             ^^ source.scala meta.template.expression.scala meta.embedded.line.scala
+#                               ^ source.scala meta.template.expression.scala punctuation.definition.template-expression.end.scala
 #                                ^^^ source.scala string.quoted.triple.interpolated.scala punctuation.definition.string.end.scala
 >}
 #^ source.scala punctuation.section.block.end.scala
