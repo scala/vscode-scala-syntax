@@ -1,5 +1,14 @@
 ## Scala Syntax (official) Changelog
 
+### 0.3.9 (2020/01/27 06:40 +00:00)
+- [9a3fb4f](https://github.com/scala/vscode-scala-syntax/commit/9a3fb4fb689b256e4c4b10a56dfb15237f158836) Update .gitignore (@kiendang)
+- [1906813](https://github.com/scala/vscode-scala-syntax/commit/19068130bf87eb0aec38ec286217b43ae85fdf8c) Update string interpolation highlighting (@kiendang)
+- [9553c6e](https://github.com/scala/vscode-scala-syntax/commit/9553c6e6518c2802f6b96594963cacea6c622087) Remove $ as possible character in simple interpolated variable name (@kiendang)
+- [c00e6ae](https://github.com/scala/vscode-scala-syntax/commit/c00e6ae26ea0cf4ebad0f03802b02231f394134a) Fix string interpolation with curly braces (@kiendang)
+- [861d285](https://github.com/scala/vscode-scala-syntax/commit/861d2853f92753ef511df90c3ff21331c7e8781b) Remove `erased` keyword (@nicolasstucki)
+- [d83ed44](https://github.com/scala/vscode-scala-syntax/commit/d83ed44b7c3d3578d625a0e51c693984e461735c) Revert "Revert "Fix #45: Use npx to execute github-changes"" (@nicolasstucki)
+- [d4c7de5](https://github.com/scala/vscode-scala-syntax/commit/d4c7de53edae929bd05deefdf115aaa47ae02b77) Update release notes for 0.3.8
+
 ### 0.3.8 (2019/10/07 07:40 +00:00)
 - [14d22e4](https://github.com/scala/vscode-scala-syntax/commit/14d22e4f897b611266c1ba726473ecc31f0665cb) Revert "Fix #45: Use npx to execute github-changes" (@nicolasstucki)
 - [8f1deeb](https://github.com/scala/vscode-scala-syntax/commit/8f1deeb58ed8fa2d64bac7cc9a54d8bfbb14c49d) Update release notes for 0.3.7
