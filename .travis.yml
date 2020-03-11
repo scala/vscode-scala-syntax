@@ -14,14 +14,4 @@ jobs:
     - stage: release
       script: bin/ci-release.sh
 
-deploy:
-  provider: releases
-  api_key:
-    secure: "Wt9gFsQqxwFOnLFuMgc6fy1d4Z4T2v3xfyhb4+bqip/MTUR3K9vwUAmvsxWe6/rPfFsdWb+Iou2VH5t3Bh5lck2yxzG28S0sxDoLkdB2cAkcIDxGWfxxoi62V3IFFkXs5XHcQuTXGLjJymDv+824SaEIid+ePliW4imDUXNJP9gSohTG+zZzNSvKJpipduXd3p+LRkk+HQGMZPHRv2jn24xLpTRkn6uiSVI8xUjA93K04vq3O8CU58/L77GpB5oVZm4GZXr9GgFVI5FsgVi9ps5Glnm4v87d3jTw4sjGy274QbB89Ys43hkUUm4Zu/JlxfZlhkp/o/u+gLuJ/XT65NxTikI9LeY8g5KwM0kA2jQMIL70Iyl+jiJ8f9Venm97toa5/4rKkIqwHkdf2I2f+VRDu2LFtk0VzOjb3mPmAhoOLPWUfLphKJTuIhaI0pdATts9BhJ6bYjj7qLdviRGnx7bOASxCqwPNAGNCXWEVEesMF7Y/Bu56eONFi70pECi3WWgISZjeDhotyKyTusixzQWTWZcBJQ02Ua//JCR0d2Dx33ANEoabwUPaIZ+pLhj8Awaojxf1F0pepWiWCB2DiweXGVfZQyU/EGkBY7tB9HiYNPpNfbAYeqVuIst1DHsYAzPmOhEONrzjKSJBd9bcuX0n7VL15OVRzV5SDmCCS8="
-  file_glob: true
-  file: *.vsix
-  skip_cleanup: true
-  on:
-    tags: true
-
 cache: yarn
