@@ -8,6 +8,11 @@ NEW_VERSION=${TRAVIS_TAG#"v"}
 yarn install
 yarn build
 yarn test
+vsce package
+
+for f in $(ls *.vsix); do
+  mv $f "scala-lang.$f"
+done
 
 # Update package.json and CHANGELOG.md
 set-up-ssh() {
