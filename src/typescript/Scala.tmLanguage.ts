@@ -151,6 +151,9 @@ export const scalaTmLanguage: TmLanguage = {
           include: '#inheritance'
         },
         {
+          include: '#extension'
+        },
+        {
           include: '#imports'
         },
         {
@@ -854,6 +857,24 @@ export const scalaTmLanguage: TmLanguage = {
             },
             '2': {
               name: 'entity.other.inherited-class.scala'
+            }
+          }
+        }
+      ]
+    },
+    extension: {
+      patterns: [
+        {
+          match: `(extension)\\s+(?:(${plainid})\\s)?\\s*(on|(?=\\{))`,
+          captures: {
+            '1': {
+              name: 'keyword.declaration.scala'
+            },
+            '2': {
+              name: 'entity.name.class'
+            },
+            '3': {
+              name: 'keyword.declaration.scala'
             }
           }
         }
