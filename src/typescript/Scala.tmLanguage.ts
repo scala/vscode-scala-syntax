@@ -169,6 +169,9 @@ export const scalaTmLanguage: TmLanguage = {
           include: '#keywords'
         },
         {
+          include: '#using'
+        },
+        {
           include: '#constants'
         },
         {
@@ -315,6 +318,18 @@ export const scalaTmLanguage: TmLanguage = {
           endCaptures: {
             '0': {
               name: 'string.quoted.double.interpolated.scala punctuation.definition.string.end.scala'
+            }
+          }
+        }
+      ]
+    },
+    'using': {
+      patterns: [
+        {
+          match: `\\(\\s*(using)`,
+          captures: {
+            '1': {
+              name: 'keyword.declaration.scala'
             }
           }
         }
