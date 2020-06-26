@@ -568,7 +568,7 @@ export const scalaTmLanguage: TmLanguage = {
           }
         },
         {
-          match: '\\b(?:(case|open)\\s+)?(class|object)\\s+([^\\s\\{\\(\\[]+)',
+          match: '\\b(?:(case|open)\\s+)?(class|object)\\s+([^\\s\\{\\(\\[;]+)',
           captures: {
             '1': {
               name: 'keyword.declaration.scala'
@@ -935,7 +935,7 @@ export const scalaTmLanguage: TmLanguage = {
     inheritance: {
       patterns: [
         {
-          match: '(extends|with|derives)\\s+([^\\s\\(\\{\\[\\]]+|(?=\\([^\\)]+=>))',
+          match: '(extends|with|derives)\\s+([^\\s\\(\\{\\[\\]\\)\\};]+|(?=\\([^\\)]+=>))',
           captures: {
             '1': {
               name: 'keyword.declaration.scala'
