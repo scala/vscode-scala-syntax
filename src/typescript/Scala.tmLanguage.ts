@@ -480,7 +480,7 @@ export const scalaTmLanguage: TmLanguage = {
           }
         },
         {
-          match: '\\b(?:(case)\\s+)?(class|object)\\s+([^\\s\\{\\(\\[]+)',
+          match: '\\b(?:(case|open)\\s+)?(class|object)\\s+([^\\s\\{\\(\\[]+)',
           captures: {
             '1': {
               name: 'keyword.declaration.scala'
