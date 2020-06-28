@@ -51,10 +51,6 @@ export const scalaTmLanguage: TmLanguage = {
           include: '#comments'
         },
         {
-          match: `(given)(?=\\s)`,
-          name: 'keyword.given.import.scala'
-        },
-        {
           match: `(${backQuotedId}|${plainid})`,
           name: 'entity.name.import.scala'
         },
@@ -72,33 +68,32 @@ export const scalaTmLanguage: TmLanguage = {
           },
           patterns: [
             {
-              match: `(?x)\\s*(${backQuotedId}|${plainid})\\s*(=>)\\s*(${backQuotedId}|${plainid})\\s*`,
+              match: `(?x)(given\\s)?\\s*(${backQuotedId}|${plainid})\\s*(=>)\\s*(${backQuotedId}|${plainid})\\s*`,
               captures: {
                 '1': {
-                  name: 'entity.name.import.renamed-from.scala'
+                  name: 'keyword.other.given.scala'
                 },
                 '2': {
-                  name: 'keyword.other.arrow.scala'
+                  name: 'entity.name.import.renamed-from.scala'
                 },
                 '3': {
+                  name: 'keyword.other.arrow.scala'
+                },
+                '4': {
                   name: 'entity.name.import.renamed-to.scala'
                 }
               }
             },
             {
-              match: `(given)(\\s+${plainid})?(?=\\s*[,}])`,
+              match: `(given\\s+)?([^\\s.,}]+)`,
               captures: {
                 '1': {
                   name: 'keyword.given.import.scala'
                 },
                 '2': {
-                  name: 'entity.name.type.import.scala'
+                  name: 'entity.name.import.scala'
                 }
               }
-            },
-            {
-              match: '([^\\s.,}]+)',
-              name: 'entity.name.import.scala'
             }
           ],
           endCaptures: {
