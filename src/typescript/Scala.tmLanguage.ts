@@ -118,7 +118,7 @@ export const scalaTmLanguage: TmLanguage = {
           name: 'constant.language.scala'
         },
         {
-          match: '\\b((0(x|X)[0-9a-fA-F]*)|(([0-9]+\\.[0-9]+)|(\\.[0-9]+))((e|E)(\\+|-)?[0-9]+)?|[0-9]+)([LlFfDd]|UL|ul)?\\b',
+          match: '\\b((0(x|X)[0-9a-fA-F_]*)|(([0-9][0-9_]*\\.[0-9][0-9_]*)|(\\.[0-9][0-9_]*))((e|E)(\\+|-)?[0-9][0-9_]*)?|[0-9][0-9_]*)([LlFfDd]|UL|ul)?\\b',
           name: 'constant.numeric.scala'
         },
         {
