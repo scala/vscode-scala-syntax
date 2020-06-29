@@ -557,7 +557,7 @@ export const scalaTmLanguage: TmLanguage = {
           }
         },
         {
-          match: '\\b(trait)\\s+([^\\s\\{\\(\\[]+)',
+          match: `\\b(trait)\\s+([^\\s\\{\\(\\[;]+)(?<![^${opchar}]:)`,
           captures: {
             '1': {
               name: 'keyword.declaration.scala'
@@ -568,7 +568,7 @@ export const scalaTmLanguage: TmLanguage = {
           }
         },
         {
-          match: '\\b(?:(case|open)\\s+)?(class|object)\\s+([^\\s\\{\\(\\[;]+)',
+          match: `\\b(?:(case|open)\\s+)?(class|object)\\s+([^\\s\\{\\(\\[;]+)(?<![^${opchar}]:)`,
           captures: {
             '1': {
               name: 'keyword.declaration.scala'
