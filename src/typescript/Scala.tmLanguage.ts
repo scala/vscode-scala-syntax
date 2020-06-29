@@ -111,6 +111,67 @@ export const scalaTmLanguage: TmLanguage = {
       ],
       name: 'meta.import.scala'
     },
+    exports: {
+      end: '(?<=[\\n;])',
+      begin: '\\b(export)\\s+(given\\s+)?',
+      beginCaptures: {
+        '1': {
+          name: 'keyword.other.export.scala'
+        },
+        '2': {
+          name: 'keyword.other.given.scala'
+        }
+      },
+      patterns: [
+        {
+          include: '#comments'
+        },
+        {
+          match: `(${backQuotedId}|${plainid})`,
+          name: 'entity.name.export.scala'
+        },
+        {
+          match: '\\.',
+          name: 'punctuation.definition.export'
+        },
+        {
+          end: '}',
+          begin: '{',
+          beginCaptures: {
+            '0': {
+              name: 'meta.bracket.scala'
+            }
+          },
+          patterns: [
+            {
+              match: `(?x)\\s*(${backQuotedId}|${plainid})\\s*(=>)\\s*(${backQuotedId}|${plainid})\\s*`,
+              captures: {
+                '1': {
+                  name: 'entity.name.export.renamed-from.scala'
+                },
+                '2': {
+                  name: 'keyword.other.arrow.scala'
+                },
+                '3': {
+                  name: 'entity.name.export.renamed-to.scala'
+                }
+              }
+            },
+            {
+              match: '([^\\s.,}]+)',
+              name: 'entity.name.export.scala'
+            }
+          ],
+          endCaptures: {
+            '0': {
+              name: 'meta.bracket.scala'
+            }
+          },
+          name: 'meta.export.selector.scala'
+        }
+      ],
+      name: 'meta.export.scala'
+    },
     constants: {
       patterns: [
         {
@@ -155,6 +216,9 @@ export const scalaTmLanguage: TmLanguage = {
         },
         {
           include: '#imports'
+        },
+        {
+          include: '#exports'
         },
         {
           include: '#comments'
