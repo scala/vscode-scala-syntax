@@ -178,6 +178,9 @@ export const scalaTmLanguage: TmLanguage = {
           include: '#scala-symbol'
         },
         {
+          include: '#singleton-type'
+        },
+        {
           include: '#scala-quoted'
         },
         {
@@ -434,6 +437,14 @@ export const scalaTmLanguage: TmLanguage = {
         }
       ]
     },
+    'singleton-type': {
+      match: `\\.(type)(?!${idrest}|[0-9])`,
+      captures: {
+        '1': {
+          name: 'keyword.type.scala'
+        }
+      }
+    },
     'scala-quoted': {
       match: "('\\{|'\\[)(?!')",
       name: 'constant.other.quoted.scala'
@@ -497,7 +508,7 @@ export const scalaTmLanguage: TmLanguage = {
           }
         },
         {
-          match: `\\b(type)\\s+(${backQuotedId}|${plainid})`,
+          match: `(?<!\\.)\\b(type)\\s+(${backQuotedId}|${plainid})`,
           captures: {
             '1': {
               name: 'keyword.declaration.scala'
