@@ -4,8 +4,7 @@
 [![Version](https://img.shields.io/github/package-json/v/scala/vscode-scala-syntax.svg)](https://marketplace.visualstudio.com/items?itemName=scala-lang.scala)
 [![Build Status](https://travis-ci.org/scala/vscode-scala-syntax.svg?branch=master)](https://travis-ci.org/scala/vscode-scala-syntax)
 
-Visual Studio Code extension providing syntax highlighting for Scala source
-files.
+Visual Studio Code extension providing syntax highlighting for Scala 2 and Scala 3 source files.
 
 ![Syntax Highlighting Demo](https://i.imgur.com/TDx0mC3.png)
 
@@ -15,8 +14,8 @@ This repo also powers the Scala syntax highlighting on GitHub. (It is vendored i
 
 The current maintainers (people who can merge pull requests) are:
 
-- Olafur Pall Geirsson - [`@olafurpg`](https://github.com/olafurpg)
 - Nicolas Stucki- [`@nicolasstucki`](https://github.com/nicolasstucki)
+- Olafur Pall Geirsson - [`@olafurpg`](https://github.com/olafurpg)
 - Vitalii Voloshyn - [`@PanAeon`](https://github.com/PanAeon)
 - all other members of the Scala organization on GitHub
 
