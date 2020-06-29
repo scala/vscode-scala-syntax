@@ -3,6 +3,8 @@
 [![Install extension](https://img.shields.io/badge/scala-vscode-blue.png)](vscode:extension/scala-lang.scala)
 [![Version](https://img.shields.io/github/package-json/v/scala/vscode-scala-syntax.svg)](https://marketplace.visualstudio.com/items?itemName=scala-lang.scala)
 [![Build Status](https://travis-ci.org/scala/vscode-scala-syntax.svg?branch=master)](https://travis-ci.org/scala/vscode-scala-syntax)
+[![Percentage of issues still open](http://isitmaintained.com/badge/open/scala/vscode-scala-syntax.svg)](http://isitmaintained.com/project/scala/vscode-scala-syntax "Percentage of issues still open")
+[![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/scala/vscode-scala-syntax.svg)](http://isitmaintained.com/project/scala/vscode-scala-syntax "Average time to resolve an issue")
 
 Visual Studio Code extension providing syntax highlighting for Scala 2 and Scala 3 source files.
 
