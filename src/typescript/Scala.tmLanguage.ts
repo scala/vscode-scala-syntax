@@ -18,7 +18,7 @@ const idUpper = `${upperLetter}${letterOrDigit}*(?:(?<=_)${opchar}+)?`
 const idLower = `${lowerLetter}${letterOrDigit}*(?:(?<=_)${opchar}+)?`
 const plainid = `(?:${idrest}|${opchar}+)`
 const backQuotedId = "`[^`]+`"
-
+const endOfLineMaybeWithComment = "(?=\\s*(//.*|/\\*(?!.*\\*/\\s*\\S.*).*)?$)"
 
 export const scalaTmLanguage: TmLanguage = {
   fileTypes: [
@@ -486,18 +486,30 @@ export const scalaTmLanguage: TmLanguage = {
           name: 'keyword.control.flow.scala'
         },
         {
-          match: `^\\s*(end)\\s+(?:(if|while|for|match|new)|(${upperLetter}${plainid}?)|(${backQuotedId}|${plainid}))?(?=\\s*(//.*|/\\*(?!.*\\*/\\s*\\S.*).*)?$)`,
+          match: `^\\s*(end)\\s+(if|while|for|match)${endOfLineMaybeWithComment}`,
+          name: 'keyword.control.flow.end.scala'
+        },
+        {
+          match: `^\\s*(end)\\s+(?:(new)|(${idUpper}))${endOfLineMaybeWithComment}`,
           captures: {
             '1': {
-              name: 'keyword.control.flow.end.scala'
+              name: 'keyword.declaration.end.scala'
             },
             '2': {
-              name: 'keyword.control.flow.end.scala'
+              name: 'keyword.declaration.end.scala'
             },
             '3': {
               name: 'entity.name.type.declaration'
+            }
+          }
+        },
+        {
+          match: `^\\s*(end)\\s+(${backQuotedId}|${plainid})?${endOfLineMaybeWithComment}`,
+          captures: {
+            '1': {
+              name: 'keyword.declaration.end.scala'
             },
-            '4': {
+            '2': {
               name: 'entity.name.declaration'
             }
           }
