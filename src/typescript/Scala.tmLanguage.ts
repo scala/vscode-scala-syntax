@@ -486,8 +486,21 @@ export const scalaTmLanguage: TmLanguage = {
           name: 'keyword.control.flow.scala'
         },
         {
-          match: `^\\s*end(?=\\s+(if|while|for|match|${plainid})\\s*(//.*|/\\*(?!.*\\*/\\s*\\S.*).*)?$)`,
-          name: 'keyword.control.flow.end.scala'
+          match: `^\\s*(end)\\s+(?:(if|while|for|match|new)|(${upperLetter}${plainid}?)|(${backQuotedId}|${plainid}))?(?=\\s*(//.*|/\\*(?!.*\\*/\\s*\\S.*).*)?$)`,
+          captures: {
+            '1': {
+              name: 'keyword.control.flow.end.scala'
+            },
+            '2': {
+              name: 'keyword.control.flow.end.scala'
+            },
+            '3': {
+              name: 'entity.name.type.declaration'
+            },
+            '4': {
+              name: 'entity.name.declaration'
+            }
+          }
         },
         {
           match: '\\b(catch|finally|try)\\b',
