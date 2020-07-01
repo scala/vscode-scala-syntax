@@ -7,6 +7,10 @@
 //  ^^^ keyword.declaration.end.scala
 //      ^^^ keyword.declaration.end.scala
 
+    end extension
+//  ^^^ keyword.declaration.end.scala
+//      ^^^^^^^^^ keyword.declaration.end.scala
+
     end if
 //  ^^^ keyword.control.flow.end.scala
 //      ^^ keyword.control.flow.end.scala
