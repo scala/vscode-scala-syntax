@@ -56,10 +56,10 @@
     import A.{given TC}
 //  ^^^^^^ meta.import.scala keyword.other.import.scala
 //        ^ meta.import.scala
-//         ^ meta.import.scala entity.name.import.scala
+//         ^ meta.import.scala entity.name.class.import.scala
 //          ^ meta.import.scala punctuation.definition.import
 //           ^ meta.import.scala meta.import.selector.scala meta.bracket.scala
 //            ^^^^^ meta.import.scala keyword.given.import.scala
 //                 ^ meta.import.scala meta.import.selector.scala
-//                  ^^ meta.import.scala entity.name.import.scala
+//                  ^^ meta.import.scala entity.name.class.import.scala
 //                    ^ meta.import.scala meta.import.selector.scala

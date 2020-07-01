@@ -821,7 +821,7 @@
 #       ^ source.scala
 #        ^^^^^^ source.scala meta.import.scala keyword.other.import.scala
 #              ^ source.scala meta.import.scala
-#               ^ source.scala meta.import.scala entity.name.import.scala
+#               ^ source.scala meta.import.scala entity.name.class.import.scala
 #                ^ source.scala meta.import.scala punctuation.definition.import
 #                 ^ source.scala meta.import.scala meta.import.selector.scala meta.bracket.scala
 #                  ^^^ source.scala meta.import.scala meta.import.selector.scala entity.name.import.scala
