@@ -42,13 +42,13 @@
         ]
     },
     "devDependencies": {
-        "@types/node": "^12.6.8",
-        "ajv": "^6.10.2",
-        "ts-node": "^8.3.0",
+        "@types/node": "^14.0.14",
+        "ajv": "^6.12.2",
+        "ts-node": "^8.10.2",
         "tsc": "^1.20150623.0",
-        "typescript": "^3.5.3",
-        "vsce": "^1.66.0",
-        "vscode-tmgrammar-test": "0.0.5"
+        "typescript": "^3.9.5",
+        "vsce": "^1.77.0",
+        "vscode-tmgrammar-test": "0.0.10"
     },
     "scripts": {
         "vscode:prepublish": "test -f ./syntaxes/Scala.tmLanguage.json",
