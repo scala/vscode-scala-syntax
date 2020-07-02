@@ -114,7 +114,7 @@ import scala.colection.Seq
 //          ^  meta.import.scala punctuation.definition.import
 //           ^^^^^^^^^  meta.import.scala entity.name.import.scala
 //                    ^  meta.import.scala punctuation.definition.import
-//                     ^^^  meta.import.scala entity.name.import.scala
+//                     ^^^  meta.import.scala entity.name.class.import.scala
 import users._  // import everything from the users package
 // <------  meta.import.scala keyword.other.import.scala
 //    ^  meta.import.scala
@@ -128,7 +128,7 @@ import users.User  // import the class User
 //    ^  meta.import.scala
 //     ^^^^^  meta.import.scala entity.name.import.scala
 //          ^  meta.import.scala punctuation.definition.import
-//           ^^^^  meta.import.scala entity.name.import.scala
+//           ^^^^  meta.import.scala entity.name.class.import.scala
 //                 ^^  comment.line.double-slash.scala punctuation.definition.comment.scala
 //                   ^^^^^^^^^^^^^^^^^^^^^^  comment.line.double-slash.scala
 import users.{User, UserPreferences}  // Only imports selected members
@@ -137,9 +137,9 @@ import users.{User, UserPreferences}  // Only imports selected members
 //     ^^^^^  meta.import.scala entity.name.import.scala
 //          ^  meta.import.scala punctuation.definition.import
 //           ^  meta.import.scala meta.import.selector.scala meta.bracket.scala
-//            ^^^^  meta.import.scala meta.import.selector.scala entity.name.import.scala
+//            ^^^^  meta.import.scala meta.import.selector.scala entity.name.class.import.scala
 //                ^^  meta.import.scala meta.import.selector.scala
-//                  ^^^^^^^^^^^^^^^  meta.import.scala meta.import.selector.scala entity.name.import.scala
+//                  ^^^^^^^^^^^^^^^  meta.import.scala meta.import.selector.scala entity.name.class.import.scala
 //                                 ^  meta.import.scala meta.import.selector.scala meta.bracket.scala
 
 
@@ -150,11 +150,11 @@ import users.{UserPreferences => UPrefs}  // import and rename for convenience
 //     ^^^^^  meta.import.scala entity.name.import.scala
 //          ^  meta.import.scala punctuation.definition.import
 //           ^  meta.import.scala meta.import.selector.scala meta.bracket.scala
-//            ^^^^^^^^^^^^^^^  meta.import.scala meta.import.selector.scala entity.name.import.renamed-from.scala
+//            ^^^^^^^^^^^^^^^  meta.import.scala meta.import.selector.scala entity.name.class.import.renamed-from.scala
 //                           ^  meta.import.scala meta.import.selector.scala
 //                            ^^  meta.import.scala meta.import.selector.scala keyword.other.arrow.scala
 //                              ^  meta.import.scala meta.import.selector.scala
-//                               ^^^^^^  meta.import.scala meta.import.selector.scala entity.name.import.renamed-to.scala
+//                               ^^^^^^  meta.import.scala meta.import.selector.scala entity.name.class.import.renamed-to.scala
 //                                     ^  meta.import.scala meta.import.selector.scala meta.bracket.scala
 
 
