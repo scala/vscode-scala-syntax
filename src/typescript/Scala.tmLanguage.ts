@@ -490,7 +490,7 @@ export const scalaTmLanguage: TmLanguage = {
           name: 'keyword.control.flow.end.scala'
         },
         {
-          match: `^\\s*(end)\\s+(?:(new)|(${idUpper}))${endOfLineMaybeWithComment}`,
+          match: `^\\s*(end)\\s+(?:(new|extension)|(${idUpper}))${endOfLineMaybeWithComment}`,
           captures: {
             '1': {
               name: 'keyword.declaration.end.scala'
