@@ -36,6 +36,12 @@ The output tmLanguage file `syntaxes/Scala.tmLanguage.json` is marked as ignored
 in git and shouldn't be commited into the repository. The output file is
 validated against the json schema before being written.
 
+To run the tests, run the following command:
+
+```bash
+yarn test
+```
+
 ## Installing the extension locally
 
 Run the following commands to globally install this extension with your local
