@@ -30,9 +30,9 @@ command:
 yarn build
 ```
 
-The output tmLanguage file `syntaxes/Scala.tmLanguage.json` is marked as ignored
-in git and shouldn't be commited into the repository. The output file is
-validated against the json schema before being written.
+The output tmLanguage file `syntaxes/Scala.tmLanguage.json` is tracked by git,
+and is committed on every release (see [#23](https://github.com/scala/vscode-scala-syntax/pull/23)).
+The output file is validated against the json schema before being written.
 
 To run the tests, run the following command:
 
