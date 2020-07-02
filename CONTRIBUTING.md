@@ -9,8 +9,6 @@ for Visual Studio Code.
 Make sure you have the following binaries installed:
 
 - [`yarn`](https://yarnpkg.com/en/): to build the project
-- [`vsce`](https://code.visualstudio.com/api/working-with-extensions/publishing-extension):
-  to package the extension for VS Code.
 - [`code`](https://code.visualstudio.com/docs/setup/mac): to launch VS Code from
   the terminal.
 
@@ -50,7 +48,7 @@ changes.
 ```bash
 yarn install
 yarn build
-vsce package
+
 # replace `*` below with the version of the generated vsix file
 code --install-extension scala-*.vsix
 ```
