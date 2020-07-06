@@ -6,7 +6,7 @@ NEW_VERSION=${TRAVIS_TAG#"v"}
 
 # Build the extension
 yarn install
-yarn build
+yarn build:syntax
 yarn test
 
 # Update package.json and CHANGELOG.md
