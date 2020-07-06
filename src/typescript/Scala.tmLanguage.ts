@@ -75,7 +75,7 @@ export const scalaTmLanguage: TmLanguage = {
               match: `(?x)(given\\s)?\\s*(?:(${idUpper})|(${backQuotedId}|${plainid}))\\s*(=>)\\s*(?:(${idUpper})|(${backQuotedId}|${plainid}))\\s*`,
               captures: {
                 '1': {
-                  name: 'keyword.other.given.scala'
+                  name: 'keyword.import.given.scala'
                 },
                 '2': {
                   name: 'entity.name.class.import.renamed-from.scala'
@@ -98,7 +98,7 @@ export const scalaTmLanguage: TmLanguage = {
               match: `(given\\s+)?(?:(${idUpper})|(${backQuotedId}|${plainid}))`,
               captures: {
                 '1': {
-                  name: 'keyword.given.import.scala'
+                  name: 'keyword.import.given.scala'
                 },
                 '2': {
                   name: 'entity.name.class.import.scala'
@@ -127,7 +127,7 @@ export const scalaTmLanguage: TmLanguage = {
           name: 'keyword.other.export.scala'
         },
         '2': {
-          name: 'keyword.other.given.scala'
+          name: 'keyword.other.export.given.scala'
         }
       },
       patterns: [
@@ -242,6 +242,9 @@ export const scalaTmLanguage: TmLanguage = {
         },
         {
           include: '#keywords'
+        },
+        {
+          include: '#given'
         },
         {
           include: '#using'
@@ -404,13 +407,37 @@ export const scalaTmLanguage: TmLanguage = {
     'using': {
       patterns: [
         {
-          match: `\\(\\s*(using)`,
+          match: `(?<=\\()\\s*(using)`,
           captures: {
             '1': {
               name: 'keyword.declaration.scala'
             }
           }
         }
+      ]
+    },
+    'given': {
+      begin: "\\b(given)\\b",
+      end: "\\b(as)\\b",
+      beginCaptures: {
+        '1': { name: "keyword.declaration.given.scala" }
+      },
+      endCaptures: {
+        '1': { name: "keyword.declaration.given.scala" }
+      },
+      patterns: [
+        { include: "#keywords" },
+        { include: "#parameter-list" },
+        { include: "#qualifiedClassName" },
+        { include: "#constants" },
+        { include: "#char-literal" },
+        { include: "#strings" },
+        { include: "#declarations" },
+        { include: "#using" },
+        {
+          match: `${backQuotedId}|${plainid}`,
+          name: "entity.name.declaration"
+        },
       ]
     },
     'string-interpolation': {
@@ -802,7 +829,7 @@ export const scalaTmLanguage: TmLanguage = {
           name: 'storage.modifier.access'
         },
         {
-          match: '\\b(synchronized|@volatile|abstract|final|lazy|sealed|implicit|given|enum|inline |opaque |override|@transient|@native)\\b',
+          match: '\\b(synchronized|@volatile|abstract|final|lazy|sealed|implicit|enum|inline |opaque |override|@transient|@native)\\b',
           name: 'storage.modifier.other'
         }
       ]
