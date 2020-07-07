@@ -1,8 +1,8 @@
 // SYNTAX TEST "source.scala"
 
    enum Color:
-// ^^^^ storage.modifier.other
-//      ^^^^ entity.name.class
+// ^^^^ keyword.declaration.scala
+//      ^^^^^ entity.name.class.declaration
     case Red, Green, Blue, Magenta
 //  ^^^^ keyword.control.flow.scala
 //            ^^^^^ entity.name.class
@@ -10,8 +10,8 @@
 //                         ^^^^^^^ entity.name.class
 
    enum Vehicle(val numberOfWheels: Int):
-// ^^^^ storage.modifier.other
-//      ^^^^^^^ entity.name.class
+// ^^^^ keyword.declaration.scala
+//      ^^^^^^^ entity.name.class.declaration
 //              ^^^ keyword.declaration.stable.scala
 //                  ^^^^^^^^^^^^^^ variable.other.declaration.scala
 //                                  ^^^ entity.name.class
