@@ -75,7 +75,7 @@ export const scalaTmLanguage: TmLanguage = {
               match: `(?x)(given\\s)?\\s*(?:(${idUpper})|(${backQuotedId}|${plainid}))\\s*(=>)\\s*(?:(${idUpper})|(${backQuotedId}|${plainid}))\\s*`,
               captures: {
                 '1': {
-                  name: 'keyword.import.given.scala'
+                  name: 'keyword.other.import.given.scala'
                 },
                 '2': {
                   name: 'entity.name.class.import.renamed-from.scala'
@@ -98,7 +98,7 @@ export const scalaTmLanguage: TmLanguage = {
               match: `(given\\s+)?(?:(${idUpper})|(${backQuotedId}|${plainid}))`,
               captures: {
                 '1': {
-                  name: 'keyword.import.given.scala'
+                  name: 'keyword.other.import.given.scala'
                 },
                 '2': {
                   name: 'entity.name.class.import.scala'
