@@ -67,3 +67,21 @@
 //                                                                           ^^^ constant.character.literal.scala
 //                                                                               ^^^^ keyword.control.flow.scala
 //                                                                                    ^ constant.numeric.scala
+
+    given // this should be a comment
+//  ^^^^^ keyword.declaration.scala
+//        ^^ punctuation.definition.comment.scala
+//          ^^^^^^^^^^^^^^^^^^^^^^^^^ comment.line.double-slash.scala
+        as Foo
+//      ^^ keyword.declaration.scala
+
+    given// this should be a comment
+//  ^^^^^ keyword.declaration.scala
+//       ^^ punctuation.definition.comment.scala
+//          ^^^^^^^^^^^^^^^^^^^^^^^^ comment.line.double-slash.scala
+
+    given /* this should be a comment */
+//  ^^^^^ keyword.declaration.scala
+//        ^^ punctuation.definition.comment.scala
+//          ^^^^^^^^^^^^^^^^^^^^^^^^^^ comment.block.scala
+//                                    ^^ punctuation.definition.comment.scala
