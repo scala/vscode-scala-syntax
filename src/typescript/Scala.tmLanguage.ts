@@ -247,9 +247,6 @@ export const scalaTmLanguage: TmLanguage = {
           include: '#using'
         },
         {
-          include: '#as'
-        },
-        {
           include: '#constants'
         },
         {
@@ -416,16 +413,6 @@ export const scalaTmLanguage: TmLanguage = {
         }
       ]
     },
-    'as': {
-      patterns: [
-        {
-          match: '\\s(as)\\s',
-          captures: {
-            '1': { name: 'keyword.declaration.scala' }
-          }
-        }
-      ]
-    },
     'string-interpolation': {
       patterns: [
         {
@@ -559,6 +546,12 @@ export const scalaTmLanguage: TmLanguage = {
         {
           match: '(<-|←|->|→|=>|⇒|\\?|\\:+|@|\\|)+',
           name: 'keyword.operator.scala'
+        },
+        {
+          match: '\\s(as)\\s',
+          captures: {
+            '1': { name: 'keyword.declaration.scala' }
+          }
         }
       ]
     },
