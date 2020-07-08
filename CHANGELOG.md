@@ -1,5 +1,30 @@
 ## Scala Syntax (official) Changelog
 
+### 0.4.1 (2020/07/08 17:49 +00:00)
+- [d9c31e1](https://github.com/scala/vscode-scala-syntax/commit/d9c31e121a13a6aadbadfbe6e6a2ecad94225bee) Update team (@nicolasstucki)
+- [373c3ff](https://github.com/scala/vscode-scala-syntax/commit/373c3fff3de5ea5ec004e91a0d91f1e3d8b3080b) Fix #119: Detect when `using` is an identifier (@nicolasstucki)
+- [55c670d](https://github.com/scala/vscode-scala-syntax/commit/55c670dc213bf358ed9082be944c2930a1331c8a) Identify `enum` as a declaration (@nicolasstucki)
+- [9df316a](https://github.com/scala/vscode-scala-syntax/commit/9df316a5979f5134d2fdaf34a0c2925842017119) Fix #122: Detect new on its own and let the other rules match the name (@nicolasstucki)
+- [e377b96](https://github.com/scala/vscode-scala-syntax/commit/e377b9606a01c7f92738571a65169f9fbebe7942) Update README.md (@nicolasstucki)
+- [16d49e5](https://github.com/scala/vscode-scala-syntax/commit/16d49e515aa026321560f7564adf8ad2a7998a03) Fix #118: Detect start of anonymous `new` (@nicolasstucki)
+- [03641e3](https://github.com/scala/vscode-scala-syntax/commit/03641e36169903e219979beffeb45640083a735f) Use `keyword.other.import` (@nicolasstucki)
+- [84f96e1](https://github.com/scala/vscode-scala-syntax/commit/84f96e1660c42380437a31e0cc3561c07c1c7499) Move `as` pattern to `keywords` patterns (@nicolasstucki)
+- [02fe701](https://github.com/scala/vscode-scala-syntax/commit/02fe701695b14e6b982628ae40731147e5141c2e) Improve rule for `given` declaration detecion (@nicolasstucki)
+- [b6e47aa](https://github.com/scala/vscode-scala-syntax/commit/b6e47aa2a0d15f7d1bd53c826bf309eee9523ab9) Fix #103: Detect `as` (@nicolasstucki)
+- [d751b0e](https://github.com/scala/vscode-scala-syntax/commit/d751b0e729472ee562cde672f2ff3cb82d3c6089) Fix extension build in release script (@MaximeKjaer)
+- [c7d3c9d](https://github.com/scala/vscode-scala-syntax/commit/c7d3c9d701705cdee9185365659b7e009998fd5d) Fix contributing instructions for generated output (@MaximeKjaer)
+- [28089f6](https://github.com/scala/vscode-scala-syntax/commit/28089f693b9b018a0944748eabaa8f8965022387) Remove unused tsc devDependency (@MaximeKjaer)
+- [8ad52d0](https://github.com/scala/vscode-scala-syntax/commit/8ad52d0aa690ca52cfd5b49b0dfe48e38fe4e7bc) Add extension build script (@MaximeKjaer)
+- [ba8ce0c](https://github.com/scala/vscode-scala-syntax/commit/ba8ce0ca828dc9285f5692d72d1fdb39aa5d8610) Replace JS test scripts by package scripts (@MaximeKjaer)
+- [7a0825f](https://github.com/scala/vscode-scala-syntax/commit/7a0825f100e2ad68e891f941cee1bf346f2c2fb8) Support `end extension` (@nicolasstucki)
+- [0da2784](https://github.com/scala/vscode-scala-syntax/commit/0da2784b27f4b64fd2cda192ae6e391a5bf45b94) Fix #110: Highlight class/object names in imports (@nicolasstucki)
+- [6f21e57](https://github.com/scala/vscode-scala-syntax/commit/6f21e5775214f0db6ce31a3bb524bfe52f36950c) Update dependencies (@nicolasstucki)
+- [269b658](https://github.com/scala/vscode-scala-syntax/commit/269b65831b7b109465002fe3a490af4980e5c1e1) Improve `end` highlighting for type declarations (@nicolasstucki)
+- [b3d1825](https://github.com/scala/vscode-scala-syntax/commit/b3d1825145165e7cbdb04b63bd52f540367765c8) Fix #107: Identify highlighting of identifier after an `end` (@nicolasstucki)
+- [5404b87](https://github.com/scala/vscode-scala-syntax/commit/5404b87377f6713ef9f78f55083e322cdaeeb362) Fix #104: Distinguish open declaration `:`
+- [af1e15d](https://github.com/scala/vscode-scala-syntax/commit/af1e15de1cf8051b34cce5d45081ad45e364b626) Fix #105: Detect all combinations of dot in numeric literals (@nicolasstucki)
+- [2e3629c](https://github.com/scala/vscode-scala-syntax/commit/2e3629cff1d158e24f2417494a0d428c06e7fc39) Update release notes for 0.4.0
+
 ### 0.4.0 (2020/06/29 18:14 +00:00)
 - [7f2f3f3](https://github.com/scala/vscode-scala-syntax/commit/7f2f3f34eaee47e3cd9d9004b374d49327359552) Regenerate Scala.tmLanguage.json (@nicolasstucki)
 - [83acbc5](https://github.com/scala/vscode-scala-syntax/commit/83acbc5df6914b55d61b5967206cedf7bcea68cb) Use HTTPS (@nicolasstucki)
