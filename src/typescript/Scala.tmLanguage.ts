@@ -75,7 +75,7 @@ export const scalaTmLanguage: TmLanguage = {
               match: `(?x)(given\\s)?\\s*(?:(${idUpper})|(${backQuotedId}|${plainid}))\\s*(=>)\\s*(?:(${idUpper})|(${backQuotedId}|${plainid}))\\s*`,
               captures: {
                 '1': {
-                  name: 'keyword.other.given.scala'
+                  name: 'keyword.other.import.given.scala'
                 },
                 '2': {
                   name: 'entity.name.class.import.renamed-from.scala'
@@ -98,7 +98,7 @@ export const scalaTmLanguage: TmLanguage = {
               match: `(given\\s+)?(?:(${idUpper})|(${backQuotedId}|${plainid}))`,
               captures: {
                 '1': {
-                  name: 'keyword.given.import.scala'
+                  name: 'keyword.other.import.given.scala'
                 },
                 '2': {
                   name: 'entity.name.class.import.scala'
@@ -127,7 +127,7 @@ export const scalaTmLanguage: TmLanguage = {
           name: 'keyword.other.export.scala'
         },
         '2': {
-          name: 'keyword.other.given.scala'
+          name: 'keyword.other.export.given.scala'
         }
       },
       patterns: [
@@ -546,6 +546,12 @@ export const scalaTmLanguage: TmLanguage = {
         {
           match: '(<-|←|->|→|=>|⇒|\\?|\\:+|@|\\|)+',
           name: 'keyword.operator.scala'
+        },
+        {
+          match: '\\s(as)\\s',
+          captures: {
+            '1': { name: 'keyword.declaration.scala' }
+          }
         }
       ]
     },
@@ -692,6 +698,14 @@ export const scalaTmLanguage: TmLanguage = {
             }
           ],
           name: 'meta.package.scala'
+        },
+        {
+          match: `\\b(given)\\b\\s*(?:\\b(as)\\b|(${backQuotedId}|(?!//|/\\*)${plainid})?)`,
+          captures: {
+            '1': { name: 'keyword.declaration.scala' },
+            '2': { name: 'keyword.declaration.scala' },
+            '3': { name: 'entity.name.declaration' }
+          }
         }
       ]
     },
@@ -802,7 +816,7 @@ export const scalaTmLanguage: TmLanguage = {
           name: 'storage.modifier.access'
         },
         {
-          match: '\\b(synchronized|@volatile|abstract|final|lazy|sealed|implicit|given|enum|inline |opaque |override|@transient|@native)\\b',
+          match: '\\b(synchronized|@volatile|abstract|final|lazy|sealed|implicit|enum|inline |opaque |override|@transient|@native)\\b',
           name: 'storage.modifier.other'
         }
       ]
