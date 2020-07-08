@@ -612,7 +612,7 @@ export const scalaTmLanguage: TmLanguage = {
           }
         },
         {
-          match: `\\b(?:(case|open)\\s+)?(class|object)\\s+([^\\s\\{\\(\\[;]+)(?<![^${opchar}]:)`,
+          match: `\\b(?:(case|open)\\s+)?(class|object|enum)\\s+([^\\s\\{\\(\\[;]+)(?<![^${opchar}]:)`,
           captures: {
             '1': {
               name: 'keyword.declaration.scala'
@@ -813,7 +813,7 @@ export const scalaTmLanguage: TmLanguage = {
           name: 'storage.modifier.access'
         },
         {
-          match: '\\b(synchronized|@volatile|abstract|final|lazy|sealed|implicit|enum|inline |opaque |override|@transient|@native)\\b',
+          match: '\\b(synchronized|@volatile|abstract|final|lazy|sealed|implicit|inline |opaque |override|@transient|@native)\\b',
           name: 'storage.modifier.other'
         }
       ]
