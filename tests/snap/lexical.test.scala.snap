@@ -163,8 +163,8 @@
 #                ^^^^^^^^ source.scala constant.numeric.scala
 #                        ^^ source.scala
 #                          ^^^^^^^^ source.scala constant.numeric.scala
-#                                  ^^^ source.scala
-#                                     ^ source.scala constant.numeric.scala
+#                                  ^^ source.scala
+#                                    ^^ source.scala constant.numeric.scala
 #                                      ^^ source.scala
 #                                        ^ source.scala meta.bracket.scala
 >}

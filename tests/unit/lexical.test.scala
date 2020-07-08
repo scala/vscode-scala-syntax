@@ -39,7 +39,7 @@ object FloatingPointLiterals {
 //  ^^^ constant.numeric.scala
 //              ^^^^^^^^ constant.numeric.scala 
 //                        ^^^^^^^^ constant.numeric.scala 
-//                                   ^ constant.numeric.scala 
+//                                  ^^ constant.numeric.scala 
 }
 
 object Boolean {
