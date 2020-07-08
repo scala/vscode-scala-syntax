@@ -2328,8 +2328,8 @@
 #            ^ source.scala keyword.operator.comparison.scala
 #             ^ source.scala
 #              ^^^ source.scala keyword.declaration.scala
-#                 ^ source.scala
-#                  ^^^^^^^^^^ source.scala entity.name.class
+#                 ^^^^^^^^^^ source.scala
+#                           ^ source.scala entity.name.class
 >    }
 #^^^^ source.scala
 #    ^ source.scala punctuation.section.block.end.scala
