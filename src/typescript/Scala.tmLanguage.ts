@@ -743,13 +743,10 @@ export const scalaTmLanguage: TmLanguage = {
       name: 'string.quoted.other constant.character.literal.scala'
     },
     initialization: {
-      match: '\\b(new)\\s+([^\\s,\\{\\}\\(\\)\\[\\]]+)',
+      match: '\\b(new)\\b',
       captures: {
         '1': {
           name: 'keyword.declaration.scala'
-        },
-        '2': {
-          name: 'entity.name.class'
         }
       }
     },
