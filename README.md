@@ -17,6 +17,7 @@ This repo also powers the Scala syntax highlighting on GitHub. (It is vendored i
 The current maintainers (people who can merge pull requests) are:
 
 - Nicolas Stucki- [`@nicolasstucki`](https://github.com/nicolasstucki)
+- Maxime Kjaer - [`@MaximeKjaer`](https://github.com/MaximeKjaer)
 - Olafur Pall Geirsson - [`@olafurpg`](https://github.com/olafurpg)
 - Vitalii Voloshyn - [`@PanAeon`](https://github.com/PanAeon)
 - all other members of the Scala organization on GitHub
