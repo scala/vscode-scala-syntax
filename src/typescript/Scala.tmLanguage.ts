@@ -191,7 +191,11 @@ export const scalaTmLanguage: TmLanguage = {
           name: 'constant.numeric.scala'
         },
         {
-          match: '((([0-9][0-9_]*(\\.[0-9][0-9_]*)?)|(\\.[0-9][0-9_]*))([eE](\\+|-)?[0-9][0-9_]*)?|[0-9][0-9_]*)([LlFfDd]|UL|ul)?\\b',
+          match: '\\b(([0-9][0-9_]*(\\.[0-9][0-9_]*)?)([eE](\\+|-)?[0-9][0-9_]*)?|[0-9][0-9_]*)([LlFfDd]|UL|ul)?\\b',
+          name: 'constant.numeric.scala'
+        },
+        {
+          match: '(\\.[0-9][0-9_]*)([eE](\\+|-)?[0-9][0-9_]*)?([LlFfDd]|UL|ul)?\\b',
           name: 'constant.numeric.scala'
         },
         {
