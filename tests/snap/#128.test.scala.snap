@@ -1,0 +1,15 @@
+>p133
+#^^^^^ source.scala
+>p133.
+#^^^^^^ source.scala
+>p133.42
+#^^^^ source.scala
+#    ^^^ source.scala constant.numeric.scala
+>p4e1
+#^^^^^ source.scala
+>p.2
+#^ source.scala
+# ^^ source.scala constant.numeric.scala
+>x124x
+#^^^^^^ source.scala
+>
