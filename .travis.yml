@@ -13,5 +13,14 @@ jobs:
       script: yarn build && yarn test
     - stage: release
       script: bin/ci-release.sh
+      deploy:
+        provider: releases
+        skip_cleanup: true
+        file_glob: true
+        file: scala-*.vsix
+        api_key:
+          secure: Gwd3nyoQSSZZTMrH8LgD4gwzXjfaPjQfrsFVvtSvoV+xcDI79crg0YQ2mClmVCnKAch6Pup/T84Os9swPKWcKJeHnZ2PxFA5FlIp4iZH5CbEODz9R7Pxqwq/qGqkAZOzr/K7W4g2NEs21IbcJKxsWlhlRhH+1m2iR397zleWduy3pkzJI0SqrdcRy34otYoCovxztnf47VmOq49HhfQdnYbOdtQTsDLJrtB7G1xXnWtDLCkFLOM1D2/bNeWaHOaSXO8hXGdC9EoAjMdmG4gauBp0VmXgHy9y+7dY0QBgFUcJdDDIfVURiiLPD/ka1/6JPigvYxPMbkXOZq8Io/3p6fZMBrtO8nqVvQKTTezU3d4GQ3zITZ84pol574MrR5gst0m9ph8gdYCNCGaJ6MZXGj/cYyIx5vswSBudK7jW75vpQyFW5iv9XE4gO9A0QsrutsIq6fe/WSNekDySHdWNdQ+JbtzK+BiyAFzu3YepytNYY2Bk8c71UpY5FUx2kkbZbLR8wGVipKn3U5W8azXFBWFRRO6yYYEXp/pcv/uCK4io9FNLotiZeZuiTs4B6X3tba3ZuV0XUI1lIwl3B+JQPggNVIH897K3Ge77+rEKoKuTvQg78U9uw41h4IjdHIjRT0aEQ+MWXj/O8Jo17B1XQvoBYdc4C9vtGW4NmmR+hmw=
+        on:
+          repo: scala/vscode-scala-syntax
 
 cache: yarn
