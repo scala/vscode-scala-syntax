@@ -708,11 +708,12 @@ export const scalaTmLanguage: TmLanguage = {
           name: 'meta.package.scala'
         },
         {
-          match: `\\b(given)\\b\\s*(?:\\b(as)\\b|(${backQuotedId}|(?!//|/\\*)${plainid})?)`,
+          match: `\\b(given)\\b\\s*(?:\\b(as)\\b|(${idUpper})|(${backQuotedId}|(?!//|/\\*)${plainid})?)`,
           captures: {
             '1': { name: 'keyword.declaration.scala' },
             '2': { name: 'keyword.declaration.scala' },
-            '3': { name: 'entity.name.declaration' }
+            '3': { name: 'entity.name.type.declaration' },
+            '4': { name: 'entity.name.declaration' },
           }
         }
       ]
