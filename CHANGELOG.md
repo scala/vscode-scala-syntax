@@ -1,5 +1,17 @@
 ## Scala Syntax (official) Changelog
 
+### 0.4.2 (2020/07/21 17:27 +00:00)
+- [23d7bfe](https://github.com/scala/vscode-scala-syntax/commit/23d7bfedeb9bfa3cad14970b61b9a2e9dff6c44b) Improve highlighting of names in given declarations (@nicolasstucki)
+- [e79e1b5](https://github.com/scala/vscode-scala-syntax/commit/e79e1b513ba5ea9c8cc3f4e01841c25f51886d2e) Fix #75: Add Travis CI deployment to GitHub Releases (@MaximeKjaer)
+- [ff079c5](https://github.com/scala/vscode-scala-syntax/commit/ff079c5a92ce2877179d8752e679b5e57247cbfc) Bump lodash from 4.17.15 to 4.17.19 (@dependabot[bot])
+- [05364bb](https://github.com/scala/vscode-scala-syntax/commit/05364bbb0b4f27fa60a1a3a56d571e04ec06a31d) Add tests (@nicolasstucki)
+- [fd36c91](https://github.com/scala/vscode-scala-syntax/commit/fd36c91b7a44793b9c71b6a902b66ee52c6b99f9) Fix test (@nicolasstucki)
+- [5d46fc7](https://github.com/scala/vscode-scala-syntax/commit/5d46fc75268c5f3eaacb6a50c1ac0799e6f71467) Remove Ul/ul number formats (@nicolasstucki)
+- [46b8880](https://github.com/scala/vscode-scala-syntax/commit/46b88803f93eead0531044912fe4424c74a885d1) Fix #128: Add missing boundary for numbers (@nicolasstucki)
+- [8aad5cd](https://github.com/scala/vscode-scala-syntax/commit/8aad5cdc15aa74eacd42fbcffb67a7c2fe4ec7a1) Fix #124: Identify extended class names as identifiers (@nicolasstucki)
+- [ccb8bbd](https://github.com/scala/vscode-scala-syntax/commit/ccb8bbd69b51f562ef44d718591521bceb8124dc) Fix #125: Highlight literals with dots and exponents (@MaximeKjaer)
+- [ec37a5e](https://github.com/scala/vscode-scala-syntax/commit/ec37a5e745d4972e2fecb4626e19d0b70cffb4c2) Update release notes for 0.4.1
+
 ### 0.4.1 (2020/07/08 17:49 +00:00)
 - [d9c31e1](https://github.com/scala/vscode-scala-syntax/commit/d9c31e121a13a6aadbadfbe6e6a2ecad94225bee) Update team (@nicolasstucki)
 - [373c3ff](https://github.com/scala/vscode-scala-syntax/commit/373c3fff3de5ea5ec004e91a0d91f1e3d8b3080b) Fix #119: Detect when `using` is an identifier (@nicolasstucki)
