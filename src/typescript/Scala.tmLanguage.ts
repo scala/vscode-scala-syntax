@@ -264,6 +264,9 @@ export const scalaTmLanguage: TmLanguage = {
           include: '#singleton-type'
         },
         {
+          include: '#inline'
+        },
+        {
           include: '#scala-quoted'
         },
         {
@@ -571,6 +574,26 @@ export const scalaTmLanguage: TmLanguage = {
         }
       }
     },
+    inline: {
+      patterns: [
+        {
+          match: `\\b(inline)\\b(?=(\\s+(?:${plainid}|${backQuotedId})\\s*:)|(.*(val|def)))`,
+          captures: {
+            '1': {
+              name: 'storage.modifier.other'
+            }
+          }
+        },
+        {
+          match: `\\b(inline)\\b(?=.*(if|match))`,
+          captures: {
+            '1': {
+              name: 'keyword.control.flow.scala'
+            }
+          }
+        }
+      ]
+    },
     'scala-quoted': {
       match: "('\\{|'\\[)(?!')",
       name: 'constant.other.quoted.scala'
@@ -822,7 +845,7 @@ export const scalaTmLanguage: TmLanguage = {
           name: 'storage.modifier.access'
         },
         {
-          match: '\\b(synchronized|@volatile|abstract|final|lazy|sealed|implicit|inline |opaque |override|@transient|@native)\\b',
+          match: '\\b(synchronized|@volatile|abstract|final|lazy|sealed|implicit|opaque |override|@transient|@native)\\b',
           name: 'storage.modifier.other'
         }
       ]
