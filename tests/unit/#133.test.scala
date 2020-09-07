@@ -39,3 +39,15 @@ val x = inline[T]
 //             ^^^^^^ entity.name.function.declaration
 //                    ^^^^^^ storage.modifier.other
 //                           ^^^^^^ variable.parameter.scala
+
+   inline if (n == 0) 1 else 2; val x = 2
+// ^^^^^^ keyword.control.flow.scala
+//        ^^ keyword.control.flow.scala
+
+   inline if (n == 0) 1 else 2; def x = 2
+// ^^^^^^ keyword.control.flow.scala
+//        ^^ keyword.control.flow.scala
+
+    inline f[X](x: X) match {
+//  ^^^^^^ keyword.control.flow.scala
+//                    ^^^^^ keyword.control.flow.scala
