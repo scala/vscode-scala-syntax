@@ -1008,21 +1008,7 @@ export const scalaTmLanguage: TmLanguage = {
     extension: {
       patterns: [
         {
-          match: `(extension)\\s+(?:(${plainid})\\s)?\\s*(on|(?=\\{))`,
-          captures: {
-            '1': {
-              name: 'keyword.declaration.scala'
-            },
-            '2': {
-              name: 'entity.name.class'
-            },
-            '3': {
-              name: 'keyword.declaration.scala'
-            }
-          }
-        },
-        {
-          match: `(extension)\\s+(?=[\\[\\(])`,
+          match: `^\\s*(extension)\\s+(?=[\\[\\(])`,
           captures: {
             '1': {
               name: 'keyword.declaration.scala'
