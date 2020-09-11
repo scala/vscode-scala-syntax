@@ -1,5 +1,16 @@
 ## Scala Syntax (official) Changelog
 
+### 0.4.3 (2020/09/11 07:09 +00:00)
+- [c60cc06](https://github.com/scala/vscode-scala-syntax/commit/c60cc061907420c432b25d9d1bce3c82cc3dd3f7) Update Scala.tmLanguage.json (@nicolasstucki)
+- [5b3c402](https://github.com/scala/vscode-scala-syntax/commit/5b3c402877fe38bfd975f2d48ecaf80a04008ad6) Fix #139: Add given as a possible inline definition (@nicolasstucki)
+- [2dd5afd](https://github.com/scala/vscode-scala-syntax/commit/2dd5afda3318196dacbf8c0ee3a8b42a00d921e7) Fix #133: Highlight inline as a soft keyword (@nicolasstucki)
+- [bd9c1d9](https://github.com/scala/vscode-scala-syntax/commit/bd9c1d9c93b740f2d1160c8db47ff450ba9a0aef) Fix #140: Identify nameless given declarations (@nicolasstucki)
+- [7333f3e](https://github.com/scala/vscode-scala-syntax/commit/7333f3e07756375af07486abd579d7d93aa33beb) Update dependencies (@nicolasstucki)
+- [1d27380](https://github.com/scala/vscode-scala-syntax/commit/1d27380817b6a39cf041771c34c73b4fecef23ab) Fix #141: Remove old `extension on` syntax (@nicolasstucki)
+- [c8aecd9](https://github.com/scala/vscode-scala-syntax/commit/c8aecd9efb89778e3be363e23cb533d357861e06) Fix #135: Idnetify package names in extension clause (@nicolasstucki)
+- [6fddb3b](https://github.com/scala/vscode-scala-syntax/commit/6fddb3baedb7cb0a043a22a8d82546c6bfe46402) Fix #75: Fix Travis CI deployments from branches other than master (@MaximeKjaer)
+- [6675978](https://github.com/scala/vscode-scala-syntax/commit/6675978c12d0a0ef079221cf431b80468a8710e7) Update release notes for 0.4.2
+
 ### 0.4.2 (2020/07/21 17:27 +00:00)
 - [23d7bfe](https://github.com/scala/vscode-scala-syntax/commit/23d7bfedeb9bfa3cad14970b61b9a2e9dff6c44b) Improve highlighting of names in given declarations (@nicolasstucki)
 - [e79e1b5](https://github.com/scala/vscode-scala-syntax/commit/e79e1b513ba5ea9c8cc3f4e01841c25f51886d2e) Fix #75: Add Travis CI deployment to GitHub Releases (@MaximeKjaer)
