@@ -577,7 +577,7 @@ export const scalaTmLanguage: TmLanguage = {
     inline: {
       patterns: [
         {
-          match: `\\b(inline)\\b(?=(?:.(?!val|def|given))*(if|match))`,
+          match: `\\b(inline)\\b(?=(?:.(?!\\b(?:val|def|given)\\b))*\\b(if|match)\\b)`,
           captures: {
             '1': {
               name: 'keyword.control.flow.scala'
@@ -585,7 +585,7 @@ export const scalaTmLanguage: TmLanguage = {
           }
         },
         {
-          match: `\\b(inline)\\s+(?=(([\\w\\s]*(val|def|given))|(${plainid}|${backQuotedId})\\s*:))`,
+          match: `\\b(inline)\\s+(?=(([\\w\\s]*\\b(val|def|given)\\b)|(${plainid}|${backQuotedId})\\s*:))`,
           captures: {
             '1': {
               name: 'storage.modifier.other'
