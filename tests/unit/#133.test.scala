@@ -71,6 +71,12 @@ val x = inline[T]
 //                                        ^^^^^^ storage.modifier.other
 //                                               ^^^^^^ variable.parameter.scala
 
+    inline def inline(inline x: Int): Double = if
+//  ^^^^^^ storage.modifier.other
+//             ^^^^^^ entity.name.function.declaration
+//                    ^^^^^^ storage.modifier.other
+//                           ^ variable.parameter.scala
+
    inline if (n == 0) 1 else 2; val x = 2
 // ^^^^^^ keyword.control.flow.scala
 //        ^^ keyword.control.flow.scala
