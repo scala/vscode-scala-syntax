@@ -577,18 +577,18 @@ export const scalaTmLanguage: TmLanguage = {
     inline: {
       patterns: [
         {
-          match: `\\b(inline)\\b(?=(?:.(?!\\b(?:val|def|given)\\b))*\\b(if|match)\\b)`,
-          captures: {
-            '1': {
-              name: 'keyword.control.flow.scala'
-            }
-          }
-        },
-        {
           match: `\\b(inline)\\s+(?=(([\\w\\s]*\\b(val|def|given)\\b)|(${plainid}|${backQuotedId})\\s*:))`,
           captures: {
             '1': {
               name: 'storage.modifier.other'
+            }
+          }
+        },
+        {
+          match: `\\b(inline)\\b(?=(?:.(?!\\b(?:val|def|given)\\b))*\\b(if|match)\\b)`,
+          captures: {
+            '1': {
+              name: 'keyword.control.flow.scala'
             }
           }
         }
