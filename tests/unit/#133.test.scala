@@ -77,6 +77,15 @@ val x = inline[T]
 //                    ^^^^^^ storage.modifier.other
 //                           ^ variable.parameter.scala
 
+    inline def toIntMacro(inline nat: Nat): Int = ${ Macros.toIntImpl('nat) }
+//  ^^^^^^ storage.modifier.other
+//                        ^^^^^^ storage.modifier.other
+
+    inline def toIntUnapply(inline nat: Nat): Int = inline 1 match
+//  ^^^^^^ storage.modifier.other
+//                          ^^^^^^ storage.modifier.other
+//                                                  ^^^^^^ keyword.control.flow.scala
+
    inline if (n == 0) 1 else 2; val x = 2
 // ^^^^^^ keyword.control.flow.scala
 //        ^^ keyword.control.flow.scala
