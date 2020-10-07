@@ -1,5 +1,11 @@
 ## Scala Syntax (official) Changelog
 
+### 0.4.4 (2020/10/07 14:50 +00:00)
+- [b2b6fc6](https://github.com/scala/vscode-scala-syntax/commit/b2b6fc60c270199dec704fe67041e26527efaf20) Fix #148: Add regression test (@nicolasstucki)
+- [e0c824a](https://github.com/scala/vscode-scala-syntax/commit/e0c824aaddba4e492ca2f2ad616564293dbad3c1) Prioritize matching of inline parameters (@nicolasstucki)
+- [806d9a7](https://github.com/scala/vscode-scala-syntax/commit/806d9a7ce07a64e3000a094c99181017b687ff80) Fix #133: Add missing boundary condition (@nicolasstucki)
+- [d2d1f8a](https://github.com/scala/vscode-scala-syntax/commit/d2d1f8a7444bc3d7e8cca6f45ab5200a4bad3041) Update release notes for 0.4.3
+
 ### 0.4.3 (2020/09/11 07:09 +00:00)
 - [c60cc06](https://github.com/scala/vscode-scala-syntax/commit/c60cc061907420c432b25d9d1bce3c82cc3dd3f7) Update Scala.tmLanguage.json (@nicolasstucki)
 - [5b3c402](https://github.com/scala/vscode-scala-syntax/commit/5b3c402877fe38bfd975f2d48ecaf80a04008ad6) Fix #139: Add given as a possible inline definition (@nicolasstucki)
