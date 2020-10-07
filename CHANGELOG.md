@@ -1,5 +1,8 @@
 ## Scala Syntax (official) Changelog
 
+### 0.4.5 (2020/10/07 15:00 +00:00)
+- [70968ba](https://github.com/scala/vscode-scala-syntax/commit/70968ba481218ce1521d5f93bd97ecc289036a2f) Update release notes for 0.4.4
+
 ### 0.4.4 (2020/10/07 14:50 +00:00)
 - [b2b6fc6](https://github.com/scala/vscode-scala-syntax/commit/b2b6fc60c270199dec704fe67041e26527efaf20) Fix #148: Add regression test (@nicolasstucki)
 - [e0c824a](https://github.com/scala/vscode-scala-syntax/commit/e0c824aaddba4e492ca2f2ad616564293dbad3c1) Prioritize matching of inline parameters (@nicolasstucki)
