@@ -51,6 +51,10 @@ export const scalaTmLanguage: TmLanguage = {
           include: '#comments'
         },
         {
+          match: 'given',
+          name: 'keyword.other.import.given.scala'
+        },
+        {
           match: idUpper,
           name: 'entity.name.class.import.scala'
         },
@@ -93,6 +97,10 @@ export const scalaTmLanguage: TmLanguage = {
                   name: 'entity.name.import.renamed-to.scala'
                 }
               }
+            },
+            {
+              match: 'given',
+              name: 'keyword.other.import.given.scala'
             },
             {
               match: `(given\\s+)?(?:(${idUpper})|(${backQuotedId}|${plainid}))`,
