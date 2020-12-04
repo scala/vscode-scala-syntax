@@ -949,7 +949,7 @@
 #^^ source.scala
 #  ^^^ source.scala keyword.declaration.stable.scala
 #     ^ source.scala
-#      ^^^^ source.scala constant.other.declaration.scala
+#      ^^^^ source.scala variable.other.declaration.scala
 #          ^ source.scala meta.bracket.scala
 #           ^ source.scala
 #            ^ source.scala meta.bracket.scala
