@@ -3,9 +3,9 @@
   object Enum extends Enumeration {
     val Foo, Bar, Baz = Value
 //  ^^^ keyword.declaration.stable.scala
-//      ^^^ constant.other.declaration.scala
-//           ^^^ constant.other.declaration.scala
-//                ^^^ constant.other.declaration.scala
+//      ^^^ variable.other.declaration.scala
+//           ^^^ variable.other.declaration.scala
+//                ^^^ variable.other.declaration.scala
 //                      ^^^^^ entity.name.class
 
   }

@@ -56,11 +56,11 @@ class Φδφκξ(x : Int, δφξκξ: Int, val y: Int, val φξ: Int) {
 
   val Constant = 3
 //^^^  keyword.declaration.stable.scala
-//    ^^^^^^^^  constant.other.declaration.scala
+//    ^^^^^^^^  variable.other.declaration.scala
 //             ^  keyword.operator.comparison.scala
   val Константа = 4
 //^^^  keyword.declaration.stable.scala
-//    ^^^^^^^^^  constant.other.declaration.scala
+//    ^^^^^^^^^  variable.other.declaration.scala
 //              ^  keyword.operator.comparison.scala
   
 }

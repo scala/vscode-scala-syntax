@@ -668,19 +668,7 @@ export const scalaTmLanguage: TmLanguage = {
           }
         },
         {
-          match: `\\b(val)\\s+(${idUpper}(\\s*,\\s*${idUpper})*)\\b`,
-          captures: {
-            '1': {
-              name: 'keyword.declaration.stable.scala'
-            }
-            ,
-            '2': {
-              name: 'constant.other.declaration.scala'
-            }
-          }
-        },
-        {
-          match: `\\b(?:(val)|(var))\\s+(?:(${backQuotedId}|${plainid})|(?=\\())`,
+          match: `\\b(?:(val)|(var))\\s+(?:(${idUpper}(\\s*,\\s*${idUpper})*|${backQuotedId}|${plainid})|(?=\\())`,
           captures: {
             '1': {
               name: 'keyword.declaration.stable.scala'
