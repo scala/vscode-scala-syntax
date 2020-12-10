@@ -584,21 +584,13 @@ export const scalaTmLanguage: TmLanguage = {
     },
     inline: {
       patterns: [
-        {
-          match: `\\b(inline)\\s+(?=(([\\w\\s]*\\b(val|def|given)\\b)|(${plainid}|${backQuotedId})\\s*:))`,
-          captures: {
-            '1': {
-              name: 'storage.modifier.other'
-            }
-          }
+        { // inline parameters
+          match: `\\b(inline)(?=\\s+(${plainid}|${backQuotedId})\\s*:)`,
+          name: 'storage.modifier.other'
         },
         {
           match: `\\b(inline)\\b(?=(?:.(?!\\b(?:val|def|given)\\b))*\\b(if|match)\\b)`,
-          captures: {
-            '1': {
-              name: 'keyword.control.flow.scala'
-            }
-          }
+          name: 'keyword.control.flow.scala'
         }
       ]
     },
@@ -651,7 +643,7 @@ export const scalaTmLanguage: TmLanguage = {
           }
         },
         {
-          match: `\\b(?:(case|open)\\s+)?(class|object|enum)\\s+([^\\s\\{\\(\\[;]+)(?<![^${opchar}]:)`,
+          match: `\\b(?:(case)\\s+)?(class|object|enum)\\s+([^\\s\\{\\(\\[;]+)(?<![^${opchar}]:)`,
           captures: {
             '1': {
               name: 'keyword.declaration.scala'
@@ -846,7 +838,11 @@ export const scalaTmLanguage: TmLanguage = {
           name: 'storage.modifier.access'
         },
         {
-          match: '\\b(synchronized|@volatile|abstract|final|lazy|sealed|implicit|opaque |override|@transient|@native)\\b',
+          match: '\\b(synchronized|@volatile|abstract|final|lazy|sealed|implicit|override|@transient|@native)\\b',
+          name: 'storage.modifier.other'
+        },
+        {
+          match: '(?<=^|\\s)\\b(transparent|opaque|infix|open|inline)\\b(?=[a-z\\s]*\\b(def|val|var|given|type|class|trait|object|enum)\\b)',
           name: 'storage.modifier.other'
         }
       ]
