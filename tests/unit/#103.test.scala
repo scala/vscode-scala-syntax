@@ -2,19 +2,19 @@
 
     given as Foo = ...
 //  ^^^^^ keyword.declaration.scala
-//        ^^ keyword.declaration.scala
+//        ^^ - keyword.declaration.scala
 
     given foo as Foo = ...
 //  ^^^^^ keyword.declaration.scala
 //        ^^^ entity.name.declaration
-//            ^^ keyword.declaration.scala
+//            ^^ - keyword.declaration.scala
 
     given (x: X) as Foo = ...
 //  ^^^^^ keyword.declaration.scala
 //         ^ variable.parameter.scala
 //          ^ meta.colon.scala
 //            ^ entity.name.class
-//               ^^ keyword.declaration.scala
+//               ^^ - keyword.declaration.scala
 
     given [X](x: X) as Foo = ...
 //  ^^^^^ keyword.declaration.scala
@@ -22,7 +22,7 @@
 //            ^ variable.parameter.scala
 //             ^ meta.colon.scala
 //               ^ entity.name.class
-//                  ^^ keyword.declaration.scala
+//                  ^^ - keyword.declaration.scala
 
     given foo(x: A) as Foo = ...
 //  ^^^^^ keyword.declaration.scala
@@ -30,7 +30,7 @@
 //            ^ variable.parameter.scala
 //             ^ meta.colon.scala
 //               ^ entity.name.class
-//                  ^^ keyword.declaration.scala
+//                  ^^ - keyword.declaration.scala
 
     given foo[X](x: X) as Foo = ...
 //  ^^^^^ keyword.declaration.scala
@@ -39,7 +39,7 @@
 //               ^ variable.parameter.scala
 //                ^ meta.colon.scala
 //                  ^ entity.name.class
-//                     ^^ keyword.declaration.scala
+//                     ^^ - keyword.declaration.scala
 
     given foo[X <: Y { type A = 1; def f(using a: Int): 2 }](x: X = 2) as Foo = ...
 //  ^^^^^ keyword.declaration.scala
@@ -73,7 +73,7 @@
 //        ^^ punctuation.definition.comment.scala
 //          ^^^^^^^^^^^^^^^^^^^^^^^^^ comment.line.double-slash.scala
         as Foo
-//      ^^ keyword.declaration.scala
+//      ^^ - keyword.declaration.scala
 
     given// this should be a comment
 //  ^^^^^ keyword.declaration.scala

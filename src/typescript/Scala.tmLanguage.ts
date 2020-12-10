@@ -565,12 +565,6 @@ export const scalaTmLanguage: TmLanguage = {
         {
           match: '(<-|←|->|→|=>|⇒|\\?|\\:+|@|\\|)+',
           name: 'keyword.operator.scala'
-        },
-        {
-          match: '\\s(as)\\s',
-          captures: {
-            '1': { name: 'keyword.declaration.scala' }
-          }
         }
       ]
     },
