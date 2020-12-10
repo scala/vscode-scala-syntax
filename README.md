@@ -2,7 +2,8 @@
 
 [![Install extension](https://img.shields.io/badge/scala-vscode-blue.png)](vscode:extension/scala-lang.scala)
 [![Version](https://img.shields.io/github/package-json/v/scala/vscode-scala-syntax.svg)](https://marketplace.visualstudio.com/items?itemName=scala-lang.scala)
-[![Build Status](https://travis-ci.org/scala/vscode-scala-syntax.svg?branch=master)](//travis-ci.org/scala/vscode-scala-syntax)
+[![Travis Build Status](https://travis-ci.org/scala/vscode-scala-syntax.svg?branch=master)](//travis-ci.org/scala/vscode-scala-syntax)
+![GitHub Actions Build Status](https://github.com/scala/vscode-scala-syntax/workflows/continuos-integration/badge.svg)
 
 Visual Studio Code extension providing syntax highlighting for Scala 2 and Scala 3 source files.
 
