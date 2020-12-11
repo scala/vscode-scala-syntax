@@ -1,6 +1,6 @@
 // SYNTAX TEST "source.scala"
 
     open class A
-//  ^^^^ keyword.declaration.scala
+//  ^^^^ storage.modifier.other
 //       ^^^^^ keyword.declaration.scala
 //             ^ entity.name.class.declaration
