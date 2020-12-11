@@ -1,12 +1,14 @@
 // SYNTAX TEST "source.scala"
 
+// THIS FILE CONTAINS OUTDATED GIVEN SYNTAX
+
     given as Foo = ...
 //  ^^^^^ keyword.declaration.scala
 //        ^^ - keyword.declaration.scala
 
     given foo as Foo = ...
 //  ^^^^^ keyword.declaration.scala
-//        ^^^ entity.name.declaration
+//        ^^^ entity.name.given.declaration
 //            ^^ - keyword.declaration.scala
 
     given (x: X) as Foo = ...
@@ -26,7 +28,7 @@
 
     given foo(x: A) as Foo = ...
 //  ^^^^^ keyword.declaration.scala
-//        ^^^ entity.name.declaration
+//        ^^^ entity.name.given.declaration
 //            ^ variable.parameter.scala
 //             ^ meta.colon.scala
 //               ^ entity.name.class
@@ -34,7 +36,7 @@
 
     given foo[X](x: X) as Foo = ...
 //  ^^^^^ keyword.declaration.scala
-//        ^^^ entity.name.declaration
+//        ^^^ entity.name.given.declaration
 //            ^ entity.name.class
 //               ^ variable.parameter.scala
 //                ^ meta.colon.scala
@@ -43,7 +45,7 @@
 
     given foo[X <: Y { type A = 1; def f(using a: Int): 2 }](x: X = 2) as Foo = ...
 //  ^^^^^ keyword.declaration.scala
-//        ^^^ entity.name.declaration
+//        ^^^ entity.name.given.declaration
 //                     ^^^^ keyword.declaration.scala
 //                              ^ constant.numeric.scala
 //                                 ^^^ keyword.declaration.scala
