@@ -4,6 +4,8 @@ This document explains the developer workflow for making changes to the
 [Scala Syntax (official) extension](https://marketplace.visualstudio.com/items?itemName=scala-lang.scala)
 for Visual Studio Code.
 
+To contribute, make sure you have signed the [Scala CLA](http://typesafe.com/contribute/cla/scala), if not, please sign it.
+
 ## Prerequisites
 
 Make sure you have the following binaries installed:
