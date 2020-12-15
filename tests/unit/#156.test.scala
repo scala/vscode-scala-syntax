@@ -24,7 +24,7 @@
 
     given tc: TC with {}
 //  ^^^^^ keyword.declaration.scala
-//        ^^ variable.parameter.scala
+//        ^^ entity.name.given.declaration
 //            ^^ entity.name.class
 //               ^^^^ keyword.declaration.scala
 
@@ -36,7 +36,7 @@
 
     given listMonad: Monad[List] with
 //  ^^^^^ keyword.declaration.scala
-//        ^^^^^^^^^ variable.parameter.scala
+//        ^^^^^^^^^ entity.name.given.declaration
 //                   ^^^^^ entity.name.class
 //                         ^^^^ entity.name.class
 //                               ^^^^ keyword.declaration.scala
