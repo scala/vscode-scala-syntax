@@ -18,6 +18,7 @@ const idUpper = `${upperLetter}${letterOrDigit}*(?:(?<=_)${opchar}+)?`
 const idLower = `${lowerLetter}${letterOrDigit}*(?:(?<=_)${opchar}+)?`
 const plainid = `(?:${idrest}|${opchar}+)`
 const backQuotedId = "`[^`]+`"
+const anyId = `(?:${plainid}|${backQuotedId})`
 const endOfLineMaybeWithComment = "(?=\\s*(//.*|/\\*(?!.*\\*/\\s*\\S.*).*)?$)"
 
 export const scalaTmLanguage: TmLanguage = {
@@ -661,8 +662,30 @@ export const scalaTmLanguage: TmLanguage = {
             }
           }
         },
+        { // val (x1, x2) = tup // val Some(x) = opt
+          match: `\\b(?:(val)|(var))(?=\\s+(${anyId})?\\()`,
+          captures: {
+            '1': {
+              name: 'keyword.declaration.stable.scala'
+            },
+            '2': {
+              name: 'keyword.declaration.volatile.scala'
+            }
+          }
+        },
+        { // val x1, x2 = y
+          match: `\\b(?:(val)|(var))\\s+(?:${anyId})(?=\\s*,)`,
+          captures: {
+            '1': {
+              name: 'keyword.declaration.stable.scala'
+            },
+            '2': {
+              name: 'keyword.declaration.volatile.scala'
+            }
+          }
+        },
         {
-          match: `\\b(?:(val)|(var))\\s+(?:(${idUpper}(\\s*,\\s*${idUpper})*|${backQuotedId}|${plainid})|(?=\\())`,
+          match: `\\b(?:(val)|(var))\\s+(${anyId})`,
           captures: {
             '1': {
               name: 'keyword.declaration.stable.scala'
