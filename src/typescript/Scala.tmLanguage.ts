@@ -20,6 +20,7 @@ const plainid = `(?:${idrest}|${opchar}+)`
 const backQuotedId = "`[^`]+`"
 const anyId = `(?:${plainid}|${backQuotedId})`
 const endOfLineMaybeWithComment = "(?=\\s*(//.*|/\\*(?!.*\\*/\\s*\\S.*).*)?$)"
+const notStartOfComment = "(?!//|/\\*)"
 
 export const scalaTmLanguage: TmLanguage = {
   fileTypes: [
@@ -616,7 +617,7 @@ export const scalaTmLanguage: TmLanguage = {
     declarations: {
       patterns: [
         {
-          match: `(?x)\\b(def)\\s+(${backQuotedId}|${plainid})`,
+          match: `\\b(def)\\b\\s*${notStartOfComment}(${anyId})?`,
           captures: {
             '1': {
               name: 'keyword.declaration.scala'
@@ -627,7 +628,7 @@ export const scalaTmLanguage: TmLanguage = {
           }
         },
         {
-          match: `\\b(trait)\\s+([^\\s\\{\\(\\[;]+)(?<![^${opchar}]:)`,
+          match: `\\b(trait)\\b\\s*${notStartOfComment}(${anyId})?`,
           captures: {
             '1': {
               name: 'keyword.declaration.scala'
@@ -638,7 +639,7 @@ export const scalaTmLanguage: TmLanguage = {
           }
         },
         {
-          match: `\\b(?:(case)\\s+)?(class|object|enum)\\s+([^\\s\\{\\(\\[;]+)(?<![^${opchar}]:)`,
+          match: `\\b(?:(case)\\s+)?(class|object|enum)\\b\\s*${notStartOfComment}(${anyId})?`,
           captures: {
             '1': {
               name: 'keyword.declaration.scala'
@@ -652,7 +653,7 @@ export const scalaTmLanguage: TmLanguage = {
           }
         },
         {
-          match: `(?<!\\.)\\b(type)\\s+(${backQuotedId}|${plainid})`,
+          match: `(?<!\\.)\\b(type)\\b\\s*${notStartOfComment}(${anyId})?`,
           captures: {
             '1': {
               name: 'keyword.declaration.scala'
@@ -663,7 +664,7 @@ export const scalaTmLanguage: TmLanguage = {
           }
         },
         { // val (x1, x2) = tup // val Some(x) = opt
-          match: `\\b(?:(val)|(var))(?=\\s+(${anyId})?\\()`,
+          match: `\\b(?:(val)|(var))\\b\\s*${notStartOfComment}(?=${anyId}?\\()`,
           captures: {
             '1': {
               name: 'keyword.declaration.stable.scala'
@@ -674,7 +675,7 @@ export const scalaTmLanguage: TmLanguage = {
           }
         },
         { // val x1, x2 = y
-          match: `\\b(?:(val)|(var))\\s+(?:${anyId})(?=\\s*,)`,
+          match: `\\b(?:(val)|(var))\\b\\s*${notStartOfComment}${anyId}(?=\\s*,)`,
           captures: {
             '1': {
               name: 'keyword.declaration.stable.scala'
@@ -685,7 +686,7 @@ export const scalaTmLanguage: TmLanguage = {
           }
         },
         {
-          match: `\\b(?:(val)|(var))\\s+(${anyId})`,
+          match: `\\b(?:(val)|(var))\\b\\s*${notStartOfComment}(${anyId})?`,
           captures: {
             '1': {
               name: 'keyword.declaration.stable.scala'
@@ -699,7 +700,7 @@ export const scalaTmLanguage: TmLanguage = {
           }
         },
         {
-          match: '\\b(package)\\s+(object)\\s+([^\\s\\{\\(\\[]+)',
+          match: `\\b(package)\\s+(object)\\b\\s*${notStartOfComment}(${anyId})?`,
           captures: {
             '1': {
               name: 'keyword.other.scoping.scala'
@@ -736,7 +737,7 @@ export const scalaTmLanguage: TmLanguage = {
           name: 'meta.package.scala'
         },
         {
-          match: `\\b(given)(?:\\s+(${idLower}|${backQuotedId}))?`,
+          match: `\\b(given)\\b\\s*(${idLower}|${backQuotedId})?`,
           captures: {
             '1': { name: 'keyword.declaration.scala' },
             '2': { name: 'entity.name.given.declaration' }

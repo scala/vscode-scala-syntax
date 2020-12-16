@@ -107,3 +107,6 @@
 //               ^^ variable.parameter.scala
 //                   ^^ entity.name.class
 //                        ^^^ entity.name.class
+
+    givenx
+//  ^^^^^ - keyword.declaration.scala
