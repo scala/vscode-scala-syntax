@@ -1,6 +1,13 @@
 name: continuous-integration
 
-on: [push, pull_request]
+# Only run for pushes to a branch, not to a tag
+on:
+  push:
+    branches:
+      - '*'
+  pull_request:
+    branches:
+      - '*'
 
 jobs:
   build-and-test:
@@ -16,4 +23,3 @@ jobs:
       - run: yarn 
       - run: yarn build
       - run: yarn test
-
