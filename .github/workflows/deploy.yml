@@ -29,13 +29,13 @@ jobs:
         run: npx github-changes --owner $OWNER --repository $REPOSITORY --branch $RELEASE_BRANCH --no-merges --title "Scala Syntax (official) Changelog"
       - run: yarn build
       - run: yarn test
-      - name: Commit generated files
-        run: |
-          git config --global user.name "Scala bot"
-          git config --global user.email "$GITHUB_RUN_NUMBER@$GITHUB_SHA"
-          git commit -am "Release ${GITHUB_REF#refs/*/}"
-          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
-          git push origin HEAD:$RELEASE_BRANCH
+      # - name: Commit generated files
+      #   run: |
+      #     git config --global user.name "Scala bot"
+      #     git config --global user.email "$GITHUB_RUN_NUMBER@$GITHUB_SHA"
+      #     git commit -am "Release ${GITHUB_REF#refs/*/}"
+      #     git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
+      #     git push origin HEAD:$RELEASE_BRANCH
 
       - name: Release extension
         run: yarn vscode:publish --pat ${{ secrets.VS_MARKETPLACE_TOKEN }}
