@@ -1,5 +1,26 @@
 ## Scala Syntax (official) Changelog
 
+### 0.5.0 (2020/12/17 13:05 +00:00)
+- [480fe19](https://github.com/scala/vscode-scala-syntax/commit/480fe19d674562d8e505f22588f64946f4b70154) Add yarn clean command (@MaximeKjaer)
+- [be95818](https://github.com/scala/vscode-scala-syntax/commit/be958188508ce5de6411117eab961b5dba4cd24c) Identify quotes/splices start as the start of a normal block (@nicolasstucki)
+- [9057516](https://github.com/scala/vscode-scala-syntax/commit/90575168381a866cd2e9c9e6c4c7e4a75e1c05e4) Migrate deployments to GitHub Actions (@MaximeKjaer)
+- [08a35be](https://github.com/scala/vscode-scala-syntax/commit/08a35be22ce84114a9053a35e8c169671c254544) Improve detection of definitions (@nicolasstucki)
+- [27c7da0](https://github.com/scala/vscode-scala-syntax/commit/27c7da0028f652556e5c0bf52228e95033399d0b) Highlight correctly multiple variable statement (@camilaagw)
+- [5a57716](https://github.com/scala/vscode-scala-syntax/commit/5a57716c50ab9aa31ebb904b9cc42f4578161592) Add Node.js module caching to GitHub Actions (@MaximeKjaer)
+- [9e9d91a](https://github.com/scala/vscode-scala-syntax/commit/9e9d91a3c07aad0f28be4d567ee2834c3b8f76c9) Fix extension build warnings (@MaximeKjaer)
+- [456edd8](https://github.com/scala/vscode-scala-syntax/commit/456edd8bd001ea356d7a56001931d499b3dc5197) Add Scala CLA (@camilaagw)
+- [feb6301](https://github.com/scala/vscode-scala-syntax/commit/feb6301cb08eb54b8dce44600543f0ac8dad525e) Fix #163: Update to new given syntax (@nicolasstucki)
+- [5885a19](https://github.com/scala/vscode-scala-syntax/commit/5885a1984eb9020da02012ec9dd1fe1e4a39a84b) Highlight all soft modifiers (@camilaagw)
+- [7445ae8](https://github.com/scala/vscode-scala-syntax/commit/7445ae86709d06d22972e04d109dbbb0d9d9f37a) Update README.md (@nicolasstucki)
+- [de391d9](https://github.com/scala/vscode-scala-syntax/commit/de391d97ae9945790af775806e54c0219705b2cf) Fix typo in workflow name (@camilaagw)
+- [a838344](https://github.com/scala/vscode-scala-syntax/commit/a83834480e9d6716dbdbb7427a719d98dbbf5b3a) Remove `as` syntax (@camilaagw)
+- [0d09d80](https://github.com/scala/vscode-scala-syntax/commit/0d09d80b538136a8e4a5a9c465876166ef50caae) Add GitHub Actions badge (@nicolasstucki)
+- [157b0ce](https://github.com/scala/vscode-scala-syntax/commit/157b0ce596ef375da4e0147306be2c11def790ef) Add tests on Github actions (@camilaagw)
+- [0080fe4](https://github.com/scala/vscode-scala-syntax/commit/0080fe44968e1cc2eb3d621916b095bf7de3fc62) Identify `extends`, `with` and `derives` at the end of a line (@nicolasstucki)
+- [76605c1](https://github.com/scala/vscode-scala-syntax/commit/76605c1370cd69a998bd6bbb4cf18ad488eb1e78) Highlight `val` with upper case (@camilaagw)
+- [a4513e2](https://github.com/scala/vscode-scala-syntax/commit/a4513e2ebe473d529c86925ab7f22bd84730dbbe) Update `given` syntax (@camilaagw)
+- [b3d18b4](https://github.com/scala/vscode-scala-syntax/commit/b3d18b417cf9b0d6bd2763bd01b7162485a152ba) Update release notes for 0.4.5
+
 ### 0.4.5 (2020/10/07 15:00 +00:00)
 - [70968ba](https://github.com/scala/vscode-scala-syntax/commit/70968ba481218ce1521d5f93bd97ecc289036a2f) Update release notes for 0.4.4
 
