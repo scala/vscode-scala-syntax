@@ -591,8 +591,16 @@ export const scalaTmLanguage: TmLanguage = {
       ]
     },
     'scala-quoted': {
-      match: "('\\{|'\\[)(?!')",
-      name: 'constant.other.quoted.scala'
+      patterns: [
+        { // Start of `'{ .. }` or `${ .. }`
+          match: "['$]\\{(?!')",
+          name: 'punctuation.section.block.begin.scala'
+        },
+        { // Start of `'[ .. ]`
+          match: "'\\[(?!')",
+          name: 'meta.bracket.scala'
+        }
+      ]
     },
     'xml-doublequotedString': {
       end: '"',
