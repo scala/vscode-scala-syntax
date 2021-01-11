@@ -425,7 +425,7 @@ export const scalaTmLanguage: TmLanguage = {
     'using': {
       patterns: [
         {
-          match: `(?<=\\()\\s*(using)\\s+(?=[\\w\\d\\(\\.\\(\\{'"])`,
+          match: `(?<=\\()\\s*(using)\\s+(?=[\\w\\d\\(\\.\\(\\{'"$])`,
           captures: {
             '1': {
               name: 'keyword.declaration.scala'
