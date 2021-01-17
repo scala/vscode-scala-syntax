@@ -332,6 +332,36 @@ export const scalaTmLanguage: TmLanguage = {
           name: 'string.quoted.triple.scala'
         },
         {
+          begin: `\\b(raw)(""")`,
+          end: '"""(?!")',
+          beginCaptures: {
+            '1': {
+              name: 'keyword.interpolation.scala'
+            },
+            '2': {
+              name: 'string.quoted.triple.interpolated.scala punctuation.definition.string.begin.scala'
+            }
+          },
+          patterns: [
+            {
+              match: "\\$[\\$\"]",
+              name: 'constant.character.escape.scala'
+            },
+            {
+              "include": "#string-interpolation"
+            },
+            {
+              match: '.',
+              name: 'string.quoted.triple.interpolated.scala'
+            }
+          ],
+          endCaptures: {
+            '0': {
+              name: 'string.quoted.triple.interpolated.scala punctuation.definition.string.end.scala'
+            }
+          }
+        },
+        {
           begin: `\\b(${alphaId})(""")`,
           end: '"""(?!")',
           beginCaptures: {
@@ -385,6 +415,36 @@ export const scalaTmLanguage: TmLanguage = {
             }
           },
           name: 'string.quoted.double.scala'
+        },
+        {
+          begin: `\\b(raw)(")`,
+          end: '"',
+          beginCaptures: {
+            '1': {
+              name: 'keyword.interpolation.scala'
+            },
+            '2': {
+              name: 'string.quoted.double.interpolated.scala punctuation.definition.string.begin.scala'
+            }
+          },
+          patterns: [
+            {
+              match: "\\$[\\$\"]",
+              name: 'constant.character.escape.scala'
+            },
+            {
+              include: "#string-interpolation"
+            },
+            {
+              match: '.',
+              name: 'string.quoted.double.interpolated.scala'
+            }
+          ],
+          endCaptures: {
+            '0': {
+              name: 'string.quoted.double.interpolated.scala punctuation.definition.string.end.scala'
+            }
+          }
         },
         {
           begin: `\\b(${alphaId})(")`,
