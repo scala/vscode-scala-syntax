@@ -42,3 +42,19 @@ given [T](using Ord[T]) as Ord[List[T]]
   f(using "")
 //  ^^^^^ keyword.declaration.scala
 //        ^^ string.quoted.double.scala
+
+  val using = ...
+//    ^^^^^ - keyword.declaration.scala
+  val using: X = ...
+//    ^^^^^ - keyword.declaration.scala
+  def using() = ...
+//    ^^^^^ - keyword.declaration.scala
+
+    using(foo)
+//  ^^^^^ - keyword.declaration.scala
+    bar(using(foo))
+//      ^^^^^ - keyword.declaration.scala
+  bar(using.apply(foo))
+//    ^^^^^ - keyword.declaration.scala
+    using.apply(foo)
+//  ^^^^^ - keyword.declaration.scala
