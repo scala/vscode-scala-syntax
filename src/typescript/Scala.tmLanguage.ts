@@ -621,7 +621,7 @@ export const scalaTmLanguage: TmLanguage = {
           name: 'keyword.operator.arithmetic.scala'
         },
         {
-          match: '(!|&&|\\|\\|)',
+          match: `(?<!${opchar})(!|&&|\\|\\|)(?!${opchar})`,
           name: 'keyword.operator.logical.scala'
         },
         {
