@@ -127,3 +127,17 @@
 //                                    ^ meta.import.scala meta.import.selector.scala
 //                                     ^^^^^^^^^^^^^^^^ meta.import.scala entity.name.class.import.scala
 //                                                     ^ meta.import.scala meta.import.selector.scala
+
+    import A.givenSomething
+//  ^^^^^^ meta.import.scala keyword.other.import.scala
+//        ^ meta.import.scala
+//         ^ meta.import.scala entity.name.class.import.scala
+//          ^ meta.import.scala punctuation.definition.import
+//           ^^^^^^^^^^^^^^ meta.import.scala entity.name.import.scala
+
+    import givenPackage.x
+//  ^^^^^^ meta.import.scala keyword.other.import.scala
+//        ^ meta.import.scala
+//         ^^^^^^^^^^^^ meta.import.scala entity.name.import.scala
+//                     ^ meta.import.scala punctuation.definition.import
+//                      ^ meta.import.scala entity.name.import.scala

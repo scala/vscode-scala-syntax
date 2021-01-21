@@ -53,7 +53,7 @@ export const scalaTmLanguage: TmLanguage = {
           include: '#comments'
         },
         {
-          match: 'given',
+          match: '\\b(given)\\b',
           name: 'keyword.other.import.given.scala'
         },
         {
@@ -101,7 +101,7 @@ export const scalaTmLanguage: TmLanguage = {
               }
             },
             {
-              match: 'given',
+              match: '\\b(given)\\b',
               name: 'keyword.other.import.given.scala'
             },
             {
