@@ -1,0 +1,256 @@
+>/// SYNTAX TEST "source.scala"
+#^^ source.scala comment.line.double-slash.scala punctuation.definition.comment.scala
+#  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.scala comment.line.double-slash.scala
+>// From: https://dotty.epfl.ch/docs/reference/other-new-features/indentation.html
+#^^ source.scala comment.line.double-slash.scala punctuation.definition.comment.scala
+#  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.scala comment.line.double-slash.scala
+>
+>package p1.p2:
+#^^^^^^^ source.scala meta.package.scala keyword.other.import.scala
+#       ^ source.scala meta.package.scala
+#        ^^ source.scala meta.package.scala entity.name.package.scala
+#          ^ source.scala meta.package.scala punctuation.definition.package
+#           ^^ source.scala meta.package.scala entity.name.package.scala
+#             ^ source.scala meta.package.scala entity.name.package.scala
+>
+>   abstract class C() with
+#^^^ source.scala
+#   ^^^^^^^^ source.scala storage.modifier.other
+#           ^ source.scala
+#            ^^^^^ source.scala keyword.declaration.scala
+#                 ^ source.scala
+#                  ^ source.scala entity.name.class.declaration
+#                   ^^ source.scala meta.parentheses.scala meta.bracket.scala
+#                     ^ source.scala
+#                      ^^^^ source.scala keyword.declaration.scala
+>
+>      def this(x: Int) =
+#^^^^^^ source.scala
+#      ^^^ source.scala keyword.declaration.scala
+#         ^ source.scala
+#          ^^^^ source.scala entity.name.function.declaration
+#              ^ source.scala meta.bracket.scala
+#               ^ source.scala variable.parameter.scala
+#                ^ source.scala meta.colon.scala
+#                 ^ source.scala
+#                  ^^^ source.scala entity.name.class
+#                     ^ source.scala meta.bracket.scala
+#                      ^ source.scala
+#                       ^ source.scala keyword.operator.comparison.scala
+>         this()
+#^^^^^^^^^ source.scala
+#         ^^^^ source.scala variable.language.scala
+#             ^^ source.scala meta.parentheses.scala meta.bracket.scala
+>         if x > 0 then
+#^^^^^^^^^ source.scala
+#         ^^ source.scala keyword.control.flow.scala
+#           ^^^ source.scala
+#              ^ source.scala keyword.operator.comparison.scala
+#               ^ source.scala
+#                ^ source.scala constant.numeric.scala
+#                 ^ source.scala
+#                  ^^^^ source.scala keyword.control.flow.scala
+>            val a :: b =
+#^^^^^^^^^^^^ source.scala
+#            ^^^ source.scala keyword.declaration.stable.scala
+#               ^ source.scala
+#                ^ source.scala variable.other.declaration.scala
+#                 ^ source.scala
+#                  ^^ source.scala keyword.operator.scala
+#                    ^^^ source.scala
+#                       ^ source.scala keyword.operator.comparison.scala
+>               x :: Nil
+#^^^^^^^^^^^^^^^^^ source.scala
+#                 ^^ source.scala keyword.operator.scala
+#                   ^ source.scala
+#                    ^^^ source.scala entity.name.class
+>            end val
+#^^^^^^^^^^^^^^^^^^^ source.scala keyword.declaration.stable.end.scala
+>            var y =
+#^^^^^^^^^^^^ source.scala
+#            ^^^ source.scala keyword.declaration.volatile.scala
+#               ^ source.scala
+#                ^ source.scala variable.other.declaration.scala
+#                 ^ source.scala
+#                  ^ source.scala keyword.operator.comparison.scala
+>               x
+#^^^^^^^^^^^^^^^^^ source.scala
+>            end y
+#^^^^^^^^^^^^ source.scala
+#            ^^^ source.scala keyword.declaration.end.scala
+#               ^ source.scala
+#                ^ source.scala entity.name.declaration
+>            while y > 0 do
+#^^^^^^^^^^^^ source.scala
+#            ^^^^^ source.scala keyword.control.flow.scala
+#                 ^^^ source.scala
+#                    ^ source.scala keyword.operator.comparison.scala
+#                     ^ source.scala
+#                      ^ source.scala constant.numeric.scala
+#                       ^ source.scala
+#                        ^^ source.scala keyword.control.flow.scala
+>               println(y)
+#^^^^^^^^^^^^^^^^^^^^^^ source.scala
+#                      ^ source.scala meta.bracket.scala
+#                       ^ source.scala
+#                        ^ source.scala meta.bracket.scala
+>               y -= 1
+#^^^^^^^^^^^^^^^^^ source.scala
+#                 ^ source.scala keyword.operator.arithmetic.scala
+#                  ^ source.scala keyword.operator.comparison.scala
+#                   ^ source.scala
+#                    ^ source.scala constant.numeric.scala
+>            end while
+#^^^^^^^^^^^^^^^^^^^^^ source.scala keyword.control.flow.end.scala
+>            try
+#^^^^^^^^^^^^ source.scala
+#            ^^^ source.scala keyword.control.exception.scala
+>               x match
+#^^^^^^^^^^^^^^^^^ source.scala
+#                 ^^^^^ source.scala keyword.control.flow.scala
+>                  case 0 => println("0")
+#^^^^^^^^^^^^^^^^^^ source.scala
+#                  ^^^^ source.scala keyword.control.flow.scala
+#                      ^ source.scala
+#                       ^ source.scala constant.numeric.scala
+#                        ^ source.scala
+#                         ^ source.scala keyword.operator.comparison.scala
+#                          ^ source.scala keyword.operator.comparison.scala
+#                           ^^^^^^^^ source.scala
+#                                   ^ source.scala meta.bracket.scala
+#                                    ^ source.scala string.quoted.double.scala punctuation.definition.string.begin.scala
+#                                     ^ source.scala string.quoted.double.scala
+#                                      ^ source.scala string.quoted.double.scala punctuation.definition.string.end.scala
+#                                       ^ source.scala meta.bracket.scala
+>                  case _ =>
+#^^^^^^^^^^^^^^^^^^ source.scala
+#                  ^^^^ source.scala keyword.control.flow.scala
+#                      ^^^ source.scala
+#                         ^ source.scala keyword.operator.comparison.scala
+#                          ^ source.scala keyword.operator.comparison.scala
+>               end match
+#^^^^^^^^^^^^^^^^^^^^^^^^ source.scala keyword.control.flow.end.scala
+>            finally
+#^^^^^^^^^^^^ source.scala
+#            ^^^^^^^ source.scala keyword.control.exception.scala
+>               println("done")
+#^^^^^^^^^^^^^^^^^^^^^^ source.scala
+#                      ^ source.scala meta.bracket.scala
+#                       ^ source.scala string.quoted.double.scala punctuation.definition.string.begin.scala
+#                        ^^^^ source.scala string.quoted.double.scala
+#                            ^ source.scala string.quoted.double.scala punctuation.definition.string.end.scala
+#                             ^ source.scala meta.bracket.scala
+>            end try
+#^^^^^^^^^^^^ source.scala
+#            ^^^ source.scala keyword.declaration.end.scala
+#               ^ source.scala
+#                ^^^ source.scala entity.name.declaration
+>         end if
+#^^^^^^^^^^^^^^^ source.scala keyword.control.flow.end.scala
+>      end this
+#^^^^^^ source.scala
+#      ^^^ source.scala keyword.declaration.end.scala
+#         ^ source.scala
+#          ^^^^ source.scala entity.name.declaration
+>
+>      def f: String
+#^^^^^^ source.scala
+#      ^^^ source.scala keyword.declaration.scala
+#         ^ source.scala
+#          ^ source.scala entity.name.function.declaration
+#           ^ source.scala keyword.operator.scala
+#            ^ source.scala
+#             ^^^^^^ source.scala entity.name.class
+>   end C
+#^^^ source.scala
+#   ^^^ source.scala keyword.declaration.end.scala
+#      ^ source.scala
+#       ^ source.scala entity.name.type.declaration
+>
+>   object C with
+#^^^ source.scala
+#   ^^^^^^ source.scala keyword.declaration.scala
+#         ^ source.scala
+#          ^ source.scala entity.name.class.declaration
+#           ^ source.scala
+#            ^^^^ source.scala keyword.declaration.scala
+>      given C =
+#^^^^^^ source.scala
+#      ^^^^^ source.scala keyword.declaration.scala
+#           ^ source.scala
+#            ^ source.scala entity.name.class
+#             ^ source.scala
+#              ^ source.scala keyword.operator.comparison.scala
+>         new C:
+#^^^^^^^^^ source.scala
+#         ^^^ source.scala keyword.declaration.scala
+#            ^ source.scala
+#             ^ source.scala entity.name.class
+#              ^ source.scala keyword.operator.scala
+>            def f = "!"
+#^^^^^^^^^^^^ source.scala
+#            ^^^ source.scala keyword.declaration.scala
+#               ^ source.scala
+#                ^ source.scala entity.name.function.declaration
+#                 ^ source.scala
+#                  ^ source.scala keyword.operator.comparison.scala
+#                   ^ source.scala
+#                    ^ source.scala string.quoted.double.scala punctuation.definition.string.begin.scala
+#                     ^ source.scala string.quoted.double.scala
+#                      ^ source.scala string.quoted.double.scala punctuation.definition.string.end.scala
+>            end f
+#^^^^^^^^^^^^ source.scala
+#            ^^^ source.scala keyword.declaration.end.scala
+#               ^ source.scala
+#                ^ source.scala entity.name.declaration
+>         end new
+#^^^^^^^^^ source.scala
+#         ^^^ source.scala keyword.declaration.end.scala
+#            ^ source.scala
+#             ^^^ source.scala keyword.declaration.end.scala
+>      end given
+#^^^^^^ source.scala
+#      ^^^ source.scala keyword.declaration.end.scala
+#         ^ source.scala
+#          ^^^^^ source.scala entity.name.declaration
+>   end C
+#^^^ source.scala
+#   ^^^ source.scala keyword.declaration.end.scala
+#      ^ source.scala
+#       ^ source.scala entity.name.type.declaration
+>
+>   extension (x: C)
+#^^^ source.scala
+#   ^^^^^^^^^ source.scala keyword.declaration.scala
+#            ^ source.scala
+#             ^ source.scala meta.bracket.scala
+#              ^ source.scala variable.parameter.scala
+#               ^ source.scala meta.colon.scala
+#                ^ source.scala
+#                 ^ source.scala entity.name.class
+#                  ^ source.scala meta.bracket.scala
+>      def ff: String = x.f ++ x.f
+#^^^^^^ source.scala
+#      ^^^ source.scala keyword.declaration.scala
+#         ^ source.scala
+#          ^^ source.scala entity.name.function.declaration
+#            ^ source.scala keyword.operator.scala
+#             ^ source.scala
+#              ^^^^^^ source.scala entity.name.class
+#                    ^ source.scala
+#                     ^ source.scala keyword.operator.comparison.scala
+#                      ^^^^^ source.scala
+#                           ^ source.scala keyword.operator.arithmetic.scala
+#                            ^ source.scala keyword.operator.arithmetic.scala
+#                             ^^^^^ source.scala
+>   end extension
+#^^^ source.scala
+#   ^^^ source.scala keyword.declaration.end.scala
+#      ^ source.scala
+#       ^^^^^^^^^ source.scala keyword.declaration.end.scala
+>
+>end p2
+#^^^ source.scala keyword.declaration.end.scala
+#   ^ source.scala
+#    ^^ source.scala entity.name.declaration
+>
