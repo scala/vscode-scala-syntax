@@ -78,4 +78,4 @@
     raw"$
 //  ^^^ source.scala keyword.interpolation.scala
 //     ^ string.quoted.double.interpolated.scala punctuation.definition.string.begin.scala
-//      ^ invalid.illegal.unrecognized-string-escape.scala
+//      ^ string.quoted.double.interpolated.scala punctuation.definition.string.end.scala

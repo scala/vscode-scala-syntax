@@ -32,16 +32,16 @@
 
    s"$ //
 //  ^ string.quoted.double.interpolated.scala punctuation.definition.string.begin.scala
-//   ^ invalid.illegal.unrecognized-string-escape.scala
+//   ^ string.quoted.double.interpolated.scala punctuation.definition.string.end.scala
 //     ^^ comment.line.double-slash.scala punctuation.definition.comment.scala
 
    s"$+
 //  ^ string.quoted.double.interpolated.scala punctuation.definition.string.begin.scala
-//   ^ invalid.illegal.unrecognized-string-escape.scala
+//   ^ string.quoted.double.interpolated.scala punctuation.definition.string.end.scala
 //    ^ keyword.operator.arithmetic.scala
 
    s"$; val a =
 //  ^ string.quoted.double.interpolated.scala punctuation.definition.string.begin.scala
-//   ^ invalid.illegal.unrecognized-string-escape.scala
+//   ^ string.quoted.double.interpolated.scala punctuation.definition.string.end.scala
 //    ^^^^^^^^^^ -string.quoted.double.interpolated.scala
 //      ^^^ keyword.declaration.stable.scala
