@@ -333,7 +333,7 @@ export const scalaTmLanguage: TmLanguage = {
         },
         {
           begin: `\\b(raw)(""")`,
-          end: '"""(?!")',
+          end: `(""")(?!")|\\$\n|(\\$[^\\$"_{${letterChars}])`,
           beginCaptures: {
             '1': {
               name: 'keyword.interpolation.scala'
@@ -356,14 +356,17 @@ export const scalaTmLanguage: TmLanguage = {
             }
           ],
           endCaptures: {
-            '0': {
+            '1': {
               name: 'string.quoted.triple.interpolated.scala punctuation.definition.string.end.scala'
+            },
+            '2': {
+              name: 'invalid.illegal.unrecognized-string-escape.scala'
             }
           }
         },
         {
           begin: `\\b(${alphaId})(""")`,
-          end: '"""(?!")',
+          end: `(""")(?!")|\\$\n|(\\$[^\\$"_{${letterChars}])`,
           beginCaptures: {
             '1': {
               name: 'keyword.interpolation.scala'
@@ -386,8 +389,11 @@ export const scalaTmLanguage: TmLanguage = {
             }
           ],
           endCaptures: {
-            '0': {
+            '1': {
               name: 'string.quoted.triple.interpolated.scala punctuation.definition.string.end.scala'
+            },
+            '2': {
+              name: 'invalid.illegal.unrecognized-string-escape.scala'
             }
           }
         },
@@ -418,7 +424,7 @@ export const scalaTmLanguage: TmLanguage = {
         },
         {
           begin: `\\b(raw)(")`,
-          end: `"|\\$(?=[^\\$"_{${letterChars}])`,
+          end: `(")|\\$\n|(\\$[^\\$"_{${letterChars}])`,
           beginCaptures: {
             '1': {
               name: 'keyword.interpolation.scala'
@@ -441,14 +447,17 @@ export const scalaTmLanguage: TmLanguage = {
             }
           ],
           endCaptures: {
-            '0': {
+            '1': {
               name: 'string.quoted.double.interpolated.scala punctuation.definition.string.end.scala'
+            },
+            '2': {
+              name: 'invalid.illegal.unrecognized-string-escape.scala'
             }
           }
         },
         {
           begin: `\\b(${alphaId})(")`,
-          end: `"|\\$(?=[^\\$"_{${letterChars}])`,
+          end: `(")|\\$\n|(\\$[^\\$"_{${letterChars}])`,
           beginCaptures: {
             '1': {
               name: 'keyword.interpolation.scala'
@@ -479,8 +488,11 @@ export const scalaTmLanguage: TmLanguage = {
             }
           ],
           endCaptures: {
-            '0': {
+            '1': {
               name: 'string.quoted.double.interpolated.scala punctuation.definition.string.end.scala'
+            },
+            '2': {
+              name: 'invalid.illegal.unrecognized-string-escape.scala'
             }
           }
         }
