@@ -8,7 +8,7 @@ on:
 env:
   OWNER: scala
   REPOSITORY: vscode-scala-syntax
-  RELEASE_BRANCH: master
+  RELEASE_BRANCH: main
 
 jobs:
   deploy:

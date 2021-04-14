@@ -12,7 +12,7 @@
         "ui",
         "web"
     ],
-    "homepage": "https://github.com/scala/vscode-scala-syntax/blob/master/README.md",
+    "homepage": "https://github.com/scala/vscode-scala-syntax/blob/main/README.md",
     "repository": {
         "type": "git",
         "url": "https://github.com/scala/vscode-scala-syntax.git"
