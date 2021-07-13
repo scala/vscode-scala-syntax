@@ -3,7 +3,7 @@ name: deploy
 on:
   push:
     tags:
-      - '*.*.*'
+      - "*.*.*"
 
 env:
   OWNER: scala
@@ -41,7 +41,7 @@ jobs:
         run: yarn vscode:publish --pat ${{ secrets.VS_MARKETPLACE_TOKEN }}
 
       - name: Generate GitHub Release notes
-        run: yarn run github-changes --owner $OWNER --repository $REPOSITORY --branch $RELEASE_BRANCH --no-merges --title "Changelog" --for-tag ${GITHUB_REF#refs/*/} --file release-notes.md
+        run: yarn run github-changes --token ${{ secrets.GITHUB_TOKEN }} --owner $OWNER --repository $REPOSITORY --branch $RELEASE_BRANCH --no-merges --title "Changelog" --for-tag ${GITHUB_REF#refs/*/} --file release-notes.md
       - name: Create GitHub Release
         id: create-release
         uses: actions/create-release@v1
