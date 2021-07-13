@@ -26,7 +26,7 @@ jobs:
       - name: Update package.json version
         run: yarn version --no-git-tag-version --new-version ${GITHUB_REF#refs/*/}
       - name: Generate CHANGELOG.md
-        run: yarn run github-changes --owner $OWNER --repository $REPOSITORY --branch $RELEASE_BRANCH --no-merges --title "Scala Syntax (official) Changelog"
+        run: yarn run github-changes --token ${{ secrets.GITHUB_TOKEN }} --owner $OWNER --repository $REPOSITORY --branch $RELEASE_BRANCH --no-merges --title "Scala Syntax (official) Changelog"
       - run: yarn build
       - run: yarn test
       # - name: Commit generated files
