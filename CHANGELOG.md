@@ -1,6 +1,35 @@
 ## Scala Syntax (official) Changelog
 
-### 0.5.0 (2020/12/17 13:05 +00:00)
+### 0.5.4 (2021/07/13 17:17 +00:00)
+- [a50181b](https://github.com/scala/vscode-scala-syntax/commit/a50181bfe2f94f457096e2a5c854aefa88d3aa6a) Add auth token to github-changes command (@MaximeKjaer)
+- [367c2a2](https://github.com/scala/vscode-scala-syntax/commit/367c2a2fc0ef92027bba49ff5711220e2f7a346d) Remove extensionKind so that other extensions can depend on scala-syntax via SSH/WSL2 (@tgodzik)
+- [78f14d0](https://github.com/scala/vscode-scala-syntax/commit/78f14d02dd612f0d309fe64e9381dc4e16f1784d) upgrade vsce to 1.93.0 (@SethTisue)
+- [ddf1c89](https://github.com/scala/vscode-scala-syntax/commit/ddf1c89abc9a05294637ea454f3f173a6fc76e97) upgrade github-changes to 2.0.2 (was 1.1.1) (@SethTisue)
+- [11704e7](https://github.com/scala/vscode-scala-syntax/commit/11704e73a4ecdbce41f06f012450b868d9546d9a) Bump hosted-git-info from 2.8.8 to 2.8.9 (@dependabot[bot])
+
+### 0.5.3 (2021/04/14 12:51 +00:00)
+- [263c776](https://github.com/scala/vscode-scala-syntax/commit/263c77649af5e9097e87acb117def4627c088e7d) Update release branch to `main` (@nicolasstucki)
+- [3caa8b6](https://github.com/scala/vscode-scala-syntax/commit/3caa8b60d405278f46f30aca3ed74ce1613ee6e6) Add support for web extension (@nicolasstucki)
+- [e72b4c9](https://github.com/scala/vscode-scala-syntax/commit/e72b4c95debc2c38e509a7e9ee360de69245e8dd) Improve highlighting strategy for illegal $ (@nicolasstucki)
+- [b28000b](https://github.com/scala/vscode-scala-syntax/commit/b28000b2aee00fb38f970cf21a3731739a26f041) Highlight illegal $ as end of string (@nicolasstucki)
+- [6d3de7b](https://github.com/scala/vscode-scala-syntax/commit/6d3de7b28da85cd820f36965fc95115c290b7467) Identify illegal $ tokens in string interpolators (@nicolasstucki)
+
+### 0.5.2 (2021/01/29 12:41 +00:00)
+- [e179337](https://github.com/scala/vscode-scala-syntax/commit/e1793378bc49b4dc3eb5fa366b7d687b0cd64455) Fix broken regex (@MaximeKjaer)
+- [78dc465](https://github.com/scala/vscode-scala-syntax/commit/78dc4656fb27a44f086e004036e82ab042f05d26) Fix 'end val' and  'end var' (@MaximeKjaer)
+- [259b2da](https://github.com/scala/vscode-scala-syntax/commit/259b2dadbb256e30ff045305afaf866524ea16fb) Fix imports of packages or members with names starting with given (@MaximeKjaer)
+
+### 0.5.1 (2021/01/20 14:13 +00:00)
+- [a5806a4](https://github.com/scala/vscode-scala-syntax/commit/a5806a485d9d076589027df9af4f09046533b0c1) Pin github-changes version (@MaximeKjaer)
+- [1bcf8af](https://github.com/scala/vscode-scala-syntax/commit/1bcf8af279f6074824beb4320c8351824a52f109) Identify bounds of `&&`, `||` and `!` operators (@nicolasstucki)
+- [f8dcd02](https://github.com/scala/vscode-scala-syntax/commit/f8dcd026397e0eb967e52a5b37012118b53372a2) Simplify 'using' regex (@nicolasstucki)
+- [3bbb8bd](https://github.com/scala/vscode-scala-syntax/commit/3bbb8bd2a684902ee5f19cacd8da97b9d2080062) Fix comments (@nicolasstucki)
+- [e9a6ed5](https://github.com/scala/vscode-scala-syntax/commit/e9a6ed5760fc2e0b2061189ab2f63fb69de413fd) Properly highlight escape characters in `raw` interpolator (@nicolasstucki)
+- [e1277fd](https://github.com/scala/vscode-scala-syntax/commit/e1277fdbac906f24e18ded7be9a736cb508c7d26) Capture `using` followed by quote splice (@nicolasstucki)
+
+### 0.5.0 (2020/12/17 14:07 +00:00)
+- [8c31186](https://github.com/scala/vscode-scala-syntax/commit/8c311862e55ed103ce6c6f5c5d3accc196903013) Disable deploy `Commit generated files` (@nicolasstucki)
+- [6e93417](https://github.com/scala/vscode-scala-syntax/commit/6e9341733417928948f0e242f175cd85043ae5e6) Release 0.5.0
 - [480fe19](https://github.com/scala/vscode-scala-syntax/commit/480fe19d674562d8e505f22588f64946f4b70154) Add yarn clean command (@MaximeKjaer)
 - [be95818](https://github.com/scala/vscode-scala-syntax/commit/be958188508ce5de6411117eab961b5dba4cd24c) Identify quotes/splices start as the start of a normal block (@nicolasstucki)
 - [9057516](https://github.com/scala/vscode-scala-syntax/commit/90575168381a866cd2e9c9e6c4c7e4a75e1c05e4) Migrate deployments to GitHub Actions (@MaximeKjaer)
