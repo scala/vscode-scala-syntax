@@ -35,13 +35,13 @@ Error: T'  Int
 
 Error: T'😀 Int
 //     ^ entity.name.class
-//      ^ punctuation.definition.character.begin.scala
-//       ^^^^^^ invalid.illegal.character-literal-too-long
+//      ^^^ constant.other.symbol.scala
+//          ^^^ entity.name.class
 
 Error: T'😀😀 Int
 //     ^ entity.name.class
-//      ^ punctuation.definition.character.begin.scala
-//       ^^^^^^^^ invalid.illegal.character-literal-too-long
+//      ^^^^^ constant.other.symbol.scala
+//            ^^^ entity.name.class
 
 Error: T'aa Int
 //     ^ entity.name.class

@@ -822,11 +822,6 @@ mute-stream@0.0.8, mute-stream@~0.0.4:
   resolved "https://registry.yarnpkg.com/mute-stream/-/mute-stream-0.0.8.tgz#1630c42b2251ff81e2a283de96a5497ea92e5e0d"
   integrity sha512-nnbWWOkoWyUsTjKrhgD0dcz22mdkSnpYqbEjIm2nhwhuxlSkpywJmBo8h0ZqJdkp73mb90SssHkN4rsRaBAfAA==
 
-nan@^2.14.0:
-  version "2.14.0"
-  resolved "https://registry.yarnpkg.com/nan/-/nan-2.14.0.tgz#7818f722027b2459a86f0295d434d1fc2336c52c"
-  integrity sha512-INOFj37C7k3AfaNTtX8RhsTw7qRy7eLET14cROi9+5HAVbbHuIWUHEauBv5qT4Av2tWasiTY1Jw6puUNqRJXQg==
-
 nice-try@^1.0.4:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/nice-try/-/nice-try-1.0.5.tgz#a3378a7696ce7d223e88fc9b764bd7ef1089e366"
@@ -907,13 +902,6 @@ onetime@^5.1.0:
   integrity sha512-kbpaSSGJTWdAY5KPVeMOKXSrPtr8C8C7wodJbcsd51jRnmD+GZu8Y0VoU6Dm5Z4vWr0Ig/1NKuWRKf7j5aaYSg==
   dependencies:
     mimic-fn "^2.1.0"
-
-oniguruma@^7.2.0:
-  version "7.2.0"
-  resolved "https://registry.yarnpkg.com/oniguruma/-/oniguruma-7.2.0.tgz#c9a59c1ea7b9fe67e237a02e02139b638856f3af"
-  integrity sha512-bh+ZLdykY1sdIx8jBp2zpLbVFDBc3XmKH4Ceo2lijNaN1WhEqtnpqFlmtCbRuDB17nJ58RAUStVwfW8e8uEbnA==
-  dependencies:
-    nan "^2.14.0"
 
 ora@^4.0.5:
   version "4.1.1"
@@ -1338,23 +1326,27 @@ vsce@^1.93.0:
     yauzl "^2.3.1"
     yazl "^2.2.2"
 
-vscode-textmate@^4.1.1:
-  version "4.2.2"
-  resolved "https://registry.yarnpkg.com/vscode-textmate/-/vscode-textmate-4.2.2.tgz#0b4dabc69a6fba79a065cb6b615f66eac07c8f4c"
-  integrity sha512-1U4ih0E/KP1zNK/EbpUqyYtI7PY+Ccd2nDGTtiMR/UalLFnmaYkwoWhN1oI7B91ptBN8NdVwWuvyUnvJAulCUw==
-  dependencies:
-    oniguruma "^7.2.0"
+vscode-oniguruma@^1.5.1:
+  version "1.5.1"
+  resolved "https://registry.yarnpkg.com/vscode-oniguruma/-/vscode-oniguruma-1.5.1.tgz#9ca10cd3ada128bd6380344ea28844243d11f695"
+  integrity sha512-JrBZH8DCC262TEYcYdeyZusiETu0Vli0xFgdRwNJjDcObcRjbmJP+IFcA3ScBwIXwgFHYKbAgfxtM/Cl+3Spjw==
 
-vscode-tmgrammar-test@0.0.10:
-  version "0.0.10"
-  resolved "https://registry.yarnpkg.com/vscode-tmgrammar-test/-/vscode-tmgrammar-test-0.0.10.tgz#e813ed1a2e2981250045ec044235ee2c45fdb76e"
-  integrity sha512-sYNjo+BXWzDfYZ8uY9tTWofMwKUyffUGmUcF0lJtRkuL1/tGn3trzlhTWZJDh6j5QowDkrZ3w0AE21qo4dzXUg==
+vscode-textmate@^5.4.0:
+  version "5.4.0"
+  resolved "https://registry.yarnpkg.com/vscode-textmate/-/vscode-textmate-5.4.0.tgz#4b25ffc1f14ac3a90faf9a388c67a01d24257cd7"
+  integrity sha512-c0Q4zYZkcLizeYJ3hNyaVUM2AA8KDhNCA3JvXY8CeZSJuBdAy3bAvSbv46RClC4P3dSO9BdwhnKEx2zOo6vP/w==
+
+vscode-tmgrammar-test@0.0.11:
+  version "0.0.11"
+  resolved "https://registry.yarnpkg.com/vscode-tmgrammar-test/-/vscode-tmgrammar-test-0.0.11.tgz#79f8c107ef1f987f602bbc547e9849a1dbed5b3a"
+  integrity sha512-Bd60x/OeBLAQnIxiR2GhUic1CQZOFfWM8Pd43HjdEUBf/0vcvYAlFQikOXvv+zkItHLznjKaDX7VWKPVYUF9ug==
   dependencies:
     chalk "^2.4.2"
     commander "^2.20.3"
     diff "^4.0.2"
     glob "^7.1.6"
-    vscode-textmate "^4.1.1"
+    vscode-oniguruma "^1.5.1"
+    vscode-textmate "^5.4.0"
 
 wcwidth@^1.0.1:
   version "1.0.1"
