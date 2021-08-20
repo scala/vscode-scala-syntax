@@ -645,7 +645,7 @@ export const scalaTmLanguage: TmLanguage = {
           name: 'keyword.operator.arithmetic.scala'
         },
         {
-          match: `(?<!${opchar})(!|&&|\\|\\|)(?!${opchar})`,
+          match: `(?<!${opchar}|_)(!|&&|\\|\\|)(?!${opchar})`,
           name: 'keyword.operator.logical.scala'
         },
         {
@@ -921,7 +921,7 @@ export const scalaTmLanguage: TmLanguage = {
       comment: 'For themes: Brackets look nice when colored.'
     },
     qualifiedClassName: {
-      match: '(\\b([A-Z][\\w]*))',
+      match: `(\\b([A-Z][\\w]*)(?:(?<=_)${opchar}+)?)`,
       captures: {
         '1': {
           name: 'entity.name.class'
