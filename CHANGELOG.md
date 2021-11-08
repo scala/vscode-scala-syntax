@@ -1,5 +1,16 @@
 ## Scala Syntax (official) Changelog
 
+### 0.5.5 (2021/11/08 13:44 +00:00)
+- [f1448ec](https://github.com/scala/vscode-scala-syntax/commit/f1448ecfee2c9a87c9644a1c2001f1111f1bfcb3) Add regex for interpolator identifier (@nicolasstucki)
+- [f776810](https://github.com/scala/vscode-scala-syntax/commit/f776810b8a9a2d1fb0fa593d892aa7c3a0699165) Bump ansi-regex from 5.0.0 to 5.0.1 (@dependabot[bot])
+- [57d2e61](https://github.com/scala/vscode-scala-syntax/commit/57d2e612ce59bbf5c62771aab235ccb9c43166cb) Bump nth-check from 2.0.0 to 2.0.1 (@dependabot[bot])
+- [f9ea511](https://github.com/scala/vscode-scala-syntax/commit/f9ea511f74ad0d9d7f509bc12753bcc7dd2aec96) Handle names ending with symbolic characters (@nicolasstucki)
+- [0e4f065](https://github.com/scala/vscode-scala-syntax/commit/0e4f065f92b0041c1d8970052279c7a0feb37a71) Fix `yarn install` (@nicolasstucki)
+- [ab08f0a](https://github.com/scala/vscode-scala-syntax/commit/ab08f0aae2ebd352ecce4c90fe634dea1122f519) Bump path-parse from 1.0.6 to 1.0.7 (@dependabot[bot])
+- [d050bd2](https://github.com/scala/vscode-scala-syntax/commit/d050bd27ad897ee0bdbe378630576c7a2b53f2f5) Uncomment CI push of generated files (@MaximeKjaer)
+- [1434962](https://github.com/scala/vscode-scala-syntax/commit/1434962fa06bb1f7f6bd487f9768180d76e81366) Add missing changelog since 0.5.0 (@MaximeKjaer)
+- [e054f5b](https://github.com/scala/vscode-scala-syntax/commit/e054f5bcdffbe2b1f968f7c64535021f876cd4b7) Fix GitHub Releases deployment command (@MaximeKjaer)
+
 ### 0.5.4 (2021/07/13 17:17 +00:00)
 - [a50181b](https://github.com/scala/vscode-scala-syntax/commit/a50181bfe2f94f457096e2a5c854aefa88d3aa6a) Add auth token to github-changes command (@MaximeKjaer)
 - [367c2a2](https://github.com/scala/vscode-scala-syntax/commit/367c2a2fc0ef92027bba49ff5711220e2f7a346d) Remove extensionKind so that other extensions can depend on scala-syntax via SSH/WSL2 (@tgodzik)
