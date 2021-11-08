@@ -17,6 +17,7 @@ const idrest = `${letter}${letterOrDigit}*(?:(?<=_)${opchar}+)?`
 const idUpper = `${upperLetter}${letterOrDigit}*(?:(?<=_)${opchar}+)?`
 const idLower = `${lowerLetter}${letterOrDigit}*(?:(?<=_)${opchar}+)?`
 const plainid = `(?:${idrest}|${opchar}+)`
+const interpolatorid = `(?:${letter}${letterOrDigit}*(?:(?<=_)${opchar}+)?)`
 const backQuotedId = "`[^`]+`"
 const anyId = `(?:${plainid}|${backQuotedId})`
 const endOfLineMaybeWithComment = "(?=\\s*(//.*|/\\*(?!.*\\*/\\s*\\S.*).*)?$)"
@@ -365,7 +366,7 @@ export const scalaTmLanguage: TmLanguage = {
           }
         },
         {
-          begin: `\\b(${alphaId})(""")`,
+          begin: `\\b(${interpolatorid})(""")`,
           end: `(""")(?!")|\\$\n|(\\$[^\\$"_{${letterChars}])`,
           beginCaptures: {
             '1': {
@@ -456,7 +457,7 @@ export const scalaTmLanguage: TmLanguage = {
           }
         },
         {
-          begin: `\\b(${alphaId})(")`,
+          begin: `\\b(${interpolatorid})(")`,
           end: `(")|\\$\n|(\\$[^\\$"_{${letterChars}])`,
           beginCaptures: {
             '1': {
