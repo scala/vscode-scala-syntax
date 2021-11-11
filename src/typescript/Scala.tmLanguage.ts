@@ -678,11 +678,11 @@ export const scalaTmLanguage: TmLanguage = {
     'scala-quoted': {
       patterns: [
         { // Start of `'{ .. }` or `${ .. }`
-          match: "['$]\\{(?!')",
+          match: "['$][ \\t]*\\{(?!')",
           name: 'punctuation.section.block.begin.scala'
         },
         { // Start of `'[ .. ]`
-          match: "'\\[(?!')",
+          match: "'[ \\t]*\\[(?!')",
           name: 'meta.bracket.scala'
         }
       ]
