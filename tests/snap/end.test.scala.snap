@@ -141,10 +141,7 @@
 #                            ^ source.scala string.quoted.double.scala punctuation.definition.string.end.scala
 #                             ^ source.scala meta.bracket.scala
 >            end try
-#^^^^^^^^^^^^ source.scala
-#            ^^^ source.scala keyword.declaration.end.scala
-#               ^ source.scala
-#                ^^^ source.scala entity.name.declaration
+#^^^^^^^^^^^^^^^^^^^ source.scala keyword.control.exception.end.scala
 >         end if
 #^^^^^^^^^^^^^^^ source.scala keyword.control.flow.end.scala
 >      end this

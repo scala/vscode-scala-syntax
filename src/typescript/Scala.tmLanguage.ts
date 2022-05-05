@@ -623,6 +623,14 @@ export const scalaTmLanguage: TmLanguage = {
           }
         },
         {
+          match: '\\b(catch|finally|try)\\b',
+          name: 'keyword.control.exception.scala'
+        },
+        {
+          match: `^\\s*(end)\\s+(try)${endOfLineMaybeWithComment}`,
+          name: 'keyword.control.exception.end.scala'
+        },
+        {
           match: `^\\s*(end)\\s+(${backQuotedId}|${plainid})?${endOfLineMaybeWithComment}`,
           captures: {
             '1': {
@@ -632,10 +640,6 @@ export const scalaTmLanguage: TmLanguage = {
               name: 'entity.name.declaration'
             }
           }
-        },
-        {
-          match: '\\b(catch|finally|try)\\b',
-          name: 'keyword.control.exception.scala'
         },
         {
           match: '(==?|!=|<=|>=|<>|<|>)',
