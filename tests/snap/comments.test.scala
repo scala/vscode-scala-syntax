@@ -1,7 +1,13 @@
 /// SYNTAX TEST "source.scala"
 #!/usr/bin/env scala
 
-// single line comments
+//> using packaging.version "1.0.0"
+//> using scala 2.13
+// > using this.is comment
+// //> using comment "out"
+
+//> using
+object X
 
 /*  /**/ /** */ /* comments within comments */ */
 

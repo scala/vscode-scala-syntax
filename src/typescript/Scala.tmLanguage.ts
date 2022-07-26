@@ -227,6 +227,9 @@ export const scalaTmLanguage: TmLanguage = {
     code: {
       patterns: [
         {
+          include: '#using-directive'
+        },
+        {
           include: '#script-header'
         },
         {
@@ -959,6 +962,35 @@ export const scalaTmLanguage: TmLanguage = {
       match: '<%|=:=|<:<|<%<|>:|<:',
       comment: 'For themes: Matching view bounds',
       name: 'meta.bounds.scala'
+    },
+    'using-directive': {
+      end: '\\n',
+      begin: '^\\s*(//>)\\s*(using)[^\\S\\n]+',
+      beginCaptures: {
+        '1': {
+          name: 'punctuation.definition.comment.scala'
+        },
+        '2': {
+          name: 'keyword.other.import.scala'
+        }
+      },
+      patterns: [
+        {
+          match: `${idUpper}|${backQuotedId}|${plainid}`,
+          name: 'entity.name.import.scala'
+        },
+        {
+          match: '\\.',
+          name: 'punctuation.definition.import'
+        },
+        {
+          include: '#strings'
+        },
+        {
+          include: '#constants'
+        },
+      ],
+      name: 'comment.line.shebang.scala'
     },
     comments: {
       patterns: [
