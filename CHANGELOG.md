@@ -1,5 +1,15 @@
 ## Scala Syntax (official) Changelog
 
+### 0.5.6 (2022/07/26 15:15 +00:00)
+- [ed31749](https://github.com/scala/vscode-scala-syntax/commit/ed31749698c83476d3251876ebaa841bb43eedf0) chore: Run node 14 when releasing (@tgodzik)
+- [31ac9b0](https://github.com/scala/vscode-scala-syntax/commit/31ac9b0c5c3d16e526bed2608bcc958e0914f79c) feat: support using directive for scala-cli (@tanishiking)
+- [7c8c7c1](https://github.com/scala/vscode-scala-syntax/commit/7c8c7c1d0d566503226097b3e24c5893d35dbc97) Bump shell-quote from 1.7.2 to 1.7.3 (@dependabot[bot])
+- [5f9ab47](https://github.com/scala/vscode-scala-syntax/commit/5f9ab474ca2f811f903200d7ea22cfe1885f6307) fix(syntax): add missing highlight for end try (@barklan)
+- [f3f3413](https://github.com/scala/vscode-scala-syntax/commit/f3f3413d7ca98fe10ac068119737a0c0012d6d0c) Bump node-fetch from 2.6.1 to 2.6.7 (@dependabot[bot])
+- [0772883](https://github.com/scala/vscode-scala-syntax/commit/077288393841a7effa2642fce8afd6aa7ded092b) Use node 14 in CI (@nicolasstucki)
+- [020b216](https://github.com/scala/vscode-scala-syntax/commit/020b216bbc27a7523401f8b26f0703b0e0361d90) Update vsce (@nicolasstucki)
+- [52eae26](https://github.com/scala/vscode-scala-syntax/commit/52eae26a56fbd372d7f6124dda935d974eb18d94) Release 0.5.5
+
 ### 0.5.5 (2021/11/08 13:44 +00:00)
 - [f1448ec](https://github.com/scala/vscode-scala-syntax/commit/f1448ecfee2c9a87c9644a1c2001f1111f1bfcb3) Add regex for interpolator identifier (@nicolasstucki)
 - [f776810](https://github.com/scala/vscode-scala-syntax/commit/f776810b8a9a2d1fb0fa593d892aa7c3a0699165) Bump ansi-regex from 5.0.0 to 5.0.1 (@dependabot[bot])
