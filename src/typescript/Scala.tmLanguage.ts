@@ -242,6 +242,9 @@ export const scalaTmLanguage: TmLanguage = {
           include: '#inheritance'
         },
         {
+          include: '#derives'
+        },
+        {
           include: '#extension'
         },
         {
@@ -1153,7 +1156,7 @@ export const scalaTmLanguage: TmLanguage = {
     inheritance: {
       patterns: [
         {
-          match: `\\b(extends|with|derives)\\b\\s*(${idUpper}|${backQuotedId}|(?=\\([^\\)]+=>)|(?=${plainid})|(?="))?`,
+          match: `\\b(extends|with)\\b\\s*(${idUpper}|${backQuotedId}|(?=\\([^\\)]+=>)|(?=${plainid})|(?="))?`,
           captures: {
             '1': {
               name: 'keyword.declaration.scala'
@@ -1164,6 +1167,10 @@ export const scalaTmLanguage: TmLanguage = {
           }
         }
       ]
+    },
+    derives: {
+      match: 'derives',
+      name: 'keyword.declaration.scala'
     },
     extension: {
       patterns: [

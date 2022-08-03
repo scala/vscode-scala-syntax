@@ -2529,3 +2529,34 @@
 #                              ^ source.scala entity.name.function.declaration
 >}
 #^ source.scala punctuation.section.block.end.scala
+>
+>enum A:
+#^^^^ source.scala keyword.declaration.scala
+#    ^ source.scala
+#     ^ source.scala entity.name.class.declaration
+#      ^ source.scala keyword.operator.scala
+>  case B, c, D
+#^^ source.scala
+#  ^^^^ source.scala keyword.control.flow.scala
+#      ^ source.scala
+#       ^ source.scala entity.name.class
+#        ^^^^^ source.scala
+#             ^ source.scala entity.name.class
+>
+>enum A extends B derives X, Y, Z
+#^^^^ source.scala keyword.declaration.scala
+#    ^ source.scala
+#     ^ source.scala entity.name.class.declaration
+#      ^ source.scala
+#       ^^^^^^^ source.scala keyword.declaration.scala
+#              ^ source.scala
+#               ^ source.scala entity.other.inherited-class.scala
+#                ^ source.scala
+#                 ^^^^^^^ source.scala keyword.declaration.scala
+#                        ^ source.scala
+#                         ^ source.scala entity.name.class
+#                          ^^ source.scala
+#                            ^ source.scala entity.name.class
+#                             ^^ source.scala
+#                               ^ source.scala entity.name.class
+>

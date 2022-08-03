@@ -240,3 +240,8 @@ object Annotations {
     @UserDefinedUpperCase def x
     @userDefinedLowerCase def y
 }
+
+enum A:
+  case B, c, D
+
+enum A extends B derives X, Y, Z
