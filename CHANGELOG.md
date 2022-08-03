@@ -1,6 +1,7 @@
 ## Scala Syntax (official) Changelog
 
-### 0.5.6 (2022/07/26 15:15 +00:00)
+### 0.5.6 (2022/07/26 15:17 +00:00)
+- [9db075c](https://github.com/scala/vscode-scala-syntax/commit/9db075c1bcf8c469ffc0c85ee428f903e53a3519) Release 0.5.6
 - [ed31749](https://github.com/scala/vscode-scala-syntax/commit/ed31749698c83476d3251876ebaa841bb43eedf0) chore: Run node 14 when releasing (@tgodzik)
 - [31ac9b0](https://github.com/scala/vscode-scala-syntax/commit/31ac9b0c5c3d16e526bed2608bcc958e0914f79c) feat: support using directive for scala-cli (@tanishiking)
 - [7c8c7c1](https://github.com/scala/vscode-scala-syntax/commit/7c8c7c1d0d566503226097b3e24c5893d35dbc97) Bump shell-quote from 1.7.2 to 1.7.3 (@dependabot[bot])
