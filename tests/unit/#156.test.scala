@@ -10,15 +10,23 @@
 //  ^^^^^ keyword.declaration.scala
 //        ^^^ entity.name.class.declaration
 //            ^^^^^^^ keyword.declaration.scala
-//                    ^^^ entity.other.inherited-class.scala
+//                    ^^^ source.scala entity.name.class
 //                        ^^^^ keyword.declaration.scala
 //                             ^^^ entity.other.inherited-class.scala
+
+    class Foo extends Bar, Baz
+//  ^^^^^ keyword.declaration.scala
+//        ^^^ entity.name.class.declaration
+//            ^^^^^^^ keyword.declaration.scala
+//                    ^^^ entity.name.class
+//                       ^^ source.scala
+//                         ^^^ source.scala entity.name.class
 
     class Foo extends Bar with
 //  ^^^^^ keyword.declaration.scala
 //        ^^^ entity.name.class.declaration
 //            ^^^^^^^ keyword.declaration.scala
-//                    ^^^ entity.other.inherited-class.scala
+//                    ^^^ source.scala entity.name.class
 //                        ^^^^ keyword.declaration.scala
 
 
@@ -53,3 +61,12 @@
 //       ^^^ entity.name.class.declaration
 //            ^ entity.name.class
 //               ^^^^^^^ keyword.declaration.scala
+
+    enum Opt[+T] derives Eq, Foo
+//  ^^^^ keyword.declaration.scala
+//       ^^^ entity.name.class.declaration
+//            ^ entity.name.class
+//               ^^^^^^^ keyword.declaration.scala
+//                       ^^ source.scala entity.name.class
+//                         ^^ source.scala
+//                            ^^^ source.scala entity.name.class

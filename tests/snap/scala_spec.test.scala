@@ -244,4 +244,4 @@ object Annotations {
 enum A:
   case B, c, D
 
-enum A extends B derives X, Y, Z
+enum A extends B, C with D derives E, F

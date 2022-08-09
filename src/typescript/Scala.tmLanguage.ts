@@ -1156,7 +1156,7 @@ export const scalaTmLanguage: TmLanguage = {
     inheritance: {
       patterns: [
         {
-          match: `\\b(extends|with)\\b\\s*(${idUpper}|${backQuotedId}|(?=\\([^\\)]+=>)|(?=${plainid})|(?="))?`,
+          match: `\\b(with)\\b\\s*(${idUpper}|${backQuotedId}|(?=\\([^\\)]+=>)|(?=${plainid})|(?="))?`,
           captures: {
             '1': {
               name: 'keyword.declaration.scala'
@@ -1169,8 +1169,16 @@ export const scalaTmLanguage: TmLanguage = {
       ]
     },
     derives: {
-      match: 'derives',
-      name: 'keyword.declaration.scala'
+      patterns: [
+        {
+          match: '\\b(derives|extends)\\b',
+          captures: {
+            1: {
+              name: 'keyword.declaration.scala'
+            }
+          }
+        }
+      ]
     },
     extension: {
       patterns: [

@@ -19,7 +19,7 @@
 //   ^^^^ source.scala keyword.control.flow.scala
 //        ^^^^^^^^ entity.name.class
 //                 ^^^^^^^ keyword.declaration.scala
-//                         ^^^^^^^ entity.other.inherited-class.scala
+//                         ^^^^^^^ source.scala entity.name.class
 //                                ^ meta.bracket.scala
 //                                 ^ constant.numeric.scala
 //                                  ^ meta.bracket.scala
@@ -28,7 +28,7 @@
 //   ^^^^ source.scala keyword.control.flow.scala
 //        ^^^^^^^ entity.name.class
 //                ^^^^^^^ keyword.declaration.scala
-//                        ^^^^^^^ entity.other.inherited-class.scala
+//                        ^^^^^^^ source.scala entity.name.class
 //                               ^ meta.bracket.scala
 //                                ^ constant.numeric.scala
 //                                 ^   meta.bracket.scala

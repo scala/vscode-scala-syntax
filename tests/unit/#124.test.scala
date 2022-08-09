@@ -17,49 +17,49 @@ class B extends A with B:
 
 class B extends A:
 //      ^^^^^^^ keyword.declaration.scala
-//              ^ entity.other.inherited-class.scala
+//              ^ source.scala entity.name.class
 //               ^ source.scala
 
 class B extends A,
 //      ^^^^^^^ keyword.declaration.scala
-//              ^ entity.other.inherited-class.scala
+//              ^ source.scala entity.name.class
 //               ^ source.scala
 
 class B extends A'
 //      ^^^^^^^ keyword.declaration.scala
-//              ^ entity.other.inherited-class.scala
+//              ^ source.scala entity.name.class
 //               ^ punctuation.definition.character.begin.scala
 
 class B extends A|
 //      ^^^^^^^ keyword.declaration.scala
-//              ^ entity.other.inherited-class.scala
+//              ^ source.scala entity.name.class
 //               ^ source.scala
 
 class B extends A+
 //      ^^^^^^^ keyword.declaration.scala
-//              ^ entity.other.inherited-class.scala
+//              ^ source.scala entity.name.class
 //               ^ source.scala
 
 class B extends A-
 //      ^^^^^^^ keyword.declaration.scala
-//              ^ entity.other.inherited-class.scala
+//              ^ source.scala entity.name.class
 //               ^ source.scala
 
 class B extends A*
 //      ^^^^^^^ keyword.declaration.scala
-//              ^ entity.other.inherited-class.scala
+//              ^ source.scala entity.name.class
 //               ^ source.scala
 
 class B extends A&
 //      ^^^^^^^ keyword.declaration.scala
-//              ^ entity.other.inherited-class.scala
+//              ^ source.scala entity.name.class
 //               ^ source.scala
 
 class B extends A^
 //      ^^^^^^^ keyword.declaration.scala
-//              ^ entity.other.inherited-class.scala
+//              ^ source.scala entity.name.class
 //               ^ source.scala
 
 class B extends `A`
 //      ^^^^^^^ keyword.declaration.scala
-//              ^^^ entity.other.inherited-class.scala
+//              ^ source.scala

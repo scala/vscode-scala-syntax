@@ -51,7 +51,7 @@
 #       ^ source.scala
 #        ^^^^^^^ source.scala keyword.declaration.scala
 #               ^ source.scala
-#                ^^^^^^^^^^ source.scala entity.other.inherited-class.scala
+#                ^^^^^^^^^^ source.scala entity.name.class
 #                          ^ source.scala meta.bracket.scala
 #                           ^ source.scala entity.name.class
 #                            ^ source.scala meta.bracket.scala
@@ -135,7 +135,7 @@
 #                                               ^ source.scala
 #                                                ^^^^^^^ source.scala keyword.declaration.scala
 #                                                       ^ source.scala
-#                                                        ^^^^^^ source.scala entity.other.inherited-class.scala
+#                                                        ^^^^^^ source.scala entity.name.class
 #                                                              ^ source.scala
 #                                                               ^ source.scala punctuation.section.block.begin.scala
 >    def fly(height: Int @suspendable) = ???
@@ -378,7 +378,7 @@
 #       ^ source.scala
 #        ^^^^^^^ source.scala keyword.declaration.scala
 #               ^ source.scala
-#                ^ source.scala entity.other.inherited-class.scala
+#                ^ source.scala entity.name.class
 #                 ^ source.scala meta.bracket.scala
 #                  ^ source.scala entity.name.class
 #                   ^ source.scala meta.bracket.scala
@@ -389,7 +389,7 @@
 #       ^ source.scala
 #        ^^^^^^^ source.scala keyword.declaration.scala
 #               ^ source.scala
-#                ^ source.scala entity.other.inherited-class.scala
+#                ^ source.scala entity.name.class
 #                 ^ source.scala meta.bracket.scala
 #                  ^ source.scala entity.name.class
 #                   ^ source.scala meta.bracket.scala
@@ -982,7 +982,7 @@
 #          ^ source.scala
 #           ^^^^^^^ source.scala keyword.declaration.scala
 #                  ^ source.scala
-#                   ^^^^^^^^^^^^^^ source.scala entity.other.inherited-class.scala
+#                   ^^^^^^^^^^^^^^ source.scala entity.name.class
 #                                 ^ source.scala
 #                                  ^^^^ source.scala keyword.declaration.scala
 #                                      ^ source.scala
@@ -998,7 +998,7 @@
 #       ^ source.scala
 #        ^^^^^^^ source.scala keyword.declaration.scala
 #               ^ source.scala
-#                ^^^^ source.scala entity.other.inherited-class.scala
+#                ^^^^ source.scala entity.name.class
 #                    ^ source.scala
 #                     ^ source.scala punctuation.section.block.begin.scala
 #                      ^ source.scala
@@ -1276,7 +1276,7 @@
 #                                     ^ source.scala
 #                                      ^^^^^^^ source.scala keyword.declaration.scala
 #                                             ^ source.scala
-#                                              ^^^^ source.scala entity.other.inherited-class.scala
+#                                              ^^^^ source.scala entity.name.class
 >
 >trait Comparable[T <: Comparable[T]] { self: T =>
 #^^^^^ source.scala keyword.declaration.scala
@@ -1396,7 +1396,7 @@
 #       ^ source.scala
 #        ^^^^^^^ source.scala keyword.declaration.scala
 #               ^ source.scala
-#                ^^^^ source.scala entity.other.inherited-class.scala
+#                ^^^^ source.scala entity.name.class
 #                    ^ source.scala
 #                     ^ source.scala punctuation.section.block.begin.scala
 #                      ^ source.scala
@@ -1978,7 +1978,7 @@
 #                                ^ source.scala
 #                                 ^^^^^^^ source.scala keyword.declaration.scala
 #                                        ^ source.scala
-#                                         ^^^^^^ source.scala entity.other.inherited-class.scala
+#                                         ^^^^^^ source.scala entity.name.class
 #                                               ^ source.scala meta.bracket.scala
 #                                                ^^^^^^ source.scala entity.name.class
 #                                                      ^ source.scala meta.bracket.scala
@@ -2376,7 +2376,7 @@
 #                 ^ source.scala
 #                  ^^^^^^^ source.scala keyword.declaration.scala
 #                         ^ source.scala
-#                          ^^^ source.scala entity.other.inherited-class.scala
+#                          ^^^ source.scala entity.name.class
 #                             ^ source.scala
 #                              ^ source.scala punctuation.section.block.begin.scala
 >    println("Hello World")
@@ -2543,20 +2543,24 @@
 #        ^^^^^ source.scala
 #             ^ source.scala entity.name.class
 >
->enum A extends B derives X, Y, Z
+>enum A extends B, C with D derives E, F
 #^^^^ source.scala keyword.declaration.scala
 #    ^ source.scala
 #     ^ source.scala entity.name.class.declaration
 #      ^ source.scala
 #       ^^^^^^^ source.scala keyword.declaration.scala
 #              ^ source.scala
-#               ^ source.scala entity.other.inherited-class.scala
-#                ^ source.scala
-#                 ^^^^^^^ source.scala keyword.declaration.scala
+#               ^ source.scala entity.name.class
+#                ^^ source.scala
+#                  ^ source.scala entity.name.class
+#                   ^ source.scala
+#                    ^^^^ source.scala keyword.declaration.scala
 #                        ^ source.scala
-#                         ^ source.scala entity.name.class
-#                          ^^ source.scala
-#                            ^ source.scala entity.name.class
-#                             ^^ source.scala
-#                               ^ source.scala entity.name.class
+#                         ^ source.scala entity.other.inherited-class.scala
+#                          ^ source.scala
+#                           ^^^^^^^ source.scala keyword.declaration.scala
+#                                  ^ source.scala
+#                                   ^ source.scala entity.name.class
+#                                    ^^ source.scala
+#                                      ^ source.scala entity.name.class
 >
