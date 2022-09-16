@@ -8,4 +8,4 @@
 //              ^^^^^^^^^^^^^^^^^^^^ string.quoted.double.scala
 //                                  ^ string.quoted.double.scala punctuation.definition.string.end.scala
 //                                    ^^^^ keyword.declaration.scala
-//                                         ^ entity.other.inherited-class.scala
+//                                         ^ entity.name.class

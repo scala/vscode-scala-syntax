@@ -1159,7 +1159,7 @@ export const scalaTmLanguage: TmLanguage = {
               name: 'keyword.declaration.scala'
             },
             '2': {
-              name: 'entity.other.inherited-class.scala'
+              name: 'entity.name.class'
             }
           }
         }
