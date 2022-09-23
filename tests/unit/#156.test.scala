@@ -10,15 +10,15 @@
 //  ^^^^^ keyword.declaration.scala
 //        ^^^ entity.name.class.declaration
 //            ^^^^^^^ keyword.declaration.scala
-//                    ^^^ entity.other.inherited-class.scala
+//                    ^^^ entity.name.class
 //                        ^^^^ keyword.declaration.scala
-//                             ^^^ entity.other.inherited-class.scala
+//                             ^^^ entity.name.class
 
     class Foo extends Bar with
 //  ^^^^^ keyword.declaration.scala
 //        ^^^ entity.name.class.declaration
 //            ^^^^^^^ keyword.declaration.scala
-//                    ^^^ entity.other.inherited-class.scala
+//                    ^^^ entity.name.class
 //                        ^^^^ keyword.declaration.scala
 
 
@@ -46,7 +46,7 @@
 //       ^^^ entity.name.class.declaration
 //            ^ entity.name.class
 //               ^^^^^^^ keyword.declaration.scala
-//                       ^^ entity.other.inherited-class.scala
+//                       ^^ entity.name.class
 
     enum Opt[+T] derives
 //  ^^^^ keyword.declaration.scala
