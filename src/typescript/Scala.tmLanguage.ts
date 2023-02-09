@@ -132,18 +132,23 @@ export const scalaTmLanguage: TmLanguage = {
     },
     exports: {
       end: '(?<=[\\n;])',
-      begin: '\\b(export)\\s+(given\\s+)?',
+      begin: '\\b(export)\\s+',
       beginCaptures: {
         '1': {
           name: 'keyword.other.export.scala'
-        },
-        '2': {
-          name: 'keyword.other.export.given.scala'
         }
       },
       patterns: [
         {
           include: '#comments'
+        },
+        {
+          match: '\\b(given)\\b',
+          name: 'keyword.other.export.given.scala'
+        },
+        {
+          match: idUpper,
+          name: 'entity.name.class.export.scala'
         },
         {
           match: `(${backQuotedId}|${plainid})`,
@@ -163,22 +168,45 @@ export const scalaTmLanguage: TmLanguage = {
           },
           patterns: [
             {
-              match: `(?x)\\s*(${backQuotedId}|${plainid})\\s*(=>)\\s*(${backQuotedId}|${plainid})\\s*`,
+              match: `(?x)(given\\s)?\\s*(?:(${idUpper})|(${backQuotedId}|${plainid}))\\s*(=>)\\s*(?:(${idUpper})|(${backQuotedId}|${plainid}))\\s*`,
               captures: {
                 '1': {
-                  name: 'entity.name.export.renamed-from.scala'
+                  name: 'keyword.other.export.given.scala'
                 },
                 '2': {
-                  name: 'keyword.other.arrow.scala'
+                  name: 'entity.name.class.export.renamed-from.scala'
                 },
                 '3': {
+                  name: 'entity.name.export.renamed-from.scala'
+                },
+                '4': {
+                  name: 'keyword.other.arrow.scala'
+                },
+                '5': {
+                  name: 'entity.name.class.export.renamed-to.scala'
+                },
+                '6': {
                   name: 'entity.name.export.renamed-to.scala'
                 }
               }
             },
             {
-              match: '([^\\s.,}]+)',
-              name: 'entity.name.export.scala'
+              match: '\\b(given)\\b',
+              name: 'keyword.other.export.given.scala'
+            },
+            {
+              match: `(given\\s+)?(?:(${idUpper})|(${backQuotedId}|${plainid}))`,
+              captures: {
+                '1': {
+                  name: 'keyword.other.export.given.scala'
+                },
+                '2': {
+                  name: 'entity.name.class.export.scala'
+                },
+                '3': {
+                  name: 'entity.name.export.scala'
+                }
+              }
             }
           ],
           endCaptures: {
