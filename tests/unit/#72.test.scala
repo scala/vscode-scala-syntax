@@ -30,7 +30,7 @@
 
    val a = 4; foo(a)
 // ^^^ keyword.declaration.stable.scala
-//     ^ variable.other.declaration.scala
+//     ^ variable.stable.declaration.scala
 //       ^ keyword.operator.comparison.scala
 //         ^ constant.numeric.scala
    s"$safeTagMarker${val a = 4; foo(a)}$safeTagMarker"
@@ -38,6 +38,6 @@
 //                   ^^^^^^^^^^^^^^^^^ meta.embedded.line.scala
 //                   ^^^^^^^^^^^^^^^^^ - punctuation.definition.template-expression
 //                   ^^^ keyword.declaration.stable.scala
-//                       ^ variable.other.declaration.scala
+//                       ^ variable.stable.declaration.scala
 //                         ^ keyword.operator.comparison.scala
 //                           ^ constant.numeric.scala

@@ -124,7 +124,7 @@
 #                ^ source.scala meta.bracket.scala
 #                 ^^^ source.scala keyword.declaration.stable.scala
 #                    ^ source.scala
-#                     ^^^^ source.scala variable.other.declaration.scala
+#                     ^^^^ source.scala variable.stable.declaration.scala
 #                         ^ source.scala keyword.operator.scala
 #                          ^ source.scala
 #                           ^^^^^^ source.scala entity.name.class
@@ -419,7 +419,7 @@
 #^^^^ source.scala
 #    ^^^ source.scala keyword.declaration.stable.scala
 #       ^ source.scala
-#        ^ source.scala variable.other.declaration.scala
+#        ^ source.scala variable.stable.declaration.scala
 #         ^ source.scala
 #          ^ source.scala keyword.operator.scala
 #           ^ source.scala
@@ -494,7 +494,7 @@
 #                                ^ source.scala
 #                                 ^^^ source.scala keyword.declaration.stable.scala
 #                                    ^ source.scala
-#                                     ^ source.scala variable.other.declaration.scala
+#                                     ^ source.scala variable.stable.declaration.scala
 #                                      ^ source.scala keyword.operator.scala
 #                                       ^ source.scala
 #                                        ^^^^^ source.scala entity.name.class
@@ -712,7 +712,7 @@
 #^^^^ source.scala
 #    ^^^ source.scala keyword.declaration.volatile.scala
 #       ^ source.scala
-#        ^^^^^^ source.scala variable.other.declaration.scala
+#        ^^^^^^ source.scala variable.volatile.declaration.scala
 #              ^ source.scala
 #               ^ source.scala keyword.operator.comparison.scala
 #                ^ source.scala
@@ -925,7 +925,7 @@
 #^^ source.scala
 #  ^^^ source.scala keyword.declaration.stable.scala
 #     ^ source.scala
-#      ^^ source.scala variable.other.declaration.scala
+#      ^^ source.scala variable.stable.declaration.scala
 #        ^ source.scala
 #         ^ source.scala keyword.operator.comparison.scala
 #          ^ source.scala
@@ -934,7 +934,7 @@
 #^^ source.scala
 #  ^^^ source.scala keyword.declaration.stable.scala
 #     ^ source.scala
-#      ^^ source.scala variable.other.declaration.scala
+#      ^^ source.scala variable.stable.declaration.scala
 #        ^ source.scala keyword.operator.scala
 #         ^ source.scala
 #          ^^^^^^ source.scala entity.name.class
@@ -964,7 +964,7 @@
 #^^ source.scala
 #  ^^^ source.scala keyword.declaration.stable.scala
 #     ^ source.scala
-#      ^ source.scala variable.other.declaration.scala
+#      ^ source.scala variable.stable.declaration.scala
 #       ^ source.scala
 #        ^^ source.scala keyword.operator.scala
 #          ^^^^ source.scala
@@ -1025,7 +1025,7 @@
 #         ^ source.scala
 #          ^^^ source.scala keyword.declaration.stable.scala
 #             ^ source.scala
-#              ^ source.scala variable.other.declaration.scala
+#              ^ source.scala variable.stable.declaration.scala
 #               ^ source.scala
 #                ^ source.scala keyword.operator.comparison.scala
 #                 ^^^ source.scala
@@ -1043,7 +1043,7 @@
 #           ^ source.scala
 #            ^^^ source.scala keyword.declaration.stable.scala
 #               ^ source.scala
-#                ^ source.scala variable.other.declaration.scala
+#                ^ source.scala variable.stable.declaration.scala
 #                 ^ source.scala
 #                  ^ source.scala keyword.operator.comparison.scala
 #                   ^ source.scala
@@ -1069,7 +1069,7 @@
 #                      ^ source.scala
 #                       ^^^ source.scala keyword.declaration.stable.scala
 #                          ^ source.scala
-#                           ^ source.scala variable.other.declaration.scala
+#                           ^ source.scala variable.stable.declaration.scala
 #                            ^ source.scala
 #                             ^ source.scala keyword.operator.comparison.scala
 #                              ^ source.scala
@@ -1128,7 +1128,7 @@
 #^^^^ source.scala
 #    ^^^ source.scala keyword.declaration.stable.scala
 #       ^ source.scala
-#        ^^^^^ source.scala variable.other.declaration.scala
+#        ^^^^^ source.scala variable.stable.declaration.scala
 #             ^ source.scala
 #              ^ source.scala keyword.operator.comparison.scala
 #               ^ source.scala
@@ -1170,7 +1170,7 @@
 #^^^^ source.scala
 #    ^^^ source.scala keyword.declaration.volatile.scala
 #       ^ source.scala
-#        ^^^^ source.scala variable.other.declaration.scala
+#        ^^^^ source.scala variable.volatile.declaration.scala
 #            ^ source.scala
 #             ^ source.scala keyword.operator.comparison.scala
 #              ^ source.scala
@@ -1179,7 +1179,7 @@
 #^^^^ source.scala
 #    ^^^ source.scala keyword.declaration.volatile.scala
 #       ^ source.scala
-#        ^^^^ source.scala variable.other.declaration.scala
+#        ^^^^ source.scala variable.volatile.declaration.scala
 #            ^ source.scala
 #             ^ source.scala keyword.operator.comparison.scala
 #              ^ source.scala
@@ -1484,7 +1484,7 @@
 #^^^^ source.scala
 #    ^^^ source.scala keyword.declaration.stable.scala
 #       ^ source.scala
-#        ^ source.scala variable.other.declaration.scala
+#        ^ source.scala variable.stable.declaration.scala
 #         ^ source.scala
 #          ^ source.scala keyword.operator.scala
 #           ^ source.scala
@@ -1499,7 +1499,7 @@
 #^^^^ source.scala
 #    ^^^ source.scala keyword.declaration.stable.scala
 #       ^ source.scala
-#        ^ source.scala variable.other.declaration.scala
+#        ^ source.scala variable.stable.declaration.scala
 #         ^ source.scala
 #          ^ source.scala keyword.operator.scala
 #           ^ source.scala
@@ -1516,7 +1516,7 @@
 #^^^^^^^^ source.scala
 #        ^^^ source.scala keyword.declaration.stable.scala
 #           ^ source.scala
-#            ^ source.scala variable.other.declaration.scala
+#            ^ source.scala variable.stable.declaration.scala
 #             ^ source.scala
 #              ^ source.scala keyword.operator.comparison.scala
 #               ^ source.scala
@@ -1561,7 +1561,7 @@
 #^^^^^^^^ source.scala
 #        ^^^ source.scala keyword.declaration.stable.scala
 #           ^ source.scala
-#            ^^^ source.scala variable.other.declaration.scala
+#            ^^^ source.scala variable.stable.declaration.scala
 #               ^ source.scala keyword.operator.scala
 #                ^ source.scala
 #                 ^^^^^ source.scala entity.name.class
@@ -1588,7 +1588,7 @@
 #^^^^^^^^ source.scala
 #        ^^^ source.scala keyword.declaration.volatile.scala
 #           ^ source.scala
-#            ^ source.scala variable.other.declaration.scala
+#            ^ source.scala variable.volatile.declaration.scala
 #             ^ source.scala
 #              ^ source.scala keyword.operator.comparison.scala
 #               ^ source.scala
@@ -1608,7 +1608,7 @@
 #^^^^^^^^^^ source.scala
 #          ^^^ source.scala keyword.declaration.volatile.scala
 #             ^ source.scala
-#              ^ source.scala variable.other.declaration.scala
+#              ^ source.scala variable.volatile.declaration.scala
 #               ^ source.scala
 #                ^ source.scala keyword.operator.comparison.scala
 #                 ^ source.scala
@@ -1632,7 +1632,7 @@
 #^^^^^^^^^^^^ source.scala
 #            ^^^ source.scala keyword.declaration.volatile.scala
 #               ^ source.scala
-#                ^^^ source.scala variable.other.declaration.scala
+#                ^^^ source.scala variable.volatile.declaration.scala
 #                   ^ source.scala
 #                    ^ source.scala keyword.operator.comparison.scala
 #                     ^ source.scala
@@ -1641,7 +1641,7 @@
 #^^^^^^^^^^^^ source.scala
 #            ^^^ source.scala keyword.declaration.volatile.scala
 #               ^ source.scala
-#                ^ source.scala variable.other.declaration.scala
+#                ^ source.scala variable.volatile.declaration.scala
 #                 ^ source.scala
 #                  ^ source.scala keyword.operator.comparison.scala
 #                   ^ source.scala
@@ -1938,7 +1938,7 @@
 #^^^^ source.scala
 #    ^^^ source.scala keyword.declaration.stable.scala
 #       ^ source.scala
-#        ^^^^ source.scala variable.other.declaration.scala
+#        ^^^^ source.scala variable.stable.declaration.scala
 #            ^ source.scala
 #             ^ source.scala keyword.operator.comparison.scala
 #              ^ source.scala
@@ -2323,7 +2323,7 @@
 #^^^^^^ source.scala
 #      ^^^ source.scala keyword.declaration.stable.scala
 #         ^ source.scala
-#          ^ source.scala variable.other.declaration.scala
+#          ^ source.scala variable.stable.declaration.scala
 #           ^ source.scala
 #            ^ source.scala keyword.operator.comparison.scala
 #             ^ source.scala
@@ -2430,7 +2430,7 @@
 #                ^^^^^^^^^ source.scala
 #                         ^^^ source.scala keyword.declaration.volatile.scala
 #                            ^ source.scala
-#                             ^ source.scala variable.other.declaration.scala
+#                             ^ source.scala variable.volatile.declaration.scala
 #                              ^ source.scala keyword.operator.scala
 #                               ^ source.scala
 #                                ^^^ source.scala entity.name.class

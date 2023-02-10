@@ -1,6 +1,6 @@
 // SYNTAX TEST "source.scala"
 
-class Φδφκξ(x : Int, δφξκξ: Int, val y: Int, val φξ: Int) { 
+class Φδφκξ(x : Int, δφξκξ: Int, val y: Int, val φξ: Int) {
 // <-----  keyword.declaration.scala
 //    ^^^^^  entity.name.class.declaration
 //         ^  meta.bracket.scala
@@ -11,11 +11,11 @@ class Φδφκξ(x : Int, δφξκξ: Int, val y: Int, val φξ: Int) {
 //                        ^  meta.colon.scala
 //                          ^^^  entity.name.class
 //                               ^^^  keyword.declaration.stable.scala
-//                                   ^  variable.other.declaration.scala
+//                                   ^  variable.stable.declaration.scala
 //                                    ^  keyword.operator.scala
 //                                      ^^^  entity.name.class
 //                                           ^^^  keyword.declaration.stable.scala
-//                                               ^^  variable.other.declaration.scala
+//                                               ^^  variable.stable.declaration.scala
 //                                                 ^  keyword.operator.scala
 //                                                   ^^^  entity.name.class
 //                                                      ^  meta.bracket.scala
@@ -27,11 +27,11 @@ class Φδφκξ(x : Int, δφξκξ: Int, val y: Int, val φξ: Int) {
 //          ^  keyword.operator.comparison.scala
   val δφξ = 4
 //^^^  keyword.declaration.stable.scala
-//    ^^^  variable.other.declaration.scala
+//    ^^^  variable.stable.declaration.scala
 //        ^  keyword.operator.comparison.scala
   var δφξ = 5
 //^^^  keyword.declaration.volatile.scala
-//    ^^^  variable.other.declaration.scala
+//    ^^^  variable.volatile.declaration.scala
 //        ^  keyword.operator.comparison.scala
   def δφξ(δφξκξ: Int) = ()
 //^^^  keyword.declaration.scala
@@ -56,13 +56,13 @@ class Φδφκξ(x : Int, δφξκξ: Int, val y: Int, val φξ: Int) {
 
   val Constant = 3
 //^^^  keyword.declaration.stable.scala
-//    ^^^^^^^^  variable.other.declaration.scala
+//    ^^^^^^^^  variable.stable.declaration.scala
 //             ^  keyword.operator.comparison.scala
   val Константа = 4
 //^^^  keyword.declaration.stable.scala
-//    ^^^^^^^^^  variable.other.declaration.scala
+//    ^^^^^^^^^  variable.stable.declaration.scala
 //              ^  keyword.operator.comparison.scala
-  
+
 }
 
 

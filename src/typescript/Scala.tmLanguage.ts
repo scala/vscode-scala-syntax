@@ -802,28 +802,25 @@ export const scalaTmLanguage: TmLanguage = {
             }
           }
         },
-        { // val x1, x2 = y
-          match: `\\b(?:(val)|(var))\\b\\s*${notStartOfComment}${anyId}(?=\\s*,)`,
+        { // val x1[, x2, x3, ...] = y
+          match: `\\b(val)\\b\\s*${notStartOfComment}(${anyId}(?:\\s*,\\s*${anyId})*)?`,
           captures: {
             '1': {
               name: 'keyword.declaration.stable.scala'
             },
             '2': {
-              name: 'keyword.declaration.volatile.scala'
+              name: 'variable.stable.declaration.scala'
             }
           }
         },
-        {
-          match: `\\b(?:(val)|(var))\\b\\s*${notStartOfComment}(${anyId})?`,
+        { // var x1[, x2, x3, ...] = y
+          match: `\\b(var)\\b\\s*${notStartOfComment}(${anyId}(?:\\s*,\\s*${anyId})*)?`,
           captures: {
             '1': {
-              name: 'keyword.declaration.stable.scala'
-            },
-            '2': {
               name: 'keyword.declaration.volatile.scala'
             },
-            '3': {
-              name: 'variable.other.declaration.scala'
+            '2': {
+              name: 'variable.volatile.declaration.scala'
             }
           }
         },

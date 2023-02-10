@@ -12,7 +12,7 @@ class Stack[A] {
   private var elements: List[A] = Nil
 //^^^^^^^ storage.modifier.access
 //        ^^^ keyword.declaration.volatile.scala
-//            ^^^^^^^^ variable.other.declaration.scala
+//            ^^^^^^^^ variable.volatile.declaration.scala
 //                    ^ keyword.operator.scala
 //                      ^^^^ entity.name.class
 //                          ^ meta.bracket.scala
@@ -39,7 +39,7 @@ class Stack[A] {
     def pop(): A = {
       val currentTop = peek
 //    ^^^ keyword.declaration.stable.scala
-//        ^^^^^^^^^^ variable.other.declaration.scala
+//        ^^^^^^^^^^ variable.stable.declaration.scala
 //                   ^ keyword.operator.comparison.scala
 //                     ^^^^ source.scala
       elements = elements.tail
