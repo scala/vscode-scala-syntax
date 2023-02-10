@@ -9,7 +9,7 @@
 #^^^^ source.scala
 #    ^^^ source.scala keyword.declaration.stable.scala
 #       ^ source.scala
-#        ^ source.scala variable.other.declaration.scala
+#        ^ source.scala variable.stable.declaration.scala
 #         ^ source.scala
 #          ^ source.scala keyword.operator.comparison.scala
 #           ^ source.scala
@@ -21,7 +21,7 @@
 #^^^^ source.scala
 #    ^^^ source.scala keyword.declaration.stable.scala
 #       ^ source.scala
-#        ^ source.scala variable.other.declaration.scala
+#        ^ source.scala variable.stable.declaration.scala
 #         ^ source.scala
 #          ^ source.scala keyword.operator.comparison.scala
 #           ^ source.scala
@@ -33,7 +33,7 @@
 #^^^^ source.scala
 #    ^^^ source.scala keyword.declaration.stable.scala
 #       ^ source.scala
-#        ^ source.scala variable.other.declaration.scala
+#        ^ source.scala variable.stable.declaration.scala
 #         ^ source.scala
 #          ^ source.scala keyword.operator.comparison.scala
 #           ^ source.scala
@@ -64,7 +64,7 @@
 #^^^^ source.scala
 #    ^^^ source.scala keyword.declaration.stable.scala
 #       ^ source.scala
-#        ^^^^^ source.scala variable.other.declaration.scala
+#        ^^^^^ source.scala variable.stable.declaration.scala
 #             ^ source.scala
 #              ^ source.scala keyword.operator.comparison.scala
 #               ^ source.scala

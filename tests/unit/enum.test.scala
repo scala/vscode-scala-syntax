@@ -13,7 +13,7 @@
 // ^^^^ keyword.declaration.scala
 //      ^^^^^^^ entity.name.class.declaration
 //              ^^^ keyword.declaration.stable.scala
-//                  ^^^^^^^^^^^^^^ variable.other.declaration.scala
+//                  ^^^^^^^^^^^^^^ variable.stable.declaration.scala
 //                                  ^^^ entity.name.class
      case Unicycle extends Vehicle(1)
 //   ^^^^ source.scala keyword.control.flow.scala
@@ -23,7 +23,7 @@
 //                                ^ meta.bracket.scala
 //                                 ^ constant.numeric.scala
 //                                  ^ meta.bracket.scala
-     
+
      case Bicycle extends Vehicle(2)
 //   ^^^^ source.scala keyword.control.flow.scala
 //        ^^^^^^^ entity.name.class

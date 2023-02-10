@@ -9,7 +9,7 @@
 #^^ source.scala
 #  ^^^ source.scala keyword.declaration.stable.scala
 #     ^ source.scala
-#      ^ source.scala variable.other.declaration.scala
+#      ^ source.scala variable.stable.declaration.scala
 #       ^ source.scala
 #        ^ source.scala keyword.operator.comparison.scala
 #         ^ source.scala
@@ -18,7 +18,7 @@
 #^^ source.scala
 #  ^^^ source.scala keyword.declaration.stable.scala
 #     ^ source.scala
-#      ^^^^^^ source.scala variable.other.declaration.scala
+#      ^^^^^^ source.scala variable.stable.declaration.scala
 #            ^ source.scala
 #             ^ source.scala keyword.operator.comparison.scala
 #              ^ source.scala
@@ -28,7 +28,7 @@
 #^^ source.scala
 #  ^^^ source.scala keyword.declaration.stable.scala
 #     ^ source.scala
-#      ^^^^^^^^ source.scala variable.other.declaration.scala
+#      ^^^^^^^^ source.scala variable.stable.declaration.scala
 #              ^ source.scala
 #               ^ source.scala keyword.operator.comparison.scala
 #                ^ source.scala
@@ -38,7 +38,7 @@
 #^^ source.scala
 #  ^^^ source.scala keyword.declaration.stable.scala
 #     ^ source.scala
-#      ^^^ source.scala variable.other.declaration.scala
+#      ^^^ source.scala variable.stable.declaration.scala
 #         ^ source.scala
 #          ^ source.scala keyword.operator.comparison.scala
 #           ^ source.scala
@@ -48,7 +48,7 @@
 #^^ source.scala
 #  ^^^ source.scala keyword.declaration.stable.scala
 #     ^ source.scala
-#      ^^^^^^^ source.scala variable.other.declaration.scala
+#      ^^^^^^^ source.scala variable.stable.declaration.scala
 #             ^ source.scala
 #              ^ source.scala keyword.operator.comparison.scala
 #               ^ source.scala
@@ -57,7 +57,7 @@
 #^^ source.scala
 #  ^^^ source.scala keyword.declaration.stable.scala
 #     ^ source.scala
-#      ^ source.scala variable.other.declaration.scala
+#      ^ source.scala variable.stable.declaration.scala
 #       ^ source.scala
 #        ^ source.scala keyword.operator.comparison.scala
 #         ^ source.scala
@@ -67,7 +67,7 @@
 #^^ source.scala
 #  ^^^ source.scala keyword.declaration.stable.scala
 #     ^ source.scala
-#      ^^^^^^^ source.scala variable.other.declaration.scala
+#      ^^^^^^^ source.scala variable.stable.declaration.scala
 #             ^ source.scala
 #              ^ source.scala keyword.operator.comparison.scala
 #               ^ source.scala
@@ -77,7 +77,7 @@
 #^^ source.scala
 #  ^^^ source.scala keyword.declaration.stable.scala
 #     ^ source.scala
-#      ^^^^^ source.scala variable.other.declaration.scala
+#      ^^^^^ source.scala variable.stable.declaration.scala
 #           ^ source.scala
 #            ^ source.scala keyword.operator.comparison.scala
 #             ^ source.scala
@@ -87,7 +87,7 @@
 #^^ source.scala
 #  ^^^ source.scala keyword.declaration.stable.scala
 #     ^ source.scala
-#      ^^ source.scala variable.other.declaration.scala
+#      ^^ source.scala variable.stable.declaration.scala
 #        ^ source.scala
 #         ^ source.scala keyword.operator.comparison.scala
 #          ^ source.scala
@@ -97,7 +97,7 @@
 #^^ source.scala
 #  ^^^ source.scala keyword.declaration.stable.scala
 #     ^ source.scala
-#      ^^^^^^^^^^^^^ source.scala variable.other.declaration.scala
+#      ^^^^^^^^^^^^^ source.scala variable.stable.declaration.scala
 #                   ^ source.scala
 #                    ^ source.scala keyword.operator.comparison.scala
 #                     ^ source.scala
@@ -106,7 +106,7 @@
 #^^ source.scala
 #  ^^^ source.scala keyword.declaration.stable.scala
 #     ^ source.scala
-#      ^^^^^^^^ source.scala variable.other.declaration.scala
+#      ^^^^^^^^ source.scala variable.stable.declaration.scala
 #              ^ source.scala
 #               ^ source.scala keyword.operator.comparison.scala
 #                ^ source.scala
@@ -116,7 +116,7 @@
 #^^ source.scala
 #  ^^^ source.scala keyword.declaration.stable.scala
 #     ^ source.scala
-#      ^^^^^^^^^ source.scala variable.other.declaration.scala
+#      ^^^^^^^^^ source.scala variable.stable.declaration.scala
 #               ^ source.scala
 #                ^ source.scala keyword.operator.comparison.scala
 #                 ^ source.scala
@@ -262,7 +262,7 @@
 #^^ source.scala
 #  ^^^ source.scala keyword.declaration.stable.scala
 #     ^ source.scala
-#      ^^^^^^^^^^^^^^^ source.scala variable.other.declaration.scala
+#      ^^^^^^^^^^^^^^^ source.scala variable.stable.declaration.scala
 #                     ^ source.scala
 #                      ^ source.scala keyword.operator.comparison.scala
 #                       ^ source.scala
@@ -293,7 +293,7 @@
 #             ^^ source.scala meta.template.expression.scala punctuation.definition.template-expression.begin.scala
 #               ^^^ source.scala meta.template.expression.scala meta.embedded.line.scala keyword.declaration.stable.scala
 #                  ^ source.scala meta.template.expression.scala meta.embedded.line.scala
-#                   ^ source.scala meta.template.expression.scala meta.embedded.line.scala variable.other.declaration.scala
+#                   ^ source.scala meta.template.expression.scala meta.embedded.line.scala variable.stable.declaration.scala
 #                    ^ source.scala meta.template.expression.scala meta.embedded.line.scala
 #                     ^ source.scala meta.template.expression.scala meta.embedded.line.scala keyword.operator.comparison.scala
 #                      ^^ source.scala meta.template.expression.scala meta.embedded.line.scala
@@ -315,7 +315,7 @@
 #                  ^^ source.scala meta.template.expression.scala punctuation.definition.template-expression.begin.scala
 #                    ^^^ source.scala meta.template.expression.scala meta.embedded.line.scala keyword.declaration.stable.scala
 #                       ^ source.scala meta.template.expression.scala meta.embedded.line.scala
-#                        ^ source.scala meta.template.expression.scala meta.embedded.line.scala variable.other.declaration.scala
+#                        ^ source.scala meta.template.expression.scala meta.embedded.line.scala variable.stable.declaration.scala
 #                         ^ source.scala meta.template.expression.scala meta.embedded.line.scala
 #                          ^ source.scala meta.template.expression.scala meta.embedded.line.scala keyword.operator.comparison.scala
 #                           ^^ source.scala meta.template.expression.scala meta.embedded.line.scala
@@ -338,7 +338,7 @@
 #               ^^ source.scala meta.template.expression.scala punctuation.definition.template-expression.begin.scala
 #                 ^^^ source.scala meta.template.expression.scala meta.embedded.line.scala keyword.declaration.stable.scala
 #                    ^ source.scala meta.template.expression.scala meta.embedded.line.scala
-#                     ^ source.scala meta.template.expression.scala meta.embedded.line.scala variable.other.declaration.scala
+#                     ^ source.scala meta.template.expression.scala meta.embedded.line.scala variable.stable.declaration.scala
 #                      ^ source.scala meta.template.expression.scala meta.embedded.line.scala
 #                       ^ source.scala meta.template.expression.scala meta.embedded.line.scala keyword.operator.comparison.scala
 #                        ^^ source.scala meta.template.expression.scala meta.embedded.line.scala
@@ -360,7 +360,7 @@
 #                    ^^ source.scala meta.template.expression.scala punctuation.definition.template-expression.begin.scala
 #                      ^^^ source.scala meta.template.expression.scala meta.embedded.line.scala keyword.declaration.stable.scala
 #                         ^ source.scala meta.template.expression.scala meta.embedded.line.scala
-#                          ^ source.scala meta.template.expression.scala meta.embedded.line.scala variable.other.declaration.scala
+#                          ^ source.scala meta.template.expression.scala meta.embedded.line.scala variable.stable.declaration.scala
 #                           ^ source.scala meta.template.expression.scala meta.embedded.line.scala
 #                            ^ source.scala meta.template.expression.scala meta.embedded.line.scala keyword.operator.comparison.scala
 #                             ^^ source.scala meta.template.expression.scala meta.embedded.line.scala
@@ -436,7 +436,7 @@
 #^^^^ source.scala
 #    ^^^ source.scala keyword.declaration.stable.scala
 #       ^ source.scala
-#        ^ source.scala variable.other.declaration.scala
+#        ^ source.scala variable.stable.declaration.scala
 #         ^ source.scala
 #          ^ source.scala keyword.operator.comparison.scala
 #           ^ source.scala

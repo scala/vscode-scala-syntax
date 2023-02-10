@@ -1,33 +1,33 @@
-// SYNTAX TEST "source.scala"  
+// SYNTAX TEST "source.scala"
 
 object ExampleIdentifiers {
   val x = 3
-//    ^ variable.other.declaration.scala
-  val Object = 3        
+//    ^ variable.stable.declaration.scala
+  val Object = 3
   val maxIndex = 3
-//    ^^^^^^^^ variable.other.declaration.scala  
-  val p2p = 3      
-//    ^^^ variable.other.declaration.scala
+//    ^^^^^^^^ variable.stable.declaration.scala
+  val p2p = 3
+//    ^^^ variable.stable.declaration.scala
   val empty_? = 3
-//    ^^^^^^^ variable.other.declaration.scala
-  val + = 3       
-//    ^ variable.other.declaration.scala  
-  val `yield` = 3 
-//    ^^^^^^^ variable.other.declaration.scala      
-  val αρετη = 3     
-  val _y = 3     
-//    ^^ variable.other.declaration.scala    
+//    ^^^^^^^ variable.stable.declaration.scala
+  val + = 3
+//    ^ variable.stable.declaration.scala
+  val `yield` = 3
+//    ^^^^^^^ variable.stable.declaration.scala
+  val αρετη = 3
+  val _y = 3
+//    ^^ variable.stable.declaration.scala
   val dot_product_* = 3
-//    ^^^^^^^^^^^^^ variable.other.declaration.scala
-  val __system = 3  
-//    ^^^^^^^^ variable.other.declaration.scala
+//    ^^^^^^^^^^^^^ variable.stable.declaration.scala
+  val __system = 3
+//    ^^^^^^^^ variable.stable.declaration.scala
   val _MAX_LEN_ = 3
-//    ^^^^^^^^^ variable.other.declaration.scala
+//    ^^^^^^^^^ variable.stable.declaration.scala
 }
 
 object IntegerLiterals {
   (0, 21,  0xFFFFFFFF, -42L)
-// ^ constant.numeric.scala        
+// ^ constant.numeric.scala
 //    ^^ constant.numeric.scala
 //         ^^^^^^^^^^ constant.numeric.scala
 //                     ^ keyword.operator.arithmetic.scala
@@ -37,9 +37,9 @@ object IntegerLiterals {
 object FloatingPointLiterals {
   ( 0.0, 1e30f, 3.14159f, 1.0e-100, .1  )
 //  ^^^ constant.numeric.scala
-//              ^^^^^^^^ constant.numeric.scala 
-//                        ^^^^^^^^ constant.numeric.scala 
-//                                  ^^ constant.numeric.scala 
+//              ^^^^^^^^ constant.numeric.scala
+//                        ^^^^^^^^ constant.numeric.scala
+//                                  ^^ constant.numeric.scala
 }
 
 object Boolean {
@@ -54,9 +54,9 @@ object CharacterLiterals {
 //   ^^^ constant.character.literal.scala
 //     ^ punctuation.definition.character.end.scala
 //           ^^^^^^^^  constant.character.literal.scala
-//            ^^^^^^   constant.character.escape.scala  
+//            ^^^^^^   constant.character.escape.scala
 //                         ^^ constant.character.escape.scala
-//                                  ^^ constant.character.escape.scala                                        
+//                                  ^^ constant.character.escape.scala
 }
 
 object StringLiterals {
@@ -65,14 +65,14 @@ object StringLiterals {
 //   ^^^^^^^^^^^^^^^^ string.quoted.double.scala
 //          ^^ constant.character.escape.scala
 //                  ^ punctuation.definition.string.end.scala
-//                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ string.quoted.double.scala                                        
+//                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ string.quoted.double.scala
     """the present string
 //  ^^^ punctuation.definition.string.begin.scala
 //  ^^^^^^^^^^^^^^^^^^^^^ string.quoted.triple.scala
      spans three
 //   ^^^^^^^^^^^ string.quoted.triple.scala
      lines."""
-//   ^^^^^^^^^ string.quoted.triple.scala 
+//   ^^^^^^^^^ string.quoted.triple.scala
 //         ^^^ punctuation.definition.string.end.scala
 
     """the present string
@@ -86,8 +86,8 @@ object StringLiterals {
 
   s"$x plain ${val x = y}"
 //^ keyword.interpolation.scala
-// ^ punctuation.definition.string.begin.scala 
-//  ^ punctuation.definition.template-expression.begin.scala 
+// ^ punctuation.definition.string.begin.scala
+//  ^ punctuation.definition.template-expression.begin.scala
 //   ^ - string.quoted.double.interpolated.scala string.quoted.double.scala
 //    ^^^^^^^ string.quoted.double.interpolated.scala
 //           ^^^^^^^^^^^^ meta.template.expression.scala
@@ -96,12 +96,12 @@ object StringLiterals {
 //             ^^^ keyword.declaration.stable.scala
 //             ^^^^^^^^^   - string.quoted.double.interpolated.scala string.quoted.double.scala
 //                      ^ punctuation.definition.template-expression.end.scala
-//                       ^   string.quoted.double.interpolated.scala  punctuation.definition.string.end.scala                   
+//                       ^   string.quoted.double.interpolated.scala  punctuation.definition.string.end.scala
 
   custom"$x plain ${val x = y}"
 //^^^^^^ keyword.interpolation.scala
-//      ^ punctuation.definition.string.begin.scala 
-//       ^ punctuation.definition.template-expression.begin.scala 
+//      ^ punctuation.definition.string.begin.scala
+//       ^ punctuation.definition.template-expression.begin.scala
 //        ^ - string.quoted.double.interpolated.scala string.quoted.double.scala
 //         ^^^^^^^ string.quoted.double.interpolated.scala
 //                ^^^^^^^^^^^^ meta.template.expression.scala
@@ -110,18 +110,18 @@ object StringLiterals {
 //                  ^^^ keyword.declaration.stable.scala
 //                  ^^^^^^^^^   - string.quoted.double.interpolated.scala string.quoted.double.scala
 //                           ^ punctuation.definition.template-expression.end.scala
-//                            ^   string.quoted.double.interpolated.scala  punctuation.definition.string.end.scala   
+//                            ^   string.quoted.double.interpolated.scala  punctuation.definition.string.end.scala
 
 object Symbols {
     ('x, 'X, 'αρετη, '=, '+ )
 //   ^^ constant.other.symbol.scala
 //       ^^ constant.other.symbol.scala
-//           ^^^^^^ constant.other.symbol.scala 
+//           ^^^^^^ constant.other.symbol.scala
 }
 
     // single line comment
-//  ^^ punctuation.definition.comment.scala 
-//  ^^^^^^^^^^^^^^^^^^^^^^ comment.line.double-slash.scala    
+//  ^^ punctuation.definition.comment.scala
+//  ^^^^^^^^^^^^^^^^^^^^^^ comment.line.double-slash.scala
 
    /*
 // ^^   punctuation.definition.comment.scala
@@ -129,7 +129,7 @@ object Symbols {
 //  ^^^^^^^^^^^^^^^^^^^ comment.block.scala
   /**
    * Scaladoc comment
-   * @scaladoc @param 
+   * @scaladoc @param
    */
 
    /*  nested /* multi-line */ comment */
