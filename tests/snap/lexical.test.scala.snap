@@ -378,15 +378,20 @@
 >    ('x, 'X, 'αρετη, '=, '+ )
 #^^^^ source.scala
 #    ^ source.scala meta.bracket.scala
-#     ^^ source.scala constant.other.symbol.scala
+#     ^ source.scala keyword.control.flow.staging.scala constant.other.symbol.scala
+#      ^ source.scala constant.other.symbol.scala
 #       ^^ source.scala
-#         ^^ source.scala constant.other.symbol.scala
+#         ^ source.scala keyword.control.flow.staging.scala constant.other.symbol.scala
+#          ^ source.scala constant.other.symbol.scala
 #           ^^ source.scala
-#             ^^^^^^ source.scala constant.other.symbol.scala
+#             ^ source.scala keyword.control.flow.staging.scala constant.other.symbol.scala
+#              ^^^^^ source.scala constant.other.symbol.scala
 #                   ^^ source.scala
-#                     ^^ source.scala constant.other.symbol.scala
+#                     ^ source.scala keyword.control.flow.staging.scala constant.other.symbol.scala
+#                      ^ source.scala constant.other.symbol.scala
 #                       ^^ source.scala
-#                         ^^ source.scala constant.other.symbol.scala
+#                         ^ source.scala keyword.control.flow.staging.scala constant.other.symbol.scala
+#                          ^ source.scala constant.other.symbol.scala
 #                           ^ source.scala
 #                            ^ source.scala meta.bracket.scala
 >}
