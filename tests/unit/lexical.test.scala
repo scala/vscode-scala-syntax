@@ -21,6 +21,7 @@ object ExampleIdentifiers {
 //    ^^^^^^^^^^^^^ variable.stable.declaration.scala
   val __system = 3
 //    ^^^^^^^^ variable.stable.declaration.scala
+
   val _MAX_LEN_ = 3
 //    ^^^^^^^^^ variable.stable.declaration.scala
 }

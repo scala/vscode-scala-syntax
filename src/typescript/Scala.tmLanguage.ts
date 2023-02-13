@@ -300,16 +300,13 @@ export const scalaTmLanguage: TmLanguage = {
           include: '#constants'
         },
         {
-          include: '#scala-symbol'
-        },
-        {
           include: '#singleton-type'
         },
         {
           include: '#inline'
         },
         {
-          include: '#scala-quoted'
+          include: '#scala-quoted-or-symbol'
         },
         {
           include: '#char-literal'
@@ -710,16 +707,31 @@ export const scalaTmLanguage: TmLanguage = {
         }
       ]
     },
-    'scala-quoted': {
+    'scala-quoted-or-symbol': {
       patterns: [
-        { // Start of `'{ .. }` or `${ .. }`
-          match: "['$]\\{(?!')",
-          name: 'punctuation.section.block.begin.scala'
+        { // `'xyz`
+          match: `(')((?>${plainid}))(?!')`,
+          captures: {
+            '1': {
+              name: 'keyword.control.flow.staging.scala constant.other.symbol.scala'
+            },
+            '2': {
+              name: 'constant.other.symbol.scala'
+            }
+          }
+        },
+        { // Start of `'{ .. }`
+          match: `'(?=\\s*\\{(?!'))`,
+          name: 'keyword.control.flow.staging.scala'
         },
         { // Start of `'[ .. ]`
-          match: "'\\[(?!')",
-          name: 'meta.bracket.scala'
-        }
+          match: "'(?=\\s*\\[(?!'))",
+          name: 'keyword.control.flow.staging.scala'
+        },
+        { // Start of `${ .. }`
+          match: "\\$(?=\\s*\\{)",
+          name: 'keyword.control.flow.staging.scala'
+        },
       ]
     },
     'xml-doublequotedString': {
@@ -910,10 +922,6 @@ export const scalaTmLanguage: TmLanguage = {
           name: 'keyword.declaration.scala'
         }
       }
-    },
-    'scala-symbol': {
-      match: `(?>'${plainid})(?!')`,
-      name: 'constant.other.symbol.scala'
     },
     'curly-braces': {
       begin: '\\{',
