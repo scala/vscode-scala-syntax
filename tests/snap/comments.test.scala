@@ -3,6 +3,11 @@
 
 //> using packaging.version "1.0.0"
 //> using scala 2.13
+//> using dep org.scala-lang::toolkit:0.2.0
+//> using deps org.scala-lang::toolkit:0.2.0,org.scala-lang::toolkit:0.2.1
+//> using numbers 123, 111
+//> using strings "asdf", bfds
+//> using booleans true false
 // > using this.is comment
 // //> using comment "out"
 
