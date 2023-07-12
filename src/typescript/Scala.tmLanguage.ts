@@ -998,29 +998,37 @@ export const scalaTmLanguage: TmLanguage = {
     },
     'using-directive': {
       end: '\\n',
-      begin: '^\\s*(//>)\\s*(using)[^\\S\\n]+',
+      begin: '^\\s*(//>)\\s*(using)[^\\S\\n]+(?:(\\S+))?',
       beginCaptures: {
         '1': {
           name: 'punctuation.definition.comment.scala'
         },
         '2': {
           name: 'keyword.other.import.scala'
+        },
+        '3': {
+          patterns: [
+            {
+              match: `${idUpper}|${backQuotedId}|${plainid}`,
+              name: 'entity.name.import.scala'
+            },
+            {
+              match: '\\.',
+              name: 'punctuation.definition.import'
+            }
+          ]
         }
       },
       patterns: [
         {
-          match: `${idUpper}|${backQuotedId}|${plainid}`,
-          name: 'entity.name.import.scala'
-        },
-        {
-          match: '\\.',
-          name: 'punctuation.definition.import'
+          include: '#constants'
         },
         {
           include: '#strings'
         },
         {
-          include: '#constants'
+          match: `[^\\s,]+`,
+          name: 'string.quoted.double.scala'
         },
       ],
       name: 'comment.line.shebang.scala'

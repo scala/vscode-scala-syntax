@@ -25,6 +25,56 @@
 #          ^^^^^ source.scala comment.line.shebang.scala entity.name.import.scala
 #               ^ source.scala comment.line.shebang.scala
 #                ^^^^ source.scala comment.line.shebang.scala constant.numeric.scala
+>//> using dep org.scala-lang::toolkit:0.2.0
+#^^^ source.scala comment.line.shebang.scala punctuation.definition.comment.scala
+#   ^ source.scala comment.line.shebang.scala
+#    ^^^^^ source.scala comment.line.shebang.scala keyword.other.import.scala
+#         ^ source.scala comment.line.shebang.scala
+#          ^^^ source.scala comment.line.shebang.scala entity.name.import.scala
+#             ^ source.scala comment.line.shebang.scala
+#              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.scala comment.line.shebang.scala string.quoted.double.scala
+>//> using deps org.scala-lang::toolkit:0.2.0,org.scala-lang::toolkit:0.2.1
+#^^^ source.scala comment.line.shebang.scala punctuation.definition.comment.scala
+#   ^ source.scala comment.line.shebang.scala
+#    ^^^^^ source.scala comment.line.shebang.scala keyword.other.import.scala
+#         ^ source.scala comment.line.shebang.scala
+#          ^^^^ source.scala comment.line.shebang.scala entity.name.import.scala
+#              ^ source.scala comment.line.shebang.scala
+#               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.scala comment.line.shebang.scala string.quoted.double.scala
+#                                            ^ source.scala comment.line.shebang.scala
+#                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.scala comment.line.shebang.scala string.quoted.double.scala
+>//> using numbers 123, 111
+#^^^ source.scala comment.line.shebang.scala punctuation.definition.comment.scala
+#   ^ source.scala comment.line.shebang.scala
+#    ^^^^^ source.scala comment.line.shebang.scala keyword.other.import.scala
+#         ^ source.scala comment.line.shebang.scala
+#          ^^^^^^^ source.scala comment.line.shebang.scala entity.name.import.scala
+#                 ^ source.scala comment.line.shebang.scala
+#                  ^^^ source.scala comment.line.shebang.scala constant.numeric.scala
+#                     ^^ source.scala comment.line.shebang.scala
+#                       ^^^ source.scala comment.line.shebang.scala constant.numeric.scala
+>//> using strings "asdf", bfds
+#^^^ source.scala comment.line.shebang.scala punctuation.definition.comment.scala
+#   ^ source.scala comment.line.shebang.scala
+#    ^^^^^ source.scala comment.line.shebang.scala keyword.other.import.scala
+#         ^ source.scala comment.line.shebang.scala
+#          ^^^^^^^ source.scala comment.line.shebang.scala entity.name.import.scala
+#                 ^ source.scala comment.line.shebang.scala
+#                  ^ source.scala comment.line.shebang.scala string.quoted.double.scala punctuation.definition.string.begin.scala
+#                   ^^^^ source.scala comment.line.shebang.scala string.quoted.double.scala
+#                       ^ source.scala comment.line.shebang.scala string.quoted.double.scala punctuation.definition.string.end.scala
+#                        ^^ source.scala comment.line.shebang.scala
+#                          ^^^^ source.scala comment.line.shebang.scala string.quoted.double.scala
+>//> using booleans true false
+#^^^ source.scala comment.line.shebang.scala punctuation.definition.comment.scala
+#   ^ source.scala comment.line.shebang.scala
+#    ^^^^^ source.scala comment.line.shebang.scala keyword.other.import.scala
+#         ^ source.scala comment.line.shebang.scala
+#          ^^^^^^^^ source.scala comment.line.shebang.scala entity.name.import.scala
+#                  ^ source.scala comment.line.shebang.scala
+#                   ^^^^ source.scala comment.line.shebang.scala constant.language.scala
+#                       ^ source.scala comment.line.shebang.scala
+#                        ^^^^^ source.scala comment.line.shebang.scala constant.language.scala
 >// > using this.is comment
 #^^ source.scala comment.line.double-slash.scala punctuation.definition.comment.scala
 #  ^^^^^^^^^^^^^^^^^^^^^^^^ source.scala comment.line.double-slash.scala
