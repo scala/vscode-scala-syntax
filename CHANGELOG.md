@@ -1,5 +1,18 @@
 ## Scala Syntax (official) Changelog
 
+### v0.5.7 (2023/07/12 16:30 +00:00)
+- [ffeefb2](https://github.com/scala/vscode-scala-syntax/commit/ffeefb25ec5e0808fa98799098bb59d03c8e5901) improvement: Highlight using directives without double quote (@jkciesluk)
+- [63cd944](https://github.com/scala/vscode-scala-syntax/commit/63cd94429e4b358930d4fbc76b10f9ed721ee68a) Bump semver from 5.7.0 to 5.7.2 (@dependabot[bot])
+- [cd24dc8](https://github.com/scala/vscode-scala-syntax/commit/cd24dc8f6e0b8fd45e4ebf890dd4dd7da64a7b8b) Merge symbol and quote capturing (@nicolasstucki)
+- [6839617](https://github.com/scala/vscode-scala-syntax/commit/6839617651b2a0e285fef68cf5a045b3085d23c9) Fix #226: Parse quoted blocks with spaces (`' {`) (@lolgab)
+- [c8b05b9](https://github.com/scala/vscode-scala-syntax/commit/c8b05b9da2df072c765fb00a7082bd1038b1144e) Fix support for multi val definitions (@nicolasstucki)
+- [d680933](https://github.com/scala/vscode-scala-syntax/commit/d680933ad74696c29373cdb4735eee4a1a897a18) bugfix: Adjust export syntax to newest (@tgodzik)
+- [24c3506](https://github.com/scala/vscode-scala-syntax/commit/24c3506edd710023b7fe55af23751094f20f002a) Bump minimatch from 3.0.4 to 3.1.2 (@dependabot[bot])
+- [83d3f6e](https://github.com/scala/vscode-scala-syntax/commit/83d3f6ec9524fdeb0a44e23a8ae1ca6347776980) Bump qs from 6.10.1 to 6.11.0 (@dependabot[bot])
+- [551c71c](https://github.com/scala/vscode-scala-syntax/commit/551c71cad493ee9289c8af2a15951747a6b5bc97) bugfix: Remove entity.other.inherited-class.scala (@tgodzik)
+- [7b08ca3](https://github.com/scala/vscode-scala-syntax/commit/7b08ca3e3f9e2d79371c664307828f760f2ec7d9) Bump moment-timezone from 0.5.33 to 0.5.37 (@dependabot[bot])
+- [0b2b1e8](https://github.com/scala/vscode-scala-syntax/commit/0b2b1e8829254f0d190e723d3a49874cb7d135c0) Release 0.5.6
+
 ### 0.5.6 (2022/07/26 15:17 +00:00)
 - [9db075c](https://github.com/scala/vscode-scala-syntax/commit/9db075c1bcf8c469ffc0c85ee428f903e53a3519) Release 0.5.6
 - [ed31749](https://github.com/scala/vscode-scala-syntax/commit/ed31749698c83476d3251876ebaa841bb43eedf0) chore: Run node 14 when releasing (@tgodzik)
@@ -94,7 +107,7 @@
 
 ### 0.4.2 (2020/07/21 17:27 +00:00)
 - [23d7bfe](https://github.com/scala/vscode-scala-syntax/commit/23d7bfedeb9bfa3cad14970b61b9a2e9dff6c44b) Improve highlighting of names in given declarations (@nicolasstucki)
-- [e79e1b5](https://github.com/scala/vscode-scala-syntax/commit/e79e1b513ba5ea9c8cc3f4e01841c25f51886d2e) Fix #75: Add Travis CI deployment to GitHub Releases (@MaximeKjaer)
+- [e79e1b5](https://github.com/scala/vscode-scala-syntax/commit/e79e1b513ba5ea9c8cc3f4e01841c25f51886d2e) Fix #75: Add Travis CI deployment to GitHub Releases
 - [ff079c5](https://github.com/scala/vscode-scala-syntax/commit/ff079c5a92ce2877179d8752e679b5e57247cbfc) Bump lodash from 4.17.15 to 4.17.19 (@dependabot[bot])
 - [05364bb](https://github.com/scala/vscode-scala-syntax/commit/05364bbb0b4f27fa60a1a3a56d571e04ec06a31d) Add tests (@nicolasstucki)
 - [fd36c91](https://github.com/scala/vscode-scala-syntax/commit/fd36c91b7a44793b9c71b6a902b66ee52c6b99f9) Fix test (@nicolasstucki)
