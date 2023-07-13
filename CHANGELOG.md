@@ -3,8 +3,6 @@
 ### 0.5.7 (2023/07/13 13:21 +00:00)
 - [ae8025c](https://github.com/scala/vscode-scala-syntax/commit/ae8025c46adfd9a805e6359e5d3409ccae4dcf82) Revert wrong release name "Release v0.5.7" (@tgodzik)
 - [cc96b72](https://github.com/scala/vscode-scala-syntax/commit/cc96b7243e5bf9c009a9064a5b50fc15f96944b0) Release v0.5.7
-
-### v0.5.7 (2023/07/12 16:30 +00:00)
 - [ffeefb2](https://github.com/scala/vscode-scala-syntax/commit/ffeefb25ec5e0808fa98799098bb59d03c8e5901) improvement: Highlight using directives without double quote (@jkciesluk)
 - [63cd944](https://github.com/scala/vscode-scala-syntax/commit/63cd94429e4b358930d4fbc76b10f9ed721ee68a) Bump semver from 5.7.0 to 5.7.2 (@dependabot[bot])
 - [cd24dc8](https://github.com/scala/vscode-scala-syntax/commit/cd24dc8f6e0b8fd45e4ebf890dd4dd7da64a7b8b) Merge symbol and quote capturing (@nicolasstucki)
