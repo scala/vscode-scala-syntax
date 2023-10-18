@@ -1,5 +1,5 @@
 >package org.scala.syntax
-#^^^^^^^ source.scala meta.package.scala keyword.other.import.scala
+#^^^^^^^ source.scala meta.package.scala keyword.other.package.scala
 #       ^ source.scala meta.package.scala
 #        ^^^ source.scala meta.package.scala entity.name.package.scala
 #           ^ source.scala meta.package.scala punctuation.definition.package
@@ -7,7 +7,7 @@
 #                 ^ source.scala meta.package.scala punctuation.definition.package
 #                  ^^^^^^ source.scala meta.package.scala entity.name.package.scala
 >package test
-#^^^^^^^ source.scala meta.package.scala keyword.other.import.scala
+#^^^^^^^ source.scala meta.package.scala keyword.other.package.scala
 #       ^ source.scala meta.package.scala
 #        ^^^^ source.scala meta.package.scala entity.name.package.scala
 >
@@ -333,7 +333,7 @@
 #^ source.scala punctuation.section.block.end.scala
 >
 >package org.scala {
-#^^^^^^^ source.scala meta.package.scala keyword.other.import.scala
+#^^^^^^^ source.scala meta.package.scala keyword.other.package.scala
 #       ^ source.scala meta.package.scala
 #        ^^^ source.scala meta.package.scala entity.name.package.scala
 #           ^ source.scala meta.package.scala punctuation.definition.package
@@ -2284,13 +2284,13 @@
 #^ source.scala punctuation.section.block.end.scala
 >
 >package p1 {
-#^^^^^^^ source.scala meta.package.scala keyword.other.import.scala
+#^^^^^^^ source.scala meta.package.scala keyword.other.package.scala
 #       ^ source.scala meta.package.scala
 #        ^^ source.scala meta.package.scala entity.name.package.scala
 #          ^^^ source.scala meta.package.scala
 >    package p2 {
 #^^^^ source.scala
-#    ^^^^^^^ source.scala meta.package.scala keyword.other.import.scala
+#    ^^^^^^^ source.scala meta.package.scala keyword.other.package.scala
 #           ^ source.scala meta.package.scala
 #            ^^ source.scala meta.package.scala entity.name.package.scala
 #              ^^^ source.scala meta.package.scala
@@ -2306,7 +2306,7 @@
 #^ source.scala punctuation.section.block.end.scala
 >
 >package a.b {
-#^^^^^^^ source.scala meta.package.scala keyword.other.import.scala
+#^^^^^^^ source.scala meta.package.scala keyword.other.package.scala
 #       ^ source.scala meta.package.scala
 #        ^ source.scala meta.package.scala entity.name.package.scala
 #         ^ source.scala meta.package.scala punctuation.definition.package

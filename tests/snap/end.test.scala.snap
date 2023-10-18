@@ -6,7 +6,7 @@
 #  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.scala comment.line.double-slash.scala
 >
 >package p1.p2:
-#^^^^^^^ source.scala meta.package.scala keyword.other.import.scala
+#^^^^^^^ source.scala meta.package.scala keyword.other.package.scala
 #       ^ source.scala meta.package.scala
 #        ^^ source.scala meta.package.scala entity.name.package.scala
 #          ^ source.scala meta.package.scala punctuation.definition.package
