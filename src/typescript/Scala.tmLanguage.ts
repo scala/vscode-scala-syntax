@@ -883,37 +883,53 @@ export const scalaTmLanguage: TmLanguage = {
       ]
     },
     'char-literal': {
-      end: "'|$",
-      begin: "'",
-      beginCaptures: {
-        '0': {
-          name: 'punctuation.definition.character.begin.scala'
-        }
-      },
       patterns: [
         {
-          match: `\\\\(?:[btnfr\\\\"']|[0-7]{1,3}|u[0-9A-Fa-f]{4})`,
-          name: 'constant.character.escape.scala'
+          match: "(')'(')",
+          name: 'string.quoted.other constant.character.literal.scala',
+          captures: {
+            '1': {
+              name: 'punctuation.definition.character.begin.scala'
+            },
+            '2': {
+              name: 'punctuation.definition.character.end.scala'
+            }
+          }
         },
         {
-          match: '\\\\.',
-          name: 'invalid.illegal.unrecognized-character-escape.scala'
-        },
-        {
-          match: "[^']{2,}",
-          name: 'invalid.illegal.character-literal-too-long'
-        },
-        {
-          match: "(?<!')[^']",
-          name: 'invalid.illegal.character-literal-too-long'
+          end: "'|$",
+          begin: "'",
+          beginCaptures: {
+            '0': {
+              name: 'punctuation.definition.character.begin.scala'
+            }
+          },
+          patterns: [
+            {
+              match: `\\\\(?:[btnfr\\\\"']|[0-7]{1,3}|u[0-9A-Fa-f]{4})`,
+              name: 'constant.character.escape.scala'
+            },
+            {
+              match: '\\\\.',
+              name: 'invalid.illegal.unrecognized-character-escape.scala'
+            },
+            {
+              match: "[^']{2,}",
+              name: 'invalid.illegal.character-literal-too-long'
+            },
+            {
+              match: "(?<!')[^']",
+              name: 'invalid.illegal.character-literal-too-long'
+            },
+          ],
+          endCaptures: {
+            '0': {
+              name: 'punctuation.definition.character.end.scala'
+            }
+          },
+          name: 'string.quoted.other constant.character.literal.scala'
         }
-      ],
-      endCaptures: {
-        '0': {
-          name: 'punctuation.definition.character.end.scala'
-        }
-      },
-      name: 'string.quoted.other constant.character.literal.scala'
+      ]
     },
     initialization: {
       match: '\\b(new)\\b',
