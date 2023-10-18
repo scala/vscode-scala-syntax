@@ -840,7 +840,7 @@ export const scalaTmLanguage: TmLanguage = {
           match: `\\b(package)\\s+(object)\\b\\s*${notStartOfComment}(${anyId})?`,
           captures: {
             '1': {
-              name: 'keyword.other.scoping.scala'
+              name: 'keyword.other.package.scala'
             },
             '2': {
               name: 'keyword.declaration.scala'
@@ -855,7 +855,7 @@ export const scalaTmLanguage: TmLanguage = {
           begin: '\\b(package)\\s+',
           beginCaptures: {
             '1': {
-              name: 'keyword.other.import.scala'
+              name: 'keyword.other.package.scala'
             }
           },
           patterns: [

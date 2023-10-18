@@ -41,5 +41,5 @@
 //        ^^^ keyword.declaration.scala
 
    package object
-// ^^^^^^^ keyword.other.scoping.scala
+// ^^^^^^^ keyword.other.package.scala
 //         ^^^^^^ keyword.declaration.scala

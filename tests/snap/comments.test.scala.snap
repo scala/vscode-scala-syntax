@@ -225,7 +225,7 @@
 #^ source.scala comment.block.documentation.scala
 # ^^ source.scala comment.block.documentation.scala punctuation.definition.comment.scala
 >package complex {}
-#^^^^^^^ source.scala meta.package.scala keyword.other.import.scala
+#^^^^^^^ source.scala meta.package.scala keyword.other.package.scala
 #       ^ source.scala meta.package.scala
 #        ^^^^^^^ source.scala meta.package.scala entity.name.package.scala
 #               ^^^^ source.scala meta.package.scala
