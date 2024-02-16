@@ -7,7 +7,7 @@
    0B1
 // ^^^ constant.numeric.scala
    0b0001
-// ^^^ constant.numeric.scala
+// ^^^^^^ constant.numeric.scala
    0b0001_0000_0000
 // ^^^^^^^^^^^^^^^^ constant.numeric.scala
 
