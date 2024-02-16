@@ -238,6 +238,10 @@ export const scalaTmLanguage: TmLanguage = {
           name: 'constant.numeric.scala'
         },
         {
+          match: '\\b0[bB][01]([01_]*[01])?[Ll]?\\b',
+          name: 'constant.numeric.scala'
+        },
+        {
           match: '\\b(this|super)\\b',
           name: 'variable.language.scala'
         }
