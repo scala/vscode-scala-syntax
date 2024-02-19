@@ -58,6 +58,10 @@ export const scalaTmLanguage: TmLanguage = {
           name: 'keyword.other.import.given.scala'
         },
         {
+          match: '\\s(as)\\s',
+          name: 'keyword.other.import.as.scala'
+        },
+        {
           match: idUpper,
           name: 'entity.name.class.import.scala'
         },
