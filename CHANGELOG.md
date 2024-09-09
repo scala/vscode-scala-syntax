@@ -1,8 +1,22 @@
 ## Scala Syntax (official) Changelog
 
+### 0.5.8 (2024/09/09 13:40 +00:00)
+- [4f7be4c](https://github.com/scala/vscode-scala-syntax/commit/4f7be4cb1f2a1a23e967081d6f94373651c15690) Clain *.mill files as Scala files (@alexarchambault)
+- [61e8f76](https://github.com/scala/vscode-scala-syntax/commit/61e8f76948cdd08c6ddf1fb10c2585f3c135d461) Update tests/unit/#266.test.scala (@nicolasstucki)
+- [1addd66](https://github.com/scala/vscode-scala-syntax/commit/1addd66a1bcb65510348ee6dddb5acfcf51f4fba) Recognize `as` in imports as a keyword (@nicolasstucki)
+- [0ee961a](https://github.com/scala/vscode-scala-syntax/commit/0ee961a552679291fdf41f4070c2766da6b7e0fb) Add support for binary integer literals (@nicolasstucki)
+- [d420735](https://github.com/scala/vscode-scala-syntax/commit/d4207351671160b65ec05a43f5452ad8c9138950) Update syntaxes/Scala.tmLanguage.json (@nicolasstucki)
+- [84a2a80](https://github.com/scala/vscode-scala-syntax/commit/84a2a80e80c80de78bbeed9873d4e97e7aaedec7) Fix string interpolated value extraction in val pattern (@nicolasstucki)
+- [7ebc05a](https://github.com/scala/vscode-scala-syntax/commit/7ebc05a33d7d82beb703d70c43704665a429d60c) Fix package and package object categories (@nicolasstucki)
+- [806a87a](https://github.com/scala/vscode-scala-syntax/commit/806a87a39b90f2c43d459d59f92475e864a31299) Highlight `'''` as single quote character literal (@nicolasstucki)
+- [713fa5f](https://github.com/scala/vscode-scala-syntax/commit/713fa5f9cb3dcb963acbc0e6d197faf250857dd4) Fix changelog to omit the broken release (@tgodzik)
+- [1b51529](https://github.com/scala/vscode-scala-syntax/commit/1b51529c9b7592e3afb31cf993092163a610f498) Release 0.5.7
+
 ### 0.5.7 (2023/07/13 13:21 +00:00)
 - [ae8025c](https://github.com/scala/vscode-scala-syntax/commit/ae8025c46adfd9a805e6359e5d3409ccae4dcf82) Revert wrong release name "Release v0.5.7" (@tgodzik)
 - [cc96b72](https://github.com/scala/vscode-scala-syntax/commit/cc96b7243e5bf9c009a9064a5b50fc15f96944b0) Release v0.5.7
+
+### v0.5.7 (2023/07/12 16:30 +00:00)
 - [ffeefb2](https://github.com/scala/vscode-scala-syntax/commit/ffeefb25ec5e0808fa98799098bb59d03c8e5901) improvement: Highlight using directives without double quote (@jkciesluk)
 - [63cd944](https://github.com/scala/vscode-scala-syntax/commit/63cd94429e4b358930d4fbc76b10f9ed721ee68a) Bump semver from 5.7.0 to 5.7.2 (@dependabot[bot])
 - [cd24dc8](https://github.com/scala/vscode-scala-syntax/commit/cd24dc8f6e0b8fd45e4ebf890dd4dd7da64a7b8b) Merge symbol and quote capturing (@nicolasstucki)
