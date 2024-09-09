@@ -28,7 +28,8 @@
                 "extensions": [
                     ".scala",
                     ".sbt",
-                    ".sc"
+                    ".sc",
+                    ".mill"
                 ],
                 "configuration": "./language-configuration.json"
             }
