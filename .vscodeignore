@@ -4,5 +4,6 @@
 tests/**
 src/**
 node_modules
-.gitkeep
-scripts
+**/.gitkeep
+project/
+.github/
