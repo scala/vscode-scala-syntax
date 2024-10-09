@@ -1456,8 +1456,8 @@
 #                      ^ source.scala constant.numeric.scala
 #                       ^ source.scala meta.bracket.scala
 #                        ^ source.scala keyword.operator.scala
-#                         ^^ source.scala
-#                           ^ source.scala keyword.operator.arithmetic.scala
+#                         ^ source.scala
+#                          ^^ source.scala keyword.operator.scala
 #                            ^ source.scala meta.bracket.scala
 >
 >    val x : S = new Z
@@ -2157,8 +2157,8 @@
 #                ^ source.scala meta.bracket.scala
 #                 ^^^^^^^^^^^^ source.scala
 #                             ^ source.scala keyword.operator.scala
-#                              ^^ source.scala
-#                                ^ source.scala keyword.operator.arithmetic.scala
+#                              ^ source.scala
+#                               ^^ source.scala keyword.operator.scala
 #                                 ^ source.scala meta.bracket.scala
 #                                  ^ source.scala
 #                                   ^^ source.scala keyword.operator.scala
