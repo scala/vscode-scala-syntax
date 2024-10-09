@@ -677,11 +677,11 @@ export const scalaTmLanguage: TmLanguage = {
           }
         },
         { // Operators with three or more characters
-          match: `(${opchar}${opchar}${opchar}+)`,
+          match: `(${opchar}|[\\\\]){3,}`,
           name: 'keyword.operator.scala'
         },
         { // Operators with two characters
-          match: `(${opchar}${opchar}|\\\\${opchar})`,
+          match: `((?:${opchar}|[\\\\]){2,})`,
           captures: {
             '1': {
               patterns: [
@@ -702,7 +702,7 @@ export const scalaTmLanguage: TmLanguage = {
           }
         },
         { // Operators with one character
-          match: `(?<!${letter}_)(${opchar})`,
+          match: `(?<!${letter}_)(${opchar}|\\\\)`,
           captures: {
             '1': {
               patterns: [

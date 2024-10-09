@@ -34,3 +34,18 @@
 //   ^^^ keyword.operator.scala
    a &= b
 //   ^^ keyword.operator.scala
+
+   a \ b
+//   ^ keyword.operator.scala
+
+   a \\ b
+//   ^^ keyword.operator.scala
+
+   a \/ b
+//   ^^ keyword.operator.scala
+
+   a /\ b
+//   ^^ keyword.operator.scala
+
+   a \\\ b
+//   ^^^ keyword.operator.scala
