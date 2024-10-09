@@ -9,7 +9,6 @@ const letterChars = `${upperLetterChars}${lowerLetterChars}`
 const letter = `[${letterChars}]`
 const letterOrDigitChars = `${letterChars}0-9`
 const letterOrDigit = `[${letterOrDigitChars}]`
-const alphaId = `${letter}+`
 const letterOrDigitNoDollarSign = letterOrDigit.replace("\\$", "")
 const simpleInterpolatedVariable  = `${letter}${letterOrDigitNoDollarSign}*` // see SIP-11 https://docs.scala-lang.org/sips/string-interpolation.html
 const opchar = `[!#%&*+\\-\\/:<>=?@^|~\\p{Sm}\\p{So}]`
