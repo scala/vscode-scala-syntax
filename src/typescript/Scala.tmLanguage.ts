@@ -681,7 +681,7 @@ export const scalaTmLanguage: TmLanguage = {
           name: 'keyword.operator.scala'
         },
         { // Operators with two characters
-          match: `((?:${opchar}|[\\\\]){2,})`,
+          match: `((?:${opchar}|[\\\\]){2,}|_\\*)`,
           captures: {
             '1': {
               patterns: [
@@ -702,7 +702,7 @@ export const scalaTmLanguage: TmLanguage = {
           }
         },
         { // Operators with one character
-          match: `(?<!${letter}_)(${opchar}|\\\\)`,
+          match: `(?<!_)(${opchar}|\\\\)`,
           captures: {
             '1': {
               patterns: [
