@@ -676,6 +676,11 @@ export const scalaTmLanguage: TmLanguage = {
             }
           }
         },
+        { // Higher precedence than other kinds of operators to prevent
+          // decomposition of operators like ->
+          match: `(<-|←|->|→|=>|⇒|\\?|\\:|@)+${opchar}*`,
+          name: 'keyword.operator.scala'
+        },
         {
           match: '(==?|!=|<=|>=|<>|<|>)',
           name: 'keyword.operator.comparison.scala'
@@ -688,8 +693,8 @@ export const scalaTmLanguage: TmLanguage = {
           match: `(?<!${opchar}|_)(!|&&|\\|\\|)(?!${opchar})`,
           name: 'keyword.operator.logical.scala'
         },
-        {
-          match: `(<-|←|->|→|=>|⇒|\\?|\\:|@|\\|)+${opchar}*`,
+        { // Lower precedence than logical || operator
+          match: `(\\|)${opchar}*`,
           name: 'keyword.operator.scala'
         }
       ]
