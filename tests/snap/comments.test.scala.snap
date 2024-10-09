@@ -283,15 +283,24 @@
 > * 
 #^^^^ source.scala comment.block.documentation.scala
 > * @groupname group name
-#^^^^^^^^^^^^^^^^^^^^^^^^^ source.scala comment.block.documentation.scala
+#^^^ source.scala comment.block.documentation.scala
+#   ^^^^^^^^^^ source.scala comment.block.documentation.scala keyword.other.documentation.scaladoc.scala
+#             ^^^^^^^^^^^^ source.scala comment.block.documentation.scala
 > * @groupprio group 2
-#^^^^^^^^^^^^^^^^^^^^^^ source.scala comment.block.documentation.scala
+#^^^ source.scala comment.block.documentation.scala
+#   ^^^^^^^^^^ source.scala comment.block.documentation.scala keyword.other.documentation.scaladoc.scala
+#             ^^^^^^^^^ source.scala comment.block.documentation.scala
 > * @groupdesc group desc
-#^^^^^^^^^^^^^^^^^^^^^^^^^ source.scala comment.block.documentation.scala
+#^^^ source.scala comment.block.documentation.scala
+#   ^^^^^^^^^^ source.scala comment.block.documentation.scala keyword.other.documentation.scaladoc.scala
+#             ^^^^^^^^^^^^ source.scala comment.block.documentation.scala
 > * @group group
-#^^^^^^^^^^^^^^^^ source.scala comment.block.documentation.scala
+#^^^ source.scala comment.block.documentation.scala
+#   ^^^^^^ source.scala comment.block.documentation.scala keyword.other.documentation.scaladoc.scala
+#         ^^^^^^^ source.scala comment.block.documentation.scala
 > * @contentDiagram
-#^^^^^^^^^^^^^^^^^^^ source.scala comment.block.documentation.scala
+#^^^ source.scala comment.block.documentation.scala
+#   ^^^^^^^^^^^^^^^ source.scala comment.block.documentation.scala keyword.other.documentation.scaladoc.scala
 > * 
 #^^^^ source.scala comment.block.documentation.scala
 > * 
@@ -329,7 +338,9 @@
 #     ^^^^^^^^^^^ source.scala comment.block.documentation.scala keyword.other.documentation.scaladoc.scala
 #                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.scala comment.block.documentation.scala
 > *   @documentable Expand a type alias and abstract type into a full template page. - TODO: Test the “abstract type” claim - no examples of this in the Scala code base
-#^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.scala comment.block.documentation.scala
+#^^^^^ source.scala comment.block.documentation.scala
+#     ^^^^^^^^^^^^^ source.scala comment.block.documentation.scala keyword.other.documentation.scaladoc.scala
+#                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.scala comment.block.documentation.scala
 > *
 #^^^ source.scala comment.block.documentation.scala
 > *   @define <name> <definition>
@@ -342,6 +353,12 @@
 #^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.scala comment.block.documentation.scala
 > *   @hideImplicitConversion ???
 #^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.scala comment.block.documentation.scala
+> *
+#^^^ source.scala comment.block.documentation.scala
+> * @syntax markdown
+#^^^ source.scala comment.block.documentation.scala
+#   ^^^^^^^ source.scala comment.block.documentation.scala keyword.other.documentation.scaladoc.scala
+#          ^^^^^^^^^^ source.scala comment.block.documentation.scala
 > *
 #^^^ source.scala comment.block.documentation.scala
 > */
