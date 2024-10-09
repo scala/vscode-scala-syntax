@@ -681,6 +681,11 @@ export const scalaTmLanguage: TmLanguage = {
           match: `(<-|←|->|→|=>|⇒|\\?|\\:|@)+${opchar}*`,
           name: 'keyword.operator.scala'
         },
+        { // Arithmetic operators directly follower by another symbol are
+          // just operators like +:, /:, ++
+          match: `(\\-|\\+|\\*|/(?![/*])|%|~)${opchar}+`,
+          name: 'keyword.operator.scala'
+        },
         {
           match: '(==?|!=|<=|>=|<>|<|>)',
           name: 'keyword.operator.comparison.scala'
