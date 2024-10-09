@@ -678,12 +678,12 @@ export const scalaTmLanguage: TmLanguage = {
         },
         { // Higher precedence than other kinds of operators to prevent
           // decomposition of operators like ->
-          match: `(<-|←|->|→|=>|⇒|\\?|\\:|@)+${opchar}*`,
+          match: `(<-|←|->|→|=>|⇒|\\?|\\:|@|\\^)+${opchar}*`,
           name: 'keyword.operator.scala'
         },
-        { // Arithmetic operators directly follower by another symbol are
-          // just operators like +:, /:, ++
-          match: `(\\-|\\+|\\*|/(?![/*])|%|~)${opchar}+`,
+        { // The 'special' below operators directly follower by another symbol
+          // are just operators for example +:, /:, ++ and ==>
+          match: `(\\-|\\+|\\*|/(?![/*])|%|~|==|!=|<=|>=|<>)${opchar}+`,
           name: 'keyword.operator.scala'
         },
         {

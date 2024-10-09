@@ -23,3 +23,9 @@
 //         ^^ keyword.operator.scala
    i -= 1
 //   ^^ keyword.operator.scala
+
+   b ^? c
+//   ^^ keyword.operator.scala
+
+   a ==> b
+//   ^^^ keyword.operator.scala
