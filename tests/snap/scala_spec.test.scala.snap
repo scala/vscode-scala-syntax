@@ -724,8 +724,7 @@
 #               ^^^^^ source.scala
 #                    ^ source.scala meta.bracket.scala
 #                     ^^^^^^^^ source.scala
-#                             ^ source.scala keyword.operator.arithmetic.scala
-#                              ^ source.scala keyword.operator.comparison.scala
+#                             ^^ source.scala keyword.operator.scala
 #                               ^^^^^ source.scala
 >    result
 #^^^^^^^^^^^ source.scala
@@ -1440,8 +1439,7 @@
 #                        ^ source.scala meta.bracket.scala
 #                         ^ source.scala constant.numeric.scala
 #                          ^ source.scala
-#                           ^ source.scala keyword.operator.arithmetic.scala
-#                            ^ source.scala keyword.operator.scala
+#                           ^^ source.scala keyword.operator.scala
 #                             ^^^ source.scala
 #                                ^ source.scala meta.bracket.scala
 #                                 ^ source.scala
@@ -1673,8 +1671,7 @@
 #                                              ^ source.scala meta.bracket.scala
 >              k += 1
 #^^^^^^^^^^^^^^^^ source.scala
-#                ^ source.scala keyword.operator.arithmetic.scala
-#                 ^ source.scala keyword.operator.comparison.scala
+#                ^^ source.scala keyword.operator.scala
 #                  ^ source.scala
 #                   ^ source.scala constant.numeric.scala
 >            }
@@ -1693,8 +1690,7 @@
 #                       ^^^^^ source.scala
 >            j += 1
 #^^^^^^^^^^^^^^ source.scala
-#              ^ source.scala keyword.operator.arithmetic.scala
-#               ^ source.scala keyword.operator.comparison.scala
+#              ^^ source.scala keyword.operator.scala
 #                ^ source.scala
 #                 ^ source.scala constant.numeric.scala
 >          }
@@ -1702,8 +1698,7 @@
 #          ^ source.scala punctuation.section.block.end.scala
 >          i += 1
 #^^^^^^^^^^^^ source.scala
-#            ^ source.scala keyword.operator.arithmetic.scala
-#             ^ source.scala keyword.operator.comparison.scala
+#            ^^ source.scala keyword.operator.scala
 #              ^ source.scala
 #               ^ source.scala constant.numeric.scala
 >        }
@@ -1771,8 +1766,7 @@
 #      ^ source.scala
 #       ^ source.scala punctuation.section.block.begin.scala
 #        ^^ source.scala
-#          ^ source.scala keyword.operator.arithmetic.scala
-#           ^ source.scala keyword.operator.comparison.scala
+#          ^^ source.scala keyword.operator.scala
 #            ^ source.scala
 #             ^ source.scala constant.numeric.scala
 #              ^ source.scala punctuation.section.block.end.scala
@@ -2183,8 +2177,7 @@
 #^^^^^^^^ source.scala
 #        ^^^^ source.scala keyword.control.flow.scala
 #            ^^^^^^^ source.scala
-#                   ^ source.scala keyword.operator.arithmetic.scala
-#                    ^ source.scala keyword.operator.scala
+#                   ^^ source.scala keyword.operator.scala
 #                     ^^^^^^ source.scala
 #                           ^^ source.scala keyword.operator.scala
 >        case 3 | 5 | 6 =>
