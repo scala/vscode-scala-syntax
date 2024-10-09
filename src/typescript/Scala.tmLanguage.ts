@@ -676,31 +676,55 @@ export const scalaTmLanguage: TmLanguage = {
             }
           }
         },
-        { // Higher precedence than other kinds of operators to prevent
-          // decomposition of operators like ->
-          match: `(<-|←|->|→|=>|⇒|\\?|\\:|@|\\^)+${opchar}*`,
+        { // Operators with three or more characters
+          match: `(${opchar}${opchar}${opchar}+)`,
           name: 'keyword.operator.scala'
         },
-        { // The 'special' below operators directly follower by another symbol
-          // are just operators for example +:, /:, ++ and ==>
-          match: `(\\-|\\+|\\*|/(?![/*])|%|~|==|!=|<=|>=|<>)${opchar}+`,
-          name: 'keyword.operator.scala'
+        { // Operators with two characters
+          match: `(${opchar}${opchar}|\\\\${opchar})`,
+          captures: {
+            '1': {
+              patterns: [
+                {
+                  match: '(\\|\\||&&)',
+                  name: 'keyword.operator.logical.scala'
+                },
+                {
+                  match: '(\\!=|==|\\<=|>=)',
+                  name: 'keyword.operator.comparison.scala'
+                },
+                {
+                  match: '..',
+                  name: 'keyword.operator.scala'
+                }
+              ]
+            }
+          }
         },
-        {
-          match: '(==?|!=|<=|>=|<>|<|>)',
-          name: 'keyword.operator.comparison.scala'
-        },
-        {
-          match: '(\\-|\\+|\\*|/(?![/*])|%|~)',
-          name: 'keyword.operator.arithmetic.scala'
-        },
-        {
-          match: `(?<!${opchar}|_)(!|&&|\\|\\|)(?!${opchar})`,
-          name: 'keyword.operator.logical.scala'
-        },
-        { // Lower precedence than logical || operator
-          match: `(\\|)${opchar}*`,
-          name: 'keyword.operator.scala'
+        { // Operators with one character
+          match: `(?<!${letter}_)(${opchar})`,
+          captures: {
+            '1': {
+              patterns: [
+                {
+                  match: '(\\!)',
+                  name: 'keyword.operator.logical.scala'
+                },
+                {
+                  match: '(\\*|-|\\+|/|%|~)',
+                  name: 'keyword.operator.arithmetic.scala'
+                },
+                {
+                  match: '(=|\\<|>)',
+                  name: 'keyword.operator.comparison.scala'
+                },
+                {
+                  match: '.',
+                  name: 'keyword.operator.scala'
+                }
+              ]
+            }
+          }
         }
       ]
     },

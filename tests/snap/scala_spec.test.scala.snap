@@ -19,8 +19,7 @@
 #             ^ source.scala meta.bracket.scala
 #              ^ source.scala entity.name.class
 #               ^ source.scala
-#                ^ source.scala keyword.operator.comparison.scala
-#                 ^ source.scala keyword.operator.scala
+#                ^^ source.scala keyword.operator.scala
 #                  ^ source.scala
 #                   ^^^^^^^^^^ source.scala entity.name.class
 #                             ^ source.scala meta.bracket.scala
@@ -82,8 +81,7 @@
 #       ^ source.scala meta.bracket.scala
 #        ^ source.scala entity.name.class
 #         ^ source.scala
-#          ^ source.scala keyword.operator.comparison.scala
-#           ^ source.scala keyword.operator.scala
+#          ^^ source.scala keyword.operator.scala
 #            ^ source.scala
 #             ^^^^^^ source.scala entity.name.class
 #                   ^ source.scala meta.bracket.scala
@@ -100,8 +98,7 @@
 #          ^ source.scala
 #           ^ source.scala entity.name.class
 #            ^ source.scala
-#             ^ source.scala keyword.operator.comparison.scala
-#              ^ source.scala keyword.operator.scala
+#             ^^ source.scala keyword.operator.scala
 #               ^ source.scala
 #                ^ source.scala entity.name.class
 #                 ^ source.scala
@@ -244,8 +241,7 @@
 #             ^ source.scala meta.bracket.scala
 #              ^ source.scala entity.name.class
 #               ^ source.scala
-#                ^ source.scala keyword.operator.comparison.scala
-#                 ^ source.scala keyword.operator.scala
+#                ^^ source.scala keyword.operator.scala
 #                  ^ source.scala
 #                   ^^^^^^^^^^ source.scala entity.name.class
 #                             ^ source.scala meta.bracket.scala
@@ -301,8 +297,7 @@
 #                         ^ source.scala entity.name.class
 #                          ^ source.scala meta.bracket.scala
 #                           ^ source.scala
-#                            ^ source.scala keyword.operator.comparison.scala
-#                             ^ source.scala keyword.operator.scala
+#                            ^^ source.scala keyword.operator.scala
 #                              ^ source.scala
 #                               ^^^^^^^^ source.scala entity.name.class
 #                                       ^ source.scala meta.bracket.scala
@@ -441,8 +436,8 @@
 #                ^ source.scala keyword.operator.scala
 #                 ^ source.scala
 #                  ^^ source.scala entity.name.class
-#                    ^^ source.scala
-#                      ^ source.scala keyword.operator.arithmetic.scala
+#                    ^ source.scala
+#                     ^^ source.scala keyword.operator.scala
 #                       ^ source.scala
 #                        ^^ source.scala entity.name.class
 #                          ^ source.scala
@@ -469,8 +464,7 @@
 #                                   ^ source.scala
 #                                    ^ source.scala entity.name.type.declaration
 #                                     ^ source.scala
-#                                      ^ source.scala keyword.operator.comparison.scala
-#                                       ^ source.scala keyword.operator.scala
+#                                      ^^ source.scala keyword.operator.scala
 #                                        ^^^^^^^^^^^ source.scala
 #                                                   ^^^^^^ source.scala entity.name.class
 #                                                         ^ source.scala
@@ -509,7 +503,9 @@
 #             ^ source.scala
 #              ^^^ source.scala entity.name.class
 #                 ^ source.scala meta.bracket.scala
-#                  ^^^^^^^^^ source.scala
+#                  ^^^^^^^ source.scala
+#                         ^ source.scala keyword.operator.scala
+#                          ^ source.scala
 #                           ^ source.scala entity.name.class
 #                            ^ source.scala meta.bracket.scala
 #                             ^^^^^^^^^ source.scala
@@ -519,8 +515,7 @@
 #                                            ^ source.scala
 #                                             ^^^^^^ source.scala entity.name.type.declaration
 #                                                   ^ source.scala
-#                                                    ^ source.scala keyword.operator.comparison.scala
-#                                                     ^ source.scala keyword.operator.scala
+#                                                    ^^ source.scala keyword.operator.scala
 #                                                      ^ source.scala
 #                                                       ^^^^^ source.scala entity.name.class
 #                                                            ^ source.scala
@@ -540,20 +535,17 @@
 #                      ^^ source.scala
 #                        ^ source.scala entity.name.class
 #                         ^ source.scala
-#                          ^ source.scala keyword.operator.comparison.scala
-#                           ^ source.scala keyword.operator.scala
+#                          ^^ source.scala keyword.operator.scala
 #                            ^ source.scala
 #                             ^ source.scala entity.name.class
 #                              ^^ source.scala
 #                                ^ source.scala entity.name.class
 #                                 ^ source.scala
-#                                  ^ source.scala keyword.operator.comparison.scala
-#                                   ^ source.scala keyword.operator.scala
+#                                  ^^ source.scala keyword.operator.scala
 #                                    ^ source.scala
 #                                     ^ source.scala entity.name.class
 #                                      ^ source.scala
-#                                       ^ source.scala keyword.operator.comparison.scala
-#                                        ^ source.scala keyword.operator.scala
+#                                       ^^ source.scala keyword.operator.scala
 #                                         ^ source.scala
 #                                          ^ source.scala entity.name.class
 #                                           ^ source.scala meta.bracket.scala
@@ -568,8 +560,7 @@
 #                       ^ source.scala meta.bracket.scala
 #                        ^ source.scala entity.name.class
 #                         ^ source.scala
-#                          ^ source.scala keyword.operator.comparison.scala
-#                           ^ source.scala keyword.operator.scala
+#                          ^^ source.scala keyword.operator.scala
 #                            ^ source.scala
 #                             ^^^^^ source.scala entity.name.class
 #                                  ^ source.scala meta.bracket.scala
@@ -1001,8 +992,7 @@
 #                           ^ source.scala
 #                            ^ source.scala entity.name.type.declaration
 #                             ^ source.scala
-#                              ^ source.scala keyword.operator.comparison.scala
-#                               ^ source.scala keyword.operator.scala
+#                              ^^ source.scala keyword.operator.scala
 #                                ^ source.scala
 #                                 ^ source.scala entity.name.class
 #                                  ^ source.scala
@@ -1279,8 +1269,7 @@
 #                ^ source.scala meta.bracket.scala
 #                 ^ source.scala entity.name.class
 #                  ^ source.scala
-#                   ^ source.scala keyword.operator.comparison.scala
-#                    ^ source.scala keyword.operator.scala
+#                   ^^ source.scala keyword.operator.scala
 #                     ^ source.scala
 #                      ^^^^^^^^^^ source.scala entity.name.class
 #                                ^ source.scala meta.bracket.scala
