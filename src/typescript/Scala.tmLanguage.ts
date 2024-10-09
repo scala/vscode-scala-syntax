@@ -689,7 +689,7 @@ export const scalaTmLanguage: TmLanguage = {
           name: 'keyword.operator.logical.scala'
         },
         {
-          match: '(<-|←|->|→|=>|⇒|\\?|\\:+|@|\\|)+',
+          match: `(<-|←|->|→|=>|⇒|\\?|\\:|@|\\|)+${opchar}*`,
           name: 'keyword.operator.scala'
         }
       ]
