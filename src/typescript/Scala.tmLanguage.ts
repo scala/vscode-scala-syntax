@@ -9,7 +9,6 @@ const letterChars = `${upperLetterChars}${lowerLetterChars}`
 const letter = `[${letterChars}]`
 const letterOrDigitChars = `${letterChars}0-9`
 const letterOrDigit = `[${letterOrDigitChars}]`
-const alphaId = `${letter}+`
 const letterOrDigitNoDollarSign = letterOrDigit.replace("\\$", "")
 const simpleInterpolatedVariable  = `${letter}${letterOrDigitNoDollarSign}*` // see SIP-11 https://docs.scala-lang.org/sips/string-interpolation.html
 const opchar = `[!#%&*+\\-\\/:<>=?@^|~\\p{Sm}\\p{So}]`
@@ -677,21 +676,55 @@ export const scalaTmLanguage: TmLanguage = {
             }
           }
         },
-        {
-          match: '(==?|!=|<=|>=|<>|<|>)',
-          name: 'keyword.operator.comparison.scala'
-        },
-        {
-          match: '(\\-|\\+|\\*|/(?![/*])|%|~)',
-          name: 'keyword.operator.arithmetic.scala'
-        },
-        {
-          match: `(?<!${opchar}|_)(!|&&|\\|\\|)(?!${opchar})`,
-          name: 'keyword.operator.logical.scala'
-        },
-        {
-          match: '(<-|←|->|→|=>|⇒|\\?|\\:+|@|\\|)+',
+        { // Operators with three or more characters
+          match: `(${opchar}|[\\\\]){3,}`,
           name: 'keyword.operator.scala'
+        },
+        { // Operators with two characters
+          match: `((?:${opchar}|[\\\\]){2,}|_\\*)`,
+          captures: {
+            '1': {
+              patterns: [
+                {
+                  match: '(\\|\\||&&)',
+                  name: 'keyword.operator.logical.scala'
+                },
+                {
+                  match: '(\\!=|==|\\<=|>=)',
+                  name: 'keyword.operator.comparison.scala'
+                },
+                {
+                  match: '..',
+                  name: 'keyword.operator.scala'
+                }
+              ]
+            }
+          }
+        },
+        { // Operators with one character
+          match: `(?<!_)(${opchar}|\\\\)`,
+          captures: {
+            '1': {
+              patterns: [
+                {
+                  match: '(\\!)',
+                  name: 'keyword.operator.logical.scala'
+                },
+                {
+                  match: '(\\*|-|\\+|/|%|~)',
+                  name: 'keyword.operator.arithmetic.scala'
+                },
+                {
+                  match: '(=|\\<|>)',
+                  name: 'keyword.operator.comparison.scala'
+                },
+                {
+                  match: '.',
+                  name: 'keyword.operator.scala'
+                }
+              ]
+            }
+          }
         }
       ]
     },
