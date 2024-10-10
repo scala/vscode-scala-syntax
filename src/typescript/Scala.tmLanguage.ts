@@ -1128,7 +1128,7 @@ export const scalaTmLanguage: TmLanguage = {
               }
             },
             {
-              match: '@(return|see|note|example|constructor|usecase|author|version|since|todo|deprecated|migration|define|inheritdoc)\\b',
+              match: '@(return|see|note|example|constructor|usecase|author|version|since|todo|deprecated|migration|define|inheritdoc|groupname|groupprio|groupdesc|group|contentDiagram|documentable|syntax)\\b',
               name: 'keyword.other.documentation.scaladoc.scala'
             },
             {

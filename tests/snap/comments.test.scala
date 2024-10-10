@@ -85,6 +85,8 @@ package complex {}
  *   @shortDescription ???
  *   @hideImplicitConversion ???
  *
+ * @syntax markdown
+ *
  */
 class Person[T](name: String, age: Int) {
 }
