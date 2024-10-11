@@ -1,0 +1,10 @@
+>a \\\ b
+#^^ source.scala
+#  ^^^ source.scala keyword.operator.scala
+#     ^^^ source.scala
+>
+>a \+\ b
+#^^ source.scala
+#  ^^^ source.scala keyword.operator.scala
+#     ^^^ source.scala
+>
