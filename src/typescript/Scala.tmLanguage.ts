@@ -298,6 +298,9 @@ export const scalaTmLanguage: TmLanguage = {
           include: '#xml-literal'
         },
         {
+          include: '#namedBounds'
+        },
+        {
           include: '#keywords'
         },
         {
@@ -1017,6 +1020,21 @@ export const scalaTmLanguage: TmLanguage = {
         }
       ],
       comment: 'For themes: Brackets look nice when colored.'
+    },
+    namedBounds: {
+      patterns: [
+        {
+          match: `\\s+(as)\\s+(${idLower})\\b`,
+          captures: {
+            '1': {
+              name: 'keyword.other.import.as.scala'
+            },
+            '2': {
+              name: 'variable.stable.declaration.scala'
+            }
+          }
+        }
+      ]
     },
     qualifiedClassName: {
       match: `(\\b([A-Z][\\w]*)(?:(?<=_)${opchar}+)?)`,
