@@ -1,5 +1,23 @@
 ## Scala Syntax (official) Changelog
 
+### 0.5.9 (2025/01/15 18:04 +00:00)
+- [1d4029f](https://github.com/scala/vscode-scala-syntax/commit/1d4029f21c9c57ce3e05486968b5de2847c25c62) improvement: Show named bounds properly (@tgodzik)
+- [9d7ed62](https://github.com/scala/vscode-scala-syntax/commit/9d7ed62cdcec04d2b5efdc8c8b35305da63cd469) bugfix: Fix Scala CLA (@tgodzik)
+- [ba49f26](https://github.com/scala/vscode-scala-syntax/commit/ba49f267acd3c6be73be0342c842487fcd659159) Auto-close backticks (@harpocrates)
+- [102a676](https://github.com/scala/vscode-scala-syntax/commit/102a6769ad924da83106ef054ba61f3b2b3fbf58) Bump cross-spawn from 6.0.5 to 6.0.6 (@dependabot[bot])
+- [d868753](https://github.com/scala/vscode-scala-syntax/commit/d868753f29b0281fdf221785d3530d5066f5b77d) Treat `_*` as operator (@Jentsch)
+- [64b11df](https://github.com/scala/vscode-scala-syntax/commit/64b11df5eb40f923eed6f7b045f9fcad8b62c5ee) Fix handling of `\` as an operator (@Jentsch)
+- [2a4b6b5](https://github.com/scala/vscode-scala-syntax/commit/2a4b6b5fe396c878cd794da9e90bca50f75356a2) Simplify operators (@Jentsch)
+- [044ea66](https://github.com/scala/vscode-scala-syntax/commit/044ea6618f42d832d68219ed326246349b08fcb6) Fix examples from the documentation (@Jentsch)
+- [502446d](https://github.com/scala/vscode-scala-syntax/commit/502446d33b5353d28d0d3f6c9c868aa74fb328de) Fix operators starting with an arithmetic operator (@Jentsch)
+- [cdc67c9](https://github.com/scala/vscode-scala-syntax/commit/cdc67c95d542eb0195de9bd914abdb3896de1900) Fix 'longer' operators (@Jentsch)
+- [0493778](https://github.com/scala/vscode-scala-syntax/commit/04937782f08976ba08c0aa5065acb9025a232a6c) Improve longer operators (@Jentsch)
+- [8e22fd2](https://github.com/scala/vscode-scala-syntax/commit/8e22fd20d27c2b382b15ad9868697a356f51c74b) Remove unused `alphaId` const (@Jentsch)
+- [9a238a5](https://github.com/scala/vscode-scala-syntax/commit/9a238a51aec6abdfa221e9b84e93122a8af965f8) Add missing scala doc tags (@Jentsch)
+- [cbe332a](https://github.com/scala/vscode-scala-syntax/commit/cbe332a5bb4374d574eca901def11b84f27f7816) Stop auto closing single quotes (@Jentsch)
+- [4e68a82](https://github.com/scala/vscode-scala-syntax/commit/4e68a82743e0a44bdab1695a2087146e1f47580e) Fix exclusion of project files (@Jentsch)
+- [e04075a](https://github.com/scala/vscode-scala-syntax/commit/e04075ae1332bf923a17780c13d9955465336ffd) Release 0.5.8
+
 ### 0.5.8 (2024/09/09 14:17 +00:00)
 - [c0bffa3](https://github.com/scala/vscode-scala-syntax/commit/c0bffa395488cb01c0773cab68674499757ae37b) Revert "Release 0.5.8" to retry release (@tgodzik)
 - [45a8917](https://github.com/scala/vscode-scala-syntax/commit/45a89171c95dccf9b2cf97e266bc852d92890659) Release 0.5.8
