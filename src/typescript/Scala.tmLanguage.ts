@@ -404,6 +404,31 @@ export const scalaTmLanguage: TmLanguage = {
           }
         },
         {
+          begin: `\\b(json)(""")`,
+          end: `(""")(?!")|\\$\n|(\\$[^\\$"_{${letterChars}])`,
+          beginCaptures: {
+            '1': {
+              name: 'keyword.interpolation.scala'
+            },
+            '2': {
+              name: 'string.quoted.triple.interpolated.scala punctuation.definition.string.begin.scala'
+            }
+          },
+          patterns: [
+            {
+              "include": "source.json"
+            },
+          ],
+          endCaptures: {
+            '1': {
+              name: 'string.quoted.triple.interpolated.scala punctuation.definition.string.end.scala'
+            },
+            '2': {
+              name: 'invalid.illegal.unrecognized-string-escape.scala'
+            }
+          }
+        },
+        {
           begin: `\\b(${interpolatorid})(""")`,
           end: `(""")(?!")|\\$\n|(\\$[^\\$"_{${letterChars}])`,
           beginCaptures: {
