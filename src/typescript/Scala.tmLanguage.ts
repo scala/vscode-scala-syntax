@@ -1496,6 +1496,9 @@ export const scalaTmLanguage: TmLanguage = {
       name: 'meta.structure.dictionary.json',
       patterns: [
         {
+          include: '#string-interpolation'
+        },
+        {
           include: '#json-objectkey'
         },
         {
@@ -1585,6 +1588,9 @@ export const scalaTmLanguage: TmLanguage = {
     },
     'json-value': {
       patterns: [
+        {
+          include: '#string-interpolation'
+        },
         {
           include: '#json-constant'
         },
