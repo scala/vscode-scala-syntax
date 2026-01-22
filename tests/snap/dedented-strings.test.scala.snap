@@ -1,0 +1,269 @@
+>object DedentedStringLiterals {
+#^^^^^^ source.scala keyword.declaration.scala
+#      ^ source.scala
+#       ^^^^^^^^^^^^^^^^^^^^^^ source.scala entity.name.class.declaration
+#                             ^ source.scala
+#                              ^ source.scala punctuation.section.block.begin.scala
+>  
+>  // Triple single quote strings
+#^^ source.scala punctuation.whitespace.comment.leading.scala
+#  ^^ source.scala comment.line.double-slash.scala punctuation.definition.comment.scala
+#    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.scala comment.line.double-slash.scala
+>  val str1 = '''
+#^^ source.scala
+#  ^^^ source.scala keyword.declaration.stable.scala
+#     ^ source.scala
+#      ^^^^ source.scala variable.stable.declaration.scala
+#          ^ source.scala
+#           ^ source.scala keyword.operator.comparison.scala
+#            ^ source.scala
+#             ^^^ source.scala string.quoted.triple.scala punctuation.definition.string.begin.scala
+>    Hello
+#^^^^^^^^^^ source.scala string.quoted.triple.scala
+>    World
+#^^^^^^^^^^ source.scala string.quoted.triple.scala
+>  '''
+#^^ source.scala string.quoted.triple.scala
+#  ^^^ source.scala string.quoted.triple.scala punctuation.definition.string.end.scala
+>
+>  // Four single quote strings
+#^^ source.scala punctuation.whitespace.comment.leading.scala
+#  ^^ source.scala comment.line.double-slash.scala punctuation.definition.comment.scala
+#    ^^^^^^^^^^^^^^^^^^^^^^^^^^ source.scala comment.line.double-slash.scala
+>  val str2 = ''''
+#^^ source.scala
+#  ^^^ source.scala keyword.declaration.stable.scala
+#     ^ source.scala
+#      ^^^^ source.scala variable.stable.declaration.scala
+#          ^ source.scala
+#           ^ source.scala keyword.operator.comparison.scala
+#            ^ source.scala
+#             ^^^^ source.scala string.quoted.triple.scala punctuation.definition.string.begin.scala
+>    Nested
+#^^^^^^^^^^^ source.scala string.quoted.triple.scala
+>    ''' quotes
+#^^^^^^^^^^^^^^^ source.scala string.quoted.triple.scala
+>  ''''
+#^^ source.scala string.quoted.triple.scala
+#  ^^^^ source.scala string.quoted.triple.scala punctuation.definition.string.end.scala
+>
+>  // Five single quote strings
+#^^ source.scala punctuation.whitespace.comment.leading.scala
+#  ^^ source.scala comment.line.double-slash.scala punctuation.definition.comment.scala
+#    ^^^^^^^^^^^^^^^^^^^^^^^^^^ source.scala comment.line.double-slash.scala
+>  val str3 = '''''
+#^^ source.scala
+#  ^^^ source.scala keyword.declaration.stable.scala
+#     ^ source.scala
+#      ^^^^ source.scala variable.stable.declaration.scala
+#          ^ source.scala
+#           ^ source.scala keyword.operator.comparison.scala
+#            ^ source.scala
+#             ^^^^^ source.scala string.quoted.triple.scala punctuation.definition.string.begin.scala
+>    More
+#^^^^^^^^^ source.scala string.quoted.triple.scala
+>    '''' quotes
+#^^^^^^^^^^^^^^^^ source.scala string.quoted.triple.scala
+>  '''''
+#^^ source.scala string.quoted.triple.scala
+#  ^^^^^ source.scala string.quoted.triple.scala punctuation.definition.string.end.scala
+>
+>  // Six single quote strings
+#^^ source.scala punctuation.whitespace.comment.leading.scala
+#  ^^ source.scala comment.line.double-slash.scala punctuation.definition.comment.scala
+#    ^^^^^^^^^^^^^^^^^^^^^^^^^ source.scala comment.line.double-slash.scala
+>  val str4 = ''''''
+#^^ source.scala
+#  ^^^ source.scala keyword.declaration.stable.scala
+#     ^ source.scala
+#      ^^^^ source.scala variable.stable.declaration.scala
+#          ^ source.scala
+#           ^ source.scala keyword.operator.comparison.scala
+#            ^ source.scala
+#             ^^^^^^ source.scala string.quoted.triple.scala punctuation.definition.string.begin.scala
+>    Even more
+#^^^^^^^^^^^^^^ source.scala string.quoted.triple.scala
+>    ''''' quotes
+#^^^^^^^^^^^^^^^^^ source.scala string.quoted.triple.scala
+>  ''''''
+#^^ source.scala string.quoted.triple.scala
+#  ^^^^^^ source.scala string.quoted.triple.scala punctuation.definition.string.end.scala
+>
+>  // Interpolated triple single quote strings
+#^^ source.scala punctuation.whitespace.comment.leading.scala
+#  ^^ source.scala comment.line.double-slash.scala punctuation.definition.comment.scala
+#    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.scala comment.line.double-slash.scala
+>  val name = "World"
+#^^ source.scala
+#  ^^^ source.scala keyword.declaration.stable.scala
+#     ^ source.scala
+#      ^^^^ source.scala variable.stable.declaration.scala
+#          ^ source.scala
+#           ^ source.scala keyword.operator.comparison.scala
+#            ^ source.scala
+#             ^ source.scala string.quoted.double.scala punctuation.definition.string.begin.scala
+#              ^^^^^ source.scala string.quoted.double.scala
+#                   ^ source.scala string.quoted.double.scala punctuation.definition.string.end.scala
+>  val str5 = s'''
+#^^ source.scala
+#  ^^^ source.scala keyword.declaration.stable.scala
+#     ^ source.scala
+#      ^^^^ source.scala variable.stable.declaration.scala
+#          ^ source.scala
+#           ^ source.scala keyword.operator.comparison.scala
+#            ^ source.scala
+#             ^ source.scala keyword.interpolation.scala
+#              ^^^ source.scala string.quoted.triple.interpolated.scala punctuation.definition.string.begin.scala
+>    Hello $name
+#^ source.scala string.quoted.triple.interpolated.scala
+# ^ source.scala string.quoted.triple.interpolated.scala
+#  ^ source.scala string.quoted.triple.interpolated.scala
+#   ^ source.scala string.quoted.triple.interpolated.scala
+#    ^ source.scala string.quoted.triple.interpolated.scala
+#     ^ source.scala string.quoted.triple.interpolated.scala
+#      ^ source.scala string.quoted.triple.interpolated.scala
+#       ^ source.scala string.quoted.triple.interpolated.scala
+#        ^ source.scala string.quoted.triple.interpolated.scala
+#         ^ source.scala string.quoted.triple.interpolated.scala
+#          ^ source.scala meta.template.expression.scala punctuation.definition.template-expression.begin.scala
+#           ^^^^ source.scala meta.template.expression.scala
+>  '''
+#^ source.scala string.quoted.triple.interpolated.scala
+# ^ source.scala string.quoted.triple.interpolated.scala
+#  ^^^ source.scala string.quoted.triple.interpolated.scala punctuation.definition.string.end.scala
+>
+>  // Raw triple single quote strings
+#^^ source.scala punctuation.whitespace.comment.leading.scala
+#  ^^ source.scala comment.line.double-slash.scala punctuation.definition.comment.scala
+#    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.scala comment.line.double-slash.scala
+>  val str6 = raw'''
+#^^ source.scala
+#  ^^^ source.scala keyword.declaration.stable.scala
+#     ^ source.scala
+#      ^^^^ source.scala variable.stable.declaration.scala
+#          ^ source.scala
+#           ^ source.scala keyword.operator.comparison.scala
+#            ^ source.scala
+#             ^^^ source.scala keyword.interpolation.scala
+#                ^^^ source.scala string.quoted.triple.interpolated.scala punctuation.definition.string.begin.scala
+>    Raw $name content
+#^ source.scala string.quoted.triple.interpolated.scala
+# ^ source.scala string.quoted.triple.interpolated.scala
+#  ^ source.scala string.quoted.triple.interpolated.scala
+#   ^ source.scala string.quoted.triple.interpolated.scala
+#    ^ source.scala string.quoted.triple.interpolated.scala
+#     ^ source.scala string.quoted.triple.interpolated.scala
+#      ^ source.scala string.quoted.triple.interpolated.scala
+#       ^ source.scala string.quoted.triple.interpolated.scala
+#        ^ source.scala meta.template.expression.scala punctuation.definition.template-expression.begin.scala
+#         ^^^^ source.scala meta.template.expression.scala
+#             ^ source.scala string.quoted.triple.interpolated.scala
+#              ^ source.scala string.quoted.triple.interpolated.scala
+#               ^ source.scala string.quoted.triple.interpolated.scala
+#                ^ source.scala string.quoted.triple.interpolated.scala
+#                 ^ source.scala string.quoted.triple.interpolated.scala
+#                  ^ source.scala string.quoted.triple.interpolated.scala
+#                   ^ source.scala string.quoted.triple.interpolated.scala
+#                    ^ source.scala string.quoted.triple.interpolated.scala
+>  '''
+#^ source.scala string.quoted.triple.interpolated.scala
+# ^ source.scala string.quoted.triple.interpolated.scala
+#  ^^^ source.scala string.quoted.triple.interpolated.scala punctuation.definition.string.end.scala
+>
+>  // Custom interpolated triple single quote strings
+#^^ source.scala punctuation.whitespace.comment.leading.scala
+#  ^^ source.scala comment.line.double-slash.scala punctuation.definition.comment.scala
+#    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.scala comment.line.double-slash.scala
+>  val str7 = custom'''
+#^^ source.scala
+#  ^^^ source.scala keyword.declaration.stable.scala
+#     ^ source.scala
+#      ^^^^ source.scala variable.stable.declaration.scala
+#          ^ source.scala
+#           ^ source.scala keyword.operator.comparison.scala
+#            ^ source.scala
+#             ^^^^^^ source.scala keyword.interpolation.scala
+#                   ^^^ source.scala string.quoted.triple.interpolated.scala punctuation.definition.string.begin.scala
+>    Custom $name content
+#^ source.scala string.quoted.triple.interpolated.scala
+# ^ source.scala string.quoted.triple.interpolated.scala
+#  ^ source.scala string.quoted.triple.interpolated.scala
+#   ^ source.scala string.quoted.triple.interpolated.scala
+#    ^ source.scala string.quoted.triple.interpolated.scala
+#     ^ source.scala string.quoted.triple.interpolated.scala
+#      ^ source.scala string.quoted.triple.interpolated.scala
+#       ^ source.scala string.quoted.triple.interpolated.scala
+#        ^ source.scala string.quoted.triple.interpolated.scala
+#         ^ source.scala string.quoted.triple.interpolated.scala
+#          ^ source.scala string.quoted.triple.interpolated.scala
+#           ^ source.scala meta.template.expression.scala punctuation.definition.template-expression.begin.scala
+#            ^^^^ source.scala meta.template.expression.scala
+#                ^ source.scala string.quoted.triple.interpolated.scala
+#                 ^ source.scala string.quoted.triple.interpolated.scala
+#                  ^ source.scala string.quoted.triple.interpolated.scala
+#                   ^ source.scala string.quoted.triple.interpolated.scala
+#                    ^ source.scala string.quoted.triple.interpolated.scala
+#                     ^ source.scala string.quoted.triple.interpolated.scala
+#                      ^ source.scala string.quoted.triple.interpolated.scala
+#                       ^ source.scala string.quoted.triple.interpolated.scala
+>  '''
+#^ source.scala string.quoted.triple.interpolated.scala
+# ^ source.scala string.quoted.triple.interpolated.scala
+#  ^^^ source.scala string.quoted.triple.interpolated.scala punctuation.definition.string.end.scala
+>
+>  // Make sure regular strings still work
+#^^ source.scala punctuation.whitespace.comment.leading.scala
+#  ^^ source.scala comment.line.double-slash.scala punctuation.definition.comment.scala
+#    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.scala comment.line.double-slash.scala
+>  val regular1 = """
+#^^ source.scala
+#  ^^^ source.scala keyword.declaration.stable.scala
+#     ^ source.scala
+#      ^^^^^^^^ source.scala variable.stable.declaration.scala
+#              ^ source.scala
+#               ^ source.scala keyword.operator.comparison.scala
+#                ^ source.scala
+#                 ^^^ source.scala string.quoted.triple.scala punctuation.definition.string.begin.scala
+>    Regular triple quotes
+#^^^^^^^^^^^^^^^^^^^^^^^^^^ source.scala string.quoted.triple.scala
+>  """
+#^^ source.scala string.quoted.triple.scala
+#  ^^^ source.scala string.quoted.triple.scala punctuation.definition.string.end.scala
+>
+>  val regular2 = "Regular double quotes"
+#^^ source.scala
+#  ^^^ source.scala keyword.declaration.stable.scala
+#     ^ source.scala
+#      ^^^^^^^^ source.scala variable.stable.declaration.scala
+#              ^ source.scala
+#               ^ source.scala keyword.operator.comparison.scala
+#                ^ source.scala
+#                 ^ source.scala string.quoted.double.scala punctuation.definition.string.begin.scala
+#                  ^^^^^^^^^^^^^^^^^^^^^ source.scala string.quoted.double.scala
+#                                       ^ source.scala string.quoted.double.scala punctuation.definition.string.end.scala
+>
+>  // Edge case: mismatched delimiters should not close
+#^^ source.scala punctuation.whitespace.comment.leading.scala
+#  ^^ source.scala comment.line.double-slash.scala punctuation.definition.comment.scala
+#    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.scala comment.line.double-slash.scala
+>  val str8 = ''''
+#^^ source.scala
+#  ^^^ source.scala keyword.declaration.stable.scala
+#     ^ source.scala
+#      ^^^^ source.scala variable.stable.declaration.scala
+#          ^ source.scala
+#           ^ source.scala keyword.operator.comparison.scala
+#            ^ source.scala
+#             ^^^^ source.scala string.quoted.triple.scala punctuation.definition.string.begin.scala
+>    This has four quotes to open
+#^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.scala string.quoted.triple.scala
+>    ''' but only three to close, so this should not end the string
+#^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.scala string.quoted.triple.scala
+>    This line should still be part of the string
+#^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.scala string.quoted.triple.scala
+>  ''''
+#^^ source.scala string.quoted.triple.scala
+#  ^^^^ source.scala string.quoted.triple.scala punctuation.definition.string.end.scala
+>
+>}
+#^ source.scala punctuation.section.block.end.scala
