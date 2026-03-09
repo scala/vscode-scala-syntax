@@ -371,6 +371,90 @@ export const scalaTmLanguage: TmLanguage = {
           name: 'string.quoted.triple.scala'
         },
         {
+          end: "'''(?!')",
+          begin: "'''(?=\\s*\\n)",
+          beginCaptures: {
+            '0': {
+              name: 'punctuation.definition.string.begin.scala'
+            }
+          },
+          patterns: [
+            {
+              match: '\\\\\\\\|\\\\u[0-9A-Fa-f]{4}',
+              name: 'constant.character.escape.scala'
+            }
+          ],
+          endCaptures: {
+            '0': {
+              name: 'punctuation.definition.string.end.scala'
+            }
+          },
+          name: 'string.quoted.triple.scala'
+        },
+        {
+          end: "''''(?!')",
+          begin: "''''(?=\\s*\\n)",
+          beginCaptures: {
+            '0': {
+              name: 'punctuation.definition.string.begin.scala'
+            }
+          },
+          patterns: [
+            {
+              match: '\\\\\\\\|\\\\u[0-9A-Fa-f]{4}',
+              name: 'constant.character.escape.scala'
+            }
+          ],
+          endCaptures: {
+            '0': {
+              name: 'punctuation.definition.string.end.scala'
+            }
+          },
+          name: 'string.quoted.triple.scala'
+        },
+        {
+          end: "'''''(?!')",
+          begin: "'''''(?=\\s*\\n)",
+          beginCaptures: {
+            '0': {
+              name: 'punctuation.definition.string.begin.scala'
+            }
+          },
+          patterns: [
+            {
+              match: '\\\\\\\\|\\\\u[0-9A-Fa-f]{4}',
+              name: 'constant.character.escape.scala'
+            }
+          ],
+          endCaptures: {
+            '0': {
+              name: 'punctuation.definition.string.end.scala'
+            }
+          },
+          name: 'string.quoted.triple.scala'
+        },
+        {
+          end: "''''''(?!')",
+          begin: "''''''(?=\\s*\\n)",
+          beginCaptures: {
+            '0': {
+              name: 'punctuation.definition.string.begin.scala'
+            }
+          },
+          patterns: [
+            {
+              match: '\\\\\\\\|\\\\u[0-9A-Fa-f]{4}',
+              name: 'constant.character.escape.scala'
+            }
+          ],
+          endCaptures: {
+            '0': {
+              name: 'punctuation.definition.string.end.scala'
+            }
+          },
+          name: 'string.quoted.triple.scala'
+        },
+        {
           begin: `\\b(raw)(""")`,
           end: `(""")(?!")|\\$\n|(\\$[^\\$"_{${letterChars}])`,
           beginCaptures: {
@@ -404,8 +488,74 @@ export const scalaTmLanguage: TmLanguage = {
           }
         },
         {
+          begin: `\\b(raw)(''')(?=\\s*\\n)`,
+          end: `(''')(?!')|\\$\n|(\\$[^\\$'_{${letterChars}])`,
+          beginCaptures: {
+            '1': {
+              name: 'keyword.interpolation.scala'
+            },
+            '2': {
+              name: 'string.quoted.triple.interpolated.scala punctuation.definition.string.begin.scala'
+            }
+          },
+          patterns: [
+            {
+              match: "\\$[\\$']",
+              name: 'constant.character.escape.scala'
+            },
+            {
+              "include": "#string-interpolation"
+            },
+            {
+              match: '.',
+              name: 'string.quoted.triple.interpolated.scala'
+            }
+          ],
+          endCaptures: {
+            '1': {
+              name: 'string.quoted.triple.interpolated.scala punctuation.definition.string.end.scala'
+            },
+            '2': {
+              name: 'invalid.illegal.unrecognized-string-escape.scala'
+            }
+          }
+        },
+        {
           begin: `\\b(${interpolatorid})(""")`,
           end: `(""")(?!")|\\$\n|(\\$[^\\$"_{${letterChars}])`,
+          beginCaptures: {
+            '1': {
+              name: 'keyword.interpolation.scala'
+            },
+            '2': {
+              name: 'string.quoted.triple.interpolated.scala punctuation.definition.string.begin.scala'
+            }
+          },
+          patterns: [
+            {
+              "include": "#string-interpolation"
+            },
+            {
+              match: '\\\\\\\\|\\\\u[0-9A-Fa-f]{4}',
+              name: 'constant.character.escape.scala'
+            },
+            {
+              match: '.',
+              name: 'string.quoted.triple.interpolated.scala'
+            }
+          ],
+          endCaptures: {
+            '1': {
+              name: 'string.quoted.triple.interpolated.scala punctuation.definition.string.end.scala'
+            },
+            '2': {
+              name: 'invalid.illegal.unrecognized-string-escape.scala'
+            }
+          }
+        },
+        {
+          begin: `\\b(${interpolatorid})(''')(?=\\s*\\n)`,
+          end: `(''')(?!')|\\$\n|(\\$[^\\$'_{${letterChars}])`,
           beginCaptures: {
             '1': {
               name: 'keyword.interpolation.scala'
