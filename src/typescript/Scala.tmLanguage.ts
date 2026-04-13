@@ -404,6 +404,31 @@ export const scalaTmLanguage: TmLanguage = {
           }
         },
         {
+          begin: `\\b(json)(""")`,
+          end: `(""")(?!")|\\$\n|(\\$[^\\$"_{${letterChars}])`,
+          beginCaptures: {
+            '1': {
+              name: 'keyword.interpolation.scala'
+            },
+            '2': {
+              name: 'string.quoted.triple.interpolated.scala punctuation.definition.string.begin.scala'
+            }
+          },
+          patterns: [
+            {
+              "include": "#json-value"
+            },
+          ],
+          endCaptures: {
+            '1': {
+              name: 'string.quoted.triple.interpolated.scala punctuation.definition.string.end.scala'
+            },
+            '2': {
+              name: 'invalid.illegal.unrecognized-string-escape.scala'
+            }
+          }
+        },
+        {
           begin: `\\b(${interpolatorid})(""")`,
           end: `(""")(?!")|\\$\n|(\\$[^\\$"_{${letterChars}])`,
           beginCaptures: {
@@ -1391,6 +1416,199 @@ export const scalaTmLanguage: TmLanguage = {
         {
           include: '#xml-entity'
         }
+      ]
+    },
+    // inspired by https://github.com/microsoft/vscode-JSON.tmLanguage/blob/main/JSON.tmLanguage
+    'json-array': {
+      begin: '\\[',
+      end: '\\]',
+      beginCaptures: {
+        0: {
+          name: 'punctuation.definition.array.begin.json'
+        }
+      },
+      endCaptures: {
+        0: {
+          name: 'punctuation.definition.array.end.json'
+        }
+      },
+      name: "meta.structure.array.json",
+      patterns: [
+        {
+          include: '#json-value'
+        },
+        {
+          match: ',',
+          name: 'punctuation.separator.array.json'
+        },
+        {
+          match: '[^\\s\\]]',
+          name: 'invalid.illegal.expected-array-separator.json'
+        }
+      ]
+    },
+    'json-comment': {
+      patterns: [
+        {
+          begin: '/\\\*\\\*(?!/)',
+          end: '\\\*/',
+          captures: {
+            0: {
+              name: 'punctuation.definition.comment.json'
+            }
+          },
+          name: 'comment.block.documentation.json'
+        },
+        {
+          begin: '/\\\*',
+          end: '\\\*/',
+          captures: {
+            0: {
+              name: 'punctuation.definition.comment.json'
+            }
+          },
+          name: 'comment.block.json'
+        },
+      ]
+    },
+    'json-constant': {
+      match: '\\b(?:true|false|null)\\b',
+      name: 'constant.language.json'
+    },
+    'json-number': {
+      //match: '(?:\\d*)',
+      match: '-?(?:0|[1-9]\\d*)(?:(?:\\.\\d+)?(?:[eE][+-]?\\d+)?)?', // see the original for explanation
+      name: 'constant.numeric.json'
+    },
+    'json-object': {
+      begin: '\\{',
+      beginCaptures: {
+        0: {
+          name: 'punctuation.definition.dictionary.begin.json'
+        }
+      },
+      end: '\\}',
+      endCaptures: {
+        0: {
+          name: 'punctuation.definition.dictionary.end.json'
+        }
+      },
+      name: 'meta.structure.dictionary.json',
+      patterns: [
+        {
+          include: '#string-interpolation'
+        },
+        {
+          include: '#json-objectkey'
+        },
+        {
+          include: '#json-comment'
+        },
+        {
+          begin: ':',
+          beginCaptures: {
+            0: {
+              name: 'punctuation.separator.dictionary.key-value.json'
+            }
+          },
+          end: '(,)|(?=\\})',
+          endCaptures: {
+            1: {
+              name: 'punctuation.separator.dictionary.pair.json'
+            }
+          },
+          name: 'meta.structure.dictionary.value.json',
+          patterns: [
+            {
+              include: '#json-value'
+            },
+            {
+              match: '[^\\s,]',
+              name: 'invalid.illegal.expected-dictionary-separator.json'
+            }
+          ]
+        },
+        {
+          match: '[^\\s\\}]',
+          name: 'invalid.illegal.expected-dictionary-separator.json'
+        }
+      ]
+    },
+    'json-string': {
+      begin: '"',
+      beginCaptures: {
+        0: {
+          name: 'punctuation.definition.string.begin.json'
+        }
+      },
+      end: '"',
+      endCaptures: {
+        0: {
+          name: 'punctuation.definition.string.end.json'
+        }
+      },
+      name: 'string.quoted.double.json',
+      patterns: [
+        {
+          include: '#json-stringcontent'
+        }
+      ]
+    },
+    'json-objectkey': {
+      begin: '"',
+      beginCaptures: {
+        0: {
+          name: 'punctuation.support.type.property-name.begin.json'
+        }
+      },
+      end: '"',
+      endCaptures: {
+        0: {
+          name: 'punctuation.support.type.property-name.end.json'
+        }
+      },
+      name: 'string.json support.type.property-name.json',
+      patterns: [
+        {
+          include: '#json-stringcontent'
+        }
+      ]
+    },
+    'json-stringcontent': {
+      patterns: [
+        {
+          match: '(?x)\\\\(?:["\\\\/bfnrt]|u[0-9a-fA-F]{4})',
+          name: 'constant.character.escape.json'
+        },
+        {
+          match: '\\\\.',
+          name: 'invalid.illegal.unrecognized-string-escape.json'
+        }
+      ]
+    },
+    'json-value': {
+      patterns: [
+        {
+          include: '#string-interpolation'
+        },
+        {
+          include: '#json-constant'
+        },
+        {
+          include: '#json-number'
+        },
+        {
+          include: '#json-string'
+        },
+        {
+          include: '#json-array'
+        },
+        {
+          include: '#json-object'
+        },
+        {
+          include: '#json-comment'
+        },
       ]
     }
   },
