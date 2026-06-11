@@ -1,5 +1,23 @@
 ## Scala Syntax (official) Changelog
 
+### 0.5.10 (2026/06/11 11:09 +00:00)
+- [7f7f774](https://github.com/scala/vscode-scala-syntax/commit/7f7f7748d7573208c7dd7196ff94324537ac31ee) chore: Update actions/cache (@tgodzik)
+- [672fa16](https://github.com/scala/vscode-scala-syntax/commit/672fa16c64e12b2cc8b98da011411463968de727) feature: Add support for into modifier (@tgodzik)
+- [e9a1b50](https://github.com/scala/vscode-scala-syntax/commit/e9a1b501912cc6305780943d2cdc8cc07876d1c4) Bump shell-quote from 1.7.3 to 1.8.4 (@dependabot[bot])
+- [a65dbf8](https://github.com/scala/vscode-scala-syntax/commit/a65dbf896c43f48c5fcccfc78ab7ba4112e570a3) Bump tmp from 0.2.5 to 0.2.7 (@dependabot[bot])
+- [4929b1d](https://github.com/scala/vscode-scala-syntax/commit/4929b1d3d7b1eb9d86a9cbe9f6a7f716a39ec30d) Bump qs from 6.14.2 to 6.15.2 (@dependabot[bot])
+- [94ed132](https://github.com/scala/vscode-scala-syntax/commit/94ed132ac6b6303530fe2a70368f42a1a9dc4fe5) Bump lodash from 4.17.23 to 4.18.1 (@dependabot[bot])
+- [b1169a2](https://github.com/scala/vscode-scala-syntax/commit/b1169a2043f7043f654c85ac8f8fed1d44a1a30d) Bump minimatch from 3.1.2 to 3.1.5 (@dependabot[bot])
+- [f3d7a1e](https://github.com/scala/vscode-scala-syntax/commit/f3d7a1ed2281b14ada6aa705c6d65f1719ba6200) Bump qs from 6.14.1 to 6.14.2 (@dependabot[bot])
+- [97bb039](https://github.com/scala/vscode-scala-syntax/commit/97bb039a0c6f075b953fa530191e4df9576c6266) Bump lodash from 4.17.21 to 4.17.23 (@dependabot[bot])
+- [06afae3](https://github.com/scala/vscode-scala-syntax/commit/06afae3a1aa35e543cead84cc24d3e404364573e) Bump qs from 6.11.0 to 6.14.1 (@dependabot[bot])
+- [abcffcb](https://github.com/scala/vscode-scala-syntax/commit/abcffcb1025266c13ee85e0fa47828ad95bc37bf) Bump tmp from 0.2.1 to 0.2.5 (@dependabot[bot])
+- [d2abe3f](https://github.com/scala/vscode-scala-syntax/commit/d2abe3f3642c6b41a17384f08b0e1dce760dd001) Bump tar-fs from 2.1.3 to 2.1.4 (@dependabot[bot])
+- [9170335](https://github.com/scala/vscode-scala-syntax/commit/91703352b794c168bcf95d5846845f4dda618f2a) Bump tar-fs from 2.1.2 to 2.1.3 (@dependabot[bot])
+- [7d7ce4f](https://github.com/scala/vscode-scala-syntax/commit/7d7ce4fd4293c9fe849104be180951b3e6bfdcfd) chore: Fix CI job (@tgodzik)
+- [d62dd2a](https://github.com/scala/vscode-scala-syntax/commit/d62dd2a6257ad2f12cf9c946503e806e811a579e) Bump tar-fs from 2.1.1 to 2.1.2 (@dependabot[bot])
+- [8b0e821](https://github.com/scala/vscode-scala-syntax/commit/8b0e82141c330d87e42c3aaadcf7ceb4a65d1ac4) Release 0.5.9
+
 ### 0.5.9 (2025/01/15 18:04 +00:00)
 - [1d4029f](https://github.com/scala/vscode-scala-syntax/commit/1d4029f21c9c57ce3e05486968b5de2847c25c62) improvement: Show named bounds properly (@tgodzik)
 - [9d7ed62](https://github.com/scala/vscode-scala-syntax/commit/9d7ed62cdcec04d2b5efdc8c8b35305da63cd469) bugfix: Fix Scala CLA (@tgodzik)
@@ -37,7 +55,7 @@
 - [cc96b72](https://github.com/scala/vscode-scala-syntax/commit/cc96b7243e5bf9c009a9064a5b50fc15f96944b0) Release v0.5.7
 
 ### v0.5.7 (2023/07/12 16:30 +00:00)
-- [ffeefb2](https://github.com/scala/vscode-scala-syntax/commit/ffeefb25ec5e0808fa98799098bb59d03c8e5901) improvement: Highlight using directives without double quote (@jkciesluk)
+- [ffeefb2](https://github.com/scala/vscode-scala-syntax/commit/ffeefb25ec5e0808fa98799098bb59d03c8e5901) improvement: Highlight using directives without double quote
 - [63cd944](https://github.com/scala/vscode-scala-syntax/commit/63cd94429e4b358930d4fbc76b10f9ed721ee68a) Bump semver from 5.7.0 to 5.7.2 (@dependabot[bot])
 - [cd24dc8](https://github.com/scala/vscode-scala-syntax/commit/cd24dc8f6e0b8fd45e4ebf890dd4dd7da64a7b8b) Merge symbol and quote capturing (@nicolasstucki)
 - [6839617](https://github.com/scala/vscode-scala-syntax/commit/6839617651b2a0e285fef68cf5a045b3085d23c9) Fix #226: Parse quoted blocks with spaces (`' {`) (@lolgab)
